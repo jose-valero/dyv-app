@@ -2,7 +2,7 @@ import React from 'react';
 
 import Home from '../components/Home';
 import Layout from '../container/Layout';
-import "../styles/App.scss"
+import '../assets/styles/App.scss';
 
 const App = () => {
   return (

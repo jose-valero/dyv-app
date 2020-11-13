@@ -1,0 +1,6 @@
+@import './Vars.scss';
+
+body {
+  background-color: $color_light-white;
+  @include fluid;
+}

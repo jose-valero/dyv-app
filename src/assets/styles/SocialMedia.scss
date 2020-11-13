@@ -1,0 +1,78 @@
+@import './Vars.scss';
+
+.social {
+  position: fixed;
+  top: 15%;
+  ul {
+    list-style-type: none;
+    padding: 0;
+    transform: translatex(-270px);
+    li {
+      display: block;
+      margin: 5px;
+      background-color: $color_mid-dark;
+      width: 300px;
+      text-align: right;
+      padding: 10px;
+      border-radius: 0 30px 30px 0;
+      transition: all 1s;
+
+      &:hover {
+        transform: translatex(110px);
+        @include breakpoint(mobileonly) {
+          transform: translatex(15px);
+        }
+        .icon {
+          transform: rotate(360deg);
+          transition: all 1s;
+        }
+      }
+      a {
+        color: white;
+        text-decoration: none;
+        span {
+          @include breakpoint(mobileonly) {
+            color: transparent;
+          }
+        }
+      }
+      .icon {
+        text-align: center;
+        margin-left: 14px;
+        color: black;
+        background-color: white;
+        padding: 10px;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        font-size: 20px;
+        transform: rotate(0deg);
+      }
+    }
+    li.twitter {
+      &:hover {
+        background-color: #55acee;
+      }
+    }
+    li.facebook {
+      &:hover {
+        background-color: #3b5999;
+      }
+    }
+    li.google-plus {
+      &:hover {
+        background-color: #dd4b39;
+      }
+    }
+    li.instagram {
+      &:hover {
+        background-color: #e4405f;
+      }
+    }
+    li.pinterest {
+      &:hover {
+        background-color: #f10909;
+      }
+    }
+  }
+}
