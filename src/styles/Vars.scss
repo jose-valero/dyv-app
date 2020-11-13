@@ -1,0 +1,43 @@
+//--------------------
+// Fonts
+//--------------------
+
+@import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One|Roboto+Mono:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+$theme-font: 'Muli', sans-serif;
+$header-font: 'Roboto Mono', monospace;
+$header-subFont: 'Rubik Mono One', sans-serif;
+
+//--------------------
+// General Transition Values
+//--------------------
+$td: 150ms;
+$te: cubic-bezier(0.215, 0.61, 0.355, 1);
+
+//--------------------
+// paletas de colores
+//--------------------
+
+$color_dark: #101118;
+$color_mid-dark: #292f35;
+$color_light-dark: #495156;
+$color_mid-gray: #87857a;
+$color_mid-gray-Blue: #787fa0;
+$color_mid-blue: #8aa2c4;
+$color_light-gray: #afc2d0;
+$color_pale-gray: #c9c2b9;
+$color_light-white: #e6f5fd;
+$color_red-brown: #512200;
+$color_mid-brown: #856336;
+$color_mid-wood: #96551d;
+$color_light-wood: #d1b185;
+$color_pale-light: #ebecf0;
+$color_mid-yellow: #ffb826;
+
+@mixin TRBL {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
