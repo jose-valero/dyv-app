@@ -4,9 +4,6 @@
   --td: 150ms;
   --te: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-// ========================
-// Global elements
-// ========================
 
 h1 {
   font-size: calc(1.5rem + 4vmin);
@@ -35,10 +32,6 @@ a {
     margin-top: 1.5rem;
   }
 }
-
-// ================================
-// Main navigation
-// ================================
 
 .nav-main {
   align-items: center;
@@ -79,10 +72,6 @@ a {
   }
 }
 
-// ================================
-// Main navigation toggle
-// ================================
-
 [id='main-navigation-toggle'] {
   opacity: 0;
   position: fixed;
@@ -94,6 +83,7 @@ a {
     right: 1rem;
     top: 1rem;
     z-index: 100;
+    display: flex;
 
     span {
       display: block;
@@ -125,10 +115,6 @@ a {
     }
   }
 }
-
-// ================================
-// Main navigation toggle:checked
-// ================================
 
 [id='main-navigation-toggle']:checked ~ label {
   span {
@@ -173,10 +159,6 @@ a {
   }
 }
 
-// ================================
-// Menu
-// ================================
-
 .menu {
   position: relative;
   text-align: center;
@@ -187,10 +169,6 @@ a {
     font-size: 6vmin;
   }
 }
-
-// ================================
-// Submenu
-// ================================
 
 .submenu {
   left: 0;
@@ -219,10 +197,6 @@ a {
   }
 }
 
-// ================================
-// Menu item
-// ================================
-
 .menu__item {
   display: block;
   position: relative;
@@ -249,10 +223,6 @@ a {
     visibility: visible;
   }
 }
-
-// ================================
-// Menu link
-// ================================
 
 .menu__link {
   color: $color_light-wood;
@@ -288,10 +258,6 @@ a {
     bottom: 0;
   }
 }
-
-// ================================
-// Menu item hover styles
-// ================================
 
 .menu:not(:focus-within):not(:hover) .menu__item {
   .menu__link {
@@ -329,10 +295,6 @@ a {
     transform: translate(0, var(--pull));
   }
 }
-
-// ================================
-// Animations
-// ================================
 
 @keyframes blink {
   50%,

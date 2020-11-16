@@ -16,7 +16,7 @@ const SocialMedia = () => {
           <a
             href='https://www.instagram.com/dvanguardiavzla/'
             target='_blank'
-            without={toString()}
+            
             rel='noreferrer'
           >
             <span className='rrss__name'>Twitter</span>
@@ -27,7 +27,7 @@ const SocialMedia = () => {
           <a
             href='https://www.instagram.com/dvanguardiavzla/'
             target='_blank'
-            without={toString()}
+            
             rel='noreferrer'
           >
             <span className='rrss__name'>Facebook</span>
@@ -38,7 +38,7 @@ const SocialMedia = () => {
           <a
             href='https://www.instagram.com/dvanguardiavzla/'
             target='_blank'
-            without={toString()}
+            
             rel='noreferrer'
           >
             <span className='rrss__name'>Google plus</span>
@@ -49,7 +49,7 @@ const SocialMedia = () => {
           <a
             href='https://www.instagram.com/dvanguardiavzla/'
             target='_blank'
-            without={toString()}
+            
             rel='noreferrer'
           >
             <span className='rrss__name'>Instagram</span>
@@ -60,7 +60,7 @@ const SocialMedia = () => {
           <a
             href='https://www.instagram.com/dvanguardiavzla/'
             target='_blank'
-            without={toString()}
+            
             rel='noreferrer'
           >
             <span className='rrss__name'>Pinterest</span>

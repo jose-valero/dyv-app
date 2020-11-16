@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../assets/styles/Header.scss';
+import { MdSearch } from 'react-icons/md';
 
 const Header = () => {
   return (
@@ -10,6 +11,7 @@ const Header = () => {
         className='btn btn--close'
         title='Toggle main navigation'
       />
+
       <label htmlFor='main-navigation-toggle'>
         <span></span>
       </label>

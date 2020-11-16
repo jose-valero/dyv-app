@@ -1,5 +1,5 @@
 import React from 'react';
-import "../assets/styles/Home.scss"
+import '../assets/styles/Home.scss';
 
 const Home = () => {
   return (
