@@ -35,8 +35,6 @@ $color_light-wood: #d1b185;
 $color_pale-light: #ebecf0;
 $color_mid-yellow: #ffb826;
 
-
-
 @mixin breakpoint($point) {
   @if $point == xldevice {
     @media (min-width: 2200px) {
@@ -79,3 +77,9 @@ $color_mid-yellow: #ffb826;
   margin: 0%;
   padding: 0%;
 }
+
+$theme-colors: (
+  'dark': #202020,
+);
+
+@import "~bootstrap/scss/bootstrap";

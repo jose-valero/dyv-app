@@ -1,11 +1,9 @@
 @import './Vars.scss';
 
 .logo__position {
-  position: absolute;
-  width: 92px;
-  height: 56px;
-  left: 70px;
-  top: 30px;
+  width: 52px;
+  height: 48px;
+
   @include breakpoint(mobileonly) {
     left: 10px;
   }

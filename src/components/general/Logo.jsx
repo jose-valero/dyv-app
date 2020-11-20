@@ -9,12 +9,6 @@ const Logo = () => {
       <a href='/'>
         <img className='logo__position' src={LogoImg} alt='' />
       </a>
-      <a href='/'>
-        <span className='lang__position--es'>ESP</span>
-      </a>
-      <a href='/'>
-        <span className='lang__position--en'>ENG</span>
-      </a>
     </>
   );
 };
