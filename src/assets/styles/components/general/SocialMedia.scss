@@ -1,0 +1,57 @@
+@import '../../Vars.scss';
+
+#social_link {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  -webkit-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+  text-decoration: none;
+  &:hover {
+    outline: none;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+ul {
+  list-style: none;
+}
+.banner__social-media {
+  left: 0;
+  position: fixed;
+  top: 40%;
+  display: flex;
+  flex-direction: column;
+  background-color: $pal-2_light-dark;
+}
+.banner__sm-item {
+  height: auto;
+  width: 28px;
+
+  text-shadow: 1px 1px 2px black;
+  line-height: 48px;
+  background: $pal-2_light-dark;
+  color: $warm_oj-1;
+  padding: 0.75rem 0.5rem 0.75rem 0rem;
+  display: block;
+
+  // &:hover {
+  //   background-color: $warm_gray;
+  // }
+  // &:focus {
+  //   background-color: $pal-1_gray-2;
+  // }
+}
+
+#twitter:hover {
+  color: $color-twitter;
+}
+#facebook:hover {
+  color: $color-facebook;
+}
+#instagram:hover {
+  color: $color-instagram;
+}
+#pinterest:hover {
+  color: $color-pinterest;
+}

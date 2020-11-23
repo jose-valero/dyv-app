@@ -1,8 +1,7 @@
-@import "~bootstrap/scss/bootstrap";
-@import "./Vars.scss";
+@import './Vars.scss';
 
 body {
+  font-family: $quicksand;
   background-color: #e6f5fd;
-  margin: 0%;
-  padding: 0%;
+  @include fluid;
 }

@@ -1,74 +1,42 @@
 import React from 'react';
-import "../../assets/styles/SocialMedia.scss"
+import '../../assets/styles/components/general/SocialMedia.scss';
+
 import {
-  FaTwitter,
-  FaFacebookF,
-  FaGooglePlusG,
-  FaInstagram,
-  FaPinterestP,
-} from 'react-icons/fa';
+  TiSocialTwitter,
+  TiSocialFacebook,
+  TiSocialInstagram,
+  TiSocialPinterest,
+} from 'react-icons/ti';
 
 const SocialMedia = () => {
   return (
-    <nav className='social'>
-      <ul>
-        <li className='twitter'>
-          <a
-            href='https://www.instagram.com/dvanguardiavzla/'
-            target='_blank'
-            
-            rel='noreferrer'
-          >
-            <span className='rrss__name'>Twitter</span>
-            <FaTwitter className='icon' />
+    <>
+      <div className='banner__social-media'>
+        <li>
+          <a id='social_link' href='https://twitter.com'>
+            <TiSocialTwitter id='twitter' className='banner__sm-item' />
           </a>
         </li>
-        <li className='facebook'>
-          <a
-            href='https://www.instagram.com/dvanguardiavzla/'
-            target='_blank'
-            
-            rel='noreferrer'
-          >
-            <span className='rrss__name'>Facebook</span>
-            <FaFacebookF className='icon' />
+
+        <li>
+          <a href='https://www.facebook.com/'>
+            <TiSocialFacebook id='facebook' className='banner__sm-item' />
           </a>
         </li>
-        <li className='google-plus'>
-          <a
-            href='https://www.instagram.com/dvanguardiavzla/'
-            target='_blank'
-            
-            rel='noreferrer'
-          >
-            <span className='rrss__name'>Google plus</span>
-            <FaGooglePlusG className='icon' />
+
+        <li>
+          <a href='https://instagram.com'>
+            <TiSocialInstagram id='instagram' className='banner__sm-item' />
           </a>
         </li>
-        <li className='instagram'>
-          <a
-            href='https://www.instagram.com/dvanguardiavzla/'
-            target='_blank'
-            
-            rel='noreferrer'
-          >
-            <span className='rrss__name'>Instagram</span>
-            <FaInstagram className='icon' />
+
+        <li>
+          <a href='https://pinterest.com'>
+            <TiSocialPinterest id='pinterest' className='banner__sm-item' />
           </a>
         </li>
-        <li className='pinterest'>
-          <a
-            href='https://www.instagram.com/dvanguardiavzla/'
-            target='_blank'
-            
-            rel='noreferrer'
-          >
-            <span className='rrss__name'>Pinterest</span>
-            <FaPinterestP className='icon' />
-          </a>
-        </li>
-      </ul>
-    </nav>
+      </div>
+    </>
   );
 };
 
