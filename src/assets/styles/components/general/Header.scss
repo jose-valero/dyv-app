@@ -27,6 +27,7 @@ ul {
   line-height: 30px;
   background-color: $pal-1_dark;
   position: fixed;
+  z-index: 9999;
 }
 .brand {
   cursor: pointer;

@@ -95,3 +95,11 @@ $color-pinterest: #e60023;
   margin: 0%;
   padding: 0%;
 }
+
+@mixin  textResponsive {
+  font-size: calc(0.75rem + (24 - 16) * (100vw - 576px) / (2200 - 576));
+}
+
+@mixin titleResponsive {
+  font-size: calc(1.75rem + (24 - 16) * (100vw - 576px) / (2200 - 576));
+}
