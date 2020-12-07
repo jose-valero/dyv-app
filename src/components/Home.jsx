@@ -4,6 +4,7 @@ import homeImg from '../assets/statics/images/1.jpg';
 import Logo from '../assets/statics/images/LogoLight.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Button } from './Button';
 
 const Home = () => {
   AOS.init();
@@ -35,10 +36,11 @@ const Home = () => {
               data-aos-delay='10'
               data-aos-offset='0'
             />
-            <small>
+            <p data-aos='fade-left'>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
               magni quas, esse natus ad sed explicabo vel impedit quibusdam
-            </small>
+            </p>
+            <Button name='Conocenos' route='#' />
           </div>
         </div>
       </section>

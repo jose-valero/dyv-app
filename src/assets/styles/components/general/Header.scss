@@ -1,4 +1,4 @@
-@import "../../Vars.scss";
+@import '../../Vars.scss';
 
 .menu__links {
   text-decoration: none;
@@ -7,12 +7,18 @@
   padding: 10px 0;
 }
 .menu__names {
-  margin-right: 1.5rem;
+  @include breakpoint(desktop) {
+    margin-right: 0;
+  }
+  @include breakpoint(mobile) {
+    margin-right: 1.5rem;
+  }
 }
 
 li {
   list-style: none;
   text-decoration: none;
+  text-transform: uppercase;
 }
 ul {
   margin: 0;
@@ -42,10 +48,11 @@ ul {
   }
 }
 .menu {
-  width: 60%;
+  width: 70%;
   height: 100%;
   float: right;
   background-color: $pal-1_dark;
+  margin-right: 2.5rem;
 
   ul {
     width: 100%;
@@ -57,13 +64,13 @@ ul {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    
+
     .menu__links {
       width: 25%;
       height: inherit;
       color: $pal-1_gray-4;
       display: inline-block;
-     
+
       &:hover {
         color: $warm_oj-1;
         opacity: 1;
@@ -87,6 +94,8 @@ ul {
       }
     }
   }
+  @include breakpoint(mobile) {
+  }
 }
 #menuToggle {
   display: none;
@@ -96,6 +105,12 @@ ul {
 }
 .menu__home-icon {
   font-size: 1.5rem;
+  @include breakpoint(desktop) {
+    margin-right: 0;
+  }
+  @include breakpoint(mobile) {
+    margin-right: 1.5rem;
+  }
 }
 @media screen and (max-width: 768px) {
   .menu {
@@ -114,7 +129,7 @@ ul {
       .menu__links {
         text-align: right;
         width: 100%;
-        height: 60px;
+        height: 40px;
         background-color: transparent;
         padding: 15px 5% 0 0;
         &:hover {
@@ -126,15 +141,15 @@ ul {
     }
   }
   .menu-icon {
-    width: 100px;
+    width: 115px;
     height: inherit;
     display: block;
     position: absolute;
-    top: 0;
+    top: 15%;
     right: 0;
     line-height: 40px;
-    font-size: 1.7em;
-    color: $warm_oj-3;
+
+    color: $warm_oj-1;
   }
   #menuToggle {
     &:checked {
@@ -146,7 +161,30 @@ ul {
     }
   }
   .menu__icon-bars {
-    font-size: 1.7em;
-    color: $warm_oj-3;
+    font-size: 1.5em;
+    color: $warm_oj-1;
+  }
+}
+
+.menu__language {
+  position: fixed;
+  z-index: 99999;
+  top: 10px;
+  right: 0px;
+  &--esp {
+    text-decoration: none;
+    margin-right: 0.5rem;
+    & img {
+      width: 24px;
+      height: auto;
+    }
+  }
+  &--eng {
+    text-decoration: none;
+    margin-right: 0.75rem;
+    & img {
+      width: 24px;
+      height: auto;
+    }
   }
 }

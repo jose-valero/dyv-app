@@ -8,36 +8,48 @@
   bottom: 0;
   width: 100%;
   height: auto;
-  background-color: yellow;
+  background-color: $pal-1_dark;
   overflow: hidden;
 
   .footer__section-logo {
-    width: 15%;
-    background-color: magenta;
-    padding: 1rem;
-    margin: 1rem;
+    width: 18%;
+    // background-color: magenta;
+    // padding: 0.25rem;
+    padding: 0.5rem;
+    justify-content: center;
     img {
       max-width: 100%;
       min-width: 50px;
       height: auto;
+      margin: 15% 0%;
     }
   }
 
   .footer__nav {
-    background-color: gray;
-    padding: 1rem;
-    margin: 1rem;
-    width: 17.5%;
+    display: flex;
+    // background-color: gray;
+    padding: 0.75rem;
+    // margin: 0.5rem;
+
+    justify-content: center;
+    width: 27.333%;
     &--content {
-      border: 1px red solid;
+      & h2 {
+        color: $pal-1_gray-1;
+      }
+      // border: 1px red solid;
+      @include fluid;
       @include textResponsive;
+      &--items {
+        margin-top: 0.75rem;
+      }
     }
   }
   .footer__newsletter {
     background-color: yellowgreen;
-    padding: 1rem;
-    margin: 1rem;
-    width: 40%;
+    // padding: 0.25rem;
+    margin: 0.25rem;
+    width: 27.333%;
     &--content {
       border: 1px green solid;
       @include textResponsive;
@@ -46,9 +58,9 @@
 
   .footer__social {
     background-color: bisque;
-    padding: 1rem;
-    margin: 1rem;
-    width: 17.5%;
+    // padding: 0.25rem;
+    margin: 0.25rem;
+    width: 27.333%;
     &--content {
       border: 1px magenta solid;
       @include textResponsive;
