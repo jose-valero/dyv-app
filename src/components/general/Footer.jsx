@@ -3,6 +3,8 @@ import fullLogo from '../../assets/statics/images/LogoLight.png';
 import { Link } from 'react-router-dom';
 import { FaWhatsapp, FaMapMarkerAlt, FaEnvelopeOpenText } from 'react-icons/fa';
 import { IoMdSend } from 'react-icons/io';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import '../../assets/styles/components/general/Footer.scss';
 
 const Footer = () => {
@@ -10,8 +12,7 @@ const Footer = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    alert(`Submitting email ${email}`);
+    toast.success(`Submitting email ${email}`);
     setEmail('');
   };
 
@@ -75,6 +76,7 @@ const Footer = () => {
                     style={iconSend}
                   />
                 </button>
+                <ToastContainer position='bottom-right' />
               </form>
             </>
           </div>
