@@ -12,17 +12,15 @@
   a,
   p,
   h2,
-  p,
-  span {
+  p {
     @include textResponsive;
     @include breakpoint(mobile) {
       @include textFooterResponsive;
     }
   }
 
-  display: flex;
+  @include centerFlex;
   @include fluid;
-  align-self: flex-end;
   position: relative;
   bottom: 0;
   width: 100%;
@@ -30,11 +28,13 @@
   background-color: $pal-2_dark;
   overflow: hidden;
 }
+
 .footer__section-logo {
-  background-color: red;
+  // background-color: red;
   width: 18%;
   padding: 0.5rem;
-  margin-top: 1rem;
+  margin: auto;
+  text-align: center;
   @include breakpoint(mobile) {
     display: none;
   }
@@ -42,19 +42,23 @@
     max-width: 70%;
     min-width: 50px;
     height: auto;
-    margin: 15%;
+    margin-top: 2rem;
   }
 }
 
 .footer__nav {
-  background-color: bisque;
-  display: flex;
-  justify-content: center;
+  // background-color: bisque;
+  // @include centerFlex;
   width: 12.333%;
   text-align: center;
-  margin-top: 1rem;
+  // margin-top: 1rem;
+  @include breakpoint(mobile) {
+    width: 20%;
+  }
   &--content {
-    @include fluid;
+    // border: 2px red solid;
+    // @include fluid;
+    margin-top: 2rem;
 
     &--items {
       margin-top: 0.125rem;
@@ -77,33 +81,32 @@
 }
 
 .footer__newsletter {
-  background-color: yellow;
+  // background-color: yellow;
   text-align: center;
   width: 40.333%;
-  margin-top: 1rem;
-  display: flex;
-  justify-content: center;
+
+  // margin-top: 1rem;
+  // @include centerFlex;
+  @include breakpoint(mobile) {
+    width: 50%;
+  }
   &--content {
-    .sendButton,
-    .button,
-    svg {
-      height: 29px;
-      width: 55px;
-      border-radius: 0px;
-      a {
-        color: $pal-2_white;
-      }
+    // border: 2px red solid;
+    margin-top: 2rem;
+    .sendButton {
+      cursor: pointer;
     }
+
     form {
       display: flex;
       justify-content: center;
-
       input {
         width: 70%;
         float: left;
         height: 25px;
         text-align: center;
         font-family: inherit;
+
         @include textFooterResponsive;
         outline: 0;
         &[type='email'] {
@@ -115,18 +118,31 @@
         }
       }
     }
+
+    .footer__newsletter--button {
+      background-color: transparent;
+      @include fluid;
+      border: none;
+      outline: 0;
+    }
   }
 }
 
 .footer__social {
-  background-color: palegreen;
-
+  // background-color: palegreen;
   width: 29.333%;
-  margin-top: 1rem;
+  // margin-top: 1rem;
+  @include breakpoint(mobile) {
+    width: 30%;
+  }
   &--content {
+    // border: 2px red solid;
+    margin-top: 2rem;
+
     &--items {
-      text-align: start;
-      margin: 1rem 0 1rem 20%;
+      @include textFooterResponsive;
+      margin: 5% 0% 1rem 30%;
+      // @include centerFlex;
     }
   }
 }
@@ -134,7 +150,7 @@
 .footer__quote {
   color: $warm_gray;
   background-color: $pal-2_dark;
-  @include fluid;
+  padding-bottom: 0.75rem;
   text-align: center;
   small {
     border-top: 1px $warm_oj-1 solid;

@@ -1,17 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import fullLogo from '../../assets/statics/images/LogoLight.png';
 import { Link } from 'react-router-dom';
-import { Button } from '../Button';
-
+import { FaWhatsapp, FaMapMarkerAlt, FaEnvelopeOpenText } from 'react-icons/fa';
+import { IoMdSend } from 'react-icons/io';
 import '../../assets/styles/components/general/Footer.scss';
-import {
-  AiOutlineWhatsApp,
-  AiFillMail,
-  AiFillEnvironment,
-} from 'react-icons/ai';
-import { IoIosSend } from 'react-icons/io';
 
 const Footer = () => {
+  const [email, setEmail] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    alert(`Submitting email ${email}`);
+    setEmail('');
+  };
+
+  const sendOnChange = (e) => {
+    setEmail(e.target.value);
+  };
+
   return (
     <>
       <div className='footer__container'>
@@ -48,15 +55,26 @@ const Footer = () => {
             <h2>Newsletter</h2>
             <p>Subscribe for free and keep in touch with our lastest content</p>
             <>
-              <form>
-                <input type='email' placeholder='Your email address' />
-                <Button
-                  type='submit'
-                  name='Go!'
-                  className='sendButton'
-                  value='Go!'
-                  route="#"
+              <form onSubmit={handleSubmit}>
+                <input
+                  type='email'
+                  htmlFor='Email'
+                  placeholder='Your email address'
+                  value={email}
+                  onChange={sendOnChange}
+                  required
                 />
+                <button
+                  type='submit'
+                  value='Submit'
+                  className='footer__newsletter--button'
+                >
+                  <IoMdSend
+                    name='Go!'
+                    className='sendButton'
+                    style={iconSend}
+                  />
+                </button>
               </form>
             </>
           </div>
@@ -65,15 +83,15 @@ const Footer = () => {
           <div className='footer__social--content'>
             <h2 style={{ textAlign: 'center' }}>Let's Talk</h2>
             <div className='footer__social--content--items'>
-              <AiOutlineWhatsApp style={iconStyle} />
+              <FaWhatsapp style={iconStyle} />
               <span>+54 1165986136</span>
             </div>
             <div className='footer__social--content--items'>
-              <AiFillMail style={iconStyle} />
-              <span>jhondoe@example.com</span>
+              <FaEnvelopeOpenText style={iconStyle} />
+              <span>dyv@gmail.com</span>
             </div>
             <div className='footer__social--content--items'>
-              <AiFillEnvironment style={iconStyle} />
+              <FaMapMarkerAlt style={iconStyle} />
               <span>GBA, Pilar, Argentina</span>
             </div>
           </div>
@@ -91,20 +109,12 @@ const Footer = () => {
 const iconStyle = {
   fill: '#b3b3b5',
   marginRight: '0.5rem',
-  textAlign: 'end',
-  width: '20px',
+};
+
+const iconSend = {
+  fill: '#b3b3b5',
+  margin: '0.25rem',
+  width: '24px',
   height: 'auto',
 };
-
-const formGroup = {
-  position: 'relative',
-  // display: -ms-flexbox;
-  display: 'flex',
-  // -ms-flex-wrap: wrap;
-  flexWrap: 'wrap',
-  // -ms-flex-align: stretch;
-  alignItems: 'stretch',
-  width: '100%',
-};
-
 export default Footer;

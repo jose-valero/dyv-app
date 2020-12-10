@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { lanSelect } from '../../actions';
 import { Link } from 'react-router-dom';
 import { HiMenuAlt3 } from 'react-icons/hi';
-import { TiHome } from 'react-icons/ti';
+
 import LogoImg from '../../assets/statics/images/mini-logo.png';
 import spainFlag from '../../assets/statics/images/spainFlag.png';
 import usaFlag from '../../assets/statics/images/usaFlag.png';
@@ -89,9 +89,6 @@ class Header extends React.Component {
               </Link>
               <Link className='menu__links' to='/contact'>
                 <li className='menu__names'>Contact</li>
-              </Link>
-              <Link className='menu__links' to='/'>
-                <TiHome className='menu__home-icon' />
               </Link>
             </ul>
             <div className='menu__language'>

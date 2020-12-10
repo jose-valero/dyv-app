@@ -98,6 +98,11 @@ $color-pinterest: #e60023;
   padding: 0%;
 }
 
+@mixin centerFlex {
+  display: flex;
+  justify-content: flex-start;
+}
+
 @mixin textResponsive {
   font-size: calc(0.75rem + (24 - 16) * (100vw - 576px) / (2200 - 576));
 }
