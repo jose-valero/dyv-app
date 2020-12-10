@@ -1,6 +1,25 @@
 @import '../../Vars.scss';
 
 .footer__container {
+  h2 {
+    color: $pal-1_gray-2;
+  }
+  a,
+  p,
+  span {
+    color: $warm_gray;
+  }
+  a,
+  p,
+  h2,
+  p,
+  span {
+    @include textResponsive;
+    @include breakpoint(mobile) {
+      @include textFooterResponsive;
+    }
+  }
+
   display: flex;
   @include fluid;
   align-self: flex-end;
@@ -8,62 +27,116 @@
   bottom: 0;
   width: 100%;
   height: auto;
-  background-color: $pal-1_dark;
+  background-color: $pal-2_dark;
   overflow: hidden;
-
-  .footer__section-logo {
-    width: 18%;
-    // background-color: magenta;
-    // padding: 0.25rem;
-    padding: 0.5rem;
-    justify-content: center;
-    img {
-      max-width: 100%;
-      min-width: 50px;
-      height: auto;
-      margin: 15% 0%;
-    }
+}
+.footer__section-logo {
+  background-color: red;
+  width: 18%;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  @include breakpoint(mobile) {
+    display: none;
   }
+  img {
+    max-width: 70%;
+    min-width: 50px;
+    height: auto;
+    margin: 15%;
+  }
+}
 
-  .footer__nav {
-    display: flex;
-    // background-color: gray;
-    padding: 0.75rem;
-    // margin: 0.5rem;
+.footer__nav {
+  background-color: bisque;
+  display: flex;
+  justify-content: center;
+  width: 12.333%;
+  text-align: center;
+  margin-top: 1rem;
+  &--content {
+    @include fluid;
 
-    justify-content: center;
-    width: 27.333%;
-    &--content {
-      & h2 {
-        color: $pal-1_gray-1;
+    &--items {
+      margin-top: 0.125rem;
+      @include breakpoint(mobile) {
+        margin-top: 0;
       }
-      // border: 1px red solid;
-      @include fluid;
-      @include textResponsive;
-      &--items {
-        margin-top: 0.75rem;
+      & a {
+        text-align: center;
+        color: $warm_gray;
+      }
+      & a:hover {
+        color: $warm_oj-1;
+        opacity: 0.9;
       }
     }
   }
-  .footer__newsletter {
-    background-color: yellowgreen;
-    // padding: 0.25rem;
-    margin: 0.25rem;
-    width: 27.333%;
-    &--content {
-      border: 1px green solid;
-      @include textResponsive;
+  ul {
+    display: inline;
+  }
+}
+
+.footer__newsletter {
+  background-color: yellow;
+  text-align: center;
+  width: 40.333%;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  &--content {
+    .sendButton,
+    .button,
+    svg {
+      height: 29px;
+      width: 55px;
+      border-radius: 0px;
+      a {
+        color: $pal-2_white;
+      }
+    }
+    form {
+      display: flex;
+      justify-content: center;
+
+      input {
+        width: 70%;
+        float: left;
+        height: 25px;
+        text-align: center;
+        font-family: inherit;
+        @include textFooterResponsive;
+        outline: 0;
+        &[type='email'] {
+          border: 1px solid lighten($pal-2_white, 50%);
+          background-color: $pal-2_white;
+          &:focus {
+            border-color: $warm_oj-1;
+          }
+        }
+      }
     }
   }
+}
 
-  .footer__social {
-    background-color: bisque;
-    // padding: 0.25rem;
-    margin: 0.25rem;
-    width: 27.333%;
-    &--content {
-      border: 1px magenta solid;
-      @include textResponsive;
+.footer__social {
+  background-color: palegreen;
+
+  width: 29.333%;
+  margin-top: 1rem;
+  &--content {
+    &--items {
+      text-align: start;
+      margin: 1rem 0 1rem 20%;
     }
+  }
+}
+
+.footer__quote {
+  color: $warm_gray;
+  background-color: $pal-2_dark;
+  @include fluid;
+  text-align: center;
+  small {
+    border-top: 1px $warm_oj-1 solid;
   }
 }

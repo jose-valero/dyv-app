@@ -25,6 +25,9 @@ ul {
   background-color: $pal-2_light-dark;
   z-index: 9999;
   border-radius: 10px;
+  @include breakpoint(mobile) {
+    top: 25%;
+  }
 }
 .banner__sm-item {
   height: auto;

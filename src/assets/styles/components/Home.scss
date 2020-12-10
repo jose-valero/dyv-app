@@ -95,8 +95,9 @@
         }
       }
       & img {
-        width: 100%;
+        width: 80%;
         height: auto;
+        margin: 0 10%;
         @include breakpoint(mobile) {
           margin: 5%;
           width: 40%;
