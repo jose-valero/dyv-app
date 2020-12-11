@@ -49,11 +49,11 @@ ul {
   }
 }
 .menu {
-  width: 70%;
+  width: 50%;
   height: 100%;
   float: right;
   background-color: $pal-1_dark;
-  margin-right: 2.5rem;
+  // margin-right: 5%;
 
   ul {
     width: 100%;
@@ -67,7 +67,7 @@ ul {
     display: flex;
 
     .menu__links {
-      width: 25%;
+      width: 15%;
       height: inherit;
       color: $pal-1_gray-4;
       display: inline-block;

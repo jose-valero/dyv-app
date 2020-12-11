@@ -12,7 +12,7 @@ const Footer = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    toast.success(`Submitting email ${email}`);
+    toast.success(`🎯 Submitting email ${email}`);
     setEmail('');
   };
 
