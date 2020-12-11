@@ -13,25 +13,30 @@ const SocialMedia = () => {
     <>
       <div className='banner__social-media'>
         <li>
-          <a id='social_link' href='https://twitter.com'>
+          <a
+            id='social_link'
+            href='https://twitter.com'
+            target='_blank'
+            rel='noreferrer'
+          >
             <TiSocialTwitter id='twitter' className='banner__sm-item' />
           </a>
         </li>
 
         <li>
-          <a href='https://www.facebook.com/'>
+          <a href='https://www.facebook.com/' target='_blank' rel='noreferrer'>
             <TiSocialFacebook id='facebook' className='banner__sm-item' />
           </a>
         </li>
 
         <li>
-          <a href='https://instagram.com'>
+          <a href='https://instagram.com' target='_blank' rel='noreferrer'>
             <TiSocialInstagram id='instagram' className='banner__sm-item' />
           </a>
         </li>
 
         <li>
-          <a href='https://pinterest.com'>
+          <a href='https://pinterest.com' target='_blank' rel='noreferrer'>
             <TiSocialPinterest id='pinterest' className='banner__sm-item' />
           </a>
         </li>
