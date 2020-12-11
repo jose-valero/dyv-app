@@ -84,18 +84,28 @@ const Footer = () => {
         <div className='footer__social'>
           <div className='footer__social--content'>
             <h2 style={{ textAlign: 'center' }}>Let's Talk</h2>
-            <div className='footer__social--content--items'>
-              <FaWhatsapp style={iconStyle} />
-              <span>+54 1165986136</span>
-            </div>
-            <div className='footer__social--content--items'>
-              <FaEnvelopeOpenText style={iconStyle} />
-              <span>dyv@gmail.com</span>
-            </div>
-            <div className='footer__social--content--items'>
-              <FaMapMarkerAlt style={iconStyle} />
-              <span>GBA, Pilar, Argentina</span>
-            </div>
+            <a href='https://wa.link/702wra' target='_blank' rel='noreferrer'>
+              <div className='footer__social--content--items'>
+                <FaWhatsapp style={iconStyle} />
+                <span>+54 1165986136</span>
+              </div>
+            </a>
+            <Link to='/contact'>
+              <div className='footer__social--content--items'>
+                <FaEnvelopeOpenText style={iconStyle} />
+                <span>dyv@gmail.com</span>
+              </div>
+            </Link>
+            <a
+              href='https://goo.gl/maps/6Sxkp7BUq1Rsb9Go6'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <div className='footer__social--content--items'>
+                <FaMapMarkerAlt style={iconStyle} />
+                <span>GBA, Pilar, Argentina</span>
+              </div>
+            </a>
           </div>
         </div>
       </div>
