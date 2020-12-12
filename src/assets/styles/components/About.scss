@@ -3,19 +3,20 @@
 .about__container {
   margin-top: 50px;
   // display: flex;
-  height: 100vh;
-  background-color: red;
+  height: auto;
+  background-color: $pal-2_light-gray;
 }
 
 .about__hero {
-  background-image: url('../../statics/images/hero_about_1.png');
+  background-image: url('../../statics/images/test_ban_1.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  height: 250px;
-  width: auto;
+  height: 500px;
+  width: 100%;
   display: flex;
   align-items: center;
+  opacity: 0.9;
   & h1 {
     text-align: center;
     color: $warm_gray;
@@ -28,11 +29,50 @@
     width: 40%;
     float: left;
     margin: 5%;
+    @include textResponsive;
+    line-height: 3rem;
   }
   & img {
     margin: 5%;
     float: right;
     width: 40%;
     height: auto;
+    padding: 2rem;
+    border-bottom: 1px blue solid;
+    border-left: 1px blue solid;
+  }
+}
+
+.about__banner-container {
+  background-color: $pal-1_dark;
+  width: 100%;
+  height: auto;
+  // border: 3px solid yellow;
+  display: flex;
+}
+
+.about__banner-card-detail {
+  background-color: $pal-1_gray-2;
+  border-radius: 5px;
+  // border: 1px solid red;
+  display: flex;
+  margin: 3rem 5.83%;
+  width: 25%;
+ul {
+  margin: 1rem ;
+}
+  li {
+    text-align: left;
+    text-transform: lowercase;
+    // margin-top: 1rem;
+  }
+}
+
+.about__section-bottom {
+  width: 100%;
+  height: auto;
+  background-color:  $pal-1_gray-2;
+  &--content {
+    height: 450px;
   }
 }
