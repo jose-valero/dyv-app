@@ -4,7 +4,7 @@
   margin-top: 50px;
   // display: flex;
   height: auto;
-  background-color: $pal-2_light-gray;
+  background-color: $pal-2_light-dark;
 }
 
 .about__hero {
@@ -16,30 +16,52 @@
   width: 100%;
   display: flex;
   align-items: center;
-  opacity: 0.9;
+  opacity: 0.7;
   & h1 {
     text-align: center;
     color: $warm_gray;
   }
 }
 
-.about__content {
+.about__bio-content {
   display: flex;
-  & p {
-    width: 40%;
-    float: left;
-    margin: 5%;
-    @include textResponsive;
-    line-height: 3rem;
+  width: 100%;
+  height: auto;
+
+  .about__left-section {
+    background-color: rebeccapurple;
+    width: 100%;
+
+    .about__left-section-content {
+      @include keyframes;
+      @include animationBorder;
+      width: 50%;
+      margin: 15%;
+      padding: 2rem;
+
+      &:hover {
+        animation-play-state: running;
+      }
+    }
   }
-  & img {
-    margin: 5%;
-    float: right;
-    width: 40%;
-    height: auto;
-    padding: 2rem;
-    border-bottom: 1px blue solid;
-    border-left: 1px blue solid;
+
+  .about__right-section {
+    background-color: salmon;
+    width: 100%;
+
+    .about__right-section-content {
+      margin: 5%;
+      padding: 2rem;
+      height: auto;
+      & img {
+        border: 1px solid red;
+        // margin: 5%;
+        float: right;
+        width: 100%;
+        height: auto;
+        // padding: 2rem;
+      }
+    }
   }
 }
 
@@ -58,9 +80,9 @@
   display: flex;
   margin: 3rem 5.83%;
   width: 25%;
-ul {
-  margin: 1rem ;
-}
+  ul {
+    margin: 1rem;
+  }
   li {
     text-align: left;
     text-transform: lowercase;
@@ -71,7 +93,7 @@ ul {
 .about__section-bottom {
   width: 100%;
   height: auto;
-  background-color:  $pal-1_gray-2;
+  background-color: $pal-1_gray-2;
   &--content {
     height: 450px;
   }

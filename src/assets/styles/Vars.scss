@@ -114,10 +114,34 @@ $color-pinterest: #e60023;
   font-size: calc(1.5rem + (24 - 16) * (100vw - 576px) / (2200 - 576));
 }
 
-// @mixin vertical-align {
-//   position: absolute;
-//   top: 5%;
-//   -webkit-transform: translateY(-50%);
-//   -ms-transform: translateY(-50%);
-//   transform: translateY(-50%);
-// }
+@mixin keyframes {
+  @keyframes bg {
+    0% {
+      background-size: 0 3px, 3px 0, 0 3px, 3px 0;
+    }
+    25% {
+      background-size: 100% 3px, 3px 0, 0 3px, 3px 0;
+    }
+    50% {
+      background-size: 100% 3px, 3px 100%, 0 3px, 3px 0;
+    }
+    75% {
+      background-size: 100% 3px, 3px 100%, 100% 3px, 3px 0;
+    }
+    100% {
+      background-size: 100% 3px, 3px 100%, 100% 3px, 3px 100%;
+    }
+  }
+}
+
+@mixin animationBorder {
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to right, $warm_oj-1 100%, $warm_oj-1 100%),
+    linear-gradient(to bottom, $warm_oj-1 100%, $warm_oj-1 100%),
+    linear-gradient(to right, $warm_oj-1 100%, $warm_oj-1 100%),
+    linear-gradient(to bottom, $warm_oj-1 100%, $warm_oj-1 100%);
+  background-size: 100% 3px, 3px 100%, 100% 3px, 3px 100%;
+  background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+  animation: bg 1.25s cubic-bezier(0.19, 1, 0.22, 1) 1;
+  animation-play-state: paused;
+}
