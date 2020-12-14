@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../../assets/styles/components/general/SocialMedia.scss';
 
 import {
@@ -8,7 +8,13 @@ import {
   TiSocialPinterest,
 } from 'react-icons/ti';
 
+import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
+
 const SocialMedia = () => {
+  // const [isVivisble, setVisible] = useState(true);
+
+
+
   return (
     <>
       <div className='banner__social-media'>
@@ -40,6 +46,14 @@ const SocialMedia = () => {
             <TiSocialPinterest id='pinterest' className='banner__sm-item' />
           </a>
         </li>
+        <div className='banner__social--showHide'>
+          <button value='hide' onClick={() => {}}>
+            <FaAngleLeft value='left' />
+          </button>
+          <button value='show' onClick={() => {}}>
+            <FaAngleRight value='right' />
+          </button>
+        </div>
       </div>
     </>
   );

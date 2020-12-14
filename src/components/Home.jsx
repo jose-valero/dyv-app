@@ -47,7 +47,7 @@ const Home = (props) => {
                 hacer para ti y aqui continuamos con un texto sea claro, corto y
                 precizo que llame a la accion de dar click
               </p>
-              <Button name='Conocenos' route='#' />
+              <Button name='Conocenos' route='/about' />
             </div>
           </div>
         </section>
@@ -87,7 +87,7 @@ const Home = (props) => {
                 and here we continue with a text that is clear, short and I need
                 to call the action to click
               </p>
-              <Button name='About Us' route='#' />
+              <Button name='About Us' route='/about' />
             </div>
           </div>
         </section>

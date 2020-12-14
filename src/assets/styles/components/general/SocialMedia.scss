@@ -47,6 +47,17 @@ ul {
   // }
 }
 
+.banner__social--showHide button {
+  outline: 0;
+  background-color: transparent;
+  color: none;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
 #twitter:hover {
   color: $color-twitter;
 }

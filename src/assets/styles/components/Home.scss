@@ -1,7 +1,7 @@
 @import '../Vars.scss';
 .home__container {
   @include fluid;
-  height: 100vh;
+  height: auto;
   margin-top: 50px;
   display: flex;
   margin-bottom: 0;

@@ -45,7 +45,6 @@ const About = (props) => {
             <div className='about__right-section'>
               <div className='about__right-section-content'>
                 <img src={testImg} alt='' data-aos='fade-left' className='' />
-                
               </div>
             </div>
           </div>

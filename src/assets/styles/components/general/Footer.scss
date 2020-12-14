@@ -78,8 +78,6 @@
   }
   ul {
     margin: 1rem auto;
-
-    // background-color: rebeccapurple;
   }
 }
 
@@ -180,6 +178,10 @@
       @include textResponsive;
       @include breakpoint(mobile) {
         @include textFooterResponsive;
+      }
+      & :hover {
+        color: $warm_oj-1;
+        opacity: 0.9;
       }
     }
   }
