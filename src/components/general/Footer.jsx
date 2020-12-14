@@ -73,7 +73,7 @@ const Footer = () => {
                   <IoMdSend
                     name='Go!'
                     className='sendButton'
-                    style={iconSend}
+                    // style={iconSend}
                   />
                 </button>
                 <ToastContainer position='bottom-right' />
@@ -83,29 +83,37 @@ const Footer = () => {
         </div>
         <div className='footer__social'>
           <div className='footer__social--content'>
-            <h2 style={{ textAlign: 'center' }}>Let's Talk</h2>
-            <a href='https://wa.link/702wra' target='_blank' rel='noreferrer'>
-              <div className='footer__social--content--items'>
-                <FaWhatsapp style={iconStyle} />
-                <span>+54 1165986136</span>
+            <h2>Let's Talk</h2>
+            <>
+              <div className='footer__social-itemsContainer'>
+                <a
+                  href='https://wa.link/702wra'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  <div className='footer__social--content--items'>
+                    <FaWhatsapp style={iconStyle} />
+                    <span>+54 1165986136</span>
+                  </div>
+                </a>
+                <Link to='/contact'>
+                  <div className='footer__social--content--items'>
+                    <FaEnvelopeOpenText style={iconStyle} />
+                    <span>dyv@gmail.com</span>
+                  </div>
+                </Link>
+                <a
+                  href='https://goo.gl/maps/6Sxkp7BUq1Rsb9Go6'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  <div className='footer__social--content--items'>
+                    <FaMapMarkerAlt style={iconStyle} />
+                    <span>GBA, Pilar, Arg</span>
+                  </div>
+                </a>
               </div>
-            </a>
-            <Link to='/contact'>
-              <div className='footer__social--content--items'>
-                <FaEnvelopeOpenText style={iconStyle} />
-                <span>dyv@gmail.com</span>
-              </div>
-            </Link>
-            <a
-              href='https://goo.gl/maps/6Sxkp7BUq1Rsb9Go6'
-              target='_blank'
-              rel='noreferrer'
-            >
-              <div className='footer__social--content--items'>
-                <FaMapMarkerAlt style={iconStyle} />
-                <span>GBA, Pilar, Argentina</span>
-              </div>
-            </a>
+            </>
           </div>
         </div>
       </div>
@@ -120,13 +128,13 @@ const Footer = () => {
 
 const iconStyle = {
   fill: '#b3b3b5',
-  marginRight: '0.5rem',
+  // marginRight: '1rem',
 };
 
-const iconSend = {
-  fill: '#b3b3b5',
-  margin: '0.25rem',
-  width: '24px',
-  height: 'auto',
-};
+// const iconSend = {
+//   fill: '#b3b3b5',
+//   // margin: '0.25rem',
+//   width: '26px',
+//   height: 'auto',
+// };
 export default Footer;
