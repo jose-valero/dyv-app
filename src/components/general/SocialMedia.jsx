@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../../assets/styles/components/general/SocialMedia.scss';
 
 import {
@@ -11,10 +11,6 @@ import {
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
 
 const SocialMedia = () => {
-  // const [isVivisble, setVisible] = useState(true);
-
-
-
   return (
     <>
       <div className='banner__social-media'>
@@ -47,10 +43,10 @@ const SocialMedia = () => {
           </a>
         </li>
         <div className='banner__social--showHide'>
-          <button value='hide' onClick={() => {}}>
+          <button value='hide'>
             <FaAngleLeft value='left' />
           </button>
-          <button value='show' onClick={() => {}}>
+          <button value='show'>
             <FaAngleRight value='right' />
           </button>
         </div>
