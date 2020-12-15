@@ -17,24 +17,29 @@ ul {
   list-style: none;
 }
 .banner__social-media {
-  left: 0;
+  .social__wrapper {
+    background: $pal-2_light-dark;
+    position: relative;
+    left: 0;
+    border-radius: 0px 10px 0px 0px;
+    transition: all 0.3s ease-out;
+  }
+  overflow: hidden;
   position: fixed;
-  top: 40%;
-  display: flex;
-  flex-direction: column;
-  background-color: $pal-2_light-dark;
-  z-index: 9999;
-  border-radius: 10px;
+  z-index: 99999;
+  top: 35%;
   @include breakpoint(mobile) {
     top: 25%;
   }
+}
+.banner__social-media .hide {
+    left: -40px;
 }
 .banner__sm-item {
   height: auto;
   width: 28px;
   text-shadow: 1px 1px 2px black;
   line-height: 48px;
-  background: $pal-2_light-dark;
   color: $warm_oj-1;
   padding: 0.75rem 0.5rem 0.75rem 0rem;
   display: block;
@@ -47,15 +52,25 @@ ul {
   // }
 }
 
-.banner__social--showHide button {
-  outline: 0;
-  background-color: transparent;
-  color: none;
-  border: none;
-  cursor: pointer;
-  &:hover {
-    transform: scale(1.2);
+.banner__social--showHide {
+  transition: all 0.5s ease-out;
+  background: $pal-2_light-dark;
+  & button {
+    outline: 0;
+    background-color: transparent;
+    color: none;
+    border: none;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.2);
+    }
   }
+}
+.withBorder {
+  border-radius: 0 0 10px 0;
+}
+.noBorder {
+  border-radius: 0 10px 10px 0;
 }
 
 #twitter:hover {
