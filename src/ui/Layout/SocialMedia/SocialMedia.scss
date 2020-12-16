@@ -1,0 +1,85 @@
+@import '../../../styles/Vars.scss';
+
+#social_link {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  @include transition_ease_out2;
+  text-decoration: none;
+  &:hover {
+    outline: none;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+ul {
+  list-style: none;
+}
+.banner__social-media {
+  overflow: hidden;
+  position: fixed;
+  z-index: 99999;
+  top: 35%;
+  .social__wrapper {
+    background: $pal-2_light-dark;
+    position: relative;
+    left: 0;
+    border-radius: 0px 10px 0px 0px;
+    @include transition_ease_out3;
+  }
+  & .hide {
+    left: -32px;
+  }
+  @include breakpoint(mobile) {
+    top: 25%;
+  }
+}
+
+.banner__sm-item {
+  height: auto;
+  width: 28px;
+  text-shadow: 1px 1px 2px black;
+  line-height: 48px;
+  color: $warm_oj-1;
+  padding: 0.75rem 0.5rem 0.75rem 0rem;
+  display: block;
+}
+
+.banner__social--showHide {
+  @include transition_ease_out3;
+  background: $pal-2_light-dark;
+  & button {
+    color: $warm_oj-1;
+    outline: 0;
+    background-color: transparent;
+    color: none;
+    border: none;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+  & svg {
+    width: 1.25rem;
+    height: auto;
+  }
+  &.withBorder {
+    border-radius: 0 0 10px 0;
+  }
+  &.noBorder {
+    border-radius: 0 10px 10px 0;
+  }
+}
+
+#twitter:hover {
+  color: $color-twitter;
+}
+#facebook:hover {
+  color: $color-facebook;
+}
+#instagram:hover {
+  color: $color-instagram;
+}
+#pinterest:hover {
+  color: $color-pinterest;
+}

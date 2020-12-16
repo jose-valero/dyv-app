@@ -1,0 +1,199 @@
+@import '../../../styles/Vars.scss';
+
+.footer__container {
+  h2 {
+    color: $pal-1_gray-2;
+  }
+  a,
+  p,
+  span {
+    color: $warm_gray;
+  }
+  a,
+  p,
+  h2,
+  p {
+    @include textResponsive;
+    @include breakpoint(mobile) {
+      @include textFooterResponsive;
+    }
+  }
+  @include centerFlex;
+  @include fluid;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  background-color: $pal-2_dark;
+  overflow: hidden;
+}
+
+.footer__section-logo {
+  // border: 1px solid red;
+  @include centerFlex;
+  align-items: center;
+  width: 18%;
+  // padding: 0.5rem;
+  margin: 2rem auto auto auto;
+  text-align: center;
+  @include breakpoint(mobile) {
+    display: none;
+  }
+  img {
+    // border: 1px blue solid;
+    max-width: 70%;
+    min-width: 50px;
+    height: auto;
+    margin-top: 2rem;
+  }
+}
+
+.footer__nav {
+  // border: 1px blue solid;
+  width: 12%;
+  text-align: center;
+  @include breakpoint(mobile) {
+    width: 30.333%;
+  }
+  &--content {
+    // border: 1px yellowgreen solid;
+    margin-top: 2rem;
+    @include breakpoint(mobile) {
+      margin-top: 0.5rem;
+    }
+    &--items {
+      margin-top: 0.125rem;
+      @include breakpoint(mobile) {
+        margin-bottom: 0.125rem;
+      }
+      & a {
+        text-align: center;
+        color: $warm_gray;
+      }
+      & a:hover {
+        color: $warm_oj-1;
+        opacity: 0.9;
+      }
+    }
+  }
+  ul {
+    margin: 1rem auto;
+  }
+}
+
+.footer__newsletter {
+  // border: 1px red solid;
+  text-align: center;
+  width: 40%;
+  @include breakpoint(mobile) {
+    width: 33.333%;
+  }
+  &--content {
+    width: 100%;
+    // border: 1px green solid;
+    margin-top: 2rem;
+    & p {
+      margin-top: 2.5rem;
+    }
+
+    @include breakpoint(mobile) {
+      margin-top: 0.5rem;
+      & p {
+        margin-top: 1.125rem;
+      }
+    }
+    form {
+      @include centerFlex;
+      input {
+        width: 70%;
+        height: 1.25rem;
+        font-family: inherit;
+        margin-right: 0.125rem;
+        border-radius: 2px;
+        @include breakpoint(mobile) {
+          height: 0.5rem;
+          width: 100%;
+          margin-left: 0.5rem;
+        }
+        @include textFooterResponsive;
+        outline: 0;
+        &[type='email'] {
+          border: 1px solid lighten($pal-2_white, 50%);
+          background-color: $pal-2_white;
+          &:focus {
+            border-color: $warm_oj-1;
+          }
+        }
+      }
+    }
+    .footer__newsletter--button {
+      background-color: transparent;
+      @include fluid;
+      border: none;
+      outline: 0;
+      .sendButton {
+        @include centerFlex;
+        @include fluid;
+        cursor: pointer;
+        width: 1.55rem;
+        height: auto;
+        fill: $warm_gray;
+        @include breakpoint(mobile) {
+          width: 15px;
+        }
+      }
+    }
+  }
+}
+
+.footer__social {
+  // border: 1px blue solid;
+  width: 30%;
+  text-align: center;
+  @include breakpoint(mobile) {
+    width: 36.333%;
+  }
+  .footer__social-itemsContainer {
+    margin: 1rem 0 0 0;
+    //  background-color: rebeccapurple;
+  }
+  &--content {
+    // border: 1px white solid;
+    margin: 2rem 5% 2rem 5%;
+    @include breakpoint(mobile) {
+      margin: 0.5rem 20% 0 20%;
+    }
+
+    &--items {
+      align-items: center;
+      width: 100%;
+      margin: 0.75rem 25% 0 25%;
+      & svg {
+        margin-right: 1rem;
+        @include breakpoint(mobile) {
+          margin-right: 0.25rem;
+        }
+      }
+      @include startFlex;
+      @include textResponsive;
+      @include breakpoint(mobile) {
+        @include textFooterResponsive;
+      }
+      & :hover {
+        color: $warm_oj-1;
+        opacity: 0.9;
+      }
+    }
+  }
+}
+
+.footer__quote {
+  color: $warm_gray;
+  background-color: $pal-2_dark;
+  padding: 0.125rem 0;
+  text-align: center;
+  small {
+    border-top: 1px $warm_oj-1 solid;
+    @include textFooterResponsive;
+  }
+}
