@@ -28,7 +28,7 @@ const Footer = () => {
         </div>
         <div className='footer__nav'>
           <div className='footer__nav--content'>
-            <h2>Navigation</h2>
+            <h1>Navigation</h1>
             <ul>
               <li className='footer__nav--content--items'>
                 <Link to='/'>Home</Link>
@@ -53,7 +53,7 @@ const Footer = () => {
         </div>
         <div className='footer__newsletter'>
           <div className='footer__newsletter--content'>
-            <h2>Newsletter</h2>
+            <h1>Newsletter</h1>
             <p>Subscribe for free and keep in touch with our lastest content</p>
             <>
               <form onSubmit={handleSubmit}>
@@ -83,7 +83,7 @@ const Footer = () => {
         </div>
         <div className='footer__social'>
           <div className='footer__social--content'>
-            <h2>Let's Talk</h2>
+            <h1>Let's Talk</h1>
             <>
               <div className='footer__social-itemsContainer'>
                 <a

@@ -1,0 +1,17 @@
+{
+  "data": {
+    "home": [
+      {
+        "text": "text",
+        "number": 1,
+        "boolean": true
+      }
+    ],
+    "about": [],
+    "contact": [],
+    "clients": [],
+    "portafolio": [],
+    "services": [],
+    "quote": []
+  }
+}

@@ -1,11 +1,9 @@
 @import '../../../styles/Vars.scss';
-
 .about__container {
   margin-top: 50px;
-  // display: flex;
   height: auto;
   background-color: $pal-2_light-gray;
-  // overflow: hidden;
+  overflow: hidden;
 }
 
 .about__hero {
@@ -28,42 +26,62 @@
   display: flex;
   width: 100%;
   height: auto;
-  margin: 1rem;
+  @include breakpoint(mobile) {
+    display: block;
+  }
 
   .about__left-section {
     // background-color: rebeccapurple;
-    width: 100%;
+    width: 60%;
+    @include breakpoint(mobile) {
+      width: 100%;
+      margin: auto;
+    }
 
     .about__left-section-content {
       @include keyframes;
       @include animationBorder;
-      width: 70%;
-      margin: 5% auto;
-      padding: 2rem;
+      width: auto;
+      margin: 12.25% 0.75rem 0 3rem;
+
       &:hover {
         animation-play-state: running;
       }
       & p {
-        @include textResponsive;
-        line-height: 2.75rem;
+        @include font-size($p-font-sizes);
+        // line-height: 2.75rem;
+        padding: 1.85rem;
+        text-align: center;
+      }
+      & h1 {
+        @extend p;
+        @include font-size($h1-font-sizes);
+      }
+
+      @include breakpoint(mobile) {
       }
     }
   }
 
   .about__right-section {
+    @include centerFlex;
     // background-color: salmon;
-    width: 100%;
+    width: 40%;
+
+    @include breakpoint(mobile) {
+      width: 100%;
+    }
 
     .about__right-section-content {
-      margin: auto;
-      padding: 2rem;
+      // border: 1px solid red;
+      margin: 0 auto;
       height: auto;
       @include centerFlex;
       align-items: center;
       & img {
         @include grayscale;
         @include transition_ease_out3;
-        width: 100%;
+        width: 90%;
         height: auto;
       }
       & img:hover {

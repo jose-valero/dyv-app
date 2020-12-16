@@ -19,7 +19,7 @@ li {
   list-style: none;
   text-decoration: none;
   text-transform: uppercase;
-  @include textFooterResponsive;
+  @include font-size($a-font-sizes);
 }
 ul {
   margin: 0;

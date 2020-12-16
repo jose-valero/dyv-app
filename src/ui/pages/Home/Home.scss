@@ -1,20 +1,20 @@
 @import '../../../styles/Vars.scss';
 
 .home__container {
-  @include fluid;
+  // @include fluid;
   height: auto;
   margin-top: 50px;
   display: flex;
-  margin-bottom: 0;
-  padding-bottom: 0;
+  height: auto;
   position: relative;
+  
+  @include breakpoint(tablet_port) {
+    display: block;
+  }
   @include breakpoint(mobile) {
     display: block;
     overflow: hidden;
     height: auto;
-  }
-  @include breakpoint(tablet_port) {
-    height: 80vh;
   }
 }
 
@@ -28,13 +28,17 @@
   @include breakpoint(mobile) {
     width: 100%;
     height: auto;
-    justify-content: center;
+  }
+  @include breakpoint(tablet_port) {
+    width: 100%;
+    height: auto;
   }
 
   .home__left-content {
     width: 100%;
     &--aside {
       img {
+        overflow: hidden;
         position: relative;
         z-index: 100;
         width: 95%;
@@ -43,14 +47,12 @@
         margin: 8% 0rem 15% 8%;
 
         @include breakpoint(mobile) {
-          margin: 24.5% 5%;
+          margin: 3rem 5%;
           width: 90%;
         }
-        @include breakpoint(desktop) {
-        }
         @include breakpoint(tablet_port) {
-          margin: 50% 7%;
-          width: 100%;
+          margin: 3rem 5%;
+          width: 90%;
         }
       }
     }
@@ -58,23 +60,27 @@
 }
 
 .home__right-section {
+  @include centerFlex;
   background-color: $pal-1_dark;
   width: 30%;
   height: auto;
   z-index: 99;
-  padding: 10% 0 0 0;
-
+  align-items: center;
   @include breakpoint(mobile) {
     width: 100%;
     height: auto;
   }
-
+  @include breakpoint(tablet_port) {
+    width: 100%;
+    height: auto;
+  }
   .home__right-content {
     @include breakpoint(mobile) {
       padding: 1rem;
     }
+
     &--aside {
-      margin: 1% 10% 10% 10%;
+      margin: 10%;
       width: auto;
       height: auto;
       text-align: end;
@@ -82,18 +88,12 @@
         text-align: center;
       }
       @include breakpoint(tablet_port) {
-        margin: 100% 15%;
-        width: 90%;
-      }
-
-      p {
         text-align: center;
-        margin: 15% 1%;
+      }
+      p {
+        @include font-size($p-font-sizes);
+        text-align: center;
         color: $pal-2_white;
-        @include textResponsive;
-        @include breakpoint(mobile) {
-          margin: 0% 5% 7% 5%;
-        }
       }
       & img {
         width: 80%;
@@ -101,8 +101,10 @@
         margin: 0 10%;
         @include breakpoint(mobile) {
           margin: 5%;
-          width: 40%;
-          // height: auto;
+          width: 50%;
+        }
+        @include breakpoint(tablet_port) {
+          width: 50%;
         }
       }
     }

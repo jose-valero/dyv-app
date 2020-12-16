@@ -5,6 +5,7 @@ import { MdPalette } from 'react-icons/md';
 import { GoTools } from 'react-icons/go';
 import AOS from 'aos';
 import testImg from './assets/yusi.jpg';
+
 import './About.scss';
 
 const About = ({ langReducer }) => {
@@ -14,12 +15,10 @@ const About = ({ langReducer }) => {
     return (
       <>
         <div className='about__container'>
-          {/* Hero Section */}
           <div className='about__hero'>
             <h1>Conocenos un poco mas...</h1>
           </div>
 
-          {/* BIO SECTION */}
           <div className='about__bio-content'>
             <div className='about__left-section'>
               <div className='about__left-section-content'>
@@ -48,7 +47,6 @@ const About = ({ langReducer }) => {
             </div>
           </div>
 
-          {/* BANNER SECTION */}
           <div className='about__banner-container'>
             <>
               <div className='about__banner-card-detail'>
