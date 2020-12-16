@@ -37,12 +37,11 @@
       width: 100%;
       margin: auto;
     }
-
-    .about__left-section-content {
+    &--content {
       @include keyframes;
       @include animationBorder;
       width: auto;
-      margin: 12.25% 0.75rem 0 3rem;
+      margin: 5% 0.75rem 0 3rem;
 
       &:hover {
         animation-play-state: running;
@@ -50,10 +49,11 @@
       & p {
         @include font-size($p-font-sizes);
         // line-height: 2.75rem;
-        padding: 1.85rem;
+        // padding: 1.85rem;
         text-align: center;
       }
       & h1 {
+        @include fluid;
         @extend p;
         @include font-size($h1-font-sizes);
       }

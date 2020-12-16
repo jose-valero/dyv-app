@@ -73,7 +73,7 @@ $color-pinterest: #e60023;
       @content;
     }
   } @else if $point == tablet_port {
-    @media (orientation: portrait) and (min-width: 768px)  {
+    @media (orientation: portrait) and (min-width: 768px) {
       @content;
     }
   } @else if $point == mobile {
@@ -97,17 +97,20 @@ $color-pinterest: #e60023;
   margin: 0%;
   padding: 0%;
 }
-
-@mixin centerFlex {
-  display: flex;
+@mixin flex {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
+  display: flex;
+}
+
+@mixin centerFlex {
+  @include flex;
   justify-content: center;
 }
 @mixin startFlex {
-  display: flex;
+  @include flex;
   justify-content: flex-start;
   align-items: center;
 }
@@ -203,6 +206,7 @@ $breakpoints: (
   large_xl: 1440px,
   large_xxl: 1721px,
 );
+
 $h1-font-sizes: (
   null: 18px,
   small: 20px,
@@ -231,6 +235,16 @@ $a-font-sizes: (
   large: 14px,
   large_xl: 16px,
   large_xxl: 17px,
+);
+
+$small-font-sizes: (
+  null: 6px,
+  small: 7px,
+  medium: 8px,
+  medium_large: 9px,
+  large: 10px,
+  large_xl: 12px,
+  large_xxl: 14px,
 );
 
 @mixin font-size($fs-map, $fs-breakpoints: $breakpoints) {

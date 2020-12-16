@@ -21,7 +21,7 @@ const About = ({ langReducer }) => {
 
           <div className='about__bio-content'>
             <div className='about__left-section'>
-              <div className='about__left-section-content'>
+              <div className='about__left-section--content'>
                 <h1>long story short</h1>
                 <p data-aos='fade-right'>
                   La aventura comienza! Viviendo el presente y con mira hacia el
