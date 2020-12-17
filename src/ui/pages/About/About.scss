@@ -4,6 +4,7 @@
   height: auto;
   background-color: $pal-2_light-gray;
   overflow: hidden;
+  width: 100%;
 }
 
 .about__hero {
@@ -31,6 +32,7 @@
   }
 
   .about__left-section {
+    // border: 1px solid blue;
     // background-color: rebeccapurple;
     width: 60%;
     @include breakpoint(mobile) {
@@ -49,12 +51,12 @@
       & p {
         @include font-size($p-font-sizes);
         // line-height: 2.75rem;
-        // padding: 1.85rem;
+        padding: 1.25rem;
         text-align: center;
       }
       & h1 {
-        @include fluid;
         @extend p;
+        @include fluid;
         @include font-size($h1-font-sizes);
       }
 
@@ -64,25 +66,27 @@
   }
 
   .about__right-section {
+    border: 1px solid yellowgreen;
     @include centerFlex;
-    // background-color: salmon;
+    background-color: salmon;
     width: 40%;
-
     @include breakpoint(mobile) {
       width: 100%;
     }
-
-    .about__right-section-content {
-      // border: 1px solid red;
-      margin: 0 auto;
-      height: auto;
+    &--content {
+      border: 1px solid red;
       @include centerFlex;
+      // padding: 1rem;
+      margin: 1rem;
+      height: auto;
       align-items: center;
       & img {
+        border: 1px solid blue;
         @include grayscale;
         @include transition_ease_out3;
         width: 90%;
         height: auto;
+        margin: 1rem;
       }
       & img:hover {
         @include nograyscale;
@@ -93,13 +97,13 @@
   }
 }
 
-.about__banner-container {
-  background-color: $pal-1_dark;
-  width: 100%;
-  height: auto;
-  // border: 3px solid yellow;
-  display: flex;
-}
+// .about__banner-container {
+//   background-color: $pal-1_dark;
+//   width: 100%;
+//   height: auto;
+//   // border: 3px solid yellow;
+//   display: flex;
+// }
 
 .about__banner-card-detail {
   background-color: $pal-1_gray-2;
@@ -114,7 +118,6 @@
   li {
     text-align: left;
     text-transform: lowercase;
-    // margin-top: 1rem;
   }
 }
 
