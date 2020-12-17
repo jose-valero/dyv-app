@@ -1,0 +1,45 @@
+@mixin TRBL {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+@mixin fluid {
+  margin: 0%;
+  padding: 0%;
+}
+@mixin flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin centerFlex {
+  @include flex;
+  justify-content: center;
+}
+@mixin startFlex {
+  @include flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@mixin grayscale {
+  filter: url('#grayscale');
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: Gray();
+}
+
+@mixin nograyscale {
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  filter: none;
+}

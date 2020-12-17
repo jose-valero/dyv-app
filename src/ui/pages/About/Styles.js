@@ -5,6 +5,7 @@ export const BannerContainer = styled.div`
   width: 100%;
   height: auto;
   display: flex;
+ 
 `;
 export const iconStyle = {
   width: '200px',
