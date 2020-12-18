@@ -1,4 +1,7 @@
-@import '../../../styles/Vars.scss';
+@import '../../../styles/variables';
+@import '../../../styles/media';
+@import '../../../styles/mixins';
+@import '../../../styles/fonts';
 
 .home__container {
   // @include fluid;

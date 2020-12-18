@@ -1,5 +1,6 @@
 import React from 'react';
 import './Contact.scss';
+import '../../../styles/grid.css';
 
 const Contact = () => {
   return (
