@@ -52,12 +52,6 @@
   }
 }
 
-// *,
-// *::before,
-// *::after {
-//   box-sizing: inherit;
-// }
-
 .container,
 .container-fluid,
 .container-sm,
@@ -65,8 +59,8 @@
 .container-lg,
 .container-xl {
   width: 100%;
-  // padding-right: 15px;
-  // padding-left: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -104,6 +98,12 @@
     max-width: 1140px;
   }
 }
+
+// *,
+// *::before,
+// *::after {
+//   box-sizing: border-box;
+// }
 
 // .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
 // .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
