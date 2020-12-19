@@ -1,13 +1,27 @@
-@import '../../../styles/variables';
-@import '../../../styles/media';
-@import '../../../styles/mixins';
+@import '../../../styles/main.scss';
 
 .clients__container {
-  background-color: $pal-1_gray-1;
-  color: $pal-2_white;
+  // background-color: $pal-1_gray-1;
+  // color: $pal-2_white;
   margin-top: 50px;
-  height: 100vh;
-  width: 100%;
-  @include centerFlex;
-  align-items: center;
+  // display: flex;
+  // height: 100vh;
+  // width: 100%;
+  // @include centerFlex;
+  // align-items: center;
+}
+
+.block_1 {
+  background-color: violet;
+}
+.block_2 {
+  background-color: palegoldenrod;
+}
+
+.block_3 {
+  background-color: palegreen;
+}
+
+.block_4 {
+  background-color: salmon;
 }
