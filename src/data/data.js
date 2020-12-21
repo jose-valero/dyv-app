@@ -4,7 +4,7 @@ export const Language = {
       hero_title: 'Know more about us...',
       bio_title: 'Long Story Short',
       bio_text: ` The adventure begins! Living the present and looking towards the
-      future, <b>DESIGN & VANGUARDIA</b>, was born as a result of the
+      future, DESIGN & VANGUARDIA, was born as a result of the
       passion for design and art in 2015. Yusmary Villarroel, its
       founder began his architectural studies in 2006, and since 2010
       begins his journey through the world of interior design. Our The
@@ -13,8 +13,12 @@ export const Language = {
       extraordinary. For us it is very important that the function go
       hand in hand with aesthetics, that each space has personality and
       tell a story, which suits your needs and up-to-the-minute. AT
-      <b> DISEÑO & VANGUARDIA</b> WE CREATE YOUR DREAM SPACE!`,
-      banner_comp: 'YES',
+       DISEÑO & VANGUARDIA WE CREATE YOUR DREAM SPACE!`,
+       banner_comp: {
+        item_1: 'lorem ipsu',
+        item_2: 'lorem ipsu',
+        item_3: 'lorem ipsu',
+      },
       banner_art: 'YES',
       banner_tools: 'YES',
     },
@@ -24,7 +28,7 @@ export const Language = {
       hero_title: 'Conocenos un poco mas...',
       bio_title: 'Resumiendo',
       bio_text: `La aventura comienza! Viviendo el presente y con mira hacia el
-        futuro, <b>DISEÑO & VANGUARDIA</b>, nace como resultado de la
+        futuro, DISEÑO & VANGUARDIA, nace como resultado de la
         pasión por el diseño y el arte en el 2015. Yusmary Villarroel,
         su fundadora, inicia sus estudios de arquitectura en el 2006,
         y desde el 2010 inicia su viaje por el mundo del diseño de
@@ -34,12 +38,14 @@ export const Language = {
         nosotros es muy importante que la función vaya de la mano con
         la estética, que cada espacio tenga personalidad y cuente una
         historia, el cual se adapte a sus necesidades y al día- día.
-        EN <b>DISEÑO & VANGUARDIA</b> CREAMOS SU ESPACIO DE ENSUEÑO!`,
-      banner_comp: 'SI',
+        EN DISEÑO & VANGUARDIA CREAMOS SU ESPACIO DE ENSUEÑO!`,
+      banner_comp: {
+        item_1: 'lorem ipsu',
+        item_2: 'lorem ipsu',
+        item_3: 'lorem ipsu',
+      },
       banner_art: 'SI',
       banner_tools: 'SI',
     },
   },
 };
-
-
