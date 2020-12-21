@@ -4,9 +4,8 @@ import { Language } from '../../../data/data';
 import AOS from 'aos';
 import Banner from './Banner';
 import Bio from './Bio';
-import './About.scss';
 import Skills from './Skills';
-import { Container, Row, Col } from 'react-bootstrap';
+import './About.scss';
 
 const About = ({ langReducer }) => {
   AOS.init();
@@ -17,16 +16,11 @@ const About = ({ langReducer }) => {
         <div className='about__hero'>
           <h1>{Language[`${langReducer}`].about.hero_title}</h1>
         </div>
-        <Container fluid>
-          <Row>
-            <Col lg={12} md={6}>
-              <Bio  />
-              <Banner lg={12} />
-            </Col>
-          </Row>
-        </Container>
-
-        <Skills />
+        <>
+          <Bio />
+          <Banner />
+          <Skills />
+        </>
       </div>
     </>
   );

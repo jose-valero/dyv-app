@@ -19,6 +19,7 @@
 @mixin centerFlex {
   @include flex;
   justify-content: center;
+  align-items: center;
 }
 @mixin startFlex {
   @include flex;

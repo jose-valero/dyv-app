@@ -1,6 +1,5 @@
 @import '../../../styles/main.scss';
 
-
 .about__container {
   margin-top: 50px;
   height: auto;
@@ -8,7 +7,11 @@
   overflow: hidden;
   width: 100%;
 }
-
+.dyv__row {
+  @include breakpoint(mobile) {
+    display: block !important;
+  }
+}
 .about__hero {
   background-image: url('./assets/test_ban_2.png');
   background-repeat: no-repeat;
@@ -34,61 +37,41 @@
   }
 
   .about__left-section {
-    // border: 1px solid blue;
-    // background-color: rebeccapurple;
-    width: 60%;
-    @include breakpoint(mobile) {
-      width: 100%;
-      margin: auto;
-    }
+    // background-color: palegreen;
+      @include centerFlex;
+  
     &--content {
+      margin: auto 3.5rem;
       @include keyframes;
       @include animationBorder;
-      width: auto;
-      margin: 5% 0.75rem 0 3rem;
-
       &:hover {
         animation-play-state: running;
       }
       & p {
         @include font-size($p-font-sizes);
-        // line-height: 2.75rem;
-        padding: 1.25rem;
         text-align: center;
+        margin: 0.75rem;
       }
       & h1 {
         @extend p;
         @include fluid;
         @include font-size($h1-font-sizes);
       }
-
-      @include breakpoint(mobile) {
-      }
     }
   }
 
   .about__right-section {
-    border: 1px solid yellowgreen;
+    // background-color: saddlebrown;
     @include centerFlex;
-    background-color: salmon;
-    width: 40%;
-    @include breakpoint(mobile) {
-      width: 100%;
-    }
     &--content {
-      border: 1px solid red;
       @include centerFlex;
-      // padding: 1rem;
-      margin: 1rem;
       height: auto;
-      align-items: center;
       & img {
-        border: 1px solid blue;
         @include grayscale;
         @include transition_ease_out3;
         width: 90%;
         height: auto;
-        margin: 1rem;
+        margin: 5%;
       }
       & img:hover {
         @include nograyscale;
@@ -98,14 +81,6 @@
     }
   }
 }
-
-// .about__banner-container {
-//   background-color: $pal-1_dark;
-//   width: 100%;
-//   height: auto;
-//   // border: 3px solid yellow;
-//   display: flex;
-// }
 
 .about__banner-card-detail {
   background-color: $pal-1_gray-2;
