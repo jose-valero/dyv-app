@@ -5,11 +5,9 @@ export const BannerContainer = styled.div`
   width: 100%;
   height: auto;
   display: flex;
- 
 `;
 export const iconStyle = {
-  width: '200px',
+  width: 'auto',
   height: 'auto',
-  margin: '1rem',
   fill: '  #b3b3b5',
 };

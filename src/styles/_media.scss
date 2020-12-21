@@ -9,11 +9,11 @@
       @content;
     }
   } @else if $point == desktop {
-    @media (min-width: 1200px) {
+    @media (min-width: 1200px) and (max-width: 1699.99px){
       @content;
     }
   } @else if $point == laptop {
-    @media (min-width: 992px) {
+    @media (min-width: 992px) and (max-width: 1999.99px) {
       @content;
     }
   } @else if $point == tablet_land {

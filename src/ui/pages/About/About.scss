@@ -38,10 +38,10 @@
 
   .about__left-section {
     // background-color: palegreen;
-      @include centerFlex;
-  
+    @include centerFlex;
+
     &--content {
-      margin: auto 3.5rem;
+      margin: 1rem 3.5rem;
       @include keyframes;
       @include animationBorder;
       &:hover {
@@ -51,6 +51,15 @@
         @include font-size($p-font-sizes);
         text-align: center;
         margin: 0.75rem;
+        @include breakpoint(largedevice) {
+          line-height: 3.5rem;
+        }
+        @include breakpoint(desktop) {
+          line-height: 2.25rem;
+        }
+        @include breakpoint(laptop) {
+          line-height: 1.75rem;
+        }
       }
       & h1 {
         @extend p;
@@ -83,18 +92,21 @@
 }
 
 .about__banner-card-detail {
+  @include centerFlex;
   background-color: $pal-1_gray-2;
   border-radius: 5px;
-  // border: 1px solid red;
   display: flex;
-  margin: 3rem 5.83%;
-  width: 25%;
+  margin:3rem;
+
+
   ul {
-    margin: 1rem;
+    margin: 2rem;
   }
   li {
+    line-height: 2rem;
+    color: $warm_gray-oj;
     text-align: left;
-    text-transform: lowercase;
+    text-transform: to-upper-case($string: '');
   }
 }
 
