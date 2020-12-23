@@ -37,11 +37,11 @@
   }
 
   .about__left-section {
-    // background-color: palegreen;
     @include centerFlex;
 
     &--content {
-      margin: 1rem 3.5rem;
+      // background-color: palegreen;
+      margin: 1rem 3% 1rem 7%;
       @include keyframes;
       @include animationBorder;
       &:hover {
@@ -118,11 +118,23 @@
   }
 }
 
-.about__section-bottom {
+.about__skill {
   width: 100%;
   height: auto;
   background-color: $pal-1_gray-2;
   &--content {
-    height: 450px;
+    // height: auto;
+    &--item_1 {
+      background-color: $pal-1_dark;
+      color: $pal-2_white;
+    }
+    &--item_2 {
+      background-color: $pal-2_white;
+      color: $pal-1_dark;
+    }
+    &--item_3 {
+      background-color: $pal-1_dark;
+      color: $pal-2_white;
+    }
   }
 }
