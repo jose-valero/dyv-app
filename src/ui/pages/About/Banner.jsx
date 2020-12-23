@@ -8,19 +8,21 @@ import { Language } from '../../../data/data';
 const Banner = ({ langReducer }) => {
   return (
     <BannerContainer>
-      <div className='about__banner-card-detail dyv__col'>
+      <div
+        className='about__banner-card-detail dyv__col'
+        style={{ marginLeft: '9%' }}
+      >
         <RiComputerLine style={iconStyle} />
-        <ul>
-          <li>{Language[`${langReducer}`].about.banner_comp.item_1}</li>
-          <li>{Language[`${langReducer}`].about.banner_comp.item_2}</li>
-          <li>{Language[`${langReducer}`].about.banner_comp.item_3}</li>
-        </ul>
+        <p>{Language[`${langReducer}`].about.banner_tech}</p>
       </div>
       <div className='about__banner-card-detail dyv__col'>
         <MdPalette style={iconStyle} />
         <p>{Language[`${langReducer}`].about.banner_art}</p>
       </div>
-      <div className='about__banner-card-detail dyv__col'>
+      <div
+        className='about__banner-card-detail dyv__col'
+        style={{ marginRight: '9%' }}
+      >
         <GoTools style={iconStyle} />
         <p>{Language[`${langReducer}`].about.banner_tools}</p>
       </div>

@@ -29,7 +29,7 @@
 }
 
 .about__bio-content {
-  display: flex;
+  @include flex;
   width: 100%;
   height: auto;
   @include breakpoint(mobile) {
@@ -93,20 +93,28 @@
 
 .about__banner-card-detail {
   @include centerFlex;
-  background-color: $pal-1_gray-2;
+  z-index: 2;
+  background-color: $pal-2_light-dark;
+  margin: 1rem;
   border-radius: 5px;
-  display: flex;
-  margin:3rem;
-
-
-  ul {
-    margin: 2rem;
+  @include transition_ease1;
+  &:hover {
+    transform: scale(1.025);
   }
-  li {
-    line-height: 2rem;
-    color: $warm_gray-oj;
-    text-align: left;
-    text-transform: to-upper-case($string: '');
+  svg {
+    margin: 1rem 0.125rem;
+    width: 100%;
+    @include centerFlex;
+  }
+  p {
+    text-align: center;
+    color: $warm_gray;
+    @include breakpoint(mobile) {
+      @include font-size($small-font-sizes);
+    }
+    @include breakpoint(desktop) {
+      @include font-size($p-font-sizes);
+    }
   }
 }
 
