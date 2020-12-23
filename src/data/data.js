@@ -14,13 +14,9 @@ export const Language = {
       hand in hand with aesthetics, that each space has personality and
       tell a story, which suits your needs and up-to-the-minute. AT
        DISEÑO & VANGUARDIA WE CREATE YOUR DREAM SPACE!`,
-       banner_comp: {
-        item_1: 'lorem ipsu',
-        item_2: 'lorem ipsu',
-        item_3: 'lorem ipsu',
-      },
-      banner_art: 'YES',
-      banner_tools: 'YES',
+      banner_tech: 'Tech',
+      banner_art: 'Art',
+      banner_tools: 'Tools',
     },
   },
   ES: {
@@ -39,13 +35,9 @@ export const Language = {
         la estética, que cada espacio tenga personalidad y cuente una
         historia, el cual se adapte a sus necesidades y al día- día.
         EN DISEÑO & VANGUARDIA CREAMOS SU ESPACIO DE ENSUEÑO!`,
-      banner_comp: {
-        item_1: 'lorem ipsu',
-        item_2: 'lorem ipsu',
-        item_3: 'lorem ipsu',
-      },
-      banner_art: 'SI',
-      banner_tools: 'SI',
+      banner_tech: 'Ultimas Tecnologia  ',
+      banner_art: 'Enfoque Artistico',
+      banner_tools: 'Mejores Herramientas',
     },
   },
 };
