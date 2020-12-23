@@ -14,12 +14,13 @@ export const Language = {
       hand in hand with aesthetics, that each space has personality and
       tell a story, which suits your needs and up-to-the-minute. AT
        DISEÑO & VANGUARDIA WE CREATE YOUR DREAM SPACE!`,
-      banner_tech: 'Best Technologies',
-      banner_art: 'Artistic focus',
-      banner_tools: 'Awesome tools',
-    },
-    services: {
-      hero_title: 'know more about our services',
+       banner_comp: {
+        item_1: 'lorem ipsu',
+        item_2: 'lorem ipsu',
+        item_3: 'lorem ipsu',
+      },
+      banner_art: 'YES',
+      banner_tools: 'YES',
     },
   },
   ES: {
@@ -38,45 +39,13 @@ export const Language = {
         la estética, que cada espacio tenga personalidad y cuente una
         historia, el cual se adapte a sus necesidades y al día- día.
         EN DISEÑO & VANGUARDIA CREAMOS SU ESPACIO DE ENSUEÑO!`,
-      banner_tech: 'Mejores Tecnologias',
-      banner_art: 'Conceptos Artisticos',
-      banner_tools: 'Herramientas Increibles',
-    },
-    services: {
-      hero_title: 'Conoce nuestros serivicios',
+      banner_comp: {
+        item_1: 'lorem ipsu',
+        item_2: 'lorem ipsu',
+        item_3: 'lorem ipsu',
+      },
+      banner_art: 'SI',
+      banner_tools: 'SI',
     },
   },
 };
-
-export const Skills = [
-  {
-    id: 1,
-    name: 'OFfice Decorate',
-    image: ('../assets/images/Logo.png'),
-  },
-  {
-    id: 2,
-    name: 'Home Decorate',
-    image: ('../assets/images/Logo.png'),
-  },
-  {
-    id: 3,
-    name: 'LIGHTING DECORATE',
-    image: ('../assets/images/Logo.png'),
-  },
-  {
-    id: 4,
-    name: 'Smart Kitchen Setup',
-    image: ('../assets/images/Logo.png'),
-  },
-  {
-    id: 5,
-    name: 'Kitchen Sink Design',
-    image: ('../assets/images/Logo.png'),
-  },
-  {
-    id: 6,
-    name: 'Lobby Interior Design',
-    image: ('../assets/images/Logo.png'),
-  },
-];
