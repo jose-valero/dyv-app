@@ -4,6 +4,12 @@
   bottom: 0;
   left: 0;
 }
+
+@mixin coverImage {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
 @mixin fluid {
   margin: 0%;
   padding: 0%;
@@ -24,6 +30,11 @@
   @include flex;
   justify-content: flex-start;
   align-items: center;
+}
+@mixin endFlex {
+  @include flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 @mixin grayscale {
