@@ -1,28 +1,31 @@
-import { RiComputerLine } from 'react-icons/ri';
-import { MdPalette } from 'react-icons/md';
-import { GoTools } from 'react-icons/go';
-import { BannerContainer, iconStyle } from './Styles';
+import { BannerContainer } from './Styles';
 import { connect } from 'react-redux';
 import { Language } from '../../../data/data';
+import img_1 from './assets/2.jpg';
 
 const Banner = ({ langReducer }) => {
   return (
     <BannerContainer>
-      <div className='about__banner-card-detail dyv__col'>
-        <RiComputerLine style={iconStyle} />
-        <ul>
-          <li>{Language[`${langReducer}`].about.banner_comp.item_1}</li>
-          <li>{Language[`${langReducer}`].about.banner_comp.item_2}</li>
-          <li>{Language[`${langReducer}`].about.banner_comp.item_3}</li>
-        </ul>
+      <div className='dyv__col'>
+        <div className='hovereffect'>
+          <img src={img_1} alt='..' className='img-responsive' />
+          <div className='overlay'>
+            <h2>{Language[`${langReducer}`].about.banner_tech}</h2>
+          </div>
+        </div>
       </div>
-      <div className='about__banner-card-detail dyv__col'>
-        <MdPalette style={iconStyle} />
-        <p>{Language[`${langReducer}`].about.banner_art}</p>
+      <div
+        className='about__banner-card-detail dyv__col'
+        id='about__banner--item_2'
+      >
+        <small>{Language[`${langReducer}`].about.banner_art}</small>
       </div>
-      <div className='about__banner-card-detail dyv__col'>
-        <GoTools style={iconStyle} />
-        <p>{Language[`${langReducer}`].about.banner_tools}</p>
+      <div
+        className='about__banner-card-detail dyv__col'
+        style={{ marginRight: '10%' }}
+        id='about__banner--item_3'
+      >
+        <small>{Language[`${langReducer}`].about.banner_tools}</small>
       </div>
     </BannerContainer>
   );
