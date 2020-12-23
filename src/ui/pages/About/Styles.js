@@ -6,3 +6,8 @@ export const BannerContainer = styled.div`
   height: auto;
   display: flex;
 `;
+export const iconStyle = {
+  width: 'auto',
+  height: 'auto',
+  fill: '  #b3b3b5',
+};
