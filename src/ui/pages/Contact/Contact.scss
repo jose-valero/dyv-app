@@ -1,11 +1,25 @@
 @import '../../../styles/main.scss';
 
 .contact__container {
-  background-color: $pal-1_gray-1;
-  color: $pal-2_white;
-  margin-top: 50px;
-  height: 100vh;
-  width: 100%;
-  @include centerFlex;
-  align-items: center;
+    background-color: $pal-1_gray-1;
+    color: $pal-2_white;
+    margin-top: 50px;
+    height: 100vh;
+    width: 100%;
+    @include centerFlex;
+    align-items: center;
+}
+
+.full_w {
+    width: 100%;
+}
+
+.text_center {
+    text-align: center;
+}
+
+.mobile_col {
+    @include breakpoint(mobileonly) {
+        width: 100%;
+    }
 }
