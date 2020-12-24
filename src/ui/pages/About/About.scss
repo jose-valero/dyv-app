@@ -122,7 +122,11 @@
 .about__skill {
   &--content {
     @include flex;
-    background-image: linear-gradient(to bottom, $pal-1_dark, $pal-1_gray-1);
+    background-image: linear-gradient(
+      to bottom,
+      $pal-1_gray-4,
+      $pal-2_light-gray
+    );
     & .title {
       text-align: center;
       color: $warm_oj-1;
@@ -218,7 +222,7 @@
       line-height: 1;
       border-image: none;
       padding: 0.5rem 1rem 1rem;
-      color: $winter-sand;
+      color: $winter-aqua;
 
       &:before {
         display: none;
@@ -243,14 +247,14 @@
     .about__timeline__title {
       margin: 0;
       @include font-size($p-font-sizes);
-      color: $winter-sand;
+      color: $winter-dark;
     }
 
     .about__timeline__blurb {
       line-height: 1.5;
       @include font-size($p-font-sizes);
       margin: 0.5rem 0 0;
-      color: $winter-aqua;
+      color: $winter-dark;
     }
 
     // &--item_1 {
