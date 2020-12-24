@@ -80,7 +80,8 @@
         @include transition_ease_out3;
         width: 90%;
         height: auto;
-        margin: 5%;
+        margin: 5% 5% 0 5%;
+        padding: 0 0 5% 0;
       }
       & img:hover {
         @include nograyscale;
@@ -119,22 +120,150 @@
 }
 
 .about__skill {
-  width: 100%;
-  height: auto;
-  background-color: $pal-1_gray-2;
   &--content {
-    // height: auto;
-    &--item_1 {
-      background-color: $pal-1_dark;
-      color: $pal-2_white;
+    @include flex;
+    background-image: linear-gradient(to bottom, $pal-1_dark, $pal-1_gray-1);
+    & .title {
+      text-align: center;
+      color: $warm_oj-1;
+      // margin: 1.75rem auto;
+      padding: 1rem 0 0 0;
+      margin: 0 0 1rem 0;
+      @include font-size($h1-font-sizes);
     }
-    &--item_2 {
-      background-color: $pal-2_white;
-      color: $pal-1_dark;
+
+    .about__timeline {
+      position: relative;
+      padding: 1rem;
+      margin: 0 auto;
+      max-width: 1300px;
+
+      &:before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        border: 1px solid $warm_oj-3;
+        right: 40px;
+        top: 0;
+      }
+
+      &:after {
+        content: '';
+        display: table;
+        clear: both;
+      }
+
+      @include breakpoint(tablet) {
+        padding: 2rem;
+        &:before {
+          left: calc(50% - 1px);
+          right: auto;
+        }
+      }
     }
-    &--item_3 {
-      background-color: $pal-1_dark;
-      color: $pal-2_white;
+
+    .about__timeline__item {
+      padding: 1rem;
+      border: 2px solid $warm_oj-3;
+      border-image: linear-gradient(to right, $winter_dark 0%, $warm_oj-3 100%);
+      border-image-slice: 1;
+      position: relative;
+      margin: 1rem 3rem 1rem 1rem;
+      clear: both;
+
+      &:after,
+      &:before {
+        content: '';
+        position: absolute;
+      }
+
+      &:before {
+        right: -10px;
+        top: calc(50% - 5px);
+        border-style: solid;
+        border-color: $warm_oj-3 $warm_oj-3 transparent transparent;
+        border-width: 10px;
+        transform: rotate(45deg);
+      }
+
+      @include breakpoint(tablet) {
+        width: 44%;
+        margin: 1rem;
+
+        &:nth-of-type(2n) {
+          float: right;
+          margin: 1rem;
+          border-image: linear-gradient(
+            to right,
+            $warm_oj-3 0%,
+            $winter_dark 100%
+          );
+          border-image-slice: 1;
+
+          &:before {
+            right: auto;
+            left: -10px;
+            border-color: transparent transparent $warm_oj-3 $warm_oj-3;
+          }
+        }
+      }
     }
+
+    .about__timeline__item--year {
+      text-align: center;
+      max-width: 150px;
+      margin: 0 48px 0 auto;
+      @include font-size($p-font-sizes);
+      background-color: $pal-2_light-dark;
+      line-height: 1;
+      border-image: none;
+      padding: 0.5rem 1rem 1rem;
+      color: $winter-sand;
+
+      &:before {
+        display: none;
+      }
+
+      @include breakpoint(tablet) {
+        text-align: center;
+        margin: 0 auto;
+
+        &:nth-of-type(2n) {
+          float: none;
+          margin: 0 auto;
+          border-image: none;
+
+          &:before {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .about__timeline__title {
+      margin: 0;
+      @include font-size($p-font-sizes);
+      color: $winter-sand;
+    }
+
+    .about__timeline__blurb {
+      line-height: 1.5;
+      @include font-size($p-font-sizes);
+      margin: 0.5rem 0 0;
+      color: $winter-aqua;
+    }
+
+    // &--item_1 {
+    //   background-color: $pal-1_dark;
+    //   color: $pal-2_white;
+    // }
+    // &--item_2 {
+    //   background-color: $pal-2_white;
+    //   color: $pal-1_dark;
+    // }
+    // &--item_3 {
+    //   background-color: $pal-1_dark;
+    //   color: $pal-2_white;
+    // }
   }
 }

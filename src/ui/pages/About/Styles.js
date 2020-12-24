@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import bg from './assets/test_ban_4.png';
 
-
 export const BannerContainer = styled.div`
   background-image: url(${bg});
   /* background-repeat: no-repeat; */
@@ -17,3 +16,5 @@ export const iconStyle = {
   height: 'auto',
   fill: '  #b3b3b5',
 };
+
+export const TimelineItem = styled.div``;
