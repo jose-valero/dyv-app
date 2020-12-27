@@ -1,6 +1,9 @@
-@import '../../../styles/main.scss';
+@import '../../../styles/animations';
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
 .button {
-  display: flex;
+  @include flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
@@ -15,15 +18,15 @@
 
     .o1 {
       stroke: rgba(#c1b0a6, 0.7);
-      fill: #c1b0a6;
-      transition: all 1s ease-in-out;
+      fill: $warm_gray-oj;
+      @include transition_ease_out1;
     }
 
     .o2 {
       stroke: white;
       stroke-dasharray: 20 420;
       stroke-dashoffset: 20;
-      transition: all 1s ease-in-out;
+      @include transition_ease_out1;
     }
   }
 
@@ -46,5 +49,5 @@
 }
 a {
   text-decoration: none;
-  color: $pal-2_white ;
+  color: $pal-2_white;
 }

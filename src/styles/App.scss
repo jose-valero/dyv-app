@@ -1,9 +1,19 @@
-@import "./main";
-// @import "~bootstrap/scss/bootstrap";
+@import './mixins';
+@import './Main.scss';
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+$theme-font: 'Muli', sans-serif;
+$quicksand: 'Quicksand', sans-serif;
 
 body {
   font-family: $quicksand;
   background-color: #e6f5fd;
   @include fluid;
   height: 100%;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
 }
