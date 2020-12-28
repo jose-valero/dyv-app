@@ -1,3 +1,5 @@
+@use './mixins';
+
 .dyv__row {
   display: -ms-flexbox;
   display: flex;
@@ -48,12 +50,6 @@
   .dyv__col-#{$i} {
     @include gap;
   }
-}
-@mixin gap {
-  position: relative;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
 }
 
 .dyv__row + .dyv__row {
