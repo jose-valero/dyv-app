@@ -2,8 +2,9 @@ import styled from 'styled-components';
 import bg from './assets/test_ban_4.png';
 
 export const BannerContainer = styled.div`
-  background-image: url(${bg});
-  /* background-repeat: no-repeat; */
+background-color: #c1b0a6;
+  /* background-image: url(${bg}); */
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   width: 100%;

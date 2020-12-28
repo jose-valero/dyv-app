@@ -4,8 +4,9 @@ import { Language } from '../../../data/data';
 import AOS from 'aos';
 import Banner from './Banner';
 import Bio from './Bio';
-import Skills from './Skills';
+import Timeline from './Timeline';
 import './About.scss';
+import TimeTrap from './TimeTrap';
 
 const About = ({ langReducer }) => {
   AOS.init();
@@ -19,7 +20,8 @@ const About = ({ langReducer }) => {
         <>
           <Bio />
           <Banner />
-          <Skills />
+          <Timeline />
+          {/* <TimeTrap /> */}
         </>
       </div>
     </>

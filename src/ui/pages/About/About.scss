@@ -42,12 +42,14 @@
     @include centerFlex;
     &--content {
       // background-color: palegreen;
-      margin: 1rem 3% 1rem 7%;
+      margin: 1rem 1rem 1rem 10%;
       @include keyframes;
       @include animationBorder;
       &:hover {
         animation-play-state: running;
       }
+ 
+
       & p {
         @include font-size($p-font-sizes);
         text-align: center;
@@ -79,10 +81,13 @@
       & img {
         @include grayscale;
         @include transition_ease_out3;
-        width: 90%;
+        width: 80%;
         height: auto;
-        margin: 5% 5% 0 5%;
-        padding: 0 0 5% 0;
+        padding: 0;
+        margin: 5%;
+        @include breakpoint(mobile) {
+          width: 95%;
+        }
       }
       & img:hover {
         @include nograyscale;
@@ -125,8 +130,8 @@
     @include flex;
     background-image: linear-gradient(
       to bottom,
-      $pal-1_gray-4,
-      $pal-2_light-gray
+      $pal-2_light-gray,
+      $pal-2_white
     );
     & .title {
       text-align: center;
@@ -147,7 +152,7 @@
         content: '';
         position: absolute;
         height: 100%;
-        border: 1px solid $warm_oj-3;
+        border: 1px solid $winter_dark;
         right: 40px;
         top: 0;
       }
@@ -170,7 +175,11 @@
     .about__timeline__item {
       padding: 1rem;
       border: 2px solid $warm_oj-3;
-      border-image: linear-gradient(to right, $winter_dark 0%, $warm_oj-3 100%);
+      border-image: linear-gradient(
+        to right,
+        $winter_dark 0%,
+        $winter_aqua 100%
+      );
       border-image-slice: 1;
       position: relative;
       margin: 1rem 3rem 1rem 1rem;
@@ -186,7 +195,7 @@
         right: -10px;
         top: calc(50% - 5px);
         border-style: solid;
-        border-color: $warm_oj-3 $warm_oj-3 transparent transparent;
+        border-color: $winter_aqua $winter_aqua transparent transparent;
         border-width: 10px;
         transform: rotate(45deg);
       }
@@ -200,7 +209,7 @@
           margin: 1rem;
           border-image: linear-gradient(
             to right,
-            $warm_oj-3 0%,
+            $winter_aqua 0%,
             $winter_dark 100%
           );
           border-image-slice: 1;
@@ -208,7 +217,7 @@
           &:before {
             right: auto;
             left: -10px;
-            border-color: transparent transparent $warm_oj-3 $warm_oj-3;
+            border-color: transparent transparent $winter_aqua $winter_aqua;
           }
         }
       }
