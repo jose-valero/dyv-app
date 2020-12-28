@@ -7,13 +7,6 @@
   margin-left: -15px;
 }
 
-@mixin gap {
-  position: relative;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
 @mixin calcWidth($size) {
   flex: 1 1;
   max-width: ($size/12) * 100%;
@@ -55,6 +48,12 @@
   .dyv__col-#{$i} {
     @include gap;
   }
+}
+@mixin gap {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .dyv__row + .dyv__row {
