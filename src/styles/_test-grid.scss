@@ -63,9 +63,6 @@
 
 .dyv__col {
   @include gap;
-}
-
-.dyv__col {
   -ms-flex-preferred-size: 0;
   flex-basis: 0;
   -ms-flex-positive: 1;
