@@ -17,7 +17,7 @@
     padding: 2rem 0 0 0;
   }
   p {
-    @include font-size($p-font-sizes);
+    @include font-size($h1-font-sizes);
     @include fluid;
   }
 }

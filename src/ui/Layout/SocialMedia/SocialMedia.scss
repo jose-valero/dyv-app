@@ -25,7 +25,7 @@ ul {
   z-index: 99999;
   top: 35%;
   .social__wrapper {
-    background: $pal-2_light-dark;
+    background: $pal-1_dark;
     position: relative;
     left: 0;
     border-radius: 0px 10px 0px 0px;
@@ -51,7 +51,7 @@ ul {
 
 .banner__social--showHide {
   @include transition_ease_out3;
-  background: $pal-2_light-dark;
+  background: $pal-1_dark;
   & button {
     color: $warm_oj-1;
     outline: 0;

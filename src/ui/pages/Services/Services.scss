@@ -33,6 +33,8 @@
     text-align: center;
     text-transform: uppercase;
     background-color: $pal-2_light-dark;
-    color: $pal-2_white
+    color: $pal-2_white;
+    white-space: nowrap;
+    @include font-size($p-font-sizes);
   }
 }

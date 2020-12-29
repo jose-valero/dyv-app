@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import bg from './assets/test_ban_4.png';
 
 export const BannerContainer = styled.div`
-background-color: #c1b0a6;
+background-color: #202020;
   /* background-image: url(${bg}); */
   background-repeat: no-repeat;
   background-size: cover;

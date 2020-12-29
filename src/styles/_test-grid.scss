@@ -10,7 +10,8 @@
 }
 
 @mixin calcWidth($size) {
-  flex: 1 1;
+  // flex: 1 1;
+  flex: 0 0 100%;
   max-width: ($size/12) * 100%;
 }
 
@@ -48,6 +49,8 @@
 
 @for $i from 1 through 12 {
   .dyv__col-#{$i} {
+    flex: 0 0 100%;
+    max-width: ($i/12) * 100%;
     @include gap;
   }
 }
@@ -90,6 +93,7 @@
   .dyv__container-sm,
   .dyv__container-md {
     max-width: 720px;
+    display: block;
   }
 }
 
