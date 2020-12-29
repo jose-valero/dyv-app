@@ -49,3 +49,36 @@ export const Language = {
     },
   },
 };
+
+export const Skills = [
+  {
+    id: 1,
+    name: 'OFfice Decorate',
+    image: ('../assets/images/Logo.png'),
+  },
+  {
+    id: 2,
+    name: 'Home Decorate',
+    image: ('../assets/images/Logo.png'),
+  },
+  {
+    id: 3,
+    name: 'LIGHTING DECORATE',
+    image: ('../assets/images/Logo.png'),
+  },
+  {
+    id: 4,
+    name: 'Smart Kitchen Setup',
+    image: ('../assets/images/Logo.png'),
+  },
+  {
+    id: 5,
+    name: 'Kitchen Sink Design',
+    image: ('../assets/images/Logo.png'),
+  },
+  {
+    id: 6,
+    name: 'Lobby Interior Design',
+    image: ('../assets/images/Logo.png'),
+  },
+];
