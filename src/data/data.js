@@ -14,9 +14,12 @@ export const Language = {
       hand in hand with aesthetics, that each space has personality and
       tell a story, which suits your needs and up-to-the-minute. AT
        DISEÑO & VANGUARDIA WE CREATE YOUR DREAM SPACE!`,
-       banner_tech: "Best Technologies",
+      banner_tech: 'Best Technologies',
       banner_art: 'Artistic focus',
       banner_tools: 'Awesome tools',
+    },
+    services: {
+      hero_title: 'know more about our services',
     },
   },
   ES: {
@@ -35,9 +38,12 @@ export const Language = {
         la estética, que cada espacio tenga personalidad y cuente una
         historia, el cual se adapte a sus necesidades y al día- día.
         EN DISEÑO & VANGUARDIA CREAMOS SU ESPACIO DE ENSUEÑO!`,
-      banner_tech: "Mejores Tecnologias",
+      banner_tech: 'Mejores Tecnologias',
       banner_art: 'Conceptos Artisticos',
       banner_tools: 'Herramientas Increibles',
+    },
+    services: {
+      hero_title: 'Conoce nuestros serivicios',
     },
   },
 };
