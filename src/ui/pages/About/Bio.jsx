@@ -4,18 +4,18 @@ import { connect } from 'react-redux';
 
 const Bio = ({ langReducer }) => {
   return (
-    <div className='about__bio-content'>
-      <div className='about__left-section'>
-        <div className='about__left-section--content'>
-          <h1>{Language[`${langReducer}`].about.bio_title}</h1>
-          <p data-aos='fade-right'>
-            {Language[`${langReducer}`].about.bio_text}
-          </p>
+    <div className='about__bio-content '>
+      <div className='dyv__row about__row'>
+        <div className='about__left-section dyv__col dyv__col-xl-6 dyv__col-lg-6 dyv__col-md-6 dyv__col-sm-12'>
+          <div className='about__left-section--content'>
+            <h1>{Language[`${langReducer}`].about.bio_title}</h1>
+            <p>{Language[`${langReducer}`].about.bio_text}</p>
+          </div>
         </div>
-      </div>
-      <div className='about__right-section'>
-        <div className='about__right-section--content'>
-          <img src={testImg} alt='' data-aos='fade-left' className='' />
+        <div className='about__right-section  dyv__col dyv__col-xl-6 dyv__col-lg-6 dyv__col-md-6 dyv__col-sm-12'>
+          <div className='about__right-section--content'>
+            <img src={testImg} alt='' data-aos='fade-left' className='' />
+          </div>
         </div>
       </div>
     </div>
