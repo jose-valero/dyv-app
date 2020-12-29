@@ -3,7 +3,6 @@ import { Container } from '../../components/Container';
 import Carousel from './Carousel';
 import { Language } from '../../../data/data';
 import { Hero } from '../../components/Hero';
-import Skils from './Skils';
 import './Services.scss';
 
 const Services = ({ langReducer }) => {
@@ -14,7 +13,6 @@ const Services = ({ langReducer }) => {
       </Hero>
       <>
         <Carousel />
-        <Skils />
       </>
     </Container>
   );

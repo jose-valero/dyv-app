@@ -1,5 +1,3 @@
-import './Carousel.scss';
-
 const Carousel = () => {
   return (
     <>
@@ -106,7 +104,7 @@ const Carousel = () => {
               <p className='carousel__slide--description'>SMARTLY EXECUTE</p>
             </li>
             <li className='carousel__slide'>
-              <p className='carousel__slide--description'>WE MAKE PERFECTION</p>
+              <p className='carousel__slide--description'>LOREM IPSU</p>
             </li>
             <li className='carousel__slide'>
               <p className='carousel__slide--description'>LOREM IPSU</p>
