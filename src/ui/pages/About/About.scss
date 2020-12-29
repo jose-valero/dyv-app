@@ -5,28 +5,30 @@
 @import '../../../styles/variables';
 @import '../../../styles/keyframes';
 
-.about__container {
-  margin-top: 50px;
-  height: auto;
-  background-color: $pal-2_light-gray;
-  overflow: hidden;
-  width: 100%;
-}
+// .about__container {
+//   margin-top: 50px;
+//   height: auto;
+//   background-color: $pal-2_light-gray;
+//   overflow: hidden;
+//   width: 100%;
+// }
+
+// .about__hero {
+//   background-image: url('./assets/test_ban_2.png');
+//   @include bgCoverCenter;
+//   height: 250px;
+//   width: 100%;
+//   @include centerFlex;
+
+//   & h1 {
+//     margin: 25%;
+//     color: $warm_gray;
+//   }
+// }
+
 .dyv__row {
   @include breakpoint(mobile) {
     display: block !important;
-  }
-}
-.about__hero {
-  background-image: url('./assets/test_ban_2.png');
-  @include bgCoverCenter;
-  height: 250px;
-  width: 100%;
-  @include centerFlex;
-
-  & h1 {
-    margin: 25%;
-    color: $warm_gray;
   }
 }
 
@@ -48,7 +50,6 @@
       &:hover {
         animation-play-state: running;
       }
- 
 
       & p {
         @include font-size($p-font-sizes);
