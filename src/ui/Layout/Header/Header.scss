@@ -1,4 +1,8 @@
-@import '../../../styles/main.scss';
+@import '../../../styles/animations';
+@import '../../../styles/fonts';
+@import '../../../styles/media';
+@import '../../../styles/mixins';
+@import '../../../styles/variables';
 
 .menu__links {
   text-decoration: none;
@@ -22,8 +26,7 @@ li {
   @include font-size($small-font-sizes);
 }
 ul {
-  margin: 0;
-  padding: 0;
+  @include fluid;
   list-style: none;
   display: table;
   text-align: center;
@@ -91,8 +94,6 @@ ul {
       }
     }
   }
-  @include breakpoint(mobile) {
-  }
 }
 #menuToggle {
   display: none;
@@ -118,12 +119,8 @@ ul {
       display: block;
       max-height: 0;
       overflow: hidden;
-      -webkit-transition: max-height 0.3s;
-      -moz-transition: max-height 0.3s;
-      -ms-transition: max-height 0.3s;
-      -o-transition: max-height 0.3s;
-      transition: max-height 0.3s;
-  
+      @include maxHeight_3;
+
       .menu__links {
         text-align: right;
         width: 100%;

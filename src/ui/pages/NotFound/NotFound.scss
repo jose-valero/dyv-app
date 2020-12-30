@@ -1,4 +1,9 @@
-@import '../../../styles/main.scss';
+@import "../../../styles/animations";
+@import "../../../styles/fonts";
+@import "../../../styles/keyframes";
+@import "../../../styles/media";
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
 
 .notFound__container {
   background-color: $pal-1_gray-1;

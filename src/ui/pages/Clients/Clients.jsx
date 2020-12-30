@@ -7,9 +7,9 @@ const Clients = () => {
   return (
     <div className='container' style={{marginTop: '50px'}}>
       <div className='row'>
-        <div style={styles} className='col_auto grid-lg-8'>block 1</div>
-        <div style={styles} className='col_auto grid-lg-2'>block 2</div>
-        <div style={styles} className='col_auto grid-lg-2'>block 3</div>
+        <div style={styles} className='col_auto grid-lg-8 grid-xs-12'>block 1</div>
+        <div style={styles} className='col_auto grid-lg-2 grid-xs-12'>block 2</div>
+        <div style={styles} className='col_auto grid-lg-2 grid-xs-12'>block 3</div>
       </div>
     </div>
   );

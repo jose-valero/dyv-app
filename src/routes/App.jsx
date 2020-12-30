@@ -7,7 +7,7 @@ import Clients from '../ui/pages/Clients';
 import Contact from '../ui/pages/Contact';
 import Portafolio from '../ui/pages/Portafolio';
 import Services from '../ui/pages/Services';
-import '../styles/App.scss';
+// import '../styles/App.scss';
 
 const App = () => {
   return (

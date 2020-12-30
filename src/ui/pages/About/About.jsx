@@ -4,30 +4,28 @@ import { Language } from '../../../data/data';
 import AOS from 'aos';
 import Banner from './Banner';
 import Bio from './Bio';
+import Timeline from './Timeline';
+import TimeTrap from './TimeTrap';
+import { Container } from '../../components/Container';
+import { Hero } from '../../components/Hero';
 import './About.scss';
-import Skills from './Skills';
-import { Container, Row, Col } from 'react-bootstrap';
 
 const About = ({ langReducer }) => {
   AOS.init();
 
   return (
     <>
-      <div className='about__container'>
-        <div className='about__hero'>
+      <Container>
+        <Hero>
           <h1>{Language[`${langReducer}`].about.hero_title}</h1>
-        </div>
-        <Container fluid>
-          <Row>
-            <Col lg={12} md={6}>
-              <Bio  />
-              <Banner lg={12} />
-            </Col>
-          </Row>
-        </Container>
-
-        <Skills />
-      </div>
+        </Hero>
+        <>
+          <Bio />
+          <Banner />
+          <Timeline />
+          {/* <TimeTrap /> */}
+        </>
+      </Container>
     </>
   );
 };

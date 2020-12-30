@@ -15,6 +15,10 @@
     @media (min-width: 992px) and (max-width: 1199.99px) {
       @content;
     }
+  } @else if $point == tablet {
+    @media (min-width: 768px) {
+      @content;
+    }
   } @else if $point == tablet_land {
     @media (orientation: landscape) and (min-width: 768px) and (max-width: 991.99px) {
       @content;
