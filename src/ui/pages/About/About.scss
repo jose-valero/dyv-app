@@ -93,7 +93,7 @@
       & img:hover {
         @include nograyscale;
         @include transition_ease_out3;
-        box-shadow: 0 1.5px 3px 0 $winter_dark;
+        box-shadow: 0 1.5px 3px 0 $pal-1_gray-3;
       }
     }
   }
@@ -102,7 +102,7 @@
 .about__banner-card-detail {
   @include centerFlex;
   z-index: 2;
-  background-color: $pal-2_light-dark;
+  background-color: $pal-1_gray-1;
   margin: 1rem;
   border-radius: 5px;
   @include transition_ease1;
@@ -131,14 +131,16 @@
     @include flex;
     background-image: linear-gradient(
       to bottom,
-      $pal-2_light-gray,
-      $pal-2_white
+      $pal-1_gray-4,
+      $pal-2_white,
     );
     & .title {
       text-align: center;
-      color: $warm_oj-1;
+      color: $pal-1_dark;
+      text-transform: uppercase;
+      letter-spacing: 5px;
       // margin: 1.75rem auto;
-      padding: 1rem 0 0 0;
+      padding: 1rem 0 1rem 0;
       margin: 0 0 1rem 0;
       @include font-size($h1-font-sizes);
     }
@@ -153,7 +155,7 @@
         content: '';
         position: absolute;
         height: 100%;
-        border: 1px solid $winter_dark;
+        border: 1px solid $pal-1_gray-1;
         right: 40px;
         top: 0;
       }
@@ -178,8 +180,8 @@
       border: 2px solid $warm_oj-3;
       border-image: linear-gradient(
         to right,
-        $winter_dark 0%,
-        $winter_aqua 100%
+        $warm_gray-oj 0%,
+        $warm_oj-3 100%
       );
       border-image-slice: 1;
       position: relative;
@@ -196,7 +198,7 @@
         right: -10px;
         top: calc(50% - 5px);
         border-style: solid;
-        border-color: $winter_aqua $winter_aqua transparent transparent;
+        border-color: $pal-1_gray-2 $pal-1_gray-2 transparent transparent;
         border-width: 10px;
         transform: rotate(45deg);
       }
@@ -210,15 +212,15 @@
           margin: 1rem;
           border-image: linear-gradient(
             to right,
-            $winter_aqua 0%,
-            $winter_dark 100%
+            $warm_gray-oj 0%,
+            $warm_oj-3 100%
           );
           border-image-slice: 1;
 
           &:before {
             right: auto;
             left: -10px;
-            border-color: transparent transparent $winter_aqua $winter_aqua;
+            border-color: transparent transparent $pal-1_gray-2 $pal-1_gray-2;
           }
         }
       }
@@ -229,11 +231,11 @@
       max-width: 150px;
       margin: 0 48px 0 auto;
       @include font-size($p-font-sizes);
-      background-color: $pal-2_light-dark;
+      background-color:$pal-1_gray-3;
       line-height: 1;
       border-image: none;
       padding: 0.5rem 1rem 1rem;
-      color: $winter-aqua;
+      color: $pal-1_gray-2 ;
 
       &:before {
         display: none;
@@ -258,14 +260,14 @@
     .about__timeline__title {
       margin: 0;
       @include font-size($p-font-sizes);
-      color: $winter-dark;
+      color: $pal-1_gray-1;
     }
 
     .about__timeline__blurb {
       line-height: 1.5;
       @include font-size($p-font-sizes);
       margin: 0.5rem 0 0;
-      color: $winter-dark;
+      color: $pal-1_gray-2;
     }
 
     // &--item_1 {

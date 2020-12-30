@@ -32,7 +32,7 @@
   & p {
     text-align: center;
     text-transform: uppercase;
-    background-color: $pal-2_light-dark;
+    background-color:$pal-1_gray-1;
     color: $pal-2_white;
     white-space: nowrap;
     @include font-size($p-font-sizes);
