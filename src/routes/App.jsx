@@ -7,6 +7,7 @@ import Clients from '../ui/pages/Clients';
 import Contact from '../ui/pages/Contact/ContactContainer';
 import Portafolio from '../ui/pages/Portafolio';
 import Services from '../ui/pages/Services';
+import NotFound from '../ui/pages/NotFound/NotFound';
 // import '../styles/App.scss';
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
           <Route exact path='/contact' component={Contact} />
           <Route exact path='/portafolio' component={Portafolio} />
           <Route exact path='/services' component={Services} />
+          <Route path='/nf' component={NotFound} />
         </Switch>
       </Layout>
     </BrowserRouter>

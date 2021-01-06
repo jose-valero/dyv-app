@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { Container } from '../../components/Container';
+import { PageContainer } from '../../components/Container';
 import Carousel from './Carousel';
 import { Language } from '../../../data/data';
 import { Hero } from '../../components/Hero';
@@ -8,7 +8,7 @@ import './Services.scss';
 
 const Services = ({ langReducer }) => {
   return (
-    <Container>
+    <PageContainer>
       <Hero>
         <h1>{Language[`${langReducer}`].services.hero_title}</h1>
       </Hero>
@@ -16,7 +16,7 @@ const Services = ({ langReducer }) => {
         <Carousel />
         <Skils />
       </>
-    </Container>
+    </PageContainer>
   );
 };
 const mapStateToProps = (state) => {
