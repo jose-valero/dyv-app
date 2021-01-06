@@ -18,7 +18,7 @@ const Contact = () => {
                     </Col>
                     <Col xs={12} sm={6}>
                         <Row className="inner_form_wrapper">
-                            <Col className="dyv__col">
+                            <Col>
                                 <Row>
                                     <Col>
                                         <h1 className="text_center">CONTACTANOS</h1>
