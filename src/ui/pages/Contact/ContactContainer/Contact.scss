@@ -1,9 +1,9 @@
-@import "../../../styles/animations";
-@import "../../../styles/fonts";
-@import "../../../styles/keyframes";
-@import "../../../styles/media";
-@import "../../../styles/mixins";
-@import "../../../styles/variables";
+@import "../../../../styles/animations";
+@import "../../../../styles/fonts";
+@import "../../../../styles/keyframes";
+@import "../../../../styles/media";
+@import "../../../../styles/mixins";
+@import "../../../../styles/variables";
 
 .contact__container {
     background-color: white;
@@ -26,6 +26,9 @@
     }
     > .dyv__row {
         height: 528px;
+        > .dyv__col-6 {
+            height: 100%;
+        }
     }
     .dyv__row {
         margin: 0;

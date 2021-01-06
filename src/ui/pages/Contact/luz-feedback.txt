@@ -1,6 +1,0 @@
-1. Definir maximo 3 colores principales, ejemplo: Background, textos y botones
-2. Todos los botones tienen que tener el mismo color y forma.
-3. Maximo 3 tamaños de fuente
-4. El home tiene diferentes colores de Background, los iconos son de diferente color al botones
-5. El hero no tiene centrada verticalmente la imagen del interior.
-6. (En Conocenos) Que saques tu curriculum de ahi jajajajaj.

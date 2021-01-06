@@ -1,7 +1,7 @@
 import './style.scss';
 
 function InputText({ id, label }) {
-    const onInputClick = (e) => {
+    const onInputAnimation = (e) => {
         e.target.parentElement.previousElementSibling.classList.toggle('InputLabel-shrink');
         e.target.parentElement.previousElementSibling.classList.toggle('InputLabel-focused');
         e.target.parentElement.classList.toggle('InputLabel-focused');
@@ -15,8 +15,8 @@ function InputText({ id, label }) {
                     id={id && id} 
                     className="full_w" 
                     type="text" 
-                    onFocus={onInputClick} 
-                    onBlur={onInputClick}
+                    onFocus={onInputAnimation} 
+                    onBlur={onInputAnimation}
                 />
             </div>
         </div>
