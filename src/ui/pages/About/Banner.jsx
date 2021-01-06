@@ -1,32 +1,43 @@
 import { RiComputerLine } from 'react-icons/ri';
 import { MdPalette } from 'react-icons/md';
 import { GoTools } from 'react-icons/go';
-import { BannerContainer, iconStyle } from './Styles';
-import { connect } from 'react-redux';
+import { iconStyle } from './Styles';
 import { Language } from '../../../data/data';
+import { connect } from 'react-redux';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 const Banner = ({ langReducer }) => {
   return (
-    <BannerContainer>
-      <div
-        className='about__banner-card-detail dyv__col'
-        style={{ marginLeft: '9%' }}
-      >
-        <RiComputerLine style={iconStyle} />
-        <p>{Language[`${langReducer}`].about.banner_tech}</p>
-      </div>
-      <div className='about__banner-card-detail dyv__col'>
-        <MdPalette style={iconStyle} />
-        <p>{Language[`${langReducer}`].about.banner_art}</p>
-      </div>
-      <div
-        className='about__banner-card-detail dyv__col'
-        style={{ marginRight: '9%' }}
-      >
-        <GoTools style={iconStyle} />
-        <p>{Language[`${langReducer}`].about.banner_tools}</p>
-      </div>
-    </BannerContainer>
+    <Container className='banner__container' fluid>
+      <Row className='banner__rows'>
+        <Col xs='12' sm='12' md='4' lg='4' xl='4' className='banner__cols py-2'>
+          <div className='banner__cols--icons'>
+            <RiComputerLine style={iconStyle} />
+            <p className='banner__cols--title my-auto'>
+              {Language[`${langReducer}`].about.banner_tech}
+            </p>
+          </div>
+        </Col>
+        <Col xs='12' sm='12' md='4' lg='4' xl='4' className='banner__cols py-2'>
+          <div className='banner__cols--icons'>
+            <MdPalette style={iconStyle} />
+            <p className='banner__cols--title my-auto'>
+              {Language[`${langReducer}`].about.banner_art}
+            </p>
+          </div>
+        </Col>
+        <Col xs='12' sm='12' md='4' lg='4' xl='4' className='banner__cols py-2'>
+          <div className='banner__cols--icons'>
+            <GoTools style={iconStyle} />
+            <p className='banner__cols--title my-auto'>
+              {Language[`${langReducer}`].about.banner_tools}
+            </p>
+          </div>
+        </Col>
+      </Row>
+    </Container>
   );
 };
 

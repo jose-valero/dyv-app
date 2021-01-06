@@ -1,11 +1,13 @@
 import React from 'react';
+import { PageContainer } from '../../components/Container';
+import { Hero } from '../../components/Hero';
 import './Portafolio.scss';
 
 const Portafolio = () => {
   return (
-    <div className='portafolio__container'>
-      <h1>Hola Portafolio</h1>
-    </div>
+    <PageContainer>
+      <Hero></Hero>
+    </PageContainer>
   );
 };
 export default Portafolio;
