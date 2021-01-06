@@ -1,0 +1,10 @@
+/* make the customizations */
+@import './variables';
+$theme-colors: (
+  'info': tomato,
+  'danger': teal,
+  'dark': #202020,
+  'primary': $warm_oj-1,
+);
+
+@import '~bootstrap/scss/bootstrap';
