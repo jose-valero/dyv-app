@@ -39,7 +39,7 @@
 
   &:hover {
     .o1 {
-      fill: rgba(#cfad97, 0.3);
+      fill: rgba(#cfad97, 0.3) ;
     }
 
     .o2 {
@@ -48,6 +48,6 @@
   }
 }
 a {
-  text-decoration: none;
-  color: $pal-2_white;
+  text-decoration: none !important;
+  color: $pal-2_white !important;
 }
