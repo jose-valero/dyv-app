@@ -1,8 +1,9 @@
+// @import "~bootstrap/scss/bootstrap";
 @import './mixins';
 @import './Main.scss';
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
-
+@import "~bootstrap/scss/bootstrap";
 $theme-font: 'Muli', sans-serif;
 $quicksand: 'Quicksand', sans-serif;
 
