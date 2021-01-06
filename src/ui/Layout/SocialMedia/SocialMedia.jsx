@@ -63,13 +63,13 @@ const SocialMedia = () => {
           }`}
         >
           {isSocialMediaVisible ? (
-            <button onClick={toggleSocialMedia}>
+            <span onClick={toggleSocialMedia}>
               <FaAngleLeft />
-            </button>
+            </span>
           ) : (
-            <button onClick={toggleSocialMedia}>
+            <span onClick={toggleSocialMedia}>
               <FaAngleRight />
-            </button>
+            </span>
           )}
         </div>
       </div>
