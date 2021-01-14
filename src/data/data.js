@@ -1,5 +1,9 @@
 export const Language = {
   EN: {
+    home: {
+      brandText:
+        'Learn more about our startup, which is the best we can for you and here we continue with a text that is clear, short and I need to call the action to click',
+    },
     about: {
       hero_title: 'Know more about us...',
       bio_title: 'Long Story Short',
@@ -21,8 +25,19 @@ export const Language = {
     services: {
       hero_title: 'know more about our services',
     },
+    navbar: {
+      knowus: 'about',
+      services: 'services',
+      portafolio: 'portafolio',
+      clients: 'clients',
+      contact: 'contact',
+    },
   },
   ES: {
+    home: {
+      brandText:
+        'Conoce mas acerca de nuestra empeza, que es lo mejor que podemos hacer para ti y aqui continuamos con un texto sea claro, corto y precizo que llame a la accion de dar click',
+    },
     about: {
       hero_title: 'Conocenos un poco mas...',
       bio_title: 'Resumiendo',
@@ -45,6 +60,13 @@ export const Language = {
     services: {
       hero_title: 'Conoce nuestros serivicios',
     },
+    navbar: {
+      knowus: 'conocenos',
+      services: 'servicios',
+      portafolio: 'portafolio',
+      clients: 'clientes',
+      contact: 'contacto',
+    },
   },
 };
 
@@ -52,31 +74,31 @@ export const Skills = [
   {
     id: 1,
     name: 'OFfice Decorate',
-    image: ('../assets/images/Logo.png'),
+    image: '../assets/images/Logo.png',
   },
   {
     id: 2,
     name: 'Home Decorate',
-    image: ('../assets/images/Logo.png'),
+    image: '../assets/images/Logo.png',
   },
   {
     id: 3,
     name: 'LIGHTING DECORATE',
-    image: ('../assets/images/Logo.png'),
+    image: '../assets/images/Logo.png',
   },
   {
     id: 4,
     name: 'Smart Kitchen Setup',
-    image: ('../assets/images/Logo.png'),
+    image: '../assets/images/Logo.png',
   },
   {
     id: 5,
     name: 'Kitchen Sink Design',
-    image: ('../assets/images/Logo.png'),
+    image: '../assets/images/Logo.png',
   },
   {
     id: 6,
     name: 'Lobby Interior Design',
-    image: ('../assets/images/Logo.png'),
+    image: '../assets/images/Logo.png',
   },
 ];

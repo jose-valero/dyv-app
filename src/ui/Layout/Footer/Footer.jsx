@@ -8,6 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import './Footer.scss';
 
 const Footer = () => {
+  
   const [email, setEmail] = useState('');
 
   const handleSubmit = (e) => {

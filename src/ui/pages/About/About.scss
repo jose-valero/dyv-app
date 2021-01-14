@@ -9,8 +9,11 @@
   @include flex;
   width: 100%;
   height: auto;
+  background-color: salmon;
+  padding: 1rem;
 
   .about__left-section {
+    background-color: wheat;
     @include centerFlex;
     &--content {
       margin: 1rem 1rem 1rem 10%;
@@ -43,6 +46,7 @@
   }
 
   .about__right-section {
+    background-color: darkcyan;
     @include centerFlex;
     &--content {
       @include centerFlex;

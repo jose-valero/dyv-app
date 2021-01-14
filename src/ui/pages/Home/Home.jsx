@@ -1,99 +1,50 @@
-import React from 'react';
-import  Button  from '../../components/Button';
-import { connect } from 'react-redux';
+import Button from '../../components/Button';
+import { useSelector } from 'react-redux';
+import { Language } from '../../../data/data';
 import AOS from 'aos';
 import homeImg from './assets/1.jpg';
 import Logo from '../../../assets/images/LogoLight.png';
 import './Home.scss';
 import 'aos/dist/aos.css';
 
-const Home = ({ langReducer }) => {
+const Home = () => {
+  const lang = useSelector((state) => state.langReducer);
   AOS.init();
-  if (langReducer === 'ES') {
-    return (
-      <div className='home__container'>
-        <section className='home__left-section'>
-          <div className='home__left-content'>
-            <div className='home__left-content--aside'>
-              <img
-                src={homeImg}
-                alt=''
-                data-aos='fade-zoom-in'
-                data-aos-easing='ease-in-back'
-                data-aos-delay='10'
-                data-aos-offset='0'
-              />
-            </div>
+
+  return (
+    <div className='home__container'>
+      <section className='home__left-section'>
+        <div className='home__left-content'>
+          <div className='home__left-content--aside'>
+            <img
+              src={homeImg}
+              alt=''
+              data-aos='fade-zoom-in'
+              data-aos-easing='ease-in-back'
+              data-aos-delay='10'
+              data-aos-offset='0'
+            />
           </div>
-        </section>
-        <section className='home__right-section'>
-          <div className='home__right-content'>
-            <div className='home__right-content--aside'>
-              <img
-                src={Logo}
-                alt=''
-                data-aos='fade-zoom-in'
-                data-aos-easing='ease-in-back'
-                data-aos-delay='10'
-                data-aos-offset='0'
-              />
-              <p data-aos='fade-left'>
-                Conoce mas acerca de nuestra empeza, que es lo mejor que podemos
-                hacer para ti y aqui continuamos con un texto sea claro, corto y
-                precizo que llame a la accion de dar click
-              </p>
-              <Button name='Conocenos' route='/about' />
-            </div>
+        </div>
+      </section>
+      <section className='home__right-section'>
+        <div className='home__right-content'>
+          <div className='home__right-content--aside'>
+            <img
+              src={Logo}
+              alt=''
+              data-aos='fade-zoom-in'
+              data-aos-easing='ease-in-back'
+              data-aos-delay='10'
+              data-aos-offset='0'
+            />
+            <p data-aos='fade-left'>{Language[`${lang}`].home.brandText}</p>
+            <Button name='Conocenos' route='/about' />
           </div>
-        </section>
-      </div>
-    );
-  } else {
-    return (
-      <div className='home__container'>
-        <section className='home__left-section'>
-          <div className='home__left-content'>
-            <div className='home__left-content--aside'>
-              <img
-                src={homeImg}
-                alt=''
-                data-aos='fade-zoom-in'
-                data-aos-easing='ease-in-back'
-                data-aos-delay='10'
-                data-aos-offset='0'
-              />
-            </div>
-          </div>
-        </section>
-        <section className='home__right-section'>
-          <div className='home__right-content'>
-            <div className='home__right-content--aside'>
-              <img
-                src={Logo}
-                alt=''
-                data-aos='fade-zoom-in'
-                data-aos-easing='ease-in-back'
-                data-aos-delay='10'
-                data-aos-offset='0'
-              />
-              <p data-aos='fade-left'>
-                Learn more about our startup, which is the best we can for you
-                and here we continue with a text that is clear, short and I need
-                to call the action to click
-              </p>
-              <Button name='About Us' route='/about' />
-            </div>
-          </div>
-        </section>
-      </div>
-    );
-  }
+        </div>
+      </section>
+    </div>
+  );
 };
 
-const mapStateToProps = (state) => {
-  return {
-    langReducer: state.langReducer,
-  };
-};
-
-export default connect(mapStateToProps, {})(Home);
+export default Home;

@@ -3,12 +3,13 @@ import { MdPalette } from 'react-icons/md';
 import { GoTools } from 'react-icons/go';
 import { iconStyle } from './Styles';
 import { Language } from '../../../data/data';
-import { connect } from 'react-redux';
+import { useSelector } from 'react-redux';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-const Banner = ({ langReducer }) => {
+const Banner = () => {
+  const lang = useSelector((state) => state.langReducer);
   return (
     <Container className='banner__container' fluid>
       <Row className='banner__rows'>
@@ -16,7 +17,7 @@ const Banner = ({ langReducer }) => {
           <div className='banner__cols--icons'>
             <RiComputerLine style={iconStyle} />
             <p className='banner__cols--title my-auto'>
-              {Language[`${langReducer}`].about.banner_tech}
+              {Language[`${lang}`].about.banner_tech}
             </p>
           </div>
         </Col>
@@ -24,7 +25,7 @@ const Banner = ({ langReducer }) => {
           <div className='banner__cols--icons'>
             <MdPalette style={iconStyle} />
             <p className='banner__cols--title my-auto'>
-              {Language[`${langReducer}`].about.banner_art}
+              {Language[`${lang}`].about.banner_art}
             </p>
           </div>
         </Col>
@@ -32,7 +33,7 @@ const Banner = ({ langReducer }) => {
           <div className='banner__cols--icons'>
             <GoTools style={iconStyle} />
             <p className='banner__cols--title my-auto'>
-              {Language[`${langReducer}`].about.banner_tools}
+              {Language[`${lang}`].about.banner_tools}
             </p>
           </div>
         </Col>
@@ -41,10 +42,4 @@ const Banner = ({ langReducer }) => {
   );
 };
 
-const mapStateToProps = (state) => {
-  return {
-    langReducer: state.langReducer,
-  };
-};
-
-export default connect(mapStateToProps, {})(Banner);
+export default Banner;
