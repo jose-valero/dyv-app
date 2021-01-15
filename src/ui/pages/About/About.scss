@@ -9,14 +9,17 @@
   @include flex;
   width: 100%;
   height: auto;
-  background-color: salmon;
+  // background-color: salmon;
   padding: 1rem;
 
-  .about__left-section {
-    background-color: wheat;
+  &--left-section {
+    // background-color: wheat;
     @include centerFlex;
-    &--content {
-      margin: 1rem 1rem 1rem 10%;
+    &--text {
+      margin: 1rem;
+      @include breakpoint(mobile) {
+        // margin: 2rem 3rem;
+      }
       @include keyframes;
       @include animationBorder;
       &:hover {
@@ -24,85 +27,99 @@
       }
 
       & p {
-        @include font-size($p-font-sizes);
+        line-height: 3rem;
+        @include font-size($a-font-sizes);
         text-align: center;
-        margin: 0.75rem;
-        @include breakpoint(largedevice) {
-          line-height: 3.5rem;
-        }
-        @include breakpoint(desktop) {
-          line-height: 2.25rem;
-        }
-        @include breakpoint(laptop) {
-          line-height: 1.75rem;
-        }
+        margin: 1rem;
       }
       & h1 {
         @extend p;
-        @include fluid;
+        // @include fluid;
         @include font-size($h1-font-sizes);
       }
     }
   }
 
-  .about__right-section {
-    background-color: darkcyan;
+  &--right-section {
+    // background-color: darkcyan;
     @include centerFlex;
-    &--content {
+    &--images {
       @include centerFlex;
       height: auto;
       & img {
-        @include grayscale;
-        @include transition_ease_out3;
-        width: 80%;
+        width: 100%;
         height: auto;
         padding: 0;
         margin: 5%;
+        @include transition_ease1;
         @include breakpoint(mobile) {
           width: 95%;
         }
       }
       & img:hover {
-        @include nograyscale;
-        @include transition_ease_out3;
-        box-shadow: 0 1.5px 3px 0 $pal-1_gray-3;
+        @include transition_ease1;
+        box-shadow: 0 1.5px 3px 0 $pal-1_gray-1;
+        // border-radius: 10%;
+        transform: scale(1.05);
       }
     }
   }
 }
 
-.banner__container {
-  background-image: linear-gradient(to right, $pal-1_gray-2, $pal-1_gray-1);
-  padding: 2rem;
-}
-.banner__cols {
-  @include centerFlex;
-  &--icons {
-    @include transition_ease1;
-    opacity: 0.55;
-    border-radius: 5px;
-    background-color: $pal-1_gray-3;
-    @include centerFlex;
-    @include breakpoint(largedevice) {
-      width: 60%;
-    }
-    @include breakpoint(largedevice) {
-      width: 70%;
-    }
-    @include breakpoint(desktop) {
-      width: 60%;
-    }
-    @include breakpoint(mobile) {
-      width: 50%;
-    }
-    &:hover {
-      opacity: 1;
-      background-color: $pal-1_gray-3;
+.about__mission-container {
+  // background-color: $pal-1_white;
+  .about__mission-row {
+    padding-bottom: 2rem;
+    &--images {
+      &--items {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
   }
+}
+.about__banner-desc-content {
+  padding-top: 2rem;
+  // background-color:violet;
+  text-align: center;
   &--title {
-    color: $pal-1_dark;
-    text-align: center;
-    @include font-size($p-font-sizes);
+    @include font-size($h1-font-sizes);
+    &::after {
+      content: '';
+      display: block;
+      border-bottom: 3px solid $warm_oj-1;
+      margin: 0 auto;
+      width: 30%;
+      padding-top: 10px;
+      border-radius: 2.5px;
+    }
+  }
+  &--text {
+    margin: 2rem;
+    &::after {
+      content: '';
+      display: block;
+      border-bottom: 1px $pal-1_gray-4 solid;
+      padding-top: 10px;
+    }
   }
 }
+// .about__desc-content {
+//   // background-color: salmon;
+
+//   margin: 2rem auto;
+//   &--left-section {
+//     background-color: rebeccapurple;
+//     margin: auto;
+//     &--images {
+//       margin: auto;
+//       border: 3px red solid;
+
+//       & img {
+//         width: 90%;
+//         height: auto;
+//       }
+//     }
+//   }
+// }

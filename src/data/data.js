@@ -18,9 +18,12 @@ export const Language = {
       hand in hand with aesthetics, that each space has personality and
       tell a story, which suits your needs and up-to-the-minute. AT
        DISEÑO & VANGUARDIA WE CREATE YOUR DREAM SPACE!`,
-      banner_tech: 'Best Technologies',
-      banner_art: 'Artistic focus',
-      banner_tools: 'Awesome tools',
+      banner_missionTitle: 'Our Mision',
+      banner_missionText:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minima exercitationem earum, molestias est reprehenderit adipisci ipsum ipsa ullam officiis esse? Itaque officia cumque, provident ipsam sunt perferendis sit totam?',
+      banner_valuesTitle: 'Our Worth',
+      banner_valuesText:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minima exercitationem earum, molestias est reprehenderit adipisci ipsum ipsa ullam officiis esse? Itaque officia cumque, provident ipsam sunt perferendis sit totam?',
     },
     services: {
       hero_title: 'know more about our services',
@@ -53,9 +56,12 @@ export const Language = {
         la estética, que cada espacio tenga personalidad y cuente una
         historia, el cual se adapte a sus necesidades y al día- día.
         EN DISEÑO & VANGUARDIA CREAMOS SU ESPACIO DE ENSUEÑO!`,
-      banner_tech: 'Mejores Tecnologias',
-      banner_art: 'Conceptos Artisticos',
-      banner_tools: 'Herramientas Increibles',
+      banner_missionTitle: 'Nuestra Misión',
+      banner_missionText:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minima exercitationem earum, molestias est reprehenderit adipisci ipsum ipsa ullam officiis esse? Itaque officia cumque, provident ipsam sunt perferendis sit totam?',
+      banner_valuesTitle: 'Nuestros Valores',
+      banner_valuesText:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minima exercitationem earum, molestias est reprehenderit adipisci ipsum ipsa ullam officiis esse? Itaque officia cumque, provident ipsam sunt perferendis sit totam?',
     },
     services: {
       hero_title: 'Conoce nuestros serivicios',

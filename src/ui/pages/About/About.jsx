@@ -2,13 +2,14 @@
 
 import { Language } from '../../../data/data';
 import { useSelector } from 'react-redux';
-import Banner from './Banner';
-import Bio from './Bio';
-import Description from './Description';
+import Values from './Values';
+import Mission from './Mission';
+
 import { PageContainer } from '../../components/Container';
 import { Hero } from '../../components/Hero';
 import AOS from 'aos';
 import './About.scss';
+import Bio from './Bio';
 
 const About = () => {
   const lang = useSelector((state) => state.langReducer);
@@ -21,8 +22,8 @@ const About = () => {
         </Hero>
         <>
           <Bio />
-          <Banner />
-          <Description />
+          <Mission />
+          <Values />
         </>
       </PageContainer>
     </>
