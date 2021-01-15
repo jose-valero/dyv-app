@@ -351,7 +351,7 @@
 }
 .carousel__slide--description {
   @include font-size($h1-font-sizes); // line-height: 35px;
-  color: $pal-2_white;
+  color: $pal-1_white;
   // font-weight: 500;
   letter-spacing: 5px;
   position: absolute;

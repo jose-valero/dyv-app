@@ -23,7 +23,7 @@
 }
 
 .home__left-section {
-  background-color: $pal-2_white;
+  background-color: $pal-1_white;
   width: 70%;
   height: auto;
   overflow: visible;
@@ -97,7 +97,7 @@
       p {
         @include font-size($p-font-sizes);
         text-align: center;
-        color: $pal-2_white;
+        color: $pal-1_white;
       }
       & img {
         width: 80%;

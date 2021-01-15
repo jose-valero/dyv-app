@@ -128,8 +128,8 @@
 
         outline: 0;
         &[type='email'] {
-          border: 1px solid lighten($pal-2_white, 50%);
-          background-color: $pal-2_white;
+          border: 1px solid lighten($pal-1_white, 50%);
+          background-color: $pal-1_white;
           @include font-size($small-font-sizes);
           &:focus {
             border-color: $warm_oj-1;
