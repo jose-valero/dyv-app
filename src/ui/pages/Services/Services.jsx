@@ -1,18 +1,16 @@
-import { useSelector } from 'react-redux';
-import { PageContainer } from '../../components/Container';
+// import { useSelector } from 'react-redux';
+import { PageContainer } from '../../components/Container/PageContainer';
 import Carousel from './Carousel';
-import { Language } from '../../../data/data';
-import { Hero } from '../../components/Hero';
+// import { Language } from '../../../data/data';
+import Hero from '../../components/Hero/Hero';
 import Skils from './Skils';
 import './Services.scss';
 
 const Services = () => {
-  const lang = useSelector((state) => state.langReducer);
+  // const lang = useSelector((state) => state.langReducer);
   return (
     <PageContainer>
-      <Hero>
-        <h1>{Language[`${lang}`].services.hero_title}</h1>
-      </Hero>
+      <Hero />
       <>
         <Carousel />
         <Skils />
@@ -22,4 +20,3 @@ const Services = () => {
 };
 
 export default Services;
-

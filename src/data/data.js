@@ -4,8 +4,11 @@ export const Language = {
       brandText:
         'Learn more about our startup, which is the best we can for you and here we continue with a text that is clear, short and I need to call the action to click',
     },
+
     about: {
-      hero_title: 'Know more about us...',
+      hero_scape: 'Escape',
+      hero_title: 'into an amazing experience',
+      nextPage: 'Check our Services',
       bio_title: 'Long Story Short',
       bio_text: ` The adventure begins! Living the present and looking towards the
       future, DESIGN & VANGUARDIA, was born as a result of the
@@ -42,7 +45,9 @@ export const Language = {
         'Conoce mas acerca de nuestra empeza, que es lo mejor que podemos hacer para ti y aqui continuamos con un texto sea claro, corto y precizo que llame a la accion de dar click',
     },
     about: {
-      hero_title: 'Conocenos un poco mas...',
+      hero_scape: 'Escapa',
+      hero_title: 'a una experienca increible.',
+      nextPage: 'Revisa nuestros Servicios',
       bio_title: 'Resumiendo',
       bio_text: `La aventura comienza! Viviendo el presente y con mira hacia el
         futuro, DISEÑO & VANGUARDIA, nace como resultado de la
