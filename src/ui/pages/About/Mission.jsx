@@ -7,14 +7,13 @@ import Description from './Description';
 
 const Mission = () => {
   const lang = useSelector((state) => state.langReducer);
+  const title = Language[`${lang}`].about.banner_missionTitle;
+  const text = Language[`${lang}`].about.banner_missionText;
   return (
     <Container className='about__mision-container'>
       <Row>
         <Col>
-          <Description
-            title={Language[`${lang}`].about.banner_missionTitle}
-            text={Language[`${lang}`].about.banner_missionText}
-          />
+          <Description title={title} text={text} />
         </Col>
       </Row>
     </Container>

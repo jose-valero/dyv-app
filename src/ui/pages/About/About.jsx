@@ -4,26 +4,27 @@ import { Language } from '../../../data/data';
 import { useSelector } from 'react-redux';
 import Values from './Values';
 import Mission from './Mission';
-
-import { PageContainer } from '../../components/Container';
-import { Hero } from '../../components/Hero';
+import { PageContainer } from '../../components/Container/PageContainer';
+import Hero from '../../components/Hero/Hero';
 import AOS from 'aos';
-import './About.scss';
 import Bio from './Bio';
+import NextView from '../../components/NextView/NextView';
+import './About.scss';
 
 const About = () => {
   const lang = useSelector((state) => state.langReducer);
+  const text = Language[`${lang}`].about.nextPage;
   AOS.init();
   return (
     <>
+      {/* colocar todos los props aqui ___________ */}
       <PageContainer>
-        <Hero>
-          <h1>{Language[`${lang}`].about.hero_title}</h1>
-        </Hero>
+        <Hero />
         <>
           <Bio />
           <Mission />
           <Values />
+          <NextView nextTo={text} goTo='/services' />
         </>
       </PageContainer>
     </>

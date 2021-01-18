@@ -11,25 +11,73 @@ import Description from './Description';
 
 const Values = () => {
   const lang = useSelector((state) => state.langReducer);
+  const title = Language[`${lang}`].about.banner_valuesTitle;
+  const text = Language[`${lang}`].about.banner_valuesText;
+
   return (
     <Container className='about__mission-container'>
       <Row className='about__mission-row'>
-        <Col className='about__mission-row-images'>
-          <Image src={kitchen} className='about__mission-row--images--items' />
+        <Col
+          xs='12'
+          sm='12'
+          md='4'
+          lg='4'
+          xl='4'
+          className='about__mission-row-images '
+        >
+          <div className='about__mission--hovereffect'>
+            <Image
+              src={kitchen}
+              className='about__mission-row--images--items'
+              alt='Diseño y Vanguardia - Modern Kitchen - Italian Design - Interior - Design'
+            />
+            <div className='about__mission--overlay'>
+              <h2>Text</h2>
+            </div>
+          </div>
         </Col>
-        <Col className='about__mission-row-images'>
-          <Image src={living} className='about__mission-row--images--items' />
+        <Col
+          xs='12'
+          sm='12'
+          md='4'
+          lg='4'
+          xl='4'
+          className='about__mission-row--images'
+        >
+          <div className='about__mission--hovereffect'>
+            <Image
+              src={living}
+              className='about__mission-row--images--items'
+              alt='Diseño y Vanguardia - Modern Living - Italian Design - Interior - Design'
+            />
+            <div className='about__mission--overlay'>
+              <h2>Text</h2>
+            </div>
+          </div>
         </Col>
-        <Col className='about__mission-row-images'>
-          <Image src={rest} className='about__mission-row--images--items' />
+        <Col
+          xs='12'
+          sm='12'
+          md='4'
+          lg='4'
+          xl='4'
+          className='about__mission-row--images '
+        >
+          <div className='about__mission--hovereffect'>
+            <Image
+              src={rest}
+              className='about__mission-row--images--items'
+              alt='Diseño y Vanguardia - Modern Rest - Italian Design - Interior - Design'
+            />
+            <div className='about__mission--overlay'>
+              <h2>Text</h2>
+            </div>
+          </div>
         </Col>
       </Row>
       <Row>
         <Col>
-          <Description
-            title={Language[`${lang}`].about.banner_valuesTitle}
-            text={Language[`${lang}`].about.banner_valuesText}
-          />
+          <Description title={title} text={text} />
         </Col>
       </Row>
     </Container>
