@@ -150,29 +150,4 @@
     }
   }
 }
-.about__banner-desc-content {
-  padding-top: 2rem;
-  // background-color:violet;
-  text-align: center;
-  &--title {
-    @include font-size($h1-font-sizes);
-    &::after {
-      content: '';
-      display: block;
-      border-bottom: 3px solid $warm_oj-1;
-      margin: 0 auto;
-      width: 30%;
-      padding-top: 10px;
-      border-radius: 2.5px;
-    }
-  }
-  &--text {
-    margin: 2rem;
-    &::after {
-      content: '';
-      display: block;
-      border-bottom: 1px $pal-1_gray-4 solid;
-      padding-top: 10px;
-    }
-  }
-}
+
