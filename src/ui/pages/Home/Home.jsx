@@ -2,7 +2,7 @@ import Button from '../../components/Button';
 import { useSelector } from 'react-redux';
 import { Language } from '../../../data/data';
 import AOS from 'aos';
-import homeImg from './assets/1.jpg';
+import homeImg from '../../../assets/images/1.jpg';
 import Logo from '../../../assets/images/LogoLight.png';
 import './Home.scss';
 import 'aos/dist/aos.css';

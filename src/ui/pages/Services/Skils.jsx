@@ -1,40 +1,64 @@
+import Row from 'react-bootstrap/Row';
+import Container from 'react-bootstrap/Container';
+import Col from 'react-bootstrap/Col';
+import Card from 'react-bootstrap/Card';
 import skillImg from '../../../assets/images/2.jpg';
+import './Skills.scss';
 
 const Skils = () => {
   return (
-    <div className='skills__container'>
-      <div className='dyv__container'>
-        <div className='dyv__row'>
-          <div className='skills__block dyv__col-xl-4 dyv__col-lg-4 dyv__col-md-4 dyv__col-sm-4'>
-            <img src={skillImg} alt='...' />
-            <p>OFfice Decorate</p>
-          </div>
-          <div className='skills__block dyv__col-xl-4 dyv__col-lg-4 dyv__col-md-4 dyv__col-sm-4'>
-            <img src={skillImg} alt='...' />
-            <p>Home Decorate</p>
-          </div>
-          <div className='skills__block dyv__col-xl-4 dyv__col-lg-4 dyv__col-md-4 dyv__col-sm-4'>
-            <img src={skillImg} alt='...' />
-            <p>LIGHTING DECORATE</p>
-          </div>
-        </div>
+    <Container className=' '>
+      <Row className='row align-middle'>
+        <Col md='6' lg='4' className='column'>
+          <Card className=''>
+            <div className='txt'>
+              <h1>
+                BRANDING AND <br />
+                CORPORATE DESIGN
+              </h1>
+              <p>Visual communication and problem-solving</p>
+            </div>
+            <a href='#'>more</a>
+            <div className='ico-card'>
+              <img src={skillImg} className='w-100 p-0 m-0' />
+              {/* <i className='fa fa-rebel'></i> */}
+            </div>
+          </Card>
+        </Col>
 
-        <div className='dyv__row'>
-          <div className='skills__block dyv__col-xl-4 dyv__col-lg-4 dyv__col-md-4 dyv__col-sm-4'>
-            <img src={skillImg} alt='...' />
-            <p>Smart Kitchen Setup</p>
+        <Col md='6' lg='4' className='column'>
+          <div className='card gr-2'>
+            <div className='txt'>
+              <h1>
+                Web Front-End <br />
+                SOLUTIONS
+              </h1>
+              <p>How design is implemented on the web.</p>
+            </div>
+            <a href='#'>more</a>
+            <div className='ico-card'>
+              <img src={skillImg} className='w-100' />
+              {/* <i className='fa fa-codepen'></i> */}
+            </div>
           </div>
-          <div className='skills__block dyv__col-xl-4 dyv__col-lg-4 dyv__col-md-4 dyv__col-sm-4'>
-            <img src={skillImg} alt='...' />
-            <p>Kitchen Sink Design</p>
+        </Col>
+        <Col md='6' lg='4' className='column'>
+          <div className='card gr-3'>
+            <div className='txt'>
+              <h1>
+                UX/UI WEBsite <br /> AND MOBILE app
+              </h1>
+              <p>User Interface and User Experience Design.</p>
+            </div>
+            <a href='#'>more</a>
+            <div className='ico-card'>
+              <img src={skillImg} className='w-100' />
+              {/* <i className='fa fa-empire'></i> */}
+            </div>
           </div>
-          <div className='skills__block dyv__col-xl-4 dyv__col-lg-4 dyv__col-md-4 dyv__col-sm-4'>
-            <img src={skillImg} alt='...' />
-            <p>Lobby Interior Design</p>
-          </div>
-        </div>
-      </div>
-    </div>
+        </Col>
+      </Row>
+    </Container>
   );
 };
 

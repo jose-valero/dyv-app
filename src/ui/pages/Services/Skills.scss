@@ -1,0 +1,121 @@
+@import '../../../styles/variables';
+
+$gr-1: linear-gradient(170deg, $warm_oj-3 0%, $pal-1_gray-2 100%);
+$gr-2: linear-gradient(170deg, $warm_oj-2 0%, $pal-1_gray-3 100%);
+$gr-3: linear-gradient(170deg, $warm_oj-1 0%, $pal-1_gray-4 100%);
+
+.gr-1 {
+  background-color: red;
+  padding: 0;
+  margin: 0;
+}
+.gr-2 {
+  background: $gr-2;
+}
+.gr-3 {
+  background: $gr-3;
+}
+
+* {
+  transition: 0.5s;
+}
+
+// .h-100 {
+//   height: 100vh !important;
+// }
+// .align-middle {
+//   position: relative;
+//   top: 50%;
+//   transform: translateY(-50%);
+// }
+
+.column {
+  // background-color: red;
+  margin-top: 3rem;
+  padding-left: 3rem;
+  &:hover {
+    padding-left: 0;
+    .card .txt {
+      margin-left: 1rem;
+      h1,
+      p {
+        color: $pal-1_white;
+        opacity: 1;
+      }
+    }
+    a {
+      color: $pal-1_white;
+      &:after {
+        width: 10%;
+      }
+    }
+  }
+}
+.card {
+  background-color: red;
+  min-height: 170px;
+  margin: 0;
+  padding: 1.7rem 1.2rem;
+  border: none;
+  border-radius: 0;
+  color: rgba(0, 0, 0, 1);
+  letter-spacing: 0.05rem;
+  // font-family: 'Oswald', sans-serif;
+  box-shadow: 0 0 21px $pal-1_dark;
+  .txt {
+    margin-left: -3rem;
+    z-index: 1;
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 300;
+      text-transform: uppercase;
+    }
+    p {
+      font-size: 0.7rem;
+      // font-family: 'Open Sans', sans-serif;
+      letter-spacing: 0rem;
+      margin-top: 33px;
+      opacity: 0;
+      color: $pal-1_white;
+    }
+  }
+  a {
+    z-index: 3;
+    font-size: 0.7rem;
+    color: rgba(0, 0, 0, 1);
+    margin-left: 1rem;
+    position: relative;
+    bottom: -0.5rem;
+    text-transform: uppercase;
+    &:after {
+      content: '';
+      display: inline-block;
+      height: 0.5em;
+      width: 0;
+      margin-right: -100%;
+      margin-left: 10px;
+      border-top: 1px solid $pal-1_white;
+      transition: 0.5s;
+    }
+  }
+  .ico-card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  // i {
+  //   position: relative;
+  //   right: -50%;
+  //   top: 60%;
+  //   font-size: 12rem;
+  //   line-height: 0;
+  //   opacity: 0.2;
+  //   color: $pal-1_white;
+  //   z-index: 0;
+  // }
+}
