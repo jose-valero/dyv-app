@@ -1,10 +1,13 @@
+import React from 'react';
 import './style.scss';
 
-function InputText({ id, label }) {
+const InputText = React.forwardRef(({ label, onChange, value }, ref) => {
     const onInputAnimation = (e) => {
-        e.target.parentElement.previousElementSibling.classList.toggle('InputLabel-shrink');
-        e.target.parentElement.previousElementSibling.classList.toggle('InputLabel-focused');
-        e.target.parentElement.classList.toggle('InputLabel-focused');
+        if (!value) {
+            e.target.parentElement.previousElementSibling.classList.toggle('InputLabel-shrink');
+            e.target.parentElement.previousElementSibling.classList.toggle('InputLabel-focused');
+            e.target.parentElement.classList.toggle('InputLabel-focused');
+        }
     }
 
     return (
@@ -12,7 +15,9 @@ function InputText({ id, label }) {
             <label className="InputLabel-root InputLabel-animated InputLabel-formControl">{label}</label>
             <div className="input__inner">
                 <input 
-                    id={id && id} 
+                    value={value}
+                    onChange={onChange}
+                    ref={ref && ref}
                     className="full_w" 
                     type="text" 
                     onFocus={onInputAnimation} 
@@ -21,6 +26,6 @@ function InputText({ id, label }) {
             </div>
         </div>
     )
-}
+});
 
 export default InputText;
