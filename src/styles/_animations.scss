@@ -19,12 +19,13 @@
 }
 
 @mixin transition_all {
-  -webkit-transition: all 0.6s;
-  -moz-transition: all 0.6s;
-  -ms-transition: all 0.6s;
-  -o-transition: all 0.6s;
-  transition: all 0.6s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
 }
+
 @mixin transition_ease_out1 {
   -webkit-transition: all 1s ease-out;
   -moz-transition: all 1s ease-out;
