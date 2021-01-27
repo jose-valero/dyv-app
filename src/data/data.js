@@ -30,6 +30,7 @@ export const Language = {
     },
     services: {
       hero_title: 'know more about our services',
+      nextPage: "Take a look Around"
     },
     navbar: {
       knowus: 'about',
@@ -70,6 +71,7 @@ export const Language = {
     },
     services: {
       hero_title: 'Conoce nuestros serivicios',
+      nextPage: "Echa un vistazo"
     },
     navbar: {
       knowus: 'conocenos',
