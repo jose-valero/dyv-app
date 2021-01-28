@@ -9,6 +9,7 @@ import Col from "react-bootstrap/Col";
 const Contact = () => {
     const [name, setName] = useState("");
     const [lastName, setLastName] = useState("");
+    const [email, setEmail] = useState("");
     const [textArea, setTextArea] = useState("");
     const nameInputRef = React.createRef();
 
@@ -62,6 +63,17 @@ const Contact = () => {
                                                     setLastName(e.target.value)
                                                 }
                                                 label="Apellido"
+                                            />
+                                        </Col>
+                                    </Row>
+                                    <Row>
+                                        <Col>
+                                            <InputText
+                                                value={email}
+                                                onChange={e =>
+                                                    setEmail(e.target.value)
+                                                }
+                                                label="Email"
                                             />
                                         </Col>
                                     </Row>
