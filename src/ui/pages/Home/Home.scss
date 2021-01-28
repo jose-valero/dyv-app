@@ -1,0 +1,116 @@
+@import '../../../styles/animations';
+@import '../../../styles/fonts';
+@import '../../../styles/media';
+@import '../../../styles/mixins';
+@import '../../../styles/variables';
+
+.home__container {
+  // @include fluid;
+  height: auto;
+  margin-top: 50px;
+  display: flex;
+  height: auto;
+  position: relative;
+
+  @include breakpoint(tablet_port) {
+    display: block;
+  }
+  @include breakpoint(mobile) {
+    display: block;
+    overflow: hidden;
+    height: auto;
+  }
+}
+
+.home__left-section {
+  background-color: $pal-1_white;
+  width: 70%;
+  height: auto;
+  overflow: visible;
+  z-index: 100;
+
+  @include breakpoint(mobile) {
+    width: 100%;
+    height: auto;
+  }
+  @include breakpoint(tablet_port) {
+    width: 100%;
+    height: auto;
+  }
+
+  .home__left-content {
+    width: 100%;
+    &--aside {
+      img {
+        overflow: hidden;
+        position: relative;
+        z-index: 100;
+        width: 95%;
+        box-shadow: 0px 0px 28px -6px $pal-1_dark;
+        border-radius: 5px;
+        margin: 8% 0rem 15% 8%;
+
+        @include breakpoint(mobile) {
+          margin: 3rem 5%;
+          width: 90%;
+        }
+        @include breakpoint(tablet_port) {
+          margin: 3rem 5%;
+          width: 90%;
+        }
+      }
+    }
+  }
+}
+
+.home__right-section {
+  @include centerFlex;
+  background-color: $pal-1_gray-1;
+  width: 30%;
+  height: auto;
+  z-index: 99;
+  align-items: center;
+  @include breakpoint(mobile) {
+    width: 100%;
+    height: auto;
+  }
+  @include breakpoint(tablet_port) {
+    width: 100%;
+    height: auto;
+  }
+  .home__right-content {
+    @include breakpoint(mobile) {
+      padding: 1rem;
+    }
+
+    &--aside {
+      margin: 10%;
+      width: auto;
+      height: auto;
+      text-align: end;
+      @include breakpoint(mobile) {
+        text-align: center;
+      }
+      @include breakpoint(tablet_port) {
+        text-align: center;
+      }
+      p {
+        @include font-size($p-font-sizes);
+        text-align: center;
+        color: $pal-1_white;
+      }
+      & img {
+        width: 80%;
+        height: auto;
+        margin: 0 10%;
+        @include breakpoint(mobile) {
+          margin: 5%;
+          width: 50%;
+        }
+        @include breakpoint(tablet_port) {
+          width: 50%;
+        }
+      }
+    }
+  }
+}

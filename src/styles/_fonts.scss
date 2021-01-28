@@ -1,0 +1,73 @@
+$breakpoints: (
+  small: 480px,
+  medium: 700px,
+  medium_large: 900px,
+  large: 1024px,
+  large_xl: 1440px,
+  large_xxl: 1721px,
+);
+
+$h1-font-sizes: (
+  null: 18px,
+  small: 20px,
+  medium: 23px,
+  medium_large: 28px,
+  large: 28px,
+  large_xl: 30px,
+  large_xxl: 30px,
+);
+
+$p-font-sizes: (
+  null: 12px,
+  small: 14px,
+  medium: 16px,
+  medium_large: 18px,
+  large: 21px,
+  large_xl: 23px,
+  large_xxl: 25px,
+);
+
+$a-font-sizes: (
+  null: 9px,
+  small: 10px,
+  medium: 10px,
+  medium_large: 12px,
+  large: 14px,
+  large_xl: 16px,
+  large_xxl: 17px,
+);
+
+$small-font-sizes: (
+  null: 6px,
+  small: 7px,
+  medium: 8px,
+  medium_large: 9px,
+  large: 10px,
+  large_xl: 12px,
+  large_xxl: 14px,
+);
+
+@mixin font-size($fs-map, $fs-breakpoints: $breakpoints) {
+  @each $fs-breakpoint, $fs-font-size in $fs-map {
+    @if $fs-breakpoint == null {
+      @include make-font-size($fs-font-size);
+    } @else {
+      @if map-has-key($fs-breakpoints, $fs-breakpoint) {
+        $fs-breakpoint: map-get($fs-breakpoints, $fs-breakpoint);
+      }
+      @media screen and (min-width: $fs-breakpoint) {
+        @include make-font-size($fs-font-size);
+      }
+    }
+  }
+}
+@mixin make-font-size($fs-font-size) {
+  @if type-of($fs-font-size) == string {
+    // font-size: nth($fs-font-size, 1);
+    // @if (length($fs-font-size) > 1) {
+    //   line-height: nth($fs-font-size, 2);
+    // }
+  } @else {
+    font-size: $fs-font-size;
+  }
+}

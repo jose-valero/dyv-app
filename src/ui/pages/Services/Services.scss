@@ -1,0 +1,40 @@
+@import '../../../styles/animations';
+@import '../../../styles/fonts';
+@import '../../../styles/keyframes';
+@import '../../../styles/media';
+@import '../../../styles/mixins';
+@import '../../../styles/variables';
+.skills__container {
+  align-items: center;
+  margin: 0 auto;
+  // background-color: khaki;
+  // display: block;
+}
+.skills__block {
+  // background-image: url('../../../assets/images/2.jpg');
+  background-color: $pal-1_white;
+  width: 150px;
+  height: auto;
+  @include bgCoverCenter;
+  margin: 0.75rem;
+  display: block;
+  // border: 1px blue dotted;
+  &:hover {
+    @include transition_ease_out3;
+    box-shadow: 0 3px 6px 0 $warm_gray;
+  }
+  // @include centerFlex;
+  & img {
+    @include centerFlex;
+    width: 100%;
+    margin: 0.25rem auto;
+  }
+  & p {
+    text-align: center;
+    text-transform: uppercase;
+    background-color:$pal-1_gray-1;
+    color: $pal-1_white;
+    white-space: nowrap;
+    @include font-size($p-font-sizes);
+  }
+}
