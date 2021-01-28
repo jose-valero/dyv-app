@@ -1,7 +1,14 @@
 export const Language = {
   EN: {
+    home: {
+      brandText:
+        'Learn more about our startup, which is the best we can for you and here we continue with a text that is clear, short and I need to call the action to click',
+    },
+
     about: {
-      hero_title: 'Know more about us...',
+      hero_scape: 'Escape',
+      hero_title: 'into an amazing experience',
+      nextPage: 'Check our Services',
       bio_title: 'Long Story Short',
       bio_text: ` The adventure begins! Living the present and looking towards the
       future, DESIGN & VANGUARDIA, was born as a result of the
@@ -14,17 +21,34 @@ export const Language = {
       hand in hand with aesthetics, that each space has personality and
       tell a story, which suits your needs and up-to-the-minute. AT
        DISEÑO & VANGUARDIA WE CREATE YOUR DREAM SPACE!`,
-      banner_tech: 'Best Technologies',
-      banner_art: 'Artistic focus',
-      banner_tools: 'Awesome tools',
+      banner_missionTitle: 'Our Mision',
+      banner_missionText:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minima exercitationem earum, molestias est reprehenderit adipisci ipsum ipsa ullam officiis esse? Itaque officia cumque, provident ipsam sunt perferendis sit totam?',
+      banner_valuesTitle: 'Our Worth',
+      banner_valuesText:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minima exercitationem earum, molestias est reprehenderit adipisci ipsum ipsa ullam officiis esse? Itaque officia cumque, provident ipsam sunt perferendis sit totam?',
     },
     services: {
       hero_title: 'know more about our services',
+      nextPage: "Take a look Around"
+    },
+    navbar: {
+      knowus: 'about',
+      services: 'services',
+      portafolio: 'portafolio',
+      clients: 'clients',
+      contact: 'contact',
     },
   },
   ES: {
+    home: {
+      brandText:
+        'Conoce mas acerca de nuestra empeza, que es lo mejor que podemos hacer para ti y aqui continuamos con un texto sea claro, corto y precizo que llame a la accion de dar click',
+    },
     about: {
-      hero_title: 'Conocenos un poco mas...',
+      hero_scape: 'Escapa',
+      hero_title: 'a una experienca increible.',
+      nextPage: 'Revisa nuestros Servicios',
       bio_title: 'Resumiendo',
       bio_text: `La aventura comienza! Viviendo el presente y con mira hacia el
         futuro, DISEÑO & VANGUARDIA, nace como resultado de la
@@ -38,12 +62,23 @@ export const Language = {
         la estética, que cada espacio tenga personalidad y cuente una
         historia, el cual se adapte a sus necesidades y al día- día.
         EN DISEÑO & VANGUARDIA CREAMOS SU ESPACIO DE ENSUEÑO!`,
-      banner_tech: 'Mejores Tecnologias',
-      banner_art: 'Conceptos Artisticos',
-      banner_tools: 'Herramientas Increibles',
+      banner_missionTitle: 'Nuestra Misión',
+      banner_missionText:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minima exercitationem earum, molestias est reprehenderit adipisci ipsum ipsa ullam officiis esse? Itaque officia cumque, provident ipsam sunt perferendis sit totam?',
+      banner_valuesTitle: 'Nuestros Valores',
+      banner_valuesText:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minima exercitationem earum, molestias est reprehenderit adipisci ipsum ipsa ullam officiis esse? Itaque officia cumque, provident ipsam sunt perferendis sit totam?',
     },
     services: {
       hero_title: 'Conoce nuestros serivicios',
+      nextPage: "Echa un vistazo"
+    },
+    navbar: {
+      knowus: 'conocenos',
+      services: 'servicios',
+      portafolio: 'portafolio',
+      clients: 'clientes',
+      contact: 'contacto',
     },
   },
 };
@@ -52,31 +87,31 @@ export const Skills = [
   {
     id: 1,
     name: 'OFfice Decorate',
-    image: ('../assets/images/Logo.png'),
+    image: '../assets/images/Logo.png',
   },
   {
     id: 2,
     name: 'Home Decorate',
-    image: ('../assets/images/Logo.png'),
+    image: '../assets/images/Logo.png',
   },
   {
     id: 3,
     name: 'LIGHTING DECORATE',
-    image: ('../assets/images/Logo.png'),
+    image: '../assets/images/Logo.png',
   },
   {
     id: 4,
     name: 'Smart Kitchen Setup',
-    image: ('../assets/images/Logo.png'),
+    image: '../assets/images/Logo.png',
   },
   {
     id: 5,
     name: 'Kitchen Sink Design',
-    image: ('../assets/images/Logo.png'),
+    image: '../assets/images/Logo.png',
   },
   {
     id: 6,
     name: 'Lobby Interior Design',
-    image: ('../assets/images/Logo.png'),
+    image: '../assets/images/Logo.png',
   },
 ];

@@ -1,27 +1,34 @@
-import { connect } from 'react-redux';
-import { PageContainer } from '../../components/Container';
-import Carousel from './Carousel';
+// import { useSelector } from 'react-redux';
+import { PageContainer } from '../../components/Container/PageContainer';
+import CarouselPage from './CarouselPage';
+import { useSelector } from 'react-redux';
+import NextView from '../../components/NextView/NextView';
 import { Language } from '../../../data/data';
-import { Hero } from '../../components/Hero';
+import Hero from '../../components/Hero/Hero';
 import Skils from './Skils';
+import Description from '../../components/BannerDescription/Description';
 import './Services.scss';
 
-const Services = ({ langReducer }) => {
+const Services = () => {
+  const lang = useSelector((state) => state.langReducer);
+  const nextPageText = Language[`${lang}`].services.nextPage;
+
   return (
     <PageContainer>
-      <Hero>
-        <h1>{Language[`${langReducer}`].services.hero_title}</h1>
-      </Hero>
-      <>
-        <Carousel />
-        <Skils />
-      </>
+      <Hero />
+      <Description
+        text='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae cum impedit quisquam vel accusantium ducimus, necessitatibus nam aliquam atque esse repellendus blanditiis quos totam omnis quo enim. Doloribus, alias perferendis?'
+        title='title'
+      />
+      <CarouselPage />
+      <Description
+        text='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae cum impedit quisquam vel accusantium ducimus, necessitatibus nam aliquam atque esse repellendus blanditiis quos totam omnis quo enim. Doloribus, alias perferendis?'
+        title='title'
+      />
+      <Skils />
+      <NextView nextTo={nextPageText} goTo={'/portafolio'} />
     </PageContainer>
   );
 };
-const mapStateToProps = (state) => {
-  return {
-    langReducer: state.langReducer,
-  };
-};
-export default connect(mapStateToProps, {})(Services);
+
+export default Services;

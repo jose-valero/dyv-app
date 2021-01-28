@@ -12,7 +12,7 @@
 }
 .skills__block {
   // background-image: url('../../../assets/images/2.jpg');
-  background-color: $pal-2_white;
+  background-color: $pal-1_white;
   width: 150px;
   height: auto;
   @include bgCoverCenter;
@@ -33,7 +33,7 @@
     text-align: center;
     text-transform: uppercase;
     background-color:$pal-1_gray-1;
-    color: $pal-2_white;
+    color: $pal-1_white;
     white-space: nowrap;
     @include font-size($p-font-sizes);
   }
