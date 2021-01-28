@@ -1,7 +1,5 @@
 import Carousel from 'react-bootstrap/Carousel';
 import image1 from '../../../assets/images/4.jpg';
-import image2 from '../../../assets/images/10.jpg';
-import image3 from '../../../assets/images/2.jpg';
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
