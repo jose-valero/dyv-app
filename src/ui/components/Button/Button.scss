@@ -35,19 +35,19 @@
     margin: 0 auto;
     letter-spacing: 2px;
     text-decoration: none;
+    & a {
+      text-decoration: none !important;
+      color: $pal-1_white !important;
+    }
   }
 
   &:hover {
     .o1 {
-      fill: rgba(#cfad97, 0.3) ;
+      fill: rgba(#cfad97, 0.3);
     }
 
     .o2 {
       stroke-dashoffset: -420;
     }
   }
-}
-a {
-  text-decoration: none !important;
-  color: $pal-1_white !important;
 }

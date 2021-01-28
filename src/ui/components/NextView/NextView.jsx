@@ -13,6 +13,7 @@ export const PageLink = styled.h4`
     color: #cfad97;
     transform: scale(1.1);
     transition: all 0.3s ease-out;
+    text-decoration: none;
   }
   @media (max-width: 768px) {
     font-size: 16px;
@@ -22,7 +23,7 @@ export const PageLink = styled.h4`
 const NextView = ({ nextTo, goTo }) => {
   return (
     <PageLinkContainer>
-      <Link to={goTo}>
+      <Link to={goTo} style={{ textDecoration: 'none' }}>
         <PageLink>
           {nextTo}
           <BsArrowRight className='ml-2' />
