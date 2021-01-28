@@ -3,11 +3,8 @@ import { Link } from 'react-router-dom';
 import { BsArrowRight } from 'react-icons/bs';
 
 export const PageLinkContainer = styled.div`
-  margin: 3% 10% 0 0;
+  margin: 3% 10%;
   text-align: right;
-  @media (max-width: 768px) {
-    margin: 3% 10% 0 0;
-  }
 `;
 export const PageLink = styled.h4`
   color: #dda987;

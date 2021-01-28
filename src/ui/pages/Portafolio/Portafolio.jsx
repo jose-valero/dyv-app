@@ -6,7 +6,7 @@ import './Portafolio.scss';
 const Portafolio = () => {
   return (
     <PageContainer>
-      <Hero></Hero>
+      <Hero displayOnPage="portafolio"/>
     </PageContainer>
   );
 };

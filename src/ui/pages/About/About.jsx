@@ -21,7 +21,7 @@ const About = () => {
     <>
       {/* colocar todos los props aqui ___________ */}
       <PageContainer>
-        <Hero />
+        <Hero displayOnPage="about"/>
         <Bio />
         <Description title={misionTitle} text={missionText} />
         <Values />

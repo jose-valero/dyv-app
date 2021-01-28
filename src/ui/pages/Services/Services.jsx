@@ -15,7 +15,7 @@ const Services = () => {
 
   return (
     <PageContainer>
-      <Hero />
+      <Hero displayOnPage="services"/>
       <Description
         text='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae cum impedit quisquam vel accusantium ducimus, necessitatibus nam aliquam atque esse repellendus blanditiis quos totam omnis quo enim. Doloribus, alias perferendis?'
         title='title'

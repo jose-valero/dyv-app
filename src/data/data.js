@@ -4,7 +4,10 @@ export const Language = {
       brandText:
         'Learn more about our startup, which is the best we can for you and here we continue with a text that is clear, short and I need to call the action to click',
     },
-
+    contact: {
+      hero_scape: 'Contact',
+      hero_title: 'with us for mile',
+    },
     about: {
       hero_scape: 'Escape',
       hero_title: 'into an amazing experience',
@@ -32,6 +35,11 @@ export const Language = {
       hero_title: 'know more about our services',
       nextPage: "Take a look Around"
     },
+    portafolio: {
+      hero_scape: "first",
+      hero_title: 'second lorem impsu portafolio',
+      nextPage: "Take a look Around"
+    },
     navbar: {
       knowus: 'about',
       services: 'services',
@@ -44,6 +52,15 @@ export const Language = {
     home: {
       brandText:
         'Conoce mas acerca de nuestra empeza, que es lo mejor que podemos hacer para ti y aqui continuamos con un texto sea claro, corto y precizo que llame a la accion de dar click',
+    },
+    contact: {
+      hero_scape: 'Contactate',
+      hero_title: 'con noches a mil xD',
+    },
+    portafolio: {
+      hero_scape: "primero",
+      hero_title: 'segundo lorem ipsu portafolio',
+      nextPage: "Take a look Around"
     },
     about: {
       hero_scape: 'Escapa',
