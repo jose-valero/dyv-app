@@ -18,7 +18,7 @@ const InputText = React.forwardRef(({ label, onChange, value }, ref) => {
                     value={value}
                     onChange={onChange}
                     ref={ref && ref}
-                    className="full_w" 
+                    className="w-100" 
                     type="text" 
                     onFocus={onInputAnimation} 
                     onBlur={onInputAnimation}

@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "./Contact.scss";
 import bgFormImage from "../assets/images/form-bg.jpeg";
-import InputText from "../InputText";
+import InputText from "../../../components/InputText";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { PageContainer } from "../../../components/Container/PageContainer";
+import Hero from "../../../components/Hero/Hero";
 
 const Contact = () => {
     const [name, setName] = useState("");
@@ -24,26 +26,27 @@ const Contact = () => {
     }, []);
 
     return (
-        <div className="contact__container">
-            <Container fluid className="form__container no_padding">
+        <PageContainer>
+            <Hero displayOnPage="contact" />
+            <Container fluid className="form__container">
                 <Row>
-                    <Col xs={12} md={6} className="no_padding">
+                    <Col xs={12} md={6} className="p-0">
                         <figure>
                             <img src={bgFormImage} alt="" />
                         </figure>
                     </Col>
                     <Col xs={12} md={6}>
-                        <Row className="inner_form_wrapper">
+                        <Row className="form__row">
                             <Col>
                                 <form onSubmit={onSubmitForm}>
-                                    <Row>
+                                    <Row className="form__row-contactus">
                                         <Col>
-                                            <h1 className="text_center">
+                                            <h1 className="text-center">
                                                 CONTACTANOS
                                             </h1>
                                         </Col>
                                     </Row>
-                                    <Row>
+                                    <Row className="form__row-name">
                                         <Col>
                                             <InputText
                                                 value={name}
@@ -55,7 +58,7 @@ const Contact = () => {
                                             />
                                         </Col>
                                     </Row>
-                                    <Row>
+                                    <Row className="form__row-lastname">
                                         <Col>
                                             <InputText
                                                 value={lastName}
@@ -66,7 +69,7 @@ const Contact = () => {
                                             />
                                         </Col>
                                     </Row>
-                                    <Row>
+                                    <Row className="form__row-email">
                                         <Col>
                                             <InputText
                                                 value={email}
@@ -77,12 +80,12 @@ const Contact = () => {
                                             />
                                         </Col>
                                     </Row>
-                                    <Row>
+                                    <Row className="form__row-textarea">
                                         <Col>
                                             <textarea
                                                 value={textArea}
                                                 onChange={e => setTextArea(e.target.value)}
-                                                className="full_w"
+                                                className="w-100"
                                                 name="msg"
                                                 id=""
                                                 cols="30"
@@ -90,9 +93,9 @@ const Contact = () => {
                                             ></textarea>
                                         </Col>
                                     </Row>
-                                    <Row>
-                                        <Col className="submit__Container">
-                                            <input className="submit__Button" type="submit" value="ENVIAR" />
+                                    <Row className="form__row-button">
+                                        <Col className="form__row-button--submit">
+                                            <input className="form__row-button--submit---btnsubmit" type="submit" value="ENVIAR" />
                                         </Col>
                                     </Row>
                                 </form>
@@ -101,7 +104,7 @@ const Contact = () => {
                     </Col>
                 </Row>
             </Container>
-        </div>
+        </PageContainer>
     );
 };
 
