@@ -4,7 +4,7 @@ import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 
 // import Card from 'react-bootstrap/Card';
-import skillImg from '../../../assets/images/2.jpg';
+import C_010 from './assets/C_010.jpg';
 // import { FaAccusoft, FaBlackTie, FaCanadianMapleLeaf } from 'react-icons/fa';
 // import { GiTechnoHeart, GiCyberEye, GiFountain } from 'react-icons/gi';
 // import { RiHome2Line } from 'react-icons/ri';
@@ -16,7 +16,7 @@ const Skils = () => {
       {/* ROW 1 */}
       <Row className='skills__container--row '>
         <Col md={6} className='skills__container--row--left'>
-          <Image src={skillImg} className='skills__images' />
+          <Image src={C_010} className='skills__images' />
         </Col>
         <Col md={6} className='skills__container--row--right m-auto'>
           <p className='text-center m-0'>
@@ -51,7 +51,7 @@ const Skils = () => {
           xs={6}
           className='skills__container--row--right m-auto'
         >
-          <Image src={skillImg} className='skills__images' />
+          <Image src={C_010} className='skills__images' />
         </Col>
         <Col
           lg={4}
@@ -60,14 +60,14 @@ const Skils = () => {
           xs={6}
           className='skills__container--row--right m-auto'
         >
-          <Image src={skillImg} className='skills__images' />
+          <Image src={C_010} className='skills__images' />
         </Col>
       </Row>
 
       {/* ROW 3 */}
       <Row className='skills__container--row'>
         <Col md={7} className='skills__container--row--right m-auto'>
-          <Image src={skillImg} className='skills__images' />
+          <Image src={C_010} className='skills__images' />
         </Col>
         <Col md={5} className='skills__container--row--left m-auto'>
           <p className='text-center m-0'>
@@ -90,10 +90,10 @@ const Skils = () => {
           </p>
         </Col>
         <Col md={8} className='skills__container--row--right m-auto'>
-          <Image src={skillImg} className='skills__images' />
+          <Image src={C_010} className='skills__images' />
         </Col>
         <Col md={3} className='skills__container--row--right m-auto'>
-          <Image src={skillImg} className='skills__images' />
+          <Image src={C_010} className='skills__images' />
         </Col>
       </Row>
     </Container>

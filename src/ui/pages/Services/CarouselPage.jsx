@@ -1,5 +1,7 @@
 import Carousel from 'react-bootstrap/Carousel';
-import image1 from '../../../assets/images/4.jpg';
+import C_007 from './assets/C_007.jpg';
+import C_008 from './assets/C_008.jpg';
+import C_009 from './assets/C_009.jpg';
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
@@ -14,7 +16,7 @@ const CarouselPage = () => {
             <Carousel.Item>
               <img
                 className='carousel__image '
-                src={image1}
+                src={C_007}
                 alt='First slide'
               />
               <Carousel.Caption>
@@ -27,7 +29,7 @@ const CarouselPage = () => {
             <Carousel.Item>
               <img
                 className='carousel__image '
-                src={image1}
+                src={C_008}
                 alt='Third slide'
               />
 
@@ -39,7 +41,7 @@ const CarouselPage = () => {
             <Carousel.Item>
               <img
                 className='carousel__image '
-                src={image1}
+                src={C_009}
                 alt='Third slide'
               />
 

@@ -2,9 +2,9 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
-import kitchen from './assets/kitchen.jpg';
-import living from './assets/living.jpg';
-import rest from './assets/rest.jpg';
+import C_001 from './assets/C_001.jpg';
+import C_002 from './assets/C_002.jpg';
+import L_005 from './assets/L_005.jpg';
 
 const Values = () => {
   return (
@@ -20,7 +20,7 @@ const Values = () => {
         >
           <div className='about__mission--hovereffect'>
             <Image
-              src={kitchen}
+              src={C_001}
               className='about__mission-row--images--items'
               alt='Diseño y Vanguardia - Modern Kitchen - Italian Design - Interior - Design'
             />
@@ -39,7 +39,7 @@ const Values = () => {
         >
           <div className='about__mission--hovereffect'>
             <Image
-              src={living}
+              src={C_002}
               className='about__mission-row--images--items'
               alt='Diseño y Vanguardia - Modern Living - Italian Design - Interior - Design'
             />
@@ -58,7 +58,7 @@ const Values = () => {
         >
           <div className='about__mission--hovereffect'>
             <Image
-              src={rest}
+              src={L_005}
               className='about__mission-row--images--items'
               alt='Diseño y Vanguardia - Modern Rest - Italian Design - Interior - Design'
             />

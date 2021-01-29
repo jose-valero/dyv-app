@@ -2,7 +2,7 @@ import Button from '../../components/Button';
 import { useSelector } from 'react-redux';
 import { Language } from '../../../data/data';
 import AOS from 'aos';
-import homeImg from '../../../assets/images/1.jpg';
+import L_001 from './assets/L_001.jpg';
 import Logo from '../../../assets/images/LogoLight.png';
 import './Home.scss';
 import 'aos/dist/aos.css';
@@ -17,8 +17,8 @@ const Home = () => {
         <div className='home__left-content'>
           <div className='home__left-content--aside'>
             <img
-              src={homeImg}
-              alt=''
+              src={L_001}
+              alt='Diseño y Vanguardia - Interior Design - Coucine - Kitchen - Diseño de Cocinas'
               data-aos='fade-zoom-in'
               data-aos-easing='ease-in-back'
               data-aos-delay='10'
