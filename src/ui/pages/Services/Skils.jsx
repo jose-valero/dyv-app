@@ -3,11 +3,12 @@ import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 
-// import Card from 'react-bootstrap/Card';
+import B_001 from './assets/B_001.jpg';
+import C_004 from './assets/C_004.jpg';
 import C_010 from './assets/C_010.jpg';
-// import { FaAccusoft, FaBlackTie, FaCanadianMapleLeaf } from 'react-icons/fa';
-// import { GiTechnoHeart, GiCyberEye, GiFountain } from 'react-icons/gi';
-// import { RiHome2Line } from 'react-icons/ri';
+import D_001 from './assets/D_001.jpg';
+import L_004 from './assets/L_004.jpg';
+
 import './Skills.scss';
 
 const Skils = () => {
@@ -51,7 +52,7 @@ const Skils = () => {
           xs={6}
           className='skills__container--row--right m-auto'
         >
-          <Image src={C_010} className='skills__images' />
+          <Image src={B_001} className='skills__images' />
         </Col>
         <Col
           lg={4}
@@ -60,14 +61,14 @@ const Skils = () => {
           xs={6}
           className='skills__container--row--right m-auto'
         >
-          <Image src={C_010} className='skills__images' />
+          <Image src={D_001} className='skills__images' />
         </Col>
       </Row>
 
       {/* ROW 3 */}
       <Row className='skills__container--row'>
         <Col md={7} className='skills__container--row--right m-auto'>
-          <Image src={C_010} className='skills__images' />
+          <Image src={C_004} className='skills__images' />
         </Col>
         <Col md={5} className='skills__container--row--left m-auto'>
           <p className='text-center m-0'>
@@ -90,10 +91,7 @@ const Skils = () => {
           </p>
         </Col>
         <Col md={8} className='skills__container--row--right m-auto'>
-          <Image src={C_010} className='skills__images' />
-        </Col>
-        <Col md={3} className='skills__container--row--right m-auto'>
-          <Image src={C_010} className='skills__images' />
+          <Image src={L_004} className='skills__images' />
         </Col>
       </Row>
     </Container>
