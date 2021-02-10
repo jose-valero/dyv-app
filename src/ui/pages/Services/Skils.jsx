@@ -90,7 +90,10 @@ const Skils = () => {
             Doloribus, alias perferendis?
           </p>
         </Col>
-        <Col md={8} className='skills__container--row--right m-auto'>
+        <Col md={4} className='skills__container--row--right m-auto'>
+          <Image src={L_004} className='skills__images' />
+        </Col>
+        <Col md={4} className='skills__container--row--right m-auto'>
           <Image src={L_004} className='skills__images' />
         </Col>
       </Row>
