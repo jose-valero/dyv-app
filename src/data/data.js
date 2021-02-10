@@ -1,5 +1,6 @@
 export const Language = {
   EN: {
+    brand: { title: 'Diseño & Vanguardia' },
     home: {
       brandText:
         'Learn more about our startup, which is the best we can for you and here we continue with a text that is clear, short and I need to call the action to click',
@@ -33,12 +34,12 @@ export const Language = {
     },
     services: {
       hero_title: 'know more about our services',
-      nextPage: "Take a look Around"
+      nextPage: 'Take a look Around',
     },
     portafolio: {
-      hero_scape: "first",
+      hero_scape: 'first',
       hero_title: 'second lorem impsu portafolio',
-      nextPage: "Take a look Around"
+      nextPage: 'Take a look Around',
     },
     navbar: {
       knowus: 'about',
@@ -58,9 +59,9 @@ export const Language = {
       hero_title: 'con noches a mil xD',
     },
     portafolio: {
-      hero_scape: "primero",
+      hero_scape: 'primero',
       hero_title: 'segundo lorem ipsu portafolio',
-      nextPage: "Take a look Around"
+      nextPage: 'Take a look Around',
     },
     about: {
       hero_scape: 'Escapa',
@@ -81,14 +82,14 @@ export const Language = {
         EN DISEÑO & VANGUARDIA CREAMOS SU ESPACIO DE ENSUEÑO!`,
       banner_missionTitle: 'Nuestra Misión',
       banner_missionText:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minima exercitationem earum, molestias est reprehenderit adipisci ipsum ipsa ullam officiis esse? Itaque officia cumque, provident ipsam sunt perferendis sit totam?',
+        `Ofrecer <>MEJOR CALIDAD DE VIDA!</b> Realizando proyectos donde la funciona va de la mano con la estetica generando espacios que tienen personalidad y cuenta una historia, el cual se adapta a sus necesidades del dia-dia`,
       banner_valuesTitle: 'Nuestros Valores',
       banner_valuesText:
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minima exercitationem earum, molestias est reprehenderit adipisci ipsum ipsa ullam officiis esse? Itaque officia cumque, provident ipsam sunt perferendis sit totam?',
     },
     services: {
       hero_title: 'Conoce nuestros serivicios',
-      nextPage: "Echa un vistazo"
+      nextPage: 'Echa un vistazo',
     },
     navbar: {
       knowus: 'conocenos',
