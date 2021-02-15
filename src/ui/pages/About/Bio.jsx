@@ -1,5 +1,5 @@
 import ProfileImage from './assets/profile.jpeg';
-import { Language } from '../../../data/data';
+import { Language } from '../../../data';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';

@@ -3,7 +3,7 @@ import { PageContainer } from '../../components/Container/PageContainer';
 import CarouselPage from './CarouselPage';
 import { useSelector } from 'react-redux';
 import NextView from '../../components/NextView/NextView';
-import { Language } from '../../../data/data';
+import { Language } from '../../../data';
 import Hero from '../../components/Hero/Hero';
 import Skils from './Skils';
 import Description from '../../components/BannerDescription/Description';
@@ -15,7 +15,7 @@ const Services = () => {
 
   return (
     <PageContainer>
-      <Hero displayOnPage="services"/>
+      <Hero displayOnPage='services' />
       <Description
         text='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae cum impedit quisquam vel accusantium ducimus, necessitatibus nam aliquam atque esse repellendus blanditiis quos totam omnis quo enim. Doloribus, alias perferendis?'
         title='title'

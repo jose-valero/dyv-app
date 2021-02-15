@@ -1,4 +1,4 @@
-import { Language } from '../../../data/data';
+import { Language } from '../../../data';
 import { useSelector } from 'react-redux';
 import Values from './Values';
 import { PageContainer } from '../../components/Container/PageContainer';
