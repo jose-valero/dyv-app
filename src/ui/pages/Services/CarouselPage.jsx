@@ -1,3 +1,5 @@
+import { useSelector } from 'react-redux';
+import { Language } from '../../../data';
 import Carousel from 'react-bootstrap/Carousel';
 import C_007 from './assets/C_007.jpg';
 import C_008 from './assets/C_008.jpg';
@@ -8,49 +10,42 @@ import Col from 'react-bootstrap/Col';
 import './Carousel.scss';
 
 const CarouselPage = () => {
+  const lang = useSelector((state) => state.langReducer);
+  const captionTitle_1 = Language[`${lang}`].services.carousel_card_title_1;
+  const captionDesc_1 =
+    Language[`${lang}`].services.carousel_card_description_1;
+  const captionTitle_2 = Language[`${lang}`].services.carousel_card_title_2;
+  const captionDesc_2 =
+    Language[`${lang}`].services.carousel_card_description_2;
+  const captionTitle_3 = Language[`${lang}`].services.carousel_card_title_3;
+  const captionDesc_3 =
+    Language[`${lang}`].services.carousel_card_description_3;
   return (
     <Container className='my-5'>
       <Row>
         <Col>
           <Carousel>
             <Carousel.Item>
-              <img
-                className='carousel__image '
-                src={C_007}
-                alt='First slide'
-              />
+              <img className='carousel__image ' src={C_007} alt='First slide' />
               <Carousel.Caption>
-                <h3>First slide label</h3>
-                <p>
-                  Nulla vitae elit libero, a pharetra augue mollis interdum.
-                </p>
+                <h3>{captionTitle_1}</h3>
+                <p>{captionDesc_1}</p>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-              <img
-                className='carousel__image '
-                src={C_008}
-                alt='Third slide'
-              />
+              <img className='carousel__image ' src={C_008} alt='Third slide' />
 
               <Carousel.Caption>
-                <h3>Second slide label</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h3>{captionTitle_2}</h3>
+                <p>{captionDesc_2}</p>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-              <img
-                className='carousel__image '
-                src={C_009}
-                alt='Third slide'
-              />
+              <img className='carousel__image ' src={C_009} alt='Third slide' />
 
               <Carousel.Caption>
-                <h3>Third slide label</h3>
-                <p>
-                  Praesent commodo cursus magna, vel scelerisque nisl
-                  consectetur.
-                </p>
+                <h3>{captionTitle_3}</h3>
+                <p>{captionDesc_3}</p>
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>
