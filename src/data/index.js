@@ -33,8 +33,30 @@ export const Language = {
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minima exercitationem earum, molestias est reprehenderit adipisci ipsum ipsa ullam officiis esse? Itaque officia cumque, provident ipsam sunt perferendis sit totam?',
     },
     services: {
+      carousel_card_title_1: 'Text one',
+      carousel_card_title_2: 'text two',
+      carousel_card_title_3: 'text three',
+      carousel_card_description_1: 'desc 1',
+      carousel_card_description_2: 'desc 2',
+      carousel_card_description_3: 'desc 3',
       hero_title: 'know more about our services',
       nextPage: 'Take a look Around',
+<<<<<<< ours:src/data/data.js
+=======
+      skills_row1_title: 'ONLINE CONSULTING',
+      skills_row1_text:
+        'We assist each client from the beginning, offering the latest trends in products and services at an international level.',
+      skills_row2_title: 'INTERIOR DESIGN',
+      skills_row2_text:
+        'We provide integral solutions for your home, business, hotels and recreational areas.',
+      skills_row3_title: '3D',
+      skills_row3_subtitle: 'We show you the future,',
+      skills_row3_text:
+        'If you are related to the world of design and construction, it would be a pleasure for us to be part of your team, offering you a high quality work.',
+      skills_row4_title: 'PLANS',
+      skills_row4_text:
+        'We produce plans for our clients ranging from architects and interior designers to contractors, construction companies and individuals.',
+>>>>>>> theirs:src/data/index.js
     },
     portafolio: {
       hero_scape: 'first',
@@ -50,9 +72,15 @@ export const Language = {
     },
   },
   ES: {
+    brand_name: {
+      one: 'Diseño y Vanguardia',
+      two: 'Diseño & Vanguardia',
+      three: 'DISEÑO Y VANGUARDIA',
+      four: 'DISEÑO % VANGUARDIA',
+    },
     home: {
       brandText:
-        'Conoce mas acerca de nuestra empeza, que es lo mejor que podemos hacer para ti y aqui continuamos con un texto sea claro, corto y precizo que llame a la accion de dar click',
+        'Conoce mas acerca de nuestra empresa, que es lo mejor que podemos hacer para ti y aqui continuamos con un texto sea claro, corto y precizo que llame a la accion de dar click',
     },
     contact: {
       hero_scape: 'Contactate',
@@ -68,28 +96,47 @@ export const Language = {
       hero_title: 'a una experienca increible.',
       nextPage: 'Revisa nuestros Servicios',
       bio_title: 'Resumiendo',
-      bio_text: `La aventura comienza! Viviendo el presente y con mira hacia el
-        futuro, DISEÑO & VANGUARDIA, nace como resultado de la
-        pasión por el diseño y el arte en el 2015. Yusmary Villarroel,
-        su fundadora, inicia sus estudios de arquitectura en el 2006,
-        y desde el 2010 inicia su viaje por el mundo del diseño de
-        interiores. Nuestro principal OBJETIVO es ofrecer mejor
-        calidad de vida. Desarrollar proyectos que se conviertan en
-        realidad. Hacer que lo ordinario sea extraordinario. Para
-        nosotros es muy importante que la función vaya de la mano con
-        la estética, que cada espacio tenga personalidad y cuente una
-        historia, el cual se adapte a sus necesidades y al día- día.
-        EN DISEÑO & VANGUARDIA CREAMOS SU ESPACIO DE ENSUEÑO!`,
+      bio_text: `Viviendo el preseten y con mira hacia el futuro, DISEÑO Y VANGUARDIA, en 2015 nace como resultado
+      futuro, DISEÑO & VANGUARDIA, nace como resultado de la pasion por el diseño y el arte, superándose en cada uno de los proyectos`,
+      bio_text_paragraph:
+        'Yusmary Villarroel, su fundadora inicia sus estudios de arquitectura en el 2006, y desde el 2010 inicia su viaje por el mundo del diseño de espacios interiores, realizando prouyectos a nivel internacional',
       banner_missionTitle: 'Nuestra Misión',
       banner_missionText:
+<<<<<<< ours:src/data/data.js
         `Ofrecer <>MEJOR CALIDAD DE VIDA!</b> Realizando proyectos donde la funciona va de la mano con la estetica generando espacios que tienen personalidad y cuenta una historia, el cual se adapta a sus necesidades del dia-dia`,
+=======
+        'Ofrecer MEJOR CALIDAD DE VIDA! Realizando proyectos donde la función va de la mano con la estética, generando espacios que tienen personalidad y cuentan una historia, el cual se adapta a sus necesidades del dia a dia.',
+>>>>>>> theirs:src/data/index.js
       banner_valuesTitle: 'Nuestros Valores',
       banner_valuesText:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minima exercitationem earum, molestias est reprehenderit adipisci ipsum ipsa ullam officiis esse? Itaque officia cumque, provident ipsam sunt perferendis sit totam?',
+        'CALIDAD + INOVACION + SERVICIOS PERSONALIZADOS + COMPROMISO',
+      banner_valuesSubText: 'Son nuestros pilares',
     },
     services: {
+      carousel_card_title_1: 'titulo 1',
+      carousel_card_title_2: 'titulo 2',
+      carousel_card_title_3: 'titulo 3',
+      carousel_card_description_1: 'descripcion 1',
+      carousel_card_description_2: 'descripcion 2',
+      carousel_card_description_3: 'descripcion 3',
       hero_title: 'Conoce nuestros serivicios',
       nextPage: 'Echa un vistazo',
+<<<<<<< ours:src/data/data.js
+=======
+      skills_row1_title: 'ASESORIA ONLINE',
+      skills_row1_text:
+        'Acompaños a cada cliente desde el inicio, ofreciendo las últimas tendencias en productos y servicios a nivel internacional',
+      skills_row2_title: 'DISEÑO DE ESPACIOS DE INTERIORES',
+      skills_row2_text:
+        'Brindamos soluciones integrales para tu hogar, espacios corporativos, hotelería y áreas recreativas',
+      skills_row3_title: '3D',
+      skills_row3_subtitle: 'Te mostramos el futuro,',
+      skills_row3_text:
+        'Si estás relacionado con el mundo del Diseño y construcción, sería un placer para nosotros formar parte de su equipo, ofreciéndoles un trabajo de alta calidad',
+      skills_row4_title: 'PLANOS',
+      skills_row4_text:
+        'Realizamos los planos de nuestros Clientes que van desde arquitenctos y deseñadores de interiores hasta contratistas, empresas constructoras y particulares',
+>>>>>>> theirs:src/data/index.js
     },
     navbar: {
       knowus: 'conocenos',
