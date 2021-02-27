@@ -7,6 +7,10 @@ import { useSelector } from 'react-redux';
 
 const Bio = () => {
   const lang = useSelector((state) => state.langReducer);
+  const bioTittle = Language[`${lang}`].about.bio_title;
+
+  const bioText = Language[`${lang}`].about.bio_text;
+  const bioTextParagraph = Language[`${lang}`].about.bio_text_paragraph;
   return (
     <Container className='about__bio-content '>
       <Row>
@@ -18,8 +22,9 @@ const Bio = () => {
           className='about__bio-content--left-section '
         >
           <div className='about__bio-content--left-section--text'>
-            <h1>{Language[`${lang}`].about.bio_title}</h1>
-            <p>{Language[`${lang}`].about.bio_text}</p>
+            <h1>{bioTittle}</h1>
+            <p>{bioText}</p>
+            <p>{bioTextParagraph}</p>
           </div>
         </Col>
         <Col

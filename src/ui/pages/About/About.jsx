@@ -16,16 +16,21 @@ const About = () => {
   const missionText = Language[`${lang}`].about.banner_missionText;
   const valueTitle = Language[`${lang}`].about.banner_valuesTitle;
   const valueText = Language[`${lang}`].about.banner_valuesText;
+  const valueSubText = Language[`${lang}`].about.banner_valuesSubText;
   AOS.init();
   return (
     <>
       {/* colocar todos los props aqui ___________ */}
       <PageContainer>
-        <Hero displayOnPage="about"/>
+        <Hero displayOnPage='about' />
         <Bio />
         <Description title={misionTitle} text={missionText} />
         <ValuesCard />
-        <Description title={valueTitle} text={valueText} />
+        <Description
+          title={valueTitle}
+          text={valueText}
+          SubText={valueSubText}
+        />
         <NextView nextTo={nextPageText} goTo='/services' />
       </PageContainer>
     </>
