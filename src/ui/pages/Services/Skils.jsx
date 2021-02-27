@@ -92,21 +92,6 @@ const Skils = () => {
 
       {/* ROW 4 */}
       <Row className='skills__container--row'>
-<<<<<<< ours
-        <Col md={4} className='skills__container--row--left m-auto'>
-          <p className='text-center m-0'>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae cum
-            impedit quisquam vel accusantium ducimus, necessitatibus nam aliquam
-            atque esse repellendus blanditiis quos totam omnis quo enim.
-            Doloribus, alias perferendis?
-          </p>
-        </Col>
-        <Col md={4} className='skills__container--row--right m-auto'>
-          <Image src={C_010} className='skills__images' />
-        </Col>
-        <Col md={4} className='skills__container--row--right m-auto'>
-          <Image src={C_010} className='skills__images' />
-=======
         <Col md={6} className='skills__container--row--left m-auto'>
           <div className="skills__content">
             <h2 className='text-right'>{skills_row4_title}</h2>
@@ -115,7 +100,6 @@ const Skils = () => {
         </Col>
         <Col md={6} className='skills__container--row--right m-auto'>
           <Image src={P_001} className='skills__images' />
->>>>>>> theirs
         </Col>
       </Row>
     </Container>

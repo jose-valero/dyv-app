@@ -41,8 +41,6 @@ export const Language = {
       carousel_card_description_3: 'desc 3',
       hero_title: 'know more about our services',
       nextPage: 'Take a look Around',
-<<<<<<< ours:src/data/data.js
-=======
       skills_row1_title: 'ONLINE CONSULTING',
       skills_row1_text:
         'We assist each client from the beginning, offering the latest trends in products and services at an international level.',
@@ -56,7 +54,6 @@ export const Language = {
       skills_row4_title: 'PLANS',
       skills_row4_text:
         'We produce plans for our clients ranging from architects and interior designers to contractors, construction companies and individuals.',
->>>>>>> theirs:src/data/index.js
     },
     portafolio: {
       hero_scape: 'first',
@@ -102,11 +99,7 @@ export const Language = {
         'Yusmary Villarroel, su fundadora inicia sus estudios de arquitectura en el 2006, y desde el 2010 inicia su viaje por el mundo del diseño de espacios interiores, realizando prouyectos a nivel internacional',
       banner_missionTitle: 'Nuestra Misión',
       banner_missionText:
-<<<<<<< ours:src/data/data.js
-        `Ofrecer <>MEJOR CALIDAD DE VIDA!</b> Realizando proyectos donde la funciona va de la mano con la estetica generando espacios que tienen personalidad y cuenta una historia, el cual se adapta a sus necesidades del dia-dia`,
-=======
         'Ofrecer MEJOR CALIDAD DE VIDA! Realizando proyectos donde la función va de la mano con la estética, generando espacios que tienen personalidad y cuentan una historia, el cual se adapta a sus necesidades del dia a dia.',
->>>>>>> theirs:src/data/index.js
       banner_valuesTitle: 'Nuestros Valores',
       banner_valuesText:
         'CALIDAD + INOVACION + SERVICIOS PERSONALIZADOS + COMPROMISO',
@@ -121,8 +114,6 @@ export const Language = {
       carousel_card_description_3: 'descripcion 3',
       hero_title: 'Conoce nuestros serivicios',
       nextPage: 'Echa un vistazo',
-<<<<<<< ours:src/data/data.js
-=======
       skills_row1_title: 'ASESORIA ONLINE',
       skills_row1_text:
         'Acompaños a cada cliente desde el inicio, ofreciendo las últimas tendencias en productos y servicios a nivel internacional',
@@ -136,7 +127,6 @@ export const Language = {
       skills_row4_title: 'PLANOS',
       skills_row4_text:
         'Realizamos los planos de nuestros Clientes que van desde arquitenctos y deseñadores de interiores hasta contratistas, empresas constructoras y particulares',
->>>>>>> theirs:src/data/index.js
     },
     navbar: {
       knowus: 'conocenos',
