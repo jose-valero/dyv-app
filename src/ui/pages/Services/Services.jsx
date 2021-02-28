@@ -12,19 +12,19 @@ import './Services.scss';
 const Services = () => {
   const lang = useSelector((state) => state.langReducer);
   const nextPageText = Language[`${lang}`].services.nextPage;
+  // const nextPageText = Language[`${lang}`].services.nextPage;
 
   return (
     <PageContainer>
       <Hero displayOnPage='services' />
       <Description
-        text='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae cum impedit quisquam vel accusantium ducimus, necessitatibus nam aliquam atque esse repellendus blanditiis quos totam omnis quo enim. Doloribus, alias perferendis?'
-        title='titulos'
+      title="Servicios de calidad"
       />
       <CarouselPage />
-      <Description
+      {/* <Description
         text='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae cum impedit quisquam vel accusantium ducimus, necessitatibus nam aliquam atque esse repellendus blanditiis quos totam omnis quo enim. Doloribus, alias perferendis?'
         title='asd'
-      />
+      /> */}
       <Skils />
       <NextView nextTo={nextPageText} goTo={'/portafolio'} />
     </PageContainer>
