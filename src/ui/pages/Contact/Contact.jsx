@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react";
 import "./Contact.scss";
-import bgFormImage from "../assets/images/form-bg.jpeg";
-import InputText from "../../../components/InputText";
+import bgFormImage from "./assets/form-bg.jpeg";
+import InputText from "../../components/InputText";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { PageContainer } from "../../../components/Container/PageContainer";
-import Hero from "../../../components/Hero/Hero";
+import { PageContainer } from '../../components/Container/PageContainer';
 
 const Contact = () => {
     const [name, setName] = useState("");
@@ -27,7 +26,6 @@ const Contact = () => {
 
     return (
         <PageContainer>
-            <Hero displayOnPage="contact" />
             <Container fluid className="form__container">
                 <Row>
                     <Col xs={12} md={6} className="p-0">
@@ -66,6 +64,7 @@ const Contact = () => {
                                                     setLastName(e.target.value)
                                                 }
                                                 label="Apellido"
+                                                light
                                             />
                                         </Col>
                                     </Row>
