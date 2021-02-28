@@ -10,8 +10,8 @@ const Description = ({ title, text, SubText }) => {
         <Col>
           <div className='about__banner-desc-content'>
             <h2 className='about__banner-desc-content--title'>{title}</h2>
-            <p className='about__banner-desc-content--text'>{text}</p>
             <p className='text-center'>{SubText}</p>
+            <p className='about__banner-desc-content--text'>{text}</p>
           </div>
         </Col>
       </Row>

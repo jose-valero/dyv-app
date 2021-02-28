@@ -84,10 +84,10 @@
     }
 
     &--aside {
-      margin: 10%;
+      margin: 0 10%;
       width: auto;
       height: auto;
-      text-align: end;
+      // text-align: end;
       @include breakpoint(mobile) {
         text-align: center;
       }
@@ -98,6 +98,7 @@
         @include font-size($p-font-sizes);
         text-align: center;
         color: $pal-1_white;
+        // color: red;
       }
       & img {
         width: 80%;

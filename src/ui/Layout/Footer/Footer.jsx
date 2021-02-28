@@ -19,7 +19,7 @@ const Footer = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    toast.success(`🎯 Submitting email ${email}`);
+    toast.dark(`🎯 Submitting email ${email}`);
     setEmail('');
   };
 
@@ -124,7 +124,7 @@ const Footer = () => {
                   >
                     <div className='footer__social--content--items'>
                       <FaWhatsapp style={iconStyle} />
-                      <span>+54 1165986136</span>
+                      <span>+54 3816592931</span>
                     </div>
                   </a>
                 </li>
@@ -132,21 +132,9 @@ const Footer = () => {
                   <Link to='/contact'>
                     <div className='footer__social--content--items'>
                       <FaEnvelopeOpenText style={iconStyle} />
-                      <span>dyv@gmail.com</span>
+                      <span>dvanguardiavzla@gmail.com</span>
                     </div>
                   </Link>
-                </li>
-                <li>
-                  <a
-                    href='https://goo.gl/maps/6Sxkp7BUq1Rsb9Go6'
-                    target='_blank'
-                    rel='noreferrer'
-                  >
-                    <div className='footer__social--content--items'>
-                      <FaMapMarkerAlt style={iconStyle} />
-                      <span>GBA, Pilar, Arg</span>
-                    </div>
-                  </a>
                 </li>
               </ul>
             </div>
@@ -155,12 +143,11 @@ const Footer = () => {
         {/* Quote */}
       </Container>
       <Row>
-        <Col xs='12'>
-          <div className='footer__quote'>
-            <small>
-              This Page was made with <FaHandHoldingHeart style={{fill: "#cfad97"}}/> by Diseño<b>&</b>
-              Vanguardia
-            </small>
+        <Col xs='12' >
+          <div className='footer__quote' >
+            {/* <small style={{borderTop: "1px red solid"}}>
+              ...
+            </small> */}
           </div>
         </Col>
       </Row>

@@ -28,8 +28,8 @@ const About = () => {
         <ValuesCard />
         <Description
           title={valueTitle}
-          text={valueText}
-          SubText={valueSubText}
+          SubText={valueText}
+          text={valueSubText}
         />
         <NextView nextTo={nextPageText} goTo='/services' />
       </PageContainer>

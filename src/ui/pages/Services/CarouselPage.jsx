@@ -21,14 +21,14 @@ const CarouselPage = () => {
   const captionDesc_3 =
     Language[`${lang}`].services.carousel_card_description_3;
   return (
-    <Container className='my-5'>
+    <Container className='my-5 carousel__container'>
       <Row>
         <Col>
           <Carousel>
             <Carousel.Item>
               <img className='carousel__image ' src={C_007} alt='First slide' />
               <Carousel.Caption>
-                <h3>{captionTitle_1}</h3>
+                {/* <h3>{captionTitle_1}</h3> */}
                 <p>{captionDesc_1}</p>
               </Carousel.Caption>
             </Carousel.Item>
@@ -36,7 +36,7 @@ const CarouselPage = () => {
               <img className='carousel__image ' src={C_008} alt='Third slide' />
 
               <Carousel.Caption>
-                <h3>{captionTitle_2}</h3>
+                {/* <h3>{captionTitle_2}</h3> */}
                 <p>{captionDesc_2}</p>
               </Carousel.Caption>
             </Carousel.Item>
@@ -44,7 +44,7 @@ const CarouselPage = () => {
               <img className='carousel__image ' src={C_009} alt='Third slide' />
 
               <Carousel.Caption>
-                <h3>{captionTitle_3}</h3>
+                {/* <h3>{captionTitle_3}</h3> */}
                 <p>{captionDesc_3}</p>
               </Carousel.Caption>
             </Carousel.Item>

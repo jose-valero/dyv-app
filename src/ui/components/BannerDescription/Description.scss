@@ -1,5 +1,7 @@
 @import '../../../styles/variables';
 @import '../../../styles/fonts';
+@import '../../../styles/media';
+
 .about__banner-desc-content {
   padding-top: 2rem;
   text-align: center;
@@ -17,6 +19,9 @@
   }
   &--text {
     margin: 2rem;
+    @include breakpoint (mobile) {
+      @include font-size ($a-font-sizes)
+    }
     &::after {
       content: '';
       display: block;

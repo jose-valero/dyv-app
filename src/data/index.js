@@ -2,8 +2,7 @@ export const Language = {
   EN: {
     brand: { title: 'Diseño & Vanguardia' },
     home: {
-      brandText:
-        'Learn more about our startup, which is the best we can for you and here we continue with a text that is clear, short and I need to call the action to click',
+      brandText: 'DESIGNS THAT REFLECT YOUR INSIDE',
     },
     contact: {
       hero_scape: 'Contact',
@@ -12,7 +11,7 @@ export const Language = {
     about: {
       hero_scape: 'Escape',
       hero_title: 'into an amazing experience',
-      nextPage: 'Check our Services',
+      nextPage: 'Our Services',
       bio_title: 'Long Story Short',
       bio_text: ` The adventure begins! Living the present and looking towards the
       future, DESIGN & VANGUARDIA, was born as a result of the
@@ -36,9 +35,9 @@ export const Language = {
       carousel_card_title_1: 'Text one',
       carousel_card_title_2: 'text two',
       carousel_card_title_3: 'text three',
-      carousel_card_description_1: 'desc 1',
-      carousel_card_description_2: 'desc 2',
-      carousel_card_description_3: 'desc 3',
+      carousel_card_description_1: 'Customized services',
+      carousel_card_description_2: 'Artistic Designs',
+      carousel_card_description_3: 'Latest Trends',
       hero_title: 'know more about our services',
       nextPage: 'Take a look Around',
       skills_row1_title: 'ONLINE CONSULTING',
@@ -56,8 +55,8 @@ export const Language = {
         'We produce plans for our clients ranging from architects and interior designers to contractors, construction companies and individuals.',
     },
     portafolio: {
-      hero_scape: 'first',
-      hero_title: 'second lorem impsu portafolio',
+      hero_scape: 'Desing',
+      hero_title: 'and Vanguard, we offer you',
       nextPage: 'Take a look Around',
     },
     navbar: {
@@ -76,22 +75,21 @@ export const Language = {
       four: 'DISEÑO % VANGUARDIA',
     },
     home: {
-      brandText:
-        'Conoce mas acerca de nuestra empresa, que es lo mejor que podemos hacer para ti y aqui continuamos con un texto sea claro, corto y precizo que llame a la accion de dar click',
+      brandText: 'DISEÑOS QUE REFLEJAN TU INTERIOR',
     },
     contact: {
       hero_scape: 'Contactate',
       hero_title: 'con noches a mil xD',
     },
     portafolio: {
-      hero_scape: 'primero',
-      hero_title: 'segundo lorem ipsu portafolio',
-      nextPage: 'Take a look Around',
+      hero_scape: 'Diseño',
+      hero_title: 'y Vanguardia te ofrece',
+      nextPage: 'Nuestros Aliados',
     },
     about: {
       hero_scape: 'Escapa',
       hero_title: 'a una experienca increible.',
-      nextPage: 'Revisa nuestros Servicios',
+      nextPage: 'Nuestros Servicios',
       bio_title: 'Resumiendo',
       bio_text: `Viviendo el preseten y con mira hacia el futuro, DISEÑO Y VANGUARDIA, en 2015 nace como resultado
       futuro, DISEÑO & VANGUARDIA, nace como resultado de la pasion por el diseño y el arte, superándose en cada uno de los proyectos`,
@@ -109,9 +107,9 @@ export const Language = {
       carousel_card_title_1: 'titulo 1',
       carousel_card_title_2: 'titulo 2',
       carousel_card_title_3: 'titulo 3',
-      carousel_card_description_1: 'descripcion 1',
-      carousel_card_description_2: 'descripcion 2',
-      carousel_card_description_3: 'descripcion 3',
+      carousel_card_description_1: 'Servicios personalizados',
+      carousel_card_description_2: 'Diseños Artisticos',
+      carousel_card_description_3: 'Ultimas Tendecias',
       hero_title: 'Conoce nuestros serivicios',
       nextPage: 'Echa un vistazo',
       skills_row1_title: 'ASESORIA ONLINE',

@@ -118,6 +118,7 @@
       }
       span {
         @include font-size($a-font-sizes);
+        text-transform: lowercase;
         color: $pal-1_gray-3;
         &:hover {
           color: $warm_oj-1;
