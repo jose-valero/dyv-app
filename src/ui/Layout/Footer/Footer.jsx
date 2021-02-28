@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import fullLogo from '../../../assets/images/LogoLight.png';
 import { Link } from 'react-router-dom';
-import { FaWhatsapp, FaMapMarkerAlt, FaEnvelopeOpenText } from 'react-icons/fa';
+import { FaWhatsapp, FaEnvelopeOpenText } from 'react-icons/fa';
 import { IoMdSend } from 'react-icons/io';
-import { FaHandHoldingHeart } from 'react-icons/fa';
 import { ToastContainer, toast } from 'react-toastify';
 import InputText from '../../components/InputText/';
 import Container from 'react-bootstrap/Container';

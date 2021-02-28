@@ -11,13 +11,13 @@ import './Carousel.scss';
 
 const CarouselPage = () => {
   const lang = useSelector((state) => state.langReducer);
-  const captionTitle_1 = Language[`${lang}`].services.carousel_card_title_1;
+
   const captionDesc_1 =
     Language[`${lang}`].services.carousel_card_description_1;
-  const captionTitle_2 = Language[`${lang}`].services.carousel_card_title_2;
+
   const captionDesc_2 =
     Language[`${lang}`].services.carousel_card_description_2;
-  const captionTitle_3 = Language[`${lang}`].services.carousel_card_title_3;
+
   const captionDesc_3 =
     Language[`${lang}`].services.carousel_card_description_3;
   return (
