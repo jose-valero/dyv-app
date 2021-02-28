@@ -1,6 +1,6 @@
 import Button from '../../components/Button';
 import { useSelector } from 'react-redux';
-import { Language } from '../../../data/data';
+import { Language } from '../../../data';
 import AOS from 'aos';
 import L_001 from './assets/L_001.jpg';
 import Logo from '../../../assets/images/LogoLight.png';

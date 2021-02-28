@@ -1,12 +1,12 @@
-import { Language } from '../../../data/data';
+import { Language } from '../../../data';
 import { useSelector } from 'react-redux';
-import Values from './Values';
 import { PageContainer } from '../../components/Container/PageContainer';
-import Hero from '../../components/Hero/Hero';
-import AOS from 'aos';
+import ValuesCard from './ValuesCard';
 import Bio from './Bio';
-import NextView from '../../components/NextView/NextView';
-import Description from '../../components/BannerDescription/Description';
+import Hero from '../../components/Hero';
+import NextView from '../../components/NextView';
+import Description from '../../components/BannerDescription';
+import AOS from 'aos';
 import './About.scss';
 
 const About = () => {
@@ -16,16 +16,21 @@ const About = () => {
   const missionText = Language[`${lang}`].about.banner_missionText;
   const valueTitle = Language[`${lang}`].about.banner_valuesTitle;
   const valueText = Language[`${lang}`].about.banner_valuesText;
+  const valueSubText = Language[`${lang}`].about.banner_valuesSubText;
   AOS.init();
   return (
     <>
       {/* colocar todos los props aqui ___________ */}
       <PageContainer>
-        <Hero displayOnPage="about"/>
+        <Hero displayOnPage='about' />
         <Bio />
         <Description title={misionTitle} text={missionText} />
-        <Values />
-        <Description title={valueTitle} text={valueText} />
+        <ValuesCard />
+        <Description
+          title={valueTitle}
+          text={valueText}
+          SubText={valueSubText}
+        />
         <NextView nextTo={nextPageText} goTo='/services' />
       </PageContainer>
     </>

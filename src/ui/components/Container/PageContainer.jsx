@@ -7,3 +7,4 @@ export const PageContainer = styled.div`
   overflow: hidden;
   width: 100%;
 `;
+

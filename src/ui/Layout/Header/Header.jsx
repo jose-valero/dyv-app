@@ -1,5 +1,5 @@
 import React from 'react';
-import { Language } from '../../../data/data';
+import { Language } from '../../../data';
 import { useDispatch, useSelector } from 'react-redux';
 import { lanSelect } from '../../../redux/actions';
 import { Link } from 'react-router-dom';

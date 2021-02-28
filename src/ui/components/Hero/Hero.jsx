@@ -1,6 +1,6 @@
 import './Hero.scss';
 import { useSelector } from 'react-redux';
-import { Language } from '../../../data/data';
+import { Language } from '../../../data';
 const Hero = ({ displayOnPage }) => {
   const lang = useSelector((state) => state.langReducer);
   return (

@@ -6,7 +6,7 @@ import C_001 from './assets/C_001.jpg';
 import C_002 from './assets/C_002.jpg';
 import L_005 from './assets/L_005.jpg';
 
-const Values = () => {
+const ValuesCard = () => {
   return (
     <Container className='about__mission-container'>
       <Row className='about__mission-row'>
@@ -72,4 +72,4 @@ const Values = () => {
   );
 };
 
-export default Values;
+export default ValuesCard;
