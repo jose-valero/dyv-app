@@ -22,7 +22,7 @@ const Bio = () => {
           className='about__bio-content--left-section '
         >
           <div className='about__bio-content--left-section--text'>
-            <h1>{bioTittle}</h1>
+            {/* <h1>{bioTittle}</h1> */}
             <p>{bioText}</p>
             <p>{bioTextParagraph}</p>
           </div>

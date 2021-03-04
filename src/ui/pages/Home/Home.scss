@@ -94,16 +94,17 @@
       @include breakpoint(tablet_port) {
         text-align: center;
       }
-      p {
-        @include font-size($p-font-sizes);
+      &---title {
+        @include font-size($a-font-sizes);
         text-align: center;
         color: $pal-1_white;
-        // color: red;
+   
       }
       & img {
         width: 80%;
         height: auto;
-        margin: 0 10%;
+        margin:  10%;
+        padding-bottom: 1rem;
         @include breakpoint(mobile) {
           margin: 5%;
           width: 50%;
@@ -111,6 +112,10 @@
         @include breakpoint(tablet_port) {
           width: 50%;
         }
+      }
+      & .button {
+        padding-top: 1rem;
+        margin-top: 2rem;
       }
     }
   }

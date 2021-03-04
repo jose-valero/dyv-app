@@ -1,17 +1,29 @@
 import React from 'react';
+import  Container  from 'react-bootstrap/Container';
+import  Row  from 'react-bootstrap/Row';
+import  Col  from 'react-bootstrap/Col';
+import { PageContainer } from '../../components/Container/PageContainer';
+import Hero from '../../components/Hero';
 import './Clients.scss';
 
-const styles = {background: 'yellow', border: '1px solid'}
+
 
 const Clients = () => {
   return (
-    <div className='container' style={{marginTop: '50px'}}>
-      <div className='row'>
-        <div style={styles} className='col_auto grid-lg-8 grid-xs-12'>block 1</div>
-        <div style={styles} className='col_auto grid-lg-2 grid-xs-12'>block 2</div>
-        <div style={styles} className='col_auto grid-lg-2 grid-xs-12'>block 3</div>
-      </div>
-    </div>
+<PageContainer>
+  <Hero displayOnPage='allies'/>
+  <Container>
+    <Row>
+      <Col className="bg-primary py-5 ">Primera Seccion Descriptiva de como trabajamos con nuestros clientes</Col>
+    </Row>
+    <Row>
+      <Col className="bg-dark py-5 text-light">Segunda Seccion desarrollando a los clientes a detalles</Col>
+    </Row>
+    <Row>
+      <Col className="bg-info py-5 " >Tercera Seccion Mostrando a profundidad como somos un buen equipo y como nos respaldamos unos con otros</Col>
+    </Row>
+  </Container>
+</PageContainer>
   );
 };
 

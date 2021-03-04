@@ -59,11 +59,15 @@ export const Language = {
       hero_title: 'and Vanguard, we offer you',
       nextPage: 'Take a look Around',
     },
+    allies: {
+      hero_scape: 'We make',
+      hero_title: 'the difference',
+    },
     navbar: {
       knowus: 'about',
       services: 'services',
       portafolio: 'portafolio',
-      clients: 'clients',
+      clients: 'allies',
       contact: 'contact',
     },
   },
@@ -85,6 +89,10 @@ export const Language = {
       hero_scape: 'Diseño',
       hero_title: 'y Vanguardia te ofrece',
       nextPage: 'Nuestros Aliados',
+    },
+    allies: {
+      hero_scape: 'Nosotros',
+      hero_title: 'hacemos la diferencia',
     },
     about: {
       hero_scape: 'Escapa',
@@ -130,7 +138,7 @@ export const Language = {
       knowus: 'conocenos',
       services: 'servicios',
       portafolio: 'portafolio',
-      clients: 'clientes',
+      clients: 'aliados',
       contact: 'contacto',
     },
   },

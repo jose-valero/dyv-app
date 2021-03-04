@@ -25,7 +25,7 @@ const ValuesCard = () => {
               alt='Diseño y Vanguardia - Modern Kitchen - Italian Design - Interior - Design'
             />
             <div className='about__mission--overlay'>
-              <h2>Text</h2>
+              <h2>ART</h2>
             </div>
           </div>
         </Col>
@@ -44,7 +44,7 @@ const ValuesCard = () => {
               alt='Diseño y Vanguardia - Modern Living - Italian Design - Interior - Design'
             />
             <div className='about__mission--overlay'>
-              <h2>Text</h2>
+              <h2>DESIGN</h2>
             </div>
           </div>
         </Col>
@@ -58,12 +58,12 @@ const ValuesCard = () => {
         >
           <div className='about__mission--hovereffect'>
             <Image
-              src={L_005}
+              src={C_002}
               className='about__mission-row--images--items'
               alt='Diseño y Vanguardia - Modern Rest - Italian Design - Interior - Design'
             />
             <div className='about__mission--overlay'>
-              <h2>Text</h2>
+              <h2>PRO</h2>
             </div>
           </div>
         </Col>
