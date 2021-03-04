@@ -4,7 +4,6 @@ import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 import C_001 from './assets/C_001.jpg';
 import C_002 from './assets/C_002.jpg';
-import L_005 from './assets/L_005.jpg';
 
 const ValuesCard = () => {
   return (

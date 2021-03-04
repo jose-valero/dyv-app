@@ -7,8 +7,6 @@ import { useSelector } from 'react-redux';
 
 const Bio = () => {
   const lang = useSelector((state) => state.langReducer);
-  const bioTittle = Language[`${lang}`].about.bio_title;
-
   const bioText = Language[`${lang}`].about.bio_text;
   const bioTextParagraph = Language[`${lang}`].about.bio_text_paragraph;
   return (
