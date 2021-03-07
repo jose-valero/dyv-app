@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import fullLogo from "../../../assets/images/LogoLight.png";
 import { Link } from "react-router-dom";
 import { FaWhatsapp, FaEnvelopeOpenText } from "react-icons/fa";
@@ -13,23 +13,10 @@ import "react-toastify/dist/ReactToastify.css";
 import "./Footer.scss";
 
 const Footer = () => {
-  const [email, setEmail] = useState("");
-  const nameInputRef = React.createRef();
-
   const handleSubmit = (e) => {
     e.preventDefault();
-    toast.dark(`🎯 Submitting email ${email}`);
-    setEmail("");
+    toast.dark(`🎯 Sent successfully`);
   };
-
-  const sendOnChange = (e) => {
-    setEmail(e.target.value);
-  };
-
-  // useEffect(() => {
-  //   nameInputRef.current.focus();
-  //   // eslint-disable-next-line
-  // }, []);
 
   return (
     <>
@@ -81,13 +68,7 @@ const Footer = () => {
               </p>
               <>
                 <form onSubmit={handleSubmit}>
-                  <InputText
-                    value={email}
-                    onChange={sendOnChange}
-                    label="Email"
-                    // ref={nameInputRef}
-                    light
-                  />
+                  <InputText label="Email" light />
                   <button
                     type="submit"
                     value="Submit"

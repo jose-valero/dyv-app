@@ -13,7 +13,7 @@
   }
   > .row {
     @include breakpoint(tablet) {
-      height: 550px;
+      height: 580px;
     }
     height: auto;
     > .col-md-6 {
