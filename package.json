@@ -43,12 +43,12 @@
     ]
   },
   "devDependencies": {
-    "redux-devtools-extension": "2.13.8",
-    "redux-immutable-state-invariant": "2.1.0",
-    "redux-promise-middleware": "6.1.2",
     "@testing-library/jest-dom": "5.11.5",
     "@testing-library/react": "11.1.2",
     "@testing-library/user-event": "12.2.2",
+    "redux-devtools-extension": "2.13.8",
+    "redux-immutable-state-invariant": "2.1.0",
+    "redux-promise-middleware": "6.1.2",
     "sass": "1.29.0"
   }
 }

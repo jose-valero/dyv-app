@@ -1,7 +1,7 @@
-@import '../../../styles/fonts';
-@import '../../../styles/media';
-@import '../../../styles/mixins';
-@import '../../../styles/variables';
+@import "../../../styles/fonts";
+@import "../../../styles/media";
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
 
 .footer__container {
   position: relative;
@@ -89,9 +89,6 @@
         }
       }
     }
-    .input__text__wrapper .input__inner {
-      margin-top: 0;
-    }
   }
 }
 
@@ -136,6 +133,8 @@
 
   small {
     border-top: 1px $warm_oj-1 solid;
-    svg { fill: red}
+    svg {
+      fill: red;
+    }
   }
 }

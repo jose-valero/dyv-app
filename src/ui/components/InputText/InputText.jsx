@@ -1,14 +1,20 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./style.scss";
 
-const InputText = React.forwardRef(({ label, onChange, value, light }, ref) => {
-  const onInputAnimation = (e) => {
-    console.log("me ejecute???");
-    if (!value) {
+const InputText = (props) => {
+  const { label, light } = props;
+  const [inputValue, setInputValue] = useState("");
+  const input = useRef(null);
+
+  const onChange = (e) => {
+    setInputValue(e.target.value);
+
+    if (!e.target.value || !inputValue) {
       e.target.parentElement.previousElementSibling.classList.toggle(
         "InputLabel-shrink"
       );
       if (light) {
+        e.target.parentElement.previousElementSibling.classList.toggle("light");
         e.target.parentElement.previousElementSibling.classList.toggle(
           "InputLabel-focused-light"
         );
@@ -21,31 +27,36 @@ const InputText = React.forwardRef(({ label, onChange, value, light }, ref) => {
       }
     }
   };
-  console.log("light props: ", light, value);
+
+  useEffect(() => {
+    if (props.startOnFocus) {
+      input.current.focus();
+    }
+  }, []);
+
   return (
     <div className="input__text__wrapper">
       <label
         className={
-          light &&
-          "" + "InputLabel-root InputLabel-animated InputLabel-formControl"
+          !light
+            ? "InputLabel-root InputLabel-animated InputLabel-formControl"
+            : "InputLabel-root InputLabel-animated InputLabel-formControl light"
         }
       >
         {label}
       </label>
       <div className={`input__inner ${light ? "light" : "dark"}`}>
         <input
-          value={value}
+          value={inputValue}
           onChange={onChange}
-          ref={ref && ref}
+          ref={input}
           className="w-100"
           type="text"
-          onFocus={onInputAnimation}
-          onBlur={onInputAnimation}
-          autoComplete="none"
+          name={label}
         />
       </div>
     </div>
   );
-});
+};
 
 export default InputText;
