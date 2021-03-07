@@ -19,8 +19,6 @@ const Contact = () => {
     console.log("FORM WAS SENDED");
   };
 
-  console.log("LANGUAGE: ", Language);
-
   return (
     <PageContainer>
       <Container fluid className="form__container">
