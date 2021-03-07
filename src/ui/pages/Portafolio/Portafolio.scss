@@ -1,19 +1,20 @@
-@import '../../../styles/animations';
-@import '../../../styles/fonts';
-@import '../../../styles/keyframes';
-@import '../../../styles/media';
-@import '../../../styles/mixins';
-@import '../../../styles/variables';
+@import "../../../styles/animations";
+@import "../../../styles/fonts";
+@import "../../../styles/keyframes";
+@import "../../../styles/media";
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
 
-.portalfolio__map {
-  padding: 5%;
-  & img {
-    width: 60%;
-    height: auto;
-    margin: 0 auto;
-    @include centerFlex;
+.portfolio__page {
+  .about__banner-desc-content {
+    &--text {
+      &::after {
+        border-bottom: none !important;
+      }
+    }
   }
 }
+
 .portafolio__card {
   &--content {
     padding: 1rem;

@@ -62,6 +62,8 @@ export const Language = {
       hero_scape: "Desing",
       hero_title: "and Vanguard, we offer you",
       nextPage: "Take a look Around",
+      descriptionHeadline: "International Scope",
+      descriptionSubhead: "Know the places where we have worked",
     },
     allies: {
       hero_scape: "We make",
@@ -97,6 +99,8 @@ export const Language = {
       hero_scape: "Diseño",
       hero_title: "y Vanguardia te ofrece",
       nextPage: "Nuestros Aliados",
+      descriptionHeadline: "Alcance Internacional",
+      descriptionSubhead: "Conoce los lugares en donde hemos trabajado",
     },
     allies: {
       hero_scape: "Nosotros",

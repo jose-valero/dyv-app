@@ -32,7 +32,7 @@ const InputText = (props) => {
     if (props.startOnFocus) {
       input.current.focus();
     }
-  }, []);
+  }, [props.startOnFocus]);
 
   return (
     <div className="input__text__wrapper">

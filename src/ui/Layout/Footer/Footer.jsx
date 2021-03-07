@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import fullLogo from "../../../assets/images/LogoLight.png";
 import { Link } from "react-router-dom";
 import { FaWhatsapp, FaEnvelopeOpenText } from "react-icons/fa";
