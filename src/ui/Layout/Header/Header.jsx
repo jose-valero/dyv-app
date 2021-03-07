@@ -44,7 +44,7 @@ const Header = () => {
               {Language[`${lang}`].navbar.portafolio}
             </li>
           </Link>
-          <Link className='menu__links' to='/clients'>
+          <Link className='menu__links' to='/allies'>
             <li className='menu__names'>
               {Language[`${lang}`].navbar.clients}
             </li>

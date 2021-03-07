@@ -38,7 +38,7 @@ const Home = () => {
               data-aos-delay='10'
               data-aos-offset='0'
             />
-            <p data-aos='fade-left' className="home__right-content--aside---tittle" >{Language[`${lang}`].home.brandText}</p>
+            <p data-aos='fade-left' className="home__right-content--aside---title" >{Language[`${lang}`].home.brandText}</p>
             <Button name='Conocenos' route='/about' />
           </div>
         </div>
