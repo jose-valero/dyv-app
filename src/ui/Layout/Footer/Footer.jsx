@@ -41,7 +41,7 @@ const Footer = () => {
                   <Link to="/portafolio">Portafolio</Link>
                 </li>
                 <li className='footer__nav--content--items'>
-                  <Link to='/clients'>Aliados</Link>
+                  <Link to='/allies'>Aliados</Link>
                 </li>
                 <li className="footer__nav--content--items">
                   <Link to="/services">Services</Link>

@@ -1,0 +1,16 @@
+@import '../../../styles/animations';
+@import '../../../styles/fonts';
+@import '../../../styles/keyframes';
+@import '../../../styles/media';
+@import '../../../styles/mixins';
+@import '../../../styles/variables';
+
+.allies__image {
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.allies__socialMedia {
+  @include endFlex;
+}
