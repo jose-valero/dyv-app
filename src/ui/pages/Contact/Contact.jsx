@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
-import "./Contact.scss";
-import bgFormImage from "../../../assets/images/C_005.jpg";
-import InputText from "../../components/InputText";
+import { Language } from "../../../data/index";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { PageContainer } from "../../components/Container/PageContainer";
 import FormCheck from "react-bootstrap/FormCheck";
-import { Language } from "../../../data/index";
+import { InputText} from '../../components';
+import { PageContainer } from '../../components/Container/PageContainer';
+import bgFormImage from "../../../assets/images/C_005.jpg";
+import "./Contact.scss";
 
 const Contact = () => {
   const [textArea, setTextArea] = useState("");

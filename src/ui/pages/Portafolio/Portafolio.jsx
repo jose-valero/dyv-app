@@ -1,18 +1,22 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { PageContainer } from "../../components/Container/PageContainer";
-// import Hero from "../../components/Hero/Hero";
+import { Language } from "../../../data/index";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import Image from "react-bootstrap/Image";
 import Col from "react-bootstrap/Col";
+import Image from "react-bootstrap/Image";
 import Card from "react-bootstrap/Card";
+
+
+import {  Description } from '../../components';
+import { PageContainer } from '../../components/Container/PageContainer';
+
+// import Hero from "../../components/Hero/Hero";
+
 import MAP from "./assets/bg-portafolio-2.png";
 import C_006 from "./assets/C_006.jpg";
 import "./Portafolio.scss";
-import Description from "../../components/BannerDescription";
-import { Language } from "../../../data/index";
-import { Link } from "react-router-dom";
 
 const Portafolio = () => {
   const lang = useSelector((state) => state.langReducer);

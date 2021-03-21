@@ -1,16 +1,17 @@
-import React from "react";
-import fullLogo from "../../../assets/images/LogoLight.png";
-import { Link } from "react-router-dom";
-import { FaWhatsapp, FaEnvelopeOpenText } from "react-icons/fa";
-import { IoMdSend } from "react-icons/io";
-import { ToastContainer, toast } from "react-toastify";
-import InputText from "../../components/InputText/";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { FaWhatsapp, FaEnvelopeOpenText } from 'react-icons/fa';
+import { IoMdSend } from 'react-icons/io';
+import { ToastContainer, toast } from 'react-toastify';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
-import "react-toastify/dist/ReactToastify.css";
-import "./Footer.scss";
+import { InputText } from '../../components';
+
+import fullLogo from '../../../assets/images/LogoLight.png';
+import 'react-toastify/dist/ReactToastify.css';
+import './Footer.scss';
 
 const Footer = () => {
   const handleSubmit = (e) => {
@@ -20,34 +21,34 @@ const Footer = () => {
 
   return (
     <>
-      <Container className="footer__container" fluid>
+      <Container className='footer__container' fluid>
         <Row>
           {/* Logo */}
-          <Col md={2} lg={2} xl={2} className="footer__section-logo">
-            <img src={fullLogo} alt="" />
+          <Col md={2} lg={2} xl={2} className='footer__section-logo'>
+            <img src={fullLogo} alt='' />
           </Col>
           {/* Navigations */}
-          <Col xs={3} sm={3} md={2} lg={2} xl={2} className="footer__nav p-0">
-            <div className="footer__nav--content">
+          <Col xs={3} sm={3} md={2} lg={2} xl={2} className='footer__nav p-0'>
+            <div className='footer__nav--content'>
               <h1>Navigation</h1>
               <ul>
-                <li className="footer__nav--content--items">
-                  <Link to="/">Home</Link>
+                <li className='footer__nav--content--items'>
+                  <Link to='/'>Home</Link>
                 </li>
-                <li className="footer__nav--content--items">
-                  <Link to="/about">About</Link>
+                <li className='footer__nav--content--items'>
+                  <Link to='/about'>About</Link>
                 </li>
-                <li className="footer__nav--content--items">
-                  <Link to="/portafolio">Portafolio</Link>
+                <li className='footer__nav--content--items'>
+                  <Link to='/portafolio'>Portafolio</Link>
                 </li>
                 <li className='footer__nav--content--items'>
                   <Link to='/allies'>Aliados</Link>
                 </li>
-                <li className="footer__nav--content--items">
-                  <Link to="/services">Services</Link>
+                <li className='footer__nav--content--items'>
+                  <Link to='/services'>Services</Link>
                 </li>
-                <li className="footer__nav--content--items">
-                  <Link to="/contact">Contact</Link>
+                <li className='footer__nav--content--items'>
+                  <Link to='/contact'>Contact</Link>
                 </li>
               </ul>
             </div>
@@ -59,28 +60,28 @@ const Footer = () => {
             md={5}
             lg={5}
             xl={5}
-            className="footer__newsletter p-0"
+            className='footer__newsletter p-0'
           >
-            <div className="footer__newsletter--content">
+            <div className='footer__newsletter--content'>
               <h1>Newsletter</h1>
               <p>
                 Subscribe for free and keep in touch with our lastest content
               </p>
               <>
                 <form onSubmit={handleSubmit}>
-                  <InputText label="Email" light />
+                  <InputText label='Email' light />
                   <button
-                    type="submit"
-                    value="Submit"
-                    className="footer__newsletter--button"
+                    type='submit'
+                    value='Submit'
+                    className='footer__newsletter--button'
                   >
                     <IoMdSend
-                      name="Go!"
-                      className="sendButton"
+                      name='Go!'
+                      className='sendButton'
                       // style={iconSend}
                     />
                   </button>
-                  <ToastContainer position="bottom-right" />
+                  <ToastContainer position='bottom-right' />
                 </form>
               </>
             </div>
@@ -92,26 +93,26 @@ const Footer = () => {
             md={3}
             lg={3}
             xl={3}
-            className="footer__social p-0"
+            className='footer__social p-0'
           >
-            <div className="footer__social--content">
+            <div className='footer__social--content'>
               <h1>Let's Talk</h1>
               <ul>
                 <li>
                   <a
-                    href="https://wa.link/702wra"
-                    target="_blank"
-                    rel="noreferrer"
+                    href='https://wa.link/702wra'
+                    target='_blank'
+                    rel='noreferrer'
                   >
-                    <div className="footer__social--content--items">
+                    <div className='footer__social--content--items'>
                       <FaWhatsapp style={iconStyle} />
                       <span>+54 3816592931</span>
                     </div>
                   </a>
                 </li>
                 <li>
-                  <Link to="/contact">
-                    <div className="footer__social--content--items">
+                  <Link to='/contact'>
+                    <div className='footer__social--content--items'>
                       <FaEnvelopeOpenText style={iconStyle} />
                       <span>dvanguardiavzla@gmail.com</span>
                     </div>
@@ -124,8 +125,8 @@ const Footer = () => {
         {/* Quote */}
       </Container>
       <Row>
-        <Col xs="12">
-          <div className="footer__quote">
+        <Col xs='12'>
+          <div className='footer__quote'>
             {/* <small style={{borderTop: "1px red solid"}}>
               ...
             </small> */}
@@ -137,7 +138,7 @@ const Footer = () => {
 };
 
 const iconStyle = {
-  fill: "#b3b3b5",
+  fill: '#b3b3b5',
 };
 
 export default Footer;

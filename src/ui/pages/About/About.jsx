@@ -1,11 +1,9 @@
-import { Language } from '../../../data';
 import { useSelector } from 'react-redux';
-import { PageContainer } from '../../components/Container/PageContainer';
+import { Language } from '../../../data';
 import ValuesCard from './ValuesCard';
 import Bio from './Bio';
-import Hero from '../../components/Hero';
-import NextView from '../../components/NextView';
-import Description from '../../components/BannerDescription';
+import { Hero, NextView, Description } from '../../components';
+import { PageContainer } from '../../components/Container/PageContainer';
 import AOS from 'aos';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';

@@ -5,8 +5,10 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 import Carousel from 'react-bootstrap/Carousel';
+
 import { PageContainer } from '../../components/Container/PageContainer';
-import Hero from '../../components/Hero';
+import { Hero } from '../../components';
+
 import {
   TiSocialTwitter,
   TiSocialFacebook,
@@ -21,7 +23,7 @@ const Allies = () => {
   return (
     <PageContainer>
       <Hero displayOnPage='allies' />
-      <Container className=" mt-5"> 
+      <Container className=' mt-5'>
         <Row>
           {/* LOGO + TEXT */}
           <Col xs={3}>
@@ -79,16 +81,20 @@ const Allies = () => {
         {/* social netword */}
         <Row>
           <Col className='py-5 allies__socialMedia'>
-            <a href='https://www.facebook.com/' target='_blank' rel="noreferrer">
+            <a
+              href='https://www.facebook.com/'
+              target='_blank'
+              rel='noreferrer'
+            >
               <TiSocialFacebook />
             </a>
-            <a href='https://twitter.com' target='_blank' rel="noreferrer">
+            <a href='https://twitter.com' target='_blank' rel='noreferrer'>
               <TiSocialTwitter />
             </a>
-            <a href='https://instagram.com' target='_blank' rel="noreferrer">
+            <a href='https://instagram.com' target='_blank' rel='noreferrer'>
               <TiSocialInstagram />
             </a>
-            <a href='https://pinterest.com' target='_blank' rel="noreferrer">
+            <a href='https://pinterest.com' target='_blank' rel='noreferrer'>
               <TiSocialPinterest />
             </a>
           </Col>

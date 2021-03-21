@@ -3,7 +3,7 @@
 @import "../../../styles/keyframes";
 @import "../../../styles/media";
 @import "../../../styles/mixins";
-@import "../../../styles/variables";
+@import "../../../styles/variables.module";
 
 .notFound__container {
   background-color: $pal-1_gray-1;

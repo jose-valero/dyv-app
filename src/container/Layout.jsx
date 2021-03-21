@@ -1,7 +1,5 @@
 import React from 'react';
-import SocialMedia from '../ui/Layout/SocialMedia';
-import Header from '../ui/Layout/Header';
-import Footer from '../ui/Layout/Footer';
+import { SocialMedia, Header, Footer } from '../ui/Layout';
 import './Layout.scss';
 
 const Layout = ({ children }) => (

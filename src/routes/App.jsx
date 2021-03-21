@@ -1,13 +1,16 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Layout from '../container/Layout';
-import Home from '../ui/pages/Home';
-import About from '../ui/pages/About';
-import Allies from '../ui/pages/Allies';
-import Contact from '../ui/pages/Contact';
-import Portafolio from '../ui/pages/Portafolio';
-import Services from '../ui/pages/Services';
-import NotFound from '../ui/pages/NotFound/NotFound';
+import {
+  About,
+  Allies,
+  Contact,
+  Home,
+  NotFound,
+  Portafolio,
+  Services,
+} from '../ui/pages';
+
 // import '../styles/App.scss';
 
 const App = () => {
