@@ -1,5 +1,8 @@
 @import '../../../styles/fonts';
 @import '../../../styles/media';
+@import '../../../styles/App.scss';
+@import '../../../styles/Main.scss';
+
 
 .hero__container {
   background-image: url(../../../assets/images/herobg.jpg);
@@ -12,6 +15,9 @@
   justify-content: center;
   align-items: center;
   color: #fdfdfd;
+  @include breakpoint (mobile) {
+    height: 125px;
+  }
 }
 
 @include breakpoint(mobile) {
@@ -118,9 +124,12 @@
   }
 }
 .hero__animated {
-  @include font-size($h1-font-sizes);
+ font-family: $test_16;
+ font-size: 2.125rem;
+  // @include font-size($xl-font-sizes);
   @include breakpoint(mobile) {
-    @include font-size($p-font-sizes);
+    font-size: 1.25rem;
+    // @include font-size($xl-font-sizes);
     // color: red;
   }
   display: inline-block;
@@ -141,9 +150,9 @@
     .hero__text {
       margin-left: 450px;
       animation: slidein 7s infinite;
-      @include font-size($h1-font-sizes);
+     
       @include breakpoint(mobile) {
-        @include font-size($p-font-sizes);
+       
         animation: slideinMobile 7s infinite;
         margin-left: 200px;
       }

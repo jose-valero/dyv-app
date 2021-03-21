@@ -29,3 +29,18 @@ Exteriores:
   Fachada, Jardin, Terraza, Balcon.
 
   Planos 
+
+
+
+  arreglar id de render, que abra en top lvl
+  reducir hero a la mitad en mobile -> DONE
+  About:  Nuestros valores separar las palabras claves en 3 lineas diferentes. -> DONE
+  servicios_hero: Diseño & Vanguardia, te ofrece -> DONE
+  servicios_caroulse: intercambiar titulo card1 con card3 -> DONE
+  servicios_carousel: cambiar flechas, titulos, no se aprecian.  -> DONE
+  hero: revisar font size y  probar font-family
+  modal portafolio: maquetar vista de detalles de portafolio. 
+
+  
+
+  

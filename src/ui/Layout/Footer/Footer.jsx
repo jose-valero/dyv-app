@@ -40,8 +40,8 @@ const Footer = () => {
                 <li className="footer__nav--content--items">
                   <Link to="/portafolio">Portafolio</Link>
                 </li>
-                <li className="footer__nav--content--items">
-                  <Link to="/clients">Clients</Link>
+                <li className='footer__nav--content--items'>
+                  <Link to='/clients'>Aliados</Link>
                 </li>
                 <li className="footer__nav--content--items">
                   <Link to="/services">Services</Link>

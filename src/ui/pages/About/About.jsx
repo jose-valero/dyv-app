@@ -7,6 +7,8 @@ import Hero from '../../components/Hero';
 import NextView from '../../components/NextView';
 import Description from '../../components/BannerDescription';
 import AOS from 'aos';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import './About.scss';
 
 const About = () => {
@@ -15,9 +17,19 @@ const About = () => {
   const misionTitle = Language[`${lang}`].about.banner_missionTitle;
   const missionText = Language[`${lang}`].about.banner_missionText;
   const valueTitle = Language[`${lang}`].about.banner_valuesTitle;
-  const valueText = Language[`${lang}`].about.banner_valuesText;
+  // const valueText = Language[`${lang}`].about.banner_valuesText;
   const valueSubText = Language[`${lang}`].about.banner_valuesSubText;
   AOS.init();
+  console.log('alaverga', Language[`${lang}`].about.values);
+  const ObjValues = Language[`${lang}`].about.values;
+  const valuesItems = Object.values(ObjValues).map((value) => {
+    return (
+      <Row key={value}>
+        <Col className='py-2'>{value}</Col>
+      </Row>
+    );
+  });
+
   return (
     <>
       {/* colocar todos los props aqui ___________ */}
@@ -26,11 +38,10 @@ const About = () => {
         <Bio />
         <Description title={misionTitle} text={missionText} />
         <ValuesCard />
-        <Description
-          title={valueTitle}
-          SubText={valueText}
-          text={valueSubText}
-        />
+        <Description title={valueTitle} SubText={valueSubText}>
+          {valuesItems}
+        </Description>
+
         <NextView nextTo={nextPageText} goTo='/services' />
       </PageContainer>
     </>

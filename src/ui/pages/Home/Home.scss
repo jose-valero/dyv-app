@@ -114,6 +114,9 @@
         }
       }
       & .button {
+        // @include breakpoint (tablet_port) {
+        //   @include fuappild;
+        // }
         padding-top: 1rem;
         margin-top: 2rem;
       }

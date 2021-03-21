@@ -29,4 +29,9 @@
       padding-top: 10px;
     }
   }
+  &--subtext {
+    text-align: center;
+    @include font-size($p-font-sizes);
+    margin: 2rem 0 0 0;
+  }
 }

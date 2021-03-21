@@ -6,12 +6,12 @@ const Hero = ({ displayOnPage }) => {
   return (
     <div className='hero__container'>
       <div className='hero__animated'>
-        {Language[`${lang}`][displayOnPage].hero_scape}
+        <p>{Language[`${lang}`][displayOnPage].hero_scape}</p>
       </div>
       <div className='hero__animated'>
-        <span className='hero__text ml-2'>
+        <p className='hero__text ml-2'>
           {Language[`${lang}`][displayOnPage].hero_title}
-        </span>
+        </p>
       </div>
     </div>
   );

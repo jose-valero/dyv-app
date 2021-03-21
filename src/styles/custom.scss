@@ -7,6 +7,19 @@ $theme-colors: (
   'primary': $warm_oj-1,
 );
 
+//////////////////////////////
+///---custom carousel---/////
+////////////////////////////
+
+$carousel-control-hover-opacity:0.8;
+$carousel-control-opacity: 1;
+$carousel-control-icon-width: 3rem;
+$carousel-indicator-width: 2.5rem;
+$carousel-indicator-height: 0.5rem;
+$carousel-control-width: 15rem;
+$carousel-control-height: 15rem;
 $carousel-control-color: $warm_oj-3;
+$carousel-caption-color: $pal-1_white;
+$carousel-indicator-active-bg:$pal-1_white;
 
 @import '~bootstrap/scss/bootstrap';

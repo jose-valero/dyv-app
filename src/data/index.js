@@ -33,7 +33,13 @@ export const Language = {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minima exercitationem earum, molestias est reprehenderit adipisci ipsum ipsa ullam officiis esse? Itaque officia cumque, provident ipsam sunt perferendis sit totam?",
       banner_valuesTitle: "Our Worth",
       banner_valuesText:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minima exercitationem earum, molestias est reprehenderit adipisci ipsum ipsa ullam officiis esse? Itaque officia cumque, provident ipsam sunt perferendis sit totam?",
+        'CALIDAD + INNOVACION + SERVICIOS PERSONALIZADOS + COMPROMISO',
+      banner_valuesSubText: 'Son nuestros pilares',
+      values: {
+        value_1: 'QUALITY & INNOVATION',
+        value_2: 'CUSTOMIZED SERVICES',
+        value_3: 'COMMITMENT',
+      },
     },
     services: {
       carousel_card_title_1: "Text one",
@@ -107,35 +113,40 @@ export const Language = {
       hero_title: "hacemos la diferencia",
     },
     about: {
-      hero_scape: "Escapa",
-      hero_title: "a una experienca increible.",
-      nextPage: "Nuestros Servicios",
-      bio_title: "Resumiendo",
-      bio_text: `Viviendo el preseten y con mira hacia el futuro, DISEÑO Y VANGUARDIA, en 2015 nace como resultado
-      futuro, DISEÑO & VANGUARDIA, nace como resultado de la pasion por el diseño y el arte, superándose en cada uno de los proyectos`,
+      hero_scape: 'Escapa',
+      hero_title: 'a una experienca increible.',
+      nextPage: 'Nuestros Servicios',
+      bio_title: 'Resumiendo',
+      bio_text: `Viviendo el presente y con mira hacia el futuro, DISEÑO & VANGUARDIA, en el 2015,  nace como resultado de la pasión por el diseño y el arte, superándose en cada uno de los proyectos.`,
       bio_text_paragraph:
-        "Yusmary Villarroel, su fundadora inicia sus estudios de arquitectura en el 2006, y desde el 2010 inicia su viaje por el mundo del diseño de espacios interiores, realizando prouyectos a nivel internacional",
-      banner_missionTitle: "Nuestra Misión",
+        'Yusmary Villarroel, su fundadora, inicia sus estudios de arquitectura en el 2006, y desde el 2010 inicia su viaje por el mundo del diseño de espacios de interiores, realizando proyectos a nivel internacional.',
+      banner_missionTitle: 'Nuestra Misión',
       banner_missionText:
         "Ofrecer MEJOR CALIDAD DE VIDA! Realizando proyectos donde la función va de la mano con la estética, generando espacios que tienen personalidad y cuentan una historia, el cual se adapta a sus necesidades del dia a dia.",
       banner_valuesTitle: "Nuestros Valores",
       banner_valuesText:
-        "CALIDAD + INOVACION + SERVICIOS PERSONALIZADOS + COMPROMISO",
-      banner_valuesSubText: "Son nuestros pilares",
+        'CALIDAD + INNOVACION + SERVICIOS PERSONALIZADOS + COMPROMISO',
+      banner_valuesSubText: 'Son nuestros pilares',
+      values: {
+        value_1: 'CALIDAD & INOVACION',
+        value_2: 'SERVICIOS PERSONALIZADOS',
+        value_3: 'COMPROMISO',
+      },
     },
     services: {
-      carousel_card_title_1: "titulo 1",
-      carousel_card_title_2: "titulo 2",
-      carousel_card_title_3: "titulo 3",
-      carousel_card_description_1: "Servicios personalizados",
-      carousel_card_description_2: "Diseños Artisticos",
-      carousel_card_description_3: "Ultimas Tendecias",
-      hero_title: "Conoce nuestros serivicios",
-      nextPage: "Echa un vistazo",
-      skills_row1_title: "ASESORIA ONLINE",
+      carousel_card_title_1: 'titulo 1',
+      carousel_card_title_2: 'titulo 2',
+      carousel_card_title_3: 'titulo 3',
+      carousel_card_description_1: 'Servicios personalizados',
+      carousel_card_description_2: 'Diseños Artisticos',
+      carousel_card_description_3: 'Ultimas Tendecias',
+      hero_scape: "DISEÑO & VANGUARDIA, ", 
+      hero_title: 'Te Ofrece',
+      nextPage: 'Echa un vistazo',
+      skills_row1_title: 'ASESORIA ONLINE',
       skills_row1_text:
-        "Acompaños a cada cliente desde el inicio, ofreciendo las últimas tendencias en productos y servicios a nivel internacional",
-      skills_row2_title: "DISEÑO DE ESPACIOS DE INTERIORES",
+        'Acompañamos a cada cliente desde el inicio, ofreciendo las últimas tendencias en productos y servicios a nivel internacional',
+      skills_row2_title: 'DISEÑO DE ESPACIOS DE INTERIORES',
       skills_row2_text:
         "Brindamos soluciones integrales para tu hogar, espacios corporativos, hotelería y áreas recreativas",
       skills_row3_title: "3D",
@@ -155,36 +166,3 @@ export const Language = {
     },
   },
 };
-
-export const Skills = [
-  {
-    id: 1,
-    name: "OFfice Decorate",
-    image: "../assets/images/Logo.png",
-  },
-  {
-    id: 2,
-    name: "Home Decorate",
-    image: "../assets/images/Logo.png",
-  },
-  {
-    id: 3,
-    name: "LIGHTING DECORATE",
-    image: "../assets/images/Logo.png",
-  },
-  {
-    id: 4,
-    name: "Smart Kitchen Setup",
-    image: "../assets/images/Logo.png",
-  },
-  {
-    id: 5,
-    name: "Kitchen Sink Design",
-    image: "../assets/images/Logo.png",
-  },
-  {
-    id: 6,
-    name: "Lobby Interior Design",
-    image: "../assets/images/Logo.png",
-  },
-];

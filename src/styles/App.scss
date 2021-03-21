@@ -3,9 +3,79 @@
 @import './Main.scss';
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
-@import "~bootstrap/scss/bootstrap";
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+
+//test1
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+
+//test2
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Fugaz+One&display=swap');
+
+//test3
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+
+//test4
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+//test5
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
+
+//test6
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+//test7
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+
+//test8
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
+//test9
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+
+//test10
+@import url('https://fonts.googleapis.com/css2?family=Syncopate&display=swap');
+
+//test11
+@import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap');
+
+//test12
+@import url('https://fonts.googleapis.com/css2?family=Charm&display=swap');
+
+//test13
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@700&display=swap');
+
+//test14
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
+//test15
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap');
+
+//test16
+@import url('https://fonts.googleapis.com/css2?family=Nova+Flat&display=swap');
+
+@import '~bootstrap/scss/bootstrap';
 $theme-font: 'Muli', sans-serif;
 $quicksand: 'Quicksand', sans-serif;
+$test-font: 'Caveat', cursive;
+
+//tests
+$test_1: 'Redressed', cursive;
+$test_2: 'Courgette', 'Fugaz', cursive;
+$test_3: 'Fugaz One', cursive;
+$test_4: 'Audiowide', cursive;
+$test_5: 'El Messiri', sans-serif;
+$test_6: 'Black Ops One', cursive;
+$test_7: 'Oleo Script', cursive;
+$test_8: 'Michroma', sans-serif;
+$test_9: 'Niconne', cursive;
+$test_10: 'Syncopate', sans-serif;
+$test_11: 'Syncopate', sans-serif;
+$test_12: 'Charm', cursive;
+$test_13: 'Charm', cursive;
+$test_14: 'Major Mono Display', monospace;
+$test_15: 'MuseoModerno', cursive;
+$test_16: 'Nova Flat', cursive;
 
 body {
   font-family: $quicksand;
