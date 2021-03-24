@@ -38,3 +38,38 @@
     }
   }
 }
+
+.portafolioDetail__container {
+  margin: 2rem 0;
+  height: 675px;
+  background-color: rgb(233, 195, 195);
+.portafolioDetail__topsection {
+  text-align: center;
+  @include centerFlex;
+  margin: 0 auto;
+  height: 350px;
+  background-color: aquamarine;
+  &-title {
+    background-color: chocolate;
+    height: 300px;
+  }
+  &-images {
+    background-color: magenta;
+    height: 300px;
+    @include centerFlex;
+  }
+}
+.portafolioDetail__botsection {
+  text-align: center;
+  @include centerFlex;
+  margin: 0 auto;
+  height: 212px;
+  background-color: rgb(127, 129, 255);
+  &-desc{
+    text-align: left;
+  }
+  &-utils{
+    @include startFlex;
+  }
+}
+}
