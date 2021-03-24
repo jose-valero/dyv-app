@@ -1,17 +1,5 @@
 export const Language = {
   EN: {
-    brand: { title: "Diseño & Vanguardia" },
-    home: {
-      brandText: "DESIGNS THAT REFLECT YOUR INSIDE",
-    },
-    contact: {
-      headline: "CONTACT US",
-      nameLabel: "Name",
-      lastNameLabel: "Last Name",
-      belongToLabel: "You belong to",
-      submitButtonText: "SUBMIT",
-      checkboxRadio: ["Individual", "Company"],
-    },
     about: {
       hero_scape: "Escape",
       hero_title: "into an amazing experience",
@@ -27,19 +15,50 @@ export const Language = {
       extraordinary. For us it is very important that the function go
       hand in hand with aesthetics, that each space has personality and
       tell a story, which suits your needs and up-to-the-minute. AT
-       DISEÑO & VANGUARDIA WE CREATE YOUR DREAM SPACE!`,
+      DISEÑO & VANGUARDIA WE CREATE YOUR DREAM SPACE!`,
       banner_missionTitle: "Our Mision",
       banner_missionText:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minima exercitationem earum, molestias est reprehenderit adipisci ipsum ipsa ullam officiis esse? Itaque officia cumque, provident ipsam sunt perferendis sit totam?",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minima exercitationem earum, molestias est reprehenderit adipisci ipsum ipsa ullam officiis esse? Itaque officia cumque, provident ipsam sunt perferendis sit totam?",
       banner_valuesTitle: "Our Worth",
       banner_valuesText:
-        'CALIDAD + INNOVACION + SERVICIOS PERSONALIZADOS + COMPROMISO',
+      'CALIDAD + INNOVACION + SERVICIOS PERSONALIZADOS + COMPROMISO',
       banner_valuesSubText: 'Son nuestros pilares',
       values: {
         value_1: 'QUALITY & INNOVATION',
         value_2: 'CUSTOMIZED SERVICES',
         value_3: 'COMMITMENT',
       },
+    },
+    allies: {
+      hero_scape: "We make",
+      hero_title: "the difference",
+    },
+    brand: { title: "Diseño & Vanguardia" },
+    contact: {
+      headline: "CONTACT US",
+      nameLabel: "Name",
+      lastNameLabel: "Last Name",
+      belongToLabel: "You belong to",
+      submitButtonText: "SUBMIT",
+      checkboxRadio: ["Individual", "Company"],
+    },
+    home: {
+      brandText: "DESIGNS THAT REFLECT YOUR INSIDE",
+    },
+    portafolio: {
+      hero_scape: "Desing",
+      hero_title: "and Vanguard, we offer you",
+      nextPage: "Take a look Around",
+      descriptionHeadline: "International Scope",
+      descriptionSubhead: "Know the places where we have worked",
+    },
+
+    navbar: {
+      knowus: "about",
+      services: "services",
+      portafolio: "portafolio",
+      allies: "allies",
+      contact: "contact",
     },
     services: {
       carousel_card_title_1: "Text one",
@@ -64,24 +83,7 @@ export const Language = {
       skills_row4_text:
         "We produce plans for our clients ranging from architects and interior designers to contractors, construction companies and individuals.",
     },
-    portafolio: {
-      hero_scape: "Desing",
-      hero_title: "and Vanguard, we offer you",
-      nextPage: "Take a look Around",
-      descriptionHeadline: "International Scope",
-      descriptionSubhead: "Know the places where we have worked",
-    },
-    allies: {
-      hero_scape: "We make",
-      hero_title: "the difference",
-    },
-    navbar: {
-      knowus: "about",
-      services: "services",
-      portafolio: "portafolio",
-      allies: "allies",
-      contact: "contact",
-    },
+ 
   },
   ES: {
     brand_name: {
@@ -108,6 +110,7 @@ export const Language = {
       descriptionHeadline: "Alcance Internacional",
       descriptionSubhead: "Conoce los lugares en donde hemos trabajado",
     },
+
     allies: {
       hero_scape: "Nosotros",
       hero_title: "hacemos la diferencia",
@@ -166,3 +169,191 @@ export const Language = {
     },
   },
 };
+
+export const PortafolioDetail = {
+  EN: {
+    project_1: {
+      id: "en_project_1",
+      location: "miami USA EN",
+      title: "hola detalle de proyecto #1",
+      title_detail: "lista de detalles",
+      img: require("../ui/pages/Portafolio/assets/C_006.jpg"),
+      detail_item_1: "item#1",
+      detail_item_2: "item#2",
+      detail_item_3: "item#3",
+      detail_item_4: "item#4",
+      detail_item_5: "item#5",
+      description: "content description",
+      utils: {
+        donwload: "download",
+        year: "2092",
+        keyword_1: "keyword_1",
+        keyword_2: "keyword_2",
+      }
+    },
+    project_2: {
+      id: "en_project_2",
+      location: "miami USA EN",
+      title: "hola detalle de proyecto #2",
+      title_detail: "lista de detalles",
+      detail_item_1: "item#1",
+      detail_item_2: "item#2",
+      detail_item_3: "item#3",
+      detail_item_4: "item#4",
+      detail_item_5: "item#5",
+      description: "content description",
+      utils: {
+        donwload: "download",
+        year: "2092",
+        keyword_1: "keyword_1",
+        keyword_2: "keyword_2",
+      }
+    },
+    project_3: {
+      id: "en_project_3",
+      location: "miami USA EN",
+      title: "hola detalle de proyecto #3",
+      title_detail: "lista de detalles",
+      detail_item_1: "item#1",
+      detail_item_2: "item#2",
+      detail_item_3: "item#3",
+      detail_item_4: "item#4",
+      detail_item_5: "item#5",
+      description: "content description",
+      utils: {
+        donwload: "download",
+        year: "2092",
+        keyword_1: "keyword_1",
+        keyword_2: "keyword_2",
+      }
+    },
+    project_4: {
+      id: "en_project_4",
+      location: "miami USA EN",
+      title: "hola detalle de proyecto #4",
+      title_detail: "lista de detalles",
+      detail_item_1: "item#1",
+      detail_item_2: "item#2",
+      detail_item_3: "item#3",
+      detail_item_4: "item#4",
+      detail_item_5: "item#5",
+      description: "content description",
+      utils: {
+        donwload: "download",
+        year: "2092",
+        keyword_1: "keyword_1",
+        keyword_2: "keyword_2",
+      }
+    },
+    project_5: {
+      id: "en_project_5",
+      location: "miami USA EN",
+      title: "hola detalle de proyecto #5",
+      title_detail: "lista de detalles",
+      detail_item_1: "item#1",
+      detail_item_2: "item#2",
+      detail_item_3: "item#3",
+      detail_item_4: "item#4",
+      detail_item_5: "item#5",
+      description: "content description",
+      utils: {
+        donwload: "download",
+        year: "2092",
+        keyword_1: "keyword_1",
+        keyword_2: "keyword_2",
+      }
+    },
+  },
+  ES: {
+    project_1: {
+      id: "es_project_1",
+      location: "miami USA ES",
+      title: "hola detalle de proyecto #1",
+      title_detail: "lista de detalles",
+      detail_item_1: "item#1",
+      detail_item_2: "item#2",
+      detail_item_3: "item#3",
+      detail_item_4: "item#4",
+      detail_item_5: "item#5",
+      description: "content description",
+      utils: {
+        donwload: "download",
+        year: "2092",
+        keyword_1: "keyword_1",
+        keyword_2: "keyword_2",
+      }
+    },
+    project_2: {
+      id: "es_project_2",
+      location: "miami USA ES",
+      title: "hola detalle de proyecto #2",
+      title_detail: "lista de detalles",
+      detail_item_1: "item#1",
+      detail_item_2: "item#2",
+      detail_item_3: "item#3",
+      detail_item_4: "item#4",
+      detail_item_5: "item#5",
+      description: "content description",
+      utils: {
+        donwload: "download",
+        year: "2092",
+        keyword_1: "keyword_1",
+        keyword_2: "keyword_2",
+      }
+    },
+    project_3: {
+      id: "es_project_3",
+      location: "miami USA ES",
+      title: "hola detalle de proyecto #3",
+      title_detail: "lista de detalles",
+      detail_item_1: "item#1",
+      detail_item_2: "item#2",
+      detail_item_3: "item#3",
+      detail_item_4: "item#4",
+      detail_item_5: "item#5",
+      description: "content description",
+      utils: {
+        donwload: "download",
+        year: "2092",
+        keyword_1: "keyword_1",
+        keyword_2: "keyword_2",
+      }
+    },
+    project_4: {
+      id: "es_project_4",
+      location: "miami USA ES",
+      title: "hola detalle de proyecto #4",
+      title_detail: "lista de detalles",
+      detail_item_1: "item#1",
+      detail_item_2: "item#2",
+      detail_item_3: "item#3",
+      detail_item_4: "item#4",
+      detail_item_5: "item#5",
+      description: "content description",
+      utils: {
+        donwload: "download",
+        year: "2092",
+        keyword_1: "keyword_1",
+        keyword_2: "keyword_2",
+      }
+    },
+    project_5: {
+      id: "es_project_5",
+      location: "miami USA ES",
+      title: "hola detalle de proyecto #5",
+      title_detail: "lista de detalles",
+      detail_item_1: "item#1",
+      detail_item_2: "item#2",
+      detail_item_3: "item#3",
+      detail_item_4: "item#4",
+      detail_item_5: "item#5",
+      description: "content description",
+      utils: {
+        donwload: "download",
+        year: "2092",
+        keyword_1: "keyword_1",
+        keyword_2: "keyword_2",
+      }
+    },
+  }
+}

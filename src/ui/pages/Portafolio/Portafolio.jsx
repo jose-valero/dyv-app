@@ -42,7 +42,6 @@ const Portafolio = () => {
           <Image src={MAP} fluid />
           <Row className='portafolio__card pb-4'>
             {places.map((clientPlace) => (
-          
                 <Col xs='4' className='portafolio__card--content'>
                   <Link to='/portafolio/project_1'>
                     <Card className='portafolio__card--content---cards'>
@@ -55,7 +54,6 @@ const Portafolio = () => {
                     </Card>
                   </Link>
                 </Col>
-             
             ))}
           </Row>
         </>
