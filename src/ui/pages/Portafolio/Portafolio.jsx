@@ -34,29 +34,32 @@ const Portafolio = () => {
     <PageContainer>
       {/* <Hero displayOnPage='portafolio' /> */}
       <Container className='portfolio__page'>
-        <Description
-          title={Language[`${lang}`].portafolio.descriptionHeadline}
-          text={Language[`${lang}`].portafolio.descriptionSubhead}
-        />
-        <Image src={MAP} fluid />
-        <Row className='portafolio__card pb-4'>
-          {places.map((clientPlace) => (
-            <Col xs='4' className='portafolio__card--content'>
-              <Link to='/portafolio'>
-                <Card className='portafolio__card--content---cards'>
-                  <Card.Img variant='top' src={C_006} />
-                  <Card.Body className='mx-1 px-0'>
-                    <Card.Text className='portafolio__card--text'>
-                      {clientPlace}
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </Link>
-            </Col>
-          ))}
-        </Row>
+        <>
+          <Description
+            title={Language[`${lang}`].portafolio.descriptionHeadline}
+            text={Language[`${lang}`].portafolio.descriptionSubhead}
+          />
+          <Image src={MAP} fluid />
+          <Row className='portafolio__card pb-4'>
+            {places.map((clientPlace) => (
+          
+                <Col xs='4' className='portafolio__card--content'>
+                  <Link to='/portafolio/project_1'>
+                    <Card className='portafolio__card--content---cards'>
+                      <Card.Img variant='top' src={C_006} />
+                      <Card.Body className='mx-1 px-0'>
+                        <Card.Text className='portafolio__card--text'>
+                          {clientPlace}
+                        </Card.Text>
+                      </Card.Body>
+                    </Card>
+                  </Link>
+                </Col>
+             
+            ))}
+          </Row>
+        </>
       </Container>
-      <PlacesDetails />
     </PageContainer>
   );
 };

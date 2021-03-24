@@ -5,9 +5,11 @@ import Badge from 'react-bootstrap/Badge';
 import { PageContainer } from '../../components/Container/PageContainer';
 import Image from 'react-bootstrap/Image';
 import imgTest from './assets/C_006.jpg';
+import { Hero } from '../../components';
 const PlacesDetails = () => {
   return (
     <PageContainer>
+       <Hero displayOnPage='portafolio' />
       <Container className='portafolioDetail__container'>
         <h1 className='text-center'>HOLA PROYECTO #n</h1>
         <Row className='portafolioDetail__topsection'>
