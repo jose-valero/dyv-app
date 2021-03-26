@@ -5,7 +5,7 @@ import Badge from 'react-bootstrap/Badge';
 import { PageContainer } from '../../components/Container/PageContainer';
 import { useSelector } from 'react-redux';
 import Image from 'react-bootstrap/Image';
-import imgTest from './assets/C_006.jpg';
+import imgTest from './assets/L_002.jpg';
 import { Hero } from '../../components';
 import { useHistory, useParams } from 'react-router-dom';
 import { PortafolioDetail, Language } from '../../../data';
@@ -53,7 +53,7 @@ const PlacesDetails = () => {
               </ul>
             </Col>
             <Col className='portafolioDetail__topsection-images'>
-              <Image src={imgTest} fluid />
+              <Image src={value.img.default} fluid />
             </Col>
           </Row>
           <Row className='portafolioDetail__botsection'>
