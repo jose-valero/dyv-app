@@ -65,7 +65,7 @@ export const Language = {
       carousel_card_title_2: "text two",
       carousel_card_title_3: "text three",
       carousel_card_description_1: "Customized services",
-      carousel_card_description_2: "Artistic Designs",
+      carousel_card_description_2: "Exclusive Services",
       carousel_card_description_3: "Latest Trends",
       hero_title: "know more about our services",
       nextPage: "Take a look Around",
@@ -140,8 +140,8 @@ export const Language = {
       carousel_card_title_1: 'titulo 1',
       carousel_card_title_2: 'titulo 2',
       carousel_card_title_3: 'titulo 3',
-      carousel_card_description_1: 'Servicios personalizados',
-      carousel_card_description_2: 'Diseños Artisticos',
+      carousel_card_description_1: 'Servicios Personalizados',
+      carousel_card_description_2: 'Diseños Exclusivos',
       carousel_card_description_3: 'Ultimas Tendecias',
       hero_scape: "DISEÑO & VANGUARDIA, ", 
       hero_title: 'Te Ofrece',
@@ -166,7 +166,7 @@ export const Language = {
       portafolio: "portafolio",
       allies: "aliados",
       contact: "contacto",
-    },
+    }, 
   },
 };
 
