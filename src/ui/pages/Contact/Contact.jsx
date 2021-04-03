@@ -7,7 +7,7 @@ import Col from "react-bootstrap/Col";
 import FormCheck from "react-bootstrap/FormCheck";
 import { InputText} from '../../components';
 import { PageContainer } from '../../components/Container/PageContainer';
-import bgFormImage from "../../../assets/images/C_005.jpg";
+import L_001 from "./assets/L_001.jpg";
 import "./Contact.scss";
 
 const Contact = () => {
@@ -25,7 +25,7 @@ const Contact = () => {
         <Row>
           <Col xs={12} md={5} className="p-0 main-col">
             <figure>
-              <img src={bgFormImage} alt="" />
+              <img src={L_001} alt="" />
             </figure>
           </Col>
           <Col xs={12} md={7} className="main-col">

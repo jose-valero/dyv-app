@@ -18,10 +18,13 @@ export const Language = {
       DISEÑO & VANGUARDIA WE CREATE YOUR DREAM SPACE!`,
       banner_missionTitle: "Our Mision",
       banner_missionText:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minima exercitationem earum, molestias est reprehenderit adipisci ipsum ipsa ullam officiis esse? Itaque officia cumque, provident ipsam sunt perferendis sit totam?",
+      "OfferING BETTER QUALITY OF LIFE! Making projects where function goes hand in hand with aesthetics, generating spaces that have personality and tell a story, which adapts to your daily needs.",
+      banner_missionCardText: {
+        card_1: "CONFORT",
+        card_2: "DESIGN",
+        card_3: "DETAILS",
+      },
       banner_valuesTitle: "Our Worth",
-      banner_valuesText:
-      'CALIDAD + INNOVACION + SERVICIOS PERSONALIZADOS + COMPROMISO',
       banner_valuesSubText: 'Son nuestros pilares',
       values: {
         value_1: 'QUALITY & INNOVATION',
@@ -65,7 +68,7 @@ export const Language = {
       carousel_card_title_2: "text two",
       carousel_card_title_3: "text three",
       carousel_card_description_1: "Customized services",
-      carousel_card_description_2: "Exclusive Services",
+      carousel_card_description_2: "Artistic Designs",
       carousel_card_description_3: "Latest Trends",
       hero_title: "know more about our services",
       nextPage: "Take a look Around",
@@ -126,9 +129,12 @@ export const Language = {
       banner_missionTitle: 'Nuestra Misión',
       banner_missionText:
         "Ofrecer MEJOR CALIDAD DE VIDA! Realizando proyectos donde la función va de la mano con la estética, generando espacios que tienen personalidad y cuentan una historia, el cual se adapta a sus necesidades del dia a dia.",
+        banner_missionCardText: {
+          card_1: "CONFORT",
+          card_2: "DISEÑO",
+          card_3: "DETALLES",
+        },
       banner_valuesTitle: "Nuestros Valores",
-      banner_valuesText:
-        'CALIDAD + INNOVACION + SERVICIOS PERSONALIZADOS + COMPROMISO',
       banner_valuesSubText: 'Son nuestros pilares',
       values: {
         value_1: 'CALIDAD & INOVACION',
@@ -140,8 +146,8 @@ export const Language = {
       carousel_card_title_1: 'titulo 1',
       carousel_card_title_2: 'titulo 2',
       carousel_card_title_3: 'titulo 3',
-      carousel_card_description_1: 'Servicios Personalizados',
-      carousel_card_description_2: 'Diseños Exclusivos',
+      carousel_card_description_1: 'Servicios personalizados',
+      carousel_card_description_2: 'Diseños Artisticos',
       carousel_card_description_3: 'Ultimas Tendecias',
       hero_scape: "DISEÑO & VANGUARDIA, ", 
       hero_title: 'Te Ofrece',
@@ -166,7 +172,7 @@ export const Language = {
       portafolio: "portafolio",
       allies: "aliados",
       contact: "contacto",
-    }, 
+    },
   },
 };
 
