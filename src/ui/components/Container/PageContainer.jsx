@@ -8,5 +8,5 @@ export const PageContainer = styled.div`
   overflow: hidden;
   width: 100%;
 `;
-console.log(_variables, 'variables');
+
 
