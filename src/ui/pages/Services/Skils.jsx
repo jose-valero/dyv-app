@@ -8,7 +8,7 @@ import { useSelector } from 'react-redux';
 
 import B_001 from './assets/B_001.jpg';
 import C_004 from './assets/C_004.jpg';
-import C_010 from './assets/C_010.jpg';
+import C_011 from './assets/C_011.jpg';
 import D_001 from './assets/D_001.jpg';
 import P_001 from './assets/P_001.jpg';
 
@@ -32,7 +32,7 @@ const Skils = () => {
       {/* ROW 1 */}
       <Row className='skills__container--row '>
         <Col md={6} className='skills__container--row--left'>
-          <Image src={C_010} className='skills__images' />
+          <Image src={C_011} className='skills__images' />
         </Col>
         <Col md={6} className='skills__container--row--right m-auto'>
           <div className="skills__content">

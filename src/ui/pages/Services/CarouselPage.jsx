@@ -3,7 +3,7 @@ import { Language } from '../../../data';
 import Carousel from 'react-bootstrap/Carousel';
 import C_007 from './assets/C_007.jpg';
 import C_008 from './assets/C_008.jpg';
-import C_009 from './assets/C_009.jpg';
+import L_003 from './assets/L_003.jpg';
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
@@ -27,13 +27,13 @@ const CarouselPage = () => {
         <Col>
           <Carousel>
             <Carousel.Item>
-              <img className='carousel__image ' src={C_009} alt='First slide' />
+              <img className='carousel__image ' src={L_003} alt='First slide' />
               <Carousel.Caption>
                 <p className="carousel__caption">{captionDesc_1}</p>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-              <img className='carousel__image ' src={C_008} alt='Third slide' />
+              <img className='carousel__image' src={C_008} alt='Second slide' />
               <Carousel.Caption>
                 <p className="carousel__caption">{captionDesc_2}</p>
               </Carousel.Caption>
