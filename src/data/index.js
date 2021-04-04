@@ -137,7 +137,7 @@ export const Language = {
       banner_valuesTitle: "Nuestros Valores",
       banner_valuesSubText: 'Son nuestros pilares',
       values: {
-        value_1: 'CALIDAD & INOVACION',
+        value_1: 'CALIDAD & INNOVACION',
         value_2: 'SERVICIOS PERSONALIZADOS',
         value_3: 'COMPROMISO',
       },

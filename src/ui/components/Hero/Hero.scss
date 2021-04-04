@@ -124,8 +124,9 @@
   }
 }
 .hero__animated {
- font-family: $test_16;
- font-size: 2.125rem;
+ font-family: $test_11;
+ font-size: 1.25rem;
+ font-weight: 200;
   // @include font-size($xl-font-sizes);
   @include breakpoint(mobile) {
     font-size: 1.25rem;
