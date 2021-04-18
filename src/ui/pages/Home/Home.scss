@@ -62,12 +62,7 @@
     }
   }
 }
-#test:hover {
-  img:hover {
-    @include transition_ease1;
-    transform: scale(2.05);
-  }
-}
+
 .home__right-section {
   @include centerFlex;
   background-color: $pal-1_gray-1;

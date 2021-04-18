@@ -24,10 +24,8 @@ const Home = () => {
               data-aos-delay='10'
               data-aos-offset='0'
               className="test"
-              id="test"
             />
           </div>
-         
         </div>
       </section>
       <section className='home__right-section'>
