@@ -1,7 +1,7 @@
-@import "../../../styles/fonts";
-@import "../../../styles/media";
-@import "../../../styles/mixins";
-@import "../../../styles/variables.module";
+@import '../../../styles/fonts';
+@import '../../../styles/media';
+@import '../../../styles/mixins';
+@import '../../../styles/variables.module';
 
 .footer__container {
   position: relative;
@@ -15,7 +15,7 @@
     display: none;
   }
   img {
-    width: 90%;
+    width: 70%;
     min-width: 50px;
     height: auto;
     margin: auto;
@@ -78,13 +78,14 @@
         border: none;
         outline: 0;
         .sendButton {
-          bottom: 0;
+          // align-items:initial;
+          // bottom: 0
           cursor: pointer;
           height: auto;
           fill: $pal-1_gray-3;
-          width: 45px;
+          width: 2rem;
           @include breakpoint(mobile) {
-            width: 25px;
+            width: 1.25rem;
           }
         }
       }
@@ -136,5 +137,16 @@
     svg {
       fill: red;
     }
+  }
+}
+
+.footer__customToast {
+  &--success {
+    background-color: $warm_oj-1;
+    color: $pal-1_white;
+  }
+  &--error {
+    background-color: $pal-1_gray-3;
+    color: $pal-1_dark;
   }
 }

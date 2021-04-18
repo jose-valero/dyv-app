@@ -9,7 +9,7 @@ import Image from 'react-bootstrap/Image';
 import Card from 'react-bootstrap/Card';
 import { Description, Hero } from '../../components';
 import { PageContainer } from '../../components/Container/PageContainer';
-import PlacesDetails from './PlacesDetails';
+import PortafolioDetails from './PortafolioDetails';
 
 import MAP from './assets/bg-portafolio-2.png';
 import C_006 from './assets/C_006.jpg';

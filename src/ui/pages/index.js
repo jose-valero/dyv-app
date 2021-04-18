@@ -4,7 +4,7 @@ import Contact from './Contact';
 import Home from './Home';
 import NotFound from './NotFound';
 import Portafolio from './Portafolio';
-import PlacesDetails from './Portafolio/PlacesDetails';
+import PortafolioDetails from './Portafolio/PortafolioDetails';
 import Services from './Services';
 
-export { About, Allies, Contact, Home, NotFound, Portafolio, Services, PlacesDetails };
+export { About, Allies, Contact, Home, NotFound, Portafolio, Services, PortafolioDetails };

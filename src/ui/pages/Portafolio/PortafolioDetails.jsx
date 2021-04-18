@@ -10,14 +10,13 @@ import { Hero } from '../../components';
 import { useHistory, useParams } from 'react-router-dom';
 import { PortafolioDetail, Language } from '../../../data';
 
-const PlacesDetails = ({ id, match }) => {
+const PortafolioDetails = ({ id, match }) => {
   const lang = useSelector((state) => state.langReducer);
 
-  const project_id = match.params.id; 
+  const project_id = match.params.id;
   const dataDetail = PortafolioDetail[lang][project_id];
-  const asd = dataDetail[id]
-  console.log('asd', asd) 
-  
+  const asd = dataDetail[id];
+  console.log('asd', asd);
 
   const {
     title,
@@ -32,8 +31,8 @@ const PlacesDetails = ({ id, match }) => {
     title_detail,
   } = dataDetail;
 
-  console.log('josue', dataDetail); 
-  console.log(dataDetail)
+  console.log('josue', dataDetail);
+  console.log(dataDetail);
 
   return (
     <PageContainer>
@@ -41,6 +40,7 @@ const PlacesDetails = ({ id, match }) => {
 
       <Container className='portafolioDetail__container' id={id}>
         <h1 className='text-center'>{title}</h1>
+        <h1 className='text-center'>{location}</h1>
         <Row className='portafolioDetail__topsection'>
           <Col className='portafolioDetail__topsection-title'>
             {title_detail}
@@ -78,4 +78,4 @@ const PlacesDetails = ({ id, match }) => {
   );
 };
 
-export default PlacesDetails;
+export default PortafolioDetails;

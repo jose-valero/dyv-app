@@ -67,7 +67,7 @@ export const Language = {
       carousel_card_title_1: 'Text one',
       carousel_card_title_2: 'text two',
       carousel_card_title_3: 'text three',
-      carousel_card_description_1: 'Customized services',
+      carousel_card_description_1: 'Customized service',
       carousel_card_description_2: 'Artistic Designs',
       carousel_card_description_3: 'Latest Trends',
       hero_title: 'know more about our services',
@@ -106,13 +106,12 @@ export const Language = {
       checkboxRadio: ['Particular', 'Empresa'],
     },
     portafolio: {
-      hero_scape: 'Diseño',
-      hero_title: 'y Vanguardia te ofrece',
+      hero_scape: 'Construyendo',
+      hero_title: 'espacios alrededor del mundo',
       nextPage: 'Nuestros Aliados',
       descriptionHeadline: 'Alcance Internacional',
       descriptionSubhead: 'Conoce los lugares en donde hemos trabajado',
     },
-
     allies: {
       hero_scape: 'Nosotros',
       hero_title: 'hacemos la diferencia',
@@ -145,7 +144,7 @@ export const Language = {
       carousel_card_title_1: 'titulo 1',
       carousel_card_title_2: 'titulo 2',
       carousel_card_title_3: 'titulo 3',
-      carousel_card_description_1: 'Servicios personalizados',
+      carousel_card_description_1: 'Servicio personalizado',
       carousel_card_description_2: 'Diseños Artisticos',
       carousel_card_description_3: 'Ultimas Tendecias',
       hero_scape: 'DISEÑO & VANGUARDIA, ',
@@ -179,7 +178,7 @@ export const PortafolioDetail = {
   EN: {
     project_1: {
       id: 'project_1',
-      location: 'miami USA EN',
+      location: 'Miami, USA',
       title: 'hola detalle de proyecto #1',
       title_detail: 'lista de detalles',
       img: '/images/C_003.jpg',
@@ -196,7 +195,7 @@ export const PortafolioDetail = {
     },
     project_2: {
       id: 'project_2',
-      location: 'miami USA EN',
+      location: 'miami, USA',
       title: 'hola detalle de proyecto #2',
       title_detail: 'lista de detalles',
       img: '/images/C_005.jpg',
@@ -266,12 +265,13 @@ export const PortafolioDetail = {
       keyword_1: 'keyword_1',
       keyword_2: 'keyword_2',
     },
+    
   },
   ES: {
     project_1: {
       id: 'project_1',
-      location: 'miami USA ES',
-      title: 'hola detalle de proyecto #1',
+      location: 'miami USA ES - Location',
+      title: 'TITULO #1',
       title_detail: 'lista de detalles',
       img: '/images/C_003.jpg',
       detail: {
@@ -284,13 +284,13 @@ export const PortafolioDetail = {
       description: 'content description',
 
       donwload: 'download',
-      year: '2092',
-      keyword_1: 'keyword_1',
-      keyword_2: 'keyword_2',
+      year: 'AÑO',
+      keyword_1: 'ITALIA',
+      keyword_2: 'MODERN',
     },
     project_2: {
       id: 'project_2',
-      location: 'miami USA ES',
+      location: 'asd USA ES',
       title: 'hola detalle de proyecto #2',
       title_detail: 'lista de detalles',
       img: '/images/C_005.jpg',

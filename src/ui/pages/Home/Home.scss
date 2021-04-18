@@ -62,7 +62,12 @@
     }
   }
 }
-
+#test:hover {
+  img:hover {
+    @include transition_ease1;
+    transform: scale(2.05);
+  }
+}
 .home__right-section {
   @include centerFlex;
   background-color: $pal-1_gray-1;
@@ -98,12 +103,11 @@
         @include font-size($a-font-sizes);
         text-align: center;
         color: $pal-1_white;
-   
       }
       & img {
         width: 80%;
         height: auto;
-        margin:  10%;
+        margin: 10%;
         padding-bottom: 1rem;
         @include breakpoint(mobile) {
           margin: 5%;

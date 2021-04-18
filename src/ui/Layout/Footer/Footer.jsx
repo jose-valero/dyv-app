@@ -2,21 +2,66 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaWhatsapp, FaEnvelopeOpenText } from 'react-icons/fa';
 import { IoMdSend } from 'react-icons/io';
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer, toast, Zoom } from 'react-toastify';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-
 import { InputText } from '../../components';
-
 import fullLogo from '../../../assets/images/LogoLight.png';
+import axios from 'axios';
 import 'react-toastify/dist/ReactToastify.css';
 import './Footer.scss';
 
 const Footer = () => {
+  const successToast = () => {
+    toast(`Sent successfully`, {
+      className: 'footer__customToast--success',
+      draggable: true,
+      pauseOnHover: true,
+      position: toast.POSITION.BOTTOM_RIGHT,
+      closeOnClick: true,
+    });
+  };
+  const errorToast = () => {
+    toast('API ERROR', {
+      className: 'footer__customToast--error',
+      draggable: true,
+      position: toast.POSITION.BOTTOM_RIGHT,
+    });
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    toast.dark(`🎯 Sent successfully`);
+    const res = axios
+      ///////////- firebase usage -//////////
+      ///////////////////////////////////////
+      ////- aqui sera firebase, example: -///
+      //   db.collection("users").add({
+      //     first: "Alan",
+      //     middle: "Mathison",
+      //     last: "Turing",
+      //     born: 1912
+      // })
+      // .then((docRef) => {
+      //     console.log("Document written with ID: ", docRef.id);
+      // })
+      // .catch((error) => {
+      //     console.error("Error adding document: ", error);
+      // });
+      ////////////////////////////////////////
+      .get('/uasdasd')
+      .then((status) => {
+        if (status == 200) {
+          console.log('yes');
+          successToast();
+        }
+      })
+      .catch((err) => {
+        if (err) {
+          console.log('no', err);
+          errorToast();
+        }
+      });
   };
 
   return (
@@ -74,6 +119,7 @@ const Footer = () => {
                     type='submit'
                     value='Submit'
                     className='footer__newsletter--button'
+                    // onClick={successToast}
                   >
                     <IoMdSend
                       name='Go!'
@@ -81,7 +127,13 @@ const Footer = () => {
                       // style={iconSend}
                     />
                   </button>
-                  <ToastContainer position='bottom-right' />
+                  <ToastContainer
+                    position='bottom-right'
+                    transition={Zoom}
+                    draggable={false}
+                    autoClose={5000}
+                    hideProgressBar={true}
+                  />
                 </form>
               </>
             </div>

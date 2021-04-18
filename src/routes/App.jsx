@@ -9,7 +9,7 @@ import {
   NotFound,
   Portafolio,
   Services,
-  PlacesDetails,
+  PortafolioDetails,
 } from '../ui/pages';
 
 // import '../styles/App.scss';
@@ -25,7 +25,7 @@ const App = () => {
           <Route exact path='/contact' component={Contact} />
           <Route exact path='/portafolio' component={Portafolio} />
           <Route exact path='/services' component={Services} />
-          <Route path='/portafolio/:id' component={PlacesDetails} />
+          <Route path='/portafolio/:id' component={PortafolioDetails} />
           <Route path='/nf' component={NotFound} />
         </Switch>
       </Layout>
