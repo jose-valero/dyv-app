@@ -1,9 +1,6 @@
 export const Language = {
   EN: {
     about: {
-      hero_scape: 'Escape',
-      hero_title: 'into an amazing experience',
-      nextPage: 'Our Services',
       bio_title: 'Long Story Short',
       bio_text: ` The adventure begins! Living the present and looking towards the
       future, DESIGN & VANGUARDIA, was born as a result of the
@@ -26,6 +23,9 @@ export const Language = {
       },
       banner_valuesTitle: 'Our Worth',
       banner_valuesSubText: 'Son nuestros pilares',
+      hero_scape: 'Escape',
+      hero_title: 'into an amazing experience',
+      nextPage: 'Our Services',
       values: {
         value_1: 'QUALITY & INNOVATION',
         value_2: 'CUSTOMIZED SERVICES',
@@ -33,8 +33,6 @@ export const Language = {
       }
     },
     allies: {
-      hero_scape: 'We make',
-      hero_title: 'the difference',
       allies_detail: {
         allie_1: {
           id: 'allie_1',
@@ -48,12 +46,32 @@ export const Language = {
             tw: 'https://twitter.com',
             ig: 'https://instagram.com',
             pn: 'https://pinterest.com'
-          }
+          },
+          carousel: [
+            {
+              name: 'Diseño y Vanguardia / The Private Collections',
+              id: 'presentation_1',
+              image: '/images/C_005.jpg',
+              description: 'Customized service'
+            },
+            {
+              name: 'Diseño y Vanguardia / The Private Collections',
+              id: 'presentation_2',
+              image: '/images/C_008.jpg',
+              description: 'Artistic Designs'
+            },
+            {
+              name: 'Diseño y Vanguardia / The Private Collections',
+              id: 'presentation_3',
+              image: '/images/C_007.jpg',
+              description: 'Latest Trends'
+            }
+          ]
         },
         allie_2: {
           id: 'allie_2',
           logo: '/images/casainterior-logo.jpg',
-          name: 'The Private Collection 2',
+          name: 'CASAINMERIOR',
           description_1: 'EN',
           description_2: 'EN',
           description_3: 'EN',
@@ -62,37 +80,60 @@ export const Language = {
             tw: 'https://twitter.com',
             ig: 'https://instagram.com',
             pn: 'https://pinterest.com'
-          }
+          },
+          carousel: [
+            {
+              name: 'Diseño y Vanguardia / The Private Collections',
+              id: 'presentation_1',
+              image: '/images/C_005.jpg',
+              description: 'Customized service'
+            },
+            {
+              name: 'Diseño y Vanguardia / The Private Collections',
+              id: 'presentation_2',
+              image: '/images/C_008.jpg',
+              description: 'Artistic Designs'
+            },
+            {
+              name: 'Diseño y Vanguardia / The Private Collections',
+              id: 'presentation_3',
+              image: '/images/C_007.jpg',
+              description: 'Latest Trends'
+            }
+          ]
         }
       },
+      hero_scape: 'We make',
+      hero_title: 'the difference',
       nextPage: 'Contact us'
     },
-    brand: { title: 'Diseño & Vanguardia' },
+    brand_name: {
+      title: 'Diseño & Vanguardia'
+    },
     contact: {
-      headline: 'CONTACT US',
-      nameLabel: 'Name',
-      lastNameLabel: 'Last Name',
       belongToLabel: 'You belong to',
-      submitButtonText: 'SUBMIT',
-      checkboxRadio: ['Individual', 'Company']
+      checkboxRadio: ['Individual', 'Company'],
+      headline: 'CONTACT US',
+      lastNameLabel: 'Last Name',
+      nameLabel: 'Name',
+      submitButtonText: 'SUBMIT'
     },
     home: {
       brandText: 'DESIGNS THAT REFLECT YOUR INSIDE'
     },
     portafolio: {
+      descriptionHeadline: 'International Scope',
+      descriptionSubhead: 'Know the places where we have worked',
       hero_scape: 'Desing',
       hero_title: 'and Vanguard, we offer you',
-      nextPage: 'Take a look Around',
-      descriptionHeadline: 'International Scope',
-      descriptionSubhead: 'Know the places where we have worked'
+      nextPage: 'Take a look Around'
     },
-
     navbar: {
-      knowus: 'about',
-      services: 'services',
-      portafolio: 'portafolio',
       allies: 'allies',
-      contact: 'contact'
+      contact: 'contact',
+      knowus: 'about',
+      portafolio: 'portafolio',
+      services: 'services'
     },
     services: {
       carousel_card_title_1: 'Text one',
@@ -118,29 +159,29 @@ export const Language = {
     }
   },
   ES: {
-    brand_name: {
-      one: 'Diseño y Vanguardia',
-      two: 'Diseño & Vanguardia',
-      three: 'DISEÑO Y VANGUARDIA',
-      four: 'DISEÑO % VANGUARDIA'
-    },
-    home: {
-      brandText: 'DISEÑOS QUE REFLEJAN TU INTERIOR'
-    },
-    contact: {
-      headline: 'CONTACTANOS',
-      nameLabel: 'Nombre',
-      lastNameLabel: 'Apellido',
-      belongToLabel: 'Perteneces a',
-      submitButtonText: 'ENVIAR',
-      checkboxRadio: ['Particular', 'Empresa']
-    },
-    portafolio: {
-      hero_scape: 'Construyendo',
-      hero_title: 'espacios alrededor del mundo',
-      nextPage: 'Nuestros Aliados',
-      descriptionHeadline: 'Alcance Internacional',
-      descriptionSubhead: 'Conoce los lugares en donde hemos trabajado'
+    about: {
+      bio_title: 'Resumiendo',
+      bio_text: `Viviendo el presente y con mira hacia el futuro, DISEÑO & VANGUARDIA, en el 2015,  nace como resultado de la pasión por el diseño y el arte, superándose en cada uno de los proyectos.`,
+      bio_text_paragraph:
+        'Yusmary Villarroel, su fundadora, inicia sus estudios de arquitectura en el 2006, y desde el 2010 inicia su viaje por el mundo del diseño de espacios de interiores, realizando proyectos a nivel internacional.',
+      banner_missionTitle: 'Nuestra Misión',
+      banner_missionText:
+        'Ofrecer MEJOR CALIDAD DE VIDA! Realizando proyectos donde la función va de la mano con la estética, generando espacios que tienen personalidad y cuentan una historia, el cual se adapta a sus necesidades del dia a dia.',
+      banner_missionCards: {
+        card_1: { text: 'CONFORT', image: '/images/L_005.jpg', id: 'card_1' },
+        card_2: { text: 'DISEÑO', image: '/images/C_001.jpg', id: 'card_2' },
+        card_3: { text: 'DETALLES', image: '/images/C_002.jpg', id: 'card_3' }
+      },
+      banner_valuesTitle: 'Nuestros Valores',
+      banner_valuesSubText: 'Son nuestros pilares',
+      values: {
+        value_1: 'CALIDAD & INNOVACION',
+        value_2: 'SERVICIOS PERSONALIZADOS',
+        value_3: 'COMPROMISO'
+      },
+      hero_scape: 'Escapa',
+      hero_title: 'a una experienca increible.',
+      nextPage: 'Nuestros Servicios'
     },
     allies: {
       hero_scape: 'Nosotros',
@@ -160,7 +201,27 @@ export const Language = {
             tw: 'https://twitter.com',
             ig: 'https://instagram.com',
             pn: 'https://pinterest.com'
-          }
+          },
+          carousel: [
+            {
+              name: 'Diseño y Vanguardia / The Private Collections',
+              id: 'presentation_1',
+              image: '/images/C_005.jpg',
+              description: 'Customized service'
+            },
+            {
+              name: 'Diseño y Vanguardia / The Private Collections',
+              id: 'presentation_2',
+              image: '/images/C_008.jpg',
+              description: 'Artistic Designs'
+            },
+            {
+              name: 'Diseño y Vanguardia / The Private Collections',
+              id: 'presentation_3',
+              image: '/images/C_007.jpg',
+              description: 'Latest Trends'
+            }
+          ]
         },
         allie_2: {
           id: 'allie_2',
@@ -175,34 +236,61 @@ export const Language = {
             tw: 'https://twitter.com',
             ig: 'https://instagram.com',
             pn: 'https://pinterest.com'
-          }
+          },
+          carousel: [
+            {
+              name: 'Diseño y Vanguardia / The Private Collections',
+              id: 'presentation_1',
+              image: '/images/C_005.jpg',
+              description: 'Customized service'
+            },
+            {
+              name: 'Diseño y Vanguardia / The Private Collections',
+              id: 'presentation_2',
+              image: '/images/C_008.jpg',
+              description: 'Artistic Designs'
+            },
+            {
+              name: 'Diseño y Vanguardia / The Private Collections',
+              id: 'presentation_3',
+              image: '/images/C_007.jpg',
+              description: 'Latest Trends'
+            }
+          ]
         }
       },
       nextPage: 'Contactanos'
     },
-    about: {
-      hero_scape: 'Escapa',
-      hero_title: 'a una experienca increible.',
-      nextPage: 'Nuestros Servicios',
-      bio_title: 'Resumiendo',
-      bio_text: `Viviendo el presente y con mira hacia el futuro, DISEÑO & VANGUARDIA, en el 2015,  nace como resultado de la pasión por el diseño y el arte, superándose en cada uno de los proyectos.`,
-      bio_text_paragraph:
-        'Yusmary Villarroel, su fundadora, inicia sus estudios de arquitectura en el 2006, y desde el 2010 inicia su viaje por el mundo del diseño de espacios de interiores, realizando proyectos a nivel internacional.',
-      banner_missionTitle: 'Nuestra Misión',
-      banner_missionText:
-        'Ofrecer MEJOR CALIDAD DE VIDA! Realizando proyectos donde la función va de la mano con la estética, generando espacios que tienen personalidad y cuentan una historia, el cual se adapta a sus necesidades del dia a dia.',
-      banner_missionCards: {
-        card_1: { text: 'CONFORT', image: '/images/L_005.jpg', id: 'card_1' },
-        card_2: { text: 'DISEÑO', image: '/images/C_001.jpg', id: 'card_2' },
-        card_3: { text: 'DETALLES', image: '/images/C_002.jpg', id: 'card_3' }
-      },
-      banner_valuesTitle: 'Nuestros Valores',
-      banner_valuesSubText: 'Son nuestros pilares',
-      values: {
-        value_1: 'CALIDAD & INNOVACION',
-        value_2: 'SERVICIOS PERSONALIZADOS',
-        value_3: 'COMPROMISO'
-      }
+    brand_name: {
+      one: 'Diseño y Vanguardia',
+      two: 'Diseño & Vanguardia',
+      three: 'DISEÑO Y VANGUARDIA',
+      four: 'DISEÑO % VANGUARDIA'
+    },
+    contact: {
+      belongToLabel: 'Perteneces a',
+      checkboxRadio: ['Particular', 'Empresa'],
+      headline: 'CONTACTANOS',
+      lastNameLabel: 'Apellido',
+      nameLabel: 'Nombre',
+      submitButtonText: 'ENVIAR'
+    },
+    home: {
+      brandText: 'DISEÑOS QUE REFLEJAN TU INTERIOR'
+    },
+    portafolio: {
+      descriptionHeadline: 'Alcance Internacional',
+      descriptionSubhead: 'Conoce los lugares en donde hemos trabajado',
+      hero_scape: 'Construyendo',
+      hero_title: 'espacios alrededor del mundo',
+      nextPage: 'Nuestros Aliados'
+    },
+    navbar: {
+      allies: 'aliados',
+      contact: 'contacto',
+      knowus: 'conocenos',
+      portafolio: 'portafolio',
+      services: 'servicios'
     },
     services: {
       carousel_card_title_1: 'titulo 1',
@@ -212,7 +300,7 @@ export const Language = {
       carousel_card_description_2: 'Diseños Artisticos',
       carousel_card_description_3: 'Ultimas Tendecias',
       hero_scape: 'DISEÑO & VANGUARDIA, ',
-      hero_title: 'Te Ofrece',
+      hero_title: 'Te Ofrece lo mejor',
       nextPage: 'Echa un vistazo',
       skills_row1_title: 'ASESORIA ONLINE',
       skills_row1_text:
@@ -227,13 +315,6 @@ export const Language = {
       skills_row4_title: 'PLANOS',
       skills_row4_text:
         'Realizamos los planos de nuestros Clientes que van desde arquitenctos y deseñadores de interiores hasta contratistas, empresas constructoras y particulares'
-    },
-    navbar: {
-      knowus: 'conocenos',
-      services: 'servicios',
-      portafolio: 'portafolio',
-      allies: 'aliados',
-      contact: 'contacto'
     }
   }
 };
@@ -451,48 +532,6 @@ export const CarouselData = {
         image: '/images/C_007.jpg',
         description: 'Latest Trends'
       }
-    },
-    allies: {
-      the_private_collections: {
-        pc_item_1: {
-          name: 'Diseño y Vanguardia / The Private Collections',
-          id: 'presentation_1',
-          image: '/images/C_005.jpg',
-          description: 'Customized service'
-        },
-        pc_item_2: {
-          name: 'Diseño y Vanguardia / The Private Collections',
-          id: 'presentation_2',
-          image: '/images/C_008.jpg',
-          description: 'Artistic Designs'
-        },
-        pc_item_3: {
-          name: 'Diseño y Vanguardia / The Private Collections',
-          id: 'presentation_3',
-          image: '/images/C_007.jpg',
-          description: 'Latest Trends'
-        }
-      },
-      casa_interior: {
-        ci_item_1: {
-          name: ' Diseño y Vanguardia / Casa Interior',
-          id: 'presentation_1',
-          image: '/images/C_005.jpg',
-          description: 'Customized service'
-        },
-        ci_item_2: {
-          name: ' Diseño y Vanguardia / Casa Interior',
-          id: 'presentation_2',
-          image: '/images/C_008.jpg',
-          description: 'Artistic Designs'
-        },
-        ci_item_3: {
-          name: ' Diseño y Vanguardia / Casa Interior',
-          id: 'presentation_3',
-          image: '/images/C_007.jpg',
-          description: 'Latest Trends'
-        }
-      }
     }
   },
   ES: {
@@ -511,48 +550,6 @@ export const CarouselData = {
         id: 'presentation_3',
         image: '/images/C_007.jpg',
         description: 'Ultimas Tendecias'
-      }
-    },
-    allies: {
-      the_private_collections: {
-        pc_item_1: {
-          name: 'Diseño y Vanguardia / The Private Collections',
-          id: 'presentation_1',
-          image: '/images/C_005.jpg',
-          description: 'Customized service'
-        },
-        pc_item_2: {
-          name: 'Diseño y Vanguardia / The Private Collections',
-          id: 'presentation_2',
-          image: '/images/C_008.jpg',
-          description: 'Artistic Designs'
-        },
-        pc_item_3: {
-          name: 'Diseño y Vanguardia / The Private Collections',
-          id: 'presentation_3',
-          image: '/images/C_007.jpg',
-          description: 'Latest Trends'
-        }
-      },
-      casa_interior: {
-        ci_item_1: {
-          name: ' Diseño y Vanguardia / Casa Interior',
-          id: 'presentation_1',
-          image: '/images/C_005.jpg',
-          description: 'Customized service'
-        },
-        ci_item_2: {
-          name: ' Diseño y Vanguardia / Casa Interior',
-          id: 'presentation_2',
-          image: '/images/C_008.jpg',
-          description: 'Artistic Designs'
-        },
-        ci_item_3: {
-          name: ' Diseño y Vanguardia / Casa Interior',
-          id: 'presentation_3',
-          image: '/images/C_007.jpg',
-          description: 'Latest Trends'
-        }
       }
     }
   }

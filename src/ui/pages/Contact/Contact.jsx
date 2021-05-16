@@ -22,7 +22,7 @@ const Contact = () => {
   return (
     <PageContainer>
       <Hero displayOnPage='about' />
-      <Container className='form__container'>
+      <Container className='form__container' fluid>
         <Row>
           <Col xs={12} md={5} className='p-0 main-col'>
             <figure>

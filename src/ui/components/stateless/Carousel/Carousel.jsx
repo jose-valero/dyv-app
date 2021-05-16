@@ -4,12 +4,13 @@ import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import './Carousel.scss';
 export const CarouselView = ({ data }) => {
+  console.log('data', data);
   return (
     <Container className='mb-3 carousel__container'>
       <Row>
         <Col>
           <Carousel>
-            {Object.values(data).map((value) => (
+            {data.map((value) => (
               <Carousel.Item key={value.id}>
                 <img className='carousel__image' src={value.image} alt={value.description} />
                 <Carousel.Caption>{<p className='carousel__caption'>{value.description}</p>}</Carousel.Caption>

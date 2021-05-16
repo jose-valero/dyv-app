@@ -109,14 +109,14 @@
       width: 0px;
     }
     30% {
-      width: 450px;
+      width: 500px;
     }
     80% {
       opacity: 1;
     }
     100% {
       opacity: 0;
-      width: 450px;
+      width: 500px;
     }
   }
 }
@@ -146,7 +146,7 @@
       animation: revealMobile 7s infinite;
     }
     .hero__text {
-      margin-left: 450px;
+      margin-left: 400px;
       animation: slidein 7s infinite;
 
       @include breakpoint(mobile) {

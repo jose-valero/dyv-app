@@ -1,12 +1,13 @@
-@import "../../../styles/animations";
-@import "../../../styles/fonts";
-@import "../../../styles/keyframes";
-@import "../../../styles/media";
-@import "../../../styles/mixins";
-@import "../../../styles/variables.module";
+@import '../../../styles/animations';
+@import '../../../styles/fonts';
+@import '../../../styles/keyframes';
+@import '../../../styles/media';
+@import '../../../styles/mixins';
+@import '../../../styles/variables.module';
 
 .form__container {
   padding: 0;
+  // margin: 2rem 0;
   h1 {
     margin-top: 0;
     @include font-size($h1-font-sizes);

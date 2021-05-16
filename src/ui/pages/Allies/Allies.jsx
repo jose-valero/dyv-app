@@ -13,61 +13,55 @@ import { useSelector } from 'react-redux';
 import './Allies.scss';
 const Allies = () => {
   const lang = useSelector((state) => state.langReducer);
-
   const alliesData = Language[`${lang}`].allies.allies_detail;
   const NextPage = Language[`${lang}`].allies.nextPage;
-
-  const carouselData = CarouselData[`${lang}`].allies;
-
-  const { id, image, description } = carouselData;
-
-  console.log('AAQUIII', carouselData);
-  // console.log('alliesData', alliesData);
 
   return (
     <PageContainer>
       <Hero displayOnPage='allies' />
-      {Object.values(alliesData).map((value) => (
-        <Container className='allies__container my-5' key={value.id}>
-          <Row>
-            <Col xs={3}>
-              <Row>
-                <Col className='py-5'>
-                  <Image src={value.logo} className='allies__image' alt={value.name} />
-                </Col>
-              </Row>
-              <Row>
-                <Col className=' text-dark py-4 text-center'>
-                  <p>{value.description_1}</p>
-                  <p>{value.description_2}</p>
-                  <p>{value.description_3}</p>
-                </Col>
-              </Row>
-            </Col>
-            <Col xs={9}>
-              <CarouselView data={carouselData} id={id} image={image} description={description} />
-            </Col>
-          </Row>
+      {Object.values(alliesData).map((value) => {
+        return (
+          <Container className='allies__container my-5' key={value.id}>
+            <Row>
+              <Col xs={3}>
+                <Row>
+                  <Col className='py-5'>
+                    <Image src={value.logo} className='allies__image' alt={value.name} />
+                  </Col>
+                </Row>
+                <Row>
+                  <Col className=' text-dark py-4 text-center'>
+                    <p>{value.description_1}</p>
+                    <p>{value.description_2}</p>
+                    <p>{value.description_3}</p>
+                  </Col>
+                </Row>
+              </Col>
+              <Col xs={9}>
+                <CarouselView data={value.carousel} />
+              </Col>
+            </Row>
 
-          {/* social netword */}
-          <Row className='m-0 p-0'>
-            <Col className='allies__socialMedia'>
-              <a href={value.social_media.fb} target='_blank' rel='noreferrer'>
-                <TiSocialFacebook />
-              </a>
-              <a href={value.social_media.tw} target='_blank' rel='noreferrer'>
-                <TiSocialTwitter />
-              </a>
-              <a href={value.social_media.ig} target='_blank' rel='noreferrer'>
-                <TiSocialInstagram />
-              </a>
-              <a href={value.social_media.pn} target='_blank' rel='noreferrer'>
-                <TiSocialPinterest />
-              </a>
-            </Col>
-          </Row>
-        </Container>
-      ))}
+            {/* social netword */}
+            <Row className='m-0 p-0'>
+              <Col className='allies__socialMedia'>
+                <a href={value.social_media.fb} target='_blank' rel='noreferrer'>
+                  <TiSocialFacebook />
+                </a>
+                <a href={value.social_media.tw} target='_blank' rel='noreferrer'>
+                  <TiSocialTwitter />
+                </a>
+                <a href={value.social_media.ig} target='_blank' rel='noreferrer'>
+                  <TiSocialInstagram />
+                </a>
+                <a href={value.social_media.pn} target='_blank' rel='noreferrer'>
+                  <TiSocialPinterest />
+                </a>
+              </Col>
+            </Row>
+          </Container>
+        );
+      })}
 
       <NextView nextTo={NextPage} goTo={'/contact'} />
     </PageContainer>
