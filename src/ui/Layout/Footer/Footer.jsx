@@ -1,14 +1,14 @@
 import React from 'react';
+import axios from 'axios';
 import { Link } from 'react-router-dom';
-import { FaWhatsapp, FaEnvelopeOpenText } from 'react-icons/fa';
-import { IoMdSend } from 'react-icons/io';
-import { ToastContainer, toast, Zoom } from 'react-toastify';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import { InputText } from '../../components';
+import { FaWhatsapp, FaEnvelopeOpenText } from 'react-icons/fa';
+import { IoMdSend } from 'react-icons/io';
+import { ToastContainer, toast, Zoom } from 'react-toastify';
+import { InputText } from '../../components/stateless';
 import fullLogo from '../../../assets/images/LogoLight.png';
-import axios from 'axios';
 import 'react-toastify/dist/ReactToastify.css';
 import './Footer.scss';
 
@@ -19,14 +19,14 @@ const Footer = () => {
       draggable: true,
       pauseOnHover: true,
       position: toast.POSITION.BOTTOM_RIGHT,
-      closeOnClick: true,
+      closeOnClick: true
     });
   };
   const errorToast = () => {
     toast('API ERROR', {
       className: 'footer__customToast--error',
       draggable: true,
-      position: toast.POSITION.BOTTOM_RIGHT,
+      position: toast.POSITION.BOTTOM_RIGHT
     });
   };
 
@@ -99,19 +99,10 @@ const Footer = () => {
             </div>
           </Col>
           {/* NewsLetter */}
-          <Col
-            xs={5}
-            sm={5}
-            md={5}
-            lg={5}
-            xl={5}
-            className='footer__newsletter p-0'
-          >
+          <Col xs={5} sm={5} md={5} lg={5} xl={5} className='footer__newsletter p-0'>
             <div className='footer__newsletter--content'>
               <h1>Newsletter</h1>
-              <p>
-                Subscribe for free and keep in touch with our lastest content
-              </p>
+              <p>Subscribe for free and keep in touch with our lastest content</p>
               <>
                 <form onSubmit={handleSubmit}>
                   <InputText label='Email' light />
@@ -139,23 +130,12 @@ const Footer = () => {
             </div>
           </Col>
           {/* SocialMedia */}
-          <Col
-            xs={4}
-            sm={4}
-            md={3}
-            lg={3}
-            xl={3}
-            className='footer__social p-0'
-          >
+          <Col xs={4} sm={4} md={3} lg={3} xl={3} className='footer__social p-0'>
             <div className='footer__social--content'>
               <h1>Let's Talk</h1>
               <ul>
                 <li>
-                  <a
-                    href='https://wa.link/702wra'
-                    target='_blank'
-                    rel='noreferrer'
-                  >
+                  <a href='https://wa.link/702wra' target='_blank' rel='noreferrer'>
                     <div className='footer__social--content--items'>
                       <FaWhatsapp style={iconStyle} />
                       <span>+54 3816592931</span>
@@ -190,7 +170,7 @@ const Footer = () => {
 };
 
 const iconStyle = {
-  fill: '#b3b3b5',
+  fill: '#b3b3b5'
 };
 
 export default Footer;

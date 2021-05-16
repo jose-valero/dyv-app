@@ -6,8 +6,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import FormCheck from 'react-bootstrap/FormCheck';
 import Image from 'react-bootstrap/Image';
-import { Hero, InputText } from '../../components';
-import { PageContainer } from '../../components/Container/PageContainer';
+import { Hero, InputText, PageContainer } from '../.././components/stateless';
 import L_001 from './assets/L_001.jpg';
 import './Contact.scss';
 
@@ -17,7 +16,7 @@ const Contact = () => {
 
   const onSubmitForm = (e) => {
     e.preventDefault();
-    console.log('FORM WAS SENDED');
+    // console.log('FORM WAS SENDED');
   };
 
   return (
@@ -36,24 +35,17 @@ const Contact = () => {
                 <form onSubmit={onSubmitForm}>
                   <Row className='form__row-contactus'>
                     <Col>
-                      <h1 className='text-center'>
-                        {Language[`${lang}`].contact.headline}
-                      </h1>
+                      <h1 className='text-center'>{Language[`${lang}`].contact.headline}</h1>
                     </Col>
                   </Row>
                   <Row className='form__row-name'>
                     <Col>
-                      <InputText
-                        label={Language[`${lang}`].contact.nameLabel}
-                        startOnFocus
-                      />
+                      <InputText label={Language[`${lang}`].contact.nameLabel} startOnFocus />
                     </Col>
                   </Row>
                   <Row className='form__row-lastname'>
                     <Col>
-                      <InputText
-                        label={Language[`${lang}`].contact.lastNameLabel}
-                      />
+                      <InputText label={Language[`${lang}`].contact.lastNameLabel} />
                     </Col>
                   </Row>
                   <Row className='form__row-email'>
@@ -63,21 +55,17 @@ const Contact = () => {
                   </Row>
                   <Row className='form__row-from'>
                     <Col>
-                      <p className='mb-1'>
-                        {Language[`${lang}`].contact.belongToLabel}:
-                      </p>
-                      {Language[`${lang}`].contact.checkboxRadio.map(
-                        (checkbox, i) => (
-                          <FormCheck
-                            key={checkbox}
-                            inline
-                            type='radio'
-                            label={checkbox}
-                            name='razon'
-                            defaultChecked={i === 0 ? true : false}
-                          />
-                        )
-                      )}
+                      <p className='mb-1'>{Language[`${lang}`].contact.belongToLabel}:</p>
+                      {Language[`${lang}`].contact.checkboxRadio.map((checkbox, i) => (
+                        <FormCheck
+                          key={checkbox}
+                          inline
+                          type='radio'
+                          label={checkbox}
+                          name='razon'
+                          defaultChecked={i === 0 ? true : false}
+                        />
+                      ))}
                       {/* <FormCheck
                         inline
                         type="radio"

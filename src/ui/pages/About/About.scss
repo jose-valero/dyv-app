@@ -9,16 +9,13 @@
   @include flex;
   width: 100%;
   height: auto;
-  // background-color: salmon;
   padding: 1rem;
 
   &--left-section {
-    // background-color: wheat;
     @include centerFlex;
     &--text {
       margin: 1rem;
       @include breakpoint(mobile) {
-        // margin: 2rem 3rem;
       }
       @include keyframes;
       @include animationBorder;
@@ -34,14 +31,12 @@
       }
       & h1 {
         @extend p;
-        // @include fluid;
         @include font-size($h1-font-sizes);
       }
     }
   }
 
   &--right-section {
-    // background-color: darkcyan;
     @include centerFlex;
     &--images {
       @include centerFlex;
@@ -59,7 +54,6 @@
       & img:hover {
         @include transition_ease1;
         box-shadow: 0 1.5px 3px 0 $pal-1_gray-1;
-        // border-radius: 10%;
         transform: scale(1.05);
       }
     }
@@ -67,7 +61,6 @@
 }
 
 .about__mission-container {
-  // background-color: $pal-1_white;
   .about__mission-row {
     padding-bottom: 2rem;
     &--images {

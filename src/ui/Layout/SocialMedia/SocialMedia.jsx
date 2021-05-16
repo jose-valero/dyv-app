@@ -1,11 +1,6 @@
 import React, { useState } from 'react';
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
-import {
-  TiSocialTwitter,
-  TiSocialFacebook,
-  TiSocialInstagram,
-  TiSocialPinterest,
-} from 'react-icons/ti';
+import { TiSocialTwitter, TiSocialFacebook, TiSocialInstagram, TiSocialPinterest } from 'react-icons/ti';
 import './SocialMedia.scss';
 
 const SocialMedia = () => {
@@ -13,34 +8,21 @@ const SocialMedia = () => {
 
   const toggleSocialMedia = () => {
     setIsSocialMediaVisible(!isSocialMediaVisible);
-    console.log(isSocialMediaVisible);
+    // console.log(isSocialMediaVisible);
   };
 
   return (
     <>
       <div className='banner__social-media'>
-        <div
-          className={`social__wrapper ${
-            isSocialMediaVisible ? 'show' : 'hide'
-          }`}
-        >
+        <div className={`social__wrapper ${isSocialMediaVisible ? 'show' : 'hide'}`}>
           <li>
-            <a
-              id='social_link'
-              href='https://twitter.com'
-              target='_blank'
-              rel='noreferrer'
-            >
+            <a id='social_link' href='https://twitter.com' target='_blank' rel='noreferrer'>
               <TiSocialTwitter id='twitter' className='banner__sm-item' />
             </a>
           </li>
 
           <li>
-            <a
-              href='https://www.facebook.com/'
-              target='_blank'
-              rel='noreferrer'
-            >
+            <a href='https://www.facebook.com/' target='_blank' rel='noreferrer'>
               <TiSocialFacebook id='facebook' className='banner__sm-item' />
             </a>
           </li>
@@ -57,11 +39,7 @@ const SocialMedia = () => {
             </a>
           </li>
         </div>
-        <div
-          className={`banner__social--showHide ${
-            isSocialMediaVisible ? 'withBorder' : 'noBorder'
-          }`}
-        >
+        <div className={`banner__social--showHide ${isSocialMediaVisible ? 'withBorder' : 'noBorder'}`}>
           {isSocialMediaVisible ? (
             <span onClick={toggleSocialMedia}>
               <FaAngleLeft />

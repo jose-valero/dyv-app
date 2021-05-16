@@ -6,20 +6,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
 
-
-//test11
+//hero font
 @import url('https://fonts.googleapis.com/css2?family=Syncopate&display=swap');
+$hero-font: 'Syncopate', sans-serif;
 
+//app font
 @import '~bootstrap/scss/bootstrap';
 $theme-font: 'Muli', sans-serif;
 $quicksand: 'Quicksand', sans-serif;
 $test-font: 'Caveat', cursive;
-
-//tests
-
-
-$test_11: 'Syncopate', sans-serif;
-
 
 body {
   font-family: $quicksand;

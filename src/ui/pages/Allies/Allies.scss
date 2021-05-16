@@ -1,10 +1,12 @@
-@import '../../../styles/animations';
-@import '../../../styles/fonts';
-@import '../../../styles/keyframes';
-@import '../../../styles/media';
-@import '../../../styles/mixins';
-@import '../../../styles/variables.module';
+@import '../../../styles/Main.scss';
 
+.allies__container {
+  border-radius: 5px;
+  border-width: thin;
+  border-style: solid;
+  border-color: $pal-1_gray-4;
+  background-color: $pal-1_gray-5;
+}
 .allies__image {
   height: auto;
   width: 100%;
@@ -13,4 +15,11 @@
 
 .allies__socialMedia {
   @include endFlex;
+  & a {
+    color: $warm_oj-1;
+    font-size: 2rem;
+    & :hover {
+      color: $warm_oj-3;
+    }
+  }
 }

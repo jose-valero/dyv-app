@@ -1,4 +1,4 @@
-import Button from '../../components/Button';
+import { Button } from '../../components/stateless';
 import { useSelector } from 'react-redux';
 import { Language } from '../../../data';
 import AOS from 'aos';
@@ -23,7 +23,7 @@ const Home = () => {
               data-aos-easing='ease-in-back'
               data-aos-delay='10'
               data-aos-offset='0'
-              className="test"
+              className='test'
             />
           </div>
         </div>
@@ -39,10 +39,7 @@ const Home = () => {
               data-aos-delay='10'
               data-aos-offset='0'
             />
-            <p
-              data-aos='fade-left'
-              className='home__right-content--aside---title'
-            >
+            <p data-aos='fade-left' className='home__right-content--aside---title'>
               {Language[`${lang}`].home.brandText}
             </p>
             <Button name='Conocenos' route='/about' />

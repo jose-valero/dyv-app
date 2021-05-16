@@ -2,37 +2,19 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Badge from 'react-bootstrap/Badge';
-import { PageContainer } from '../../components/Container/PageContainer';
 import { useSelector } from 'react-redux';
 import Image from 'react-bootstrap/Image';
-import imgTest from './assets/C_006.jpg';
-import { Hero } from '../../components';
-import { useHistory, useParams } from 'react-router-dom';
-import { PortafolioDetail, Language } from '../../../data';
+import { Hero, PageContainer } from '../../components/stateless';
+import { PortafolioDetail } from '../../../data';
+// import { useHistory, useParams } from 'react-router-dom';
 
 const PortafolioDetails = ({ id, match }) => {
   const lang = useSelector((state) => state.langReducer);
 
   const project_id = match.params.id;
   const dataDetail = PortafolioDetail[lang][project_id];
-  const asd = dataDetail[id];
-  console.log('asd', asd);
 
-  const {
-    title,
-    detail,
-    img,
-    description,
-    location,
-    year,
-    donwload,
-    keyword_1,
-    keyword_2,
-    title_detail,
-  } = dataDetail;
-
-  console.log('josue', dataDetail);
-  console.log(dataDetail);
+  const { title, detail, img, description, location, year, donwload, keyword_1, keyword_2, title_detail } = dataDetail;
 
   return (
     <PageContainer>

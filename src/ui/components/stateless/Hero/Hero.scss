@@ -1,0 +1,158 @@
+@import '../../../../styles/Main.scss';
+@import '../../../../styles/App.scss';
+
+.hero__container {
+  background-image: url(../../../../assets/images/herobg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fdfdfd;
+  @include breakpoint(mobile) {
+    height: 125px;
+  }
+}
+
+@include breakpoint(mobile) {
+  @keyframes revealMobile {
+    0% {
+      opacity: 0;
+      width: 0px;
+    }
+    20% {
+      opacity: 1;
+      width: 0px;
+    }
+    30% {
+      width: 200px;
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      width: 200px;
+    }
+  }
+  @keyframes showup {
+    0% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes slideinMobile {
+    0% {
+      margin-left: -400px;
+    }
+    20% {
+      margin-left: -400px;
+    }
+    35% {
+      margin-left: 0px;
+    }
+    100% {
+      margin-left: 0px;
+    }
+  }
+}
+
+@include breakpoint(tablet) {
+  @keyframes slidein {
+    0% {
+      margin-left: -800px;
+    }
+    20% {
+      margin-left: -800px;
+    }
+    35% {
+      margin-left: 0px;
+    }
+    100% {
+      margin-left: 0px;
+    }
+  }
+
+  @keyframes showup {
+    0% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes reveal {
+    0% {
+      opacity: 0;
+      width: 0px;
+    }
+    20% {
+      opacity: 1;
+      width: 0px;
+    }
+    30% {
+      width: 450px;
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      width: 450px;
+    }
+  }
+}
+.hero__animated {
+  font-family: $hero-font;
+  font-size: 1.25rem;
+  font-weight: 200;
+  // @include font-size($xl-font-sizes);
+  @include breakpoint(mobile) {
+    font-size: 1.25rem;
+    // @include font-size($xl-font-sizes);
+    // color: red;
+  }
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  &:first-of-type {
+    animation: showup 7s infinite;
+    @include breakpoint(mobile) {
+      animation: showup 7s infinite;
+    }
+  }
+  &:last-of-type {
+    width: 0px;
+    animation: reveal 7s infinite;
+    @include breakpoint(mobile) {
+      animation: revealMobile 7s infinite;
+    }
+    .hero__text {
+      margin-left: 450px;
+      animation: slidein 7s infinite;
+
+      @include breakpoint(mobile) {
+        animation: slideinMobile 7s infinite;
+        margin-left: 200px;
+      }
+    }
+  }
+}
