@@ -155,7 +155,7 @@ export const Language = {
       descriptionSubhead: 'Know the places where we have worked',
       hero_scape: 'Desing',
       hero_title: 'and Vanguard, we offer you',
-      nextPage: 'Take a look Around',
+      next_page: 'Take a look Around',
       portafolio_detail: {
         project_1: {
           description: 'content description',
@@ -291,37 +291,39 @@ export const Language = {
         }
       ],
       hero_title: 'know more about our services',
-      nextPage: 'Take a look Around',
+      next_page: 'Take a look Around',
       skills: {
         row_1: {
+          text: 'We assist each client from the beginning, offering the latest trends in products and services at an international level.',
           title: 'ONLINE CONSULTING',
-          text: 'We assist each client from the beginning, offering the latest trends in products and services at an international level.'
+          image: '/images/C_011.jpg'
         },
         row_2: {
+          text: 'We provide integral solutions for your home, business, hotels and recreational areas.',
           title: 'NTERIOR DESIGN',
-          text: 'We provide integral solutions for your home, business, hotels and recreational areas.'
+          image_1: '/images/B_001.jpg',
+          image_2: '/images/D_001.jpg'
         },
         row_3: {
+          text: 'If you are related to the world of design and construction, it would be a pleasure for us to be part of your team, offering you a high quality work.',
           title: '3D',
-          text: 'We show you the future'
+          sub_title: 'We show you the future',
+          image: '/images/C_004.jpg'
         },
         row_4: {
+          text: 'We produce plans for our clients ranging from architects and interior designers to contractors, construction companies and individuals.',
           title: 'PLANS',
-          text: 'We produce plans for our clients ranging from architects and interior designers to contractors, construction companies and individuals.'
+          image: '/images/P_001.jpg'
         }
+      },
+      seo: {
+        description: 'take a look of us Desing and Vanguard',
+        image: '/images/LogoGold.jpg',
+        image_alt: 'Diseño y Vanguardia',
+        keywords:
+          'Design Portafolio, diseño y vanguardia, design and vanguard, interior design, exterior design, interior designer, exterior designer, modern design  ',
+        title: 'Our Services | D&V'
       }
-      // skills_row1_title: 'ONLINE CONSULTING',
-      // skills_row1_text:
-      //   'We assist each client from the beginning, offering the latest trends in products and services at an international level.',
-      // skills_row2_title: 'INTERIOR DESIGN',
-      // skills_row2_text: 'We provide integral solutions for your home, business, hotels and recreational areas.',
-      // skills_row3_title: '3D',
-      // skills_row3_subtitle: 'We show you the future,',
-      // skills_row3_text:
-      //   'If you are related to the world of design and construction, it would be a pleasure for us to be part of your team, offering you a high quality work.',
-      // skills_row4_title: 'PLANS',
-      // skills_row4_text:
-      //   'We produce plans for our clients ranging from architects and interior designers to contractors, construction companies and individuals.'
     }
   },
   ES: {
@@ -478,7 +480,7 @@ export const Language = {
       descriptionSubhead: 'Conoce los lugares en donde hemos trabajado',
       hero_scape: 'Construyendo',
       hero_title: 'espacios alrededor del mundo',
-      nextPage: 'Nuestros Aliados',
+      next_page: 'Nuestros Aliados',
       portafolio_detail: {
         project_1: {
           description: 'content description',
@@ -615,39 +617,39 @@ export const Language = {
       ],
       hero_scape: 'DISEÑO & VANGUARDIA, ',
       hero_title: 'Te Ofrece lo mejor',
-      nextPage: 'Echa un vistazo',
+      next_page: 'Echa un vistazo',
       skills: {
         row_1: {
           title: 'ASESORIA ONLINE',
-          text: 'Acompañamos a cada cliente desde el inicio, ofreciendo las últimas tendencias en productos y servicios a nivel internacional'
+          text: 'Acompañamos a cada cliente desde el inicio, ofreciendo las últimas tendencias en productos y servicios a nivel internacional',
+          image: '/images/C_011.jpg'
         },
         row_2: {
           title: 'DISEÑO DE ESPACIOS DE INTERIORES',
-          text: 'Brindamos soluciones integrales para tu hogar, espacios corporativos, hotelería y áreas recreativas'
+          text: 'Brindamos soluciones integrales para tu hogar, espacios corporativos, hotelería y áreas recreativas',
+          image_1: '/images/B_001.jpg',
+          image_2: '/images/D_001.jpg'
         },
         row_3: {
           title: '3D',
-          text: 'Te mostramos el futuro'
+          text: 'Si estás relacionado con el mundo del Diseño y construcción, sería un placer para nosotros formar parte de su equipo, ofreciéndoles un trabajo de alta calidad',
+          sub_title: 'Te mostramos el futuro',
+          image: '/images/C_004.jpg'
         },
         row_4: {
           title: 'PLANOS',
-          text: 'Realizamos los planos de nuestros Clientes que van desde arquitenctos y deseñadores de interiores hasta contratistas, empresas constructoras y particulares'
+          text: 'Realizamos los planos de nuestros Clientes que van desde arquitenctos y deseñadores de interiores hasta contratistas, empresas constructoras y particulares',
+          image: '/images/P_001.jpg'
         }
+      },
+      seo: {
+        description: 'take a look of us Desing and Vanguard',
+        image: '/images/LogoGold.jpg',
+        image_alt: 'Diseño y Vanguardia',
+        keywords:
+          'Design Portafolio, diseño y vanguardia, design and vanguard, interior design, exterior design, interior designer, exterior designer, modern design  ',
+        title: 'Servicios | D&V'
       }
-
-      // skills_row1_title: 'ASESORIA ONLINE',
-      // skills_row1_text:
-      //   'Acompañamos a cada cliente desde el inicio, ofreciendo las últimas tendencias en productos y servicios a nivel internacional',
-      // skills_row2_title: 'DISEÑO DE ESPACIOS DE INTERIORES',
-      // skills_row2_text:
-      //   'Brindamos soluciones integrales para tu hogar, espacios corporativos, hotelería y áreas recreativas',
-      // skills_row3_title: '3D',
-      // skills_row3_subtitle: 'Te mostramos el futuro,',
-      // skills_row3_text:
-      //   'Si estás relacionado con el mundo del Diseño y construcción, sería un placer para nosotros formar parte de su equipo, ofreciéndoles un trabajo de alta calidad',
-      // skills_row4_title: 'PLANOS',
-      // skills_row4_text:
-      //   'Realizamos los planos de nuestros Clientes que van desde arquitenctos y deseñadores de interiores hasta contratistas, empresas constructoras y particulares'
     }
   }
 };
