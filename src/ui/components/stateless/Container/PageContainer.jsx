@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import _variables from '../../../../styles/_variables.module.scss';
+import _variables from 'styles/_variables.module.scss';
 
 export const PageContainer = styled.div`
   margin-top: 50px;

@@ -1,16 +1,21 @@
-import React, { Suspense } from 'react';
+import React, { lazy, Suspense } from 'react';
 import { useSelector } from 'react-redux';
 import AOS from 'aos';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Language } from '../../../data';
-import { Hero, NextView, Description, PageContainer } from '../../components/stateless';
 // import { SEO } from '../../components/utils/';
 import Bio from './Bio';
 import ValuesCard from './ValuesCard';
 import './About.scss';
 
-const SEO = React.lazy(() => import('../../components/utils/SEO/SEO'));
+import { PageContainer } from '../../components/stateless/Container/PageContainer';
+
+const SEO = lazy(() => import('../../components/utils/SEO/SEO'));
+const Hero = lazy(() => import('../../components/stateless/Hero/Hero'));
+const NextView = lazy(() => import('../../components/stateless/NextView/NextView'));
+const Description = lazy(() => import('../../components/stateless/BannerDescription/Description'));
+
 const About = () => {
   AOS.init();
   const lang = useSelector((state) => state.langReducer);

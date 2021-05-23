@@ -1,11 +1,16 @@
-import React, { Suspense } from 'react';
+import React, { lazy, Suspense } from 'react';
 import { useSelector } from 'react-redux';
 import { Language } from '../../../data';
-import { Hero, NextView, Description, CarouselView, PageContainer } from '../../components/stateless';
+import { PageContainer } from '../../components/stateless/Container/PageContainer';
 // import { SEO } from '../../components/utils';
 import Skils from './Skils';
 import './Services.scss';
-const SEO = React.lazy(() => import('../../components/utils/SEO/SEO'));
+
+const SEO = lazy(() => import('../../components/utils/SEO/SEO'));
+const Hero = lazy(() => import('../../components/stateless/Hero/Hero'));
+const NextView = lazy(() => import('../../components/stateless/NextView/NextView'));
+const CarouselView = lazy(() => import('../../components/stateless/Carousel/Carousel'));
+const Description = lazy(() => import('../../components/stateless/BannerDescription/Description'));
 const Services = () => {
   const lang = useSelector((state) => state.langReducer);
 

@@ -2,7 +2,7 @@ import './Hero.scss';
 import { useSelector } from 'react-redux';
 import { Language } from '../../../../data';
 
-export const Hero = ({ displayOnPage }) => {
+const Hero = ({ displayOnPage }) => {
   const lang = useSelector((state) => state.langReducer);
   return (
     <div className='hero__container'>
@@ -15,3 +15,4 @@ export const Hero = ({ displayOnPage }) => {
     </div>
   );
 };
+export default Hero;

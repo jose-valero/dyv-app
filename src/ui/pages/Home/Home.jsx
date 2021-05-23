@@ -1,18 +1,15 @@
-import React, { Suspense } from 'react';
-
+import React, { lazy, Suspense } from 'react';
 import { useSelector } from 'react-redux';
-// import AOS from 'aos';
-
 import { Language } from '../../../data';
-// import { SEO } from '../../components/utils';
+import AOS from 'aos';
 import './Home.scss';
 import 'aos/dist/aos.css';
-// import { Button } from '../../components/stateless';
-const Button = React.lazy(() => import('../../components/stateless/Button/Button'));
-const SEO = React.lazy(() => import('../../components/utils/SEO/SEO'));
+
+const Button = lazy(() => import('../../components/stateless/Button/Button'));
+const SEO = lazy(() => import('../../components/utils/SEO/SEO'));
 
 const Home = () => {
-  // AOS.init();
+  AOS.init();
   const lang = useSelector((state) => state.langReducer);
   const HOME_DATA = Language[`${lang}`].home;
   const { seo, images, brand_text } = HOME_DATA;
@@ -33,10 +30,10 @@ const Home = () => {
               <img
                 src={images.background}
                 alt={seo.image_alt}
-                // data-aos='fade-zoom-in'
-                // data-aos-easing='ease-in-back'
-                // data-aos-delay='10'
-                // data-aos-offset='0'
+                data-aos='fade-zoom-in'
+                data-aos-easing='ease-in-back'
+                data-aos-delay='10'
+                data-aos-offset='0'
               />
             </div>
           </div>
@@ -47,10 +44,10 @@ const Home = () => {
               <img
                 src={images.light_logo}
                 alt={seo.image_alt}
-                // data-aos='fade-zoom-in'
-                // data-aos-easing='ease-in-back'
-                // data-aos-delay='10'
-                // data-aos-offset='0'
+                data-aos='fade-zoom-in'
+                data-aos-easing='ease-in-back'
+                data-aos-delay='10'
+                data-aos-offset='0'
               />
               <p data-aos='fade-left' className='home__right-content--aside---title'>
                 {brand_text}

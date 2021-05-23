@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import './Description.scss';
 
-export const Description = ({ title, text, sub_text, children }) => {
+const Description = ({ title, text, sub_text, children }) => {
   return (
     <Container>
       <Row>
@@ -19,3 +19,4 @@ export const Description = ({ title, text, sub_text, children }) => {
     </Container>
   );
 };
+export default Description;

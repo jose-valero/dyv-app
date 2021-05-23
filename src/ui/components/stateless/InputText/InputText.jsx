@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './style.scss';
 
-export const InputText = (props) => {
+const InputText = (props) => {
   const { label, light } = props;
   const [inputValue, setInputValue] = useState('');
   const input = useRef(null);
@@ -45,3 +45,4 @@ export const InputText = (props) => {
     </div>
   );
 };
+export default InputText;

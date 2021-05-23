@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 import { BsArrowRight } from 'react-icons/bs';
 
-import _variables from '../../../../styles/_variables.module.scss';
+import _variables from 'styles/_variables.module.scss';
 
 export const PageLinkContainer = styled.div`
   margin: 3% 10%;
@@ -30,10 +30,7 @@ export const StyledLink = styled(NavLink)`
   }
 `;
 
-export const NextView = ({ nextTo, goTo }) => {
-  // let history = useHistory();
-  // console.log('history', history);
-
+const NextView = ({ nextTo, goTo }) => {
   return (
     <PageLinkContainer>
       <StyledLink to={goTo} id='test'>
@@ -45,3 +42,4 @@ export const NextView = ({ nextTo, goTo }) => {
     </PageLinkContainer>
   );
 };
+export default NextView;

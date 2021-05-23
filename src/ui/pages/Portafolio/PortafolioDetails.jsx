@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import React, { lazy, Suspense } from 'react';
 import { useSelector } from 'react-redux';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -6,9 +6,11 @@ import Col from 'react-bootstrap/Col';
 import Badge from 'react-bootstrap/Badge';
 import Image from 'react-bootstrap/Image';
 import { Language } from '../../../data';
-import { Hero, PageContainer } from '../../components/stateless';
+import { PageContainer } from '../../components/stateless/Container/PageContainer';
 // import { SEO } from '../../components/utils';
-const SEO = React.lazy(() => import('../../components/utils/SEO/SEO'));
+
+const SEO = lazy(() => import('../../components/utils/SEO/SEO'));
+const Hero = lazy(() => import('../../components/stateless/Hero/Hero'));
 
 const PortafolioDetails = ({ id, match }) => {
   const lang = useSelector((state) => state.langReducer);

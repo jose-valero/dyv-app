@@ -3,7 +3,7 @@ import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import './Carousel.scss';
-export const CarouselView = ({ data }) => {
+const CarouselView = ({ data }) => {
   return (
     <Container className='mb-3 carousel__container'>
       <Row>
@@ -21,3 +21,4 @@ export const CarouselView = ({ data }) => {
     </Container>
   );
 };
+export default CarouselView;
