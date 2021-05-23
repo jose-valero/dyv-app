@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
-export const SEO = ({ description, image, image_alt, keywords, title }) => {
+const SEO = ({ description, image, image_alt, keywords, title }) => {
   return (
     <Helmet>
       {/* --General tags-- */}
@@ -22,3 +22,4 @@ export const SEO = ({ description, image, image_alt, keywords, title }) => {
     </Helmet>
   );
 };
+export default SEO;

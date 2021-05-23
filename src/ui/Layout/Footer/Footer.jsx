@@ -70,7 +70,7 @@ const Footer = () => {
         <Row>
           {/* Logo */}
           <Col md={2} lg={2} xl={2} className='footer__section-logo'>
-            <img src={fullLogo} alt='' />
+            <img src={fullLogo} alt='hola logo' />
           </Col>
           {/* Navigations */}
           <Col xs={3} sm={3} md={2} lg={2} xl={2} className='footer__nav p-0'>

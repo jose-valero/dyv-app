@@ -1,58 +1,65 @@
+import React, { Suspense } from 'react';
+
 import { useSelector } from 'react-redux';
-import AOS from 'aos';
+// import AOS from 'aos';
+
 import { Language } from '../../../data';
-import { Button } from '../../components/stateless';
-import { SEO } from '../../components/utils';
+// import { SEO } from '../../components/utils';
 import './Home.scss';
 import 'aos/dist/aos.css';
+// import { Button } from '../../components/stateless';
+const Button = React.lazy(() => import('../../components/stateless/Button/Button'));
+const SEO = React.lazy(() => import('../../components/utils/SEO/SEO'));
 
 const Home = () => {
-  AOS.init();
+  // AOS.init();
   const lang = useSelector((state) => state.langReducer);
   const HOME_DATA = Language[`${lang}`].home;
   const { seo, images, brand_text } = HOME_DATA;
 
   return (
     <div className='home__container'>
-      <SEO
-        title={seo.title}
-        description={seo.description}
-        image={seo.image}
-        image_alt={seo.image_alt}
-        keywords={seo.keywords}
-      />
-      <section className='home__left-section'>
-        <div className='home__left-content'>
-          <div className='home__left-content--aside'>
-            <img
-              src={images.background}
-              alt={images.image_alt}
-              data-aos='fade-zoom-in'
-              data-aos-easing='ease-in-back'
-              data-aos-delay='10'
-              data-aos-offset='0'
-            />
+      <Suspense fallback={<span>loading...</span>}>
+        <SEO
+          title={seo.title}
+          description={seo.description}
+          image={seo.image}
+          image_alt={seo.image_alt}
+          keywords={seo.keywords}
+        />
+        <section className='home__left-section'>
+          <div className='home__left-content'>
+            <div className='home__left-content--aside'>
+              <img
+                src={images.background}
+                alt={seo.image_alt}
+                // data-aos='fade-zoom-in'
+                // data-aos-easing='ease-in-back'
+                // data-aos-delay='10'
+                // data-aos-offset='0'
+              />
+            </div>
           </div>
-        </div>
-      </section>
-      <section className='home__right-section'>
-        <div className='home__right-content'>
-          <div className='home__right-content--aside'>
-            <img
-              src={images.light_logo}
-              alt=''
-              data-aos='fade-zoom-in'
-              data-aos-easing='ease-in-back'
-              data-aos-delay='10'
-              data-aos-offset='0'
-            />
-            <p data-aos='fade-left' className='home__right-content--aside---title'>
-              {brand_text}
-            </p>
-            <Button name='Conocenos' route='/about' />
+        </section>
+        <section className='home__right-section'>
+          <div className='home__right-content'>
+            <div className='home__right-content--aside'>
+              <img
+                src={images.light_logo}
+                alt={seo.image_alt}
+                // data-aos='fade-zoom-in'
+                // data-aos-easing='ease-in-back'
+                // data-aos-delay='10'
+                // data-aos-offset='0'
+              />
+              <p data-aos='fade-left' className='home__right-content--aside---title'>
+                {brand_text}
+              </p>
+              <Button name='Conocenos' route='/about' />
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </Suspense>
     </div>
   );
 };

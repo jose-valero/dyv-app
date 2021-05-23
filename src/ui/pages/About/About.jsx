@@ -1,14 +1,16 @@
+import React, { Suspense } from 'react';
 import { useSelector } from 'react-redux';
 import AOS from 'aos';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Language } from '../../../data';
 import { Hero, NextView, Description, PageContainer } from '../../components/stateless';
-import { SEO } from '../../components/utils/';
+// import { SEO } from '../../components/utils/';
 import Bio from './Bio';
 import ValuesCard from './ValuesCard';
 import './About.scss';
 
+const SEO = React.lazy(() => import('../../components/utils/SEO/SEO'));
 const About = () => {
   AOS.init();
   const lang = useSelector((state) => state.langReducer);
@@ -28,25 +30,27 @@ const About = () => {
 
   return (
     <PageContainer>
-      <SEO
-        title={seo.title}
-        description={seo.description}
-        image={seo.image}
-        image_alt={seo.image_alt}
-        keywords={seo.keywords}
-      />
-      <Hero displayOnPage='about' />
-      <Bio
-        profile_image={profile_image}
-        bio_text={bio_text}
-        bio_text_paragraph={bio_text_paragraph}
-        seo_image_alt={seo.image_alt}
-      />
-      <Description />
-      <ValuesCard data={banner_mission_cards} />
-      <Description>{valuesItems}</Description>
+      <Suspense fallback={<span>loading...</span>}>
+        <SEO
+          title={seo.title}
+          description={seo.description}
+          image={seo.image}
+          image_alt={seo.image_alt}
+          keywords={seo.keywords}
+        />
+        <Hero displayOnPage='about' />
+        <Bio
+          profile_image={profile_image}
+          bio_text={bio_text}
+          bio_text_paragraph={bio_text_paragraph}
+          seo_image_alt={seo.image_alt}
+        />
+        <Description />
+        <ValuesCard data={banner_mission_cards} />
+        <Description>{valuesItems}</Description>
 
-      <NextView nextTo={next_page} goTo='/services' />
+        <NextView nextTo={next_page} goTo='/services' />
+      </Suspense>
     </PageContainer>
   );
 };

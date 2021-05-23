@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Button.scss';
 
-export const Button = (props) => {
+const Button = (props) => {
   return (
     <div className='button'>
       <span>
@@ -15,3 +15,4 @@ export const Button = (props) => {
     </div>
   );
 };
+export default Button;
