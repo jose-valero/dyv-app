@@ -1,10 +1,10 @@
 import { useSelector } from 'react-redux';
-
 import AOS from 'aos';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import { Hero, NextView, Description, PageContainer } from '../../components/stateless';
 import { Language } from '../../../data';
+import { Hero, NextView, Description, PageContainer } from '../../components/stateless';
+import { SEO } from '../../components/utils/';
 import Bio from './Bio';
 import ValuesCard from './ValuesCard';
 import './About.scss';
@@ -12,14 +12,13 @@ import './About.scss';
 const About = () => {
   AOS.init();
   const lang = useSelector((state) => state.langReducer);
-  const misionTitle = Language[`${lang}`].about.banner_missionTitle;
-  const missionText = Language[`${lang}`].about.banner_missionText;
-  const valueTitle = Language[`${lang}`].about.banner_valuesTitle;
-  const valueSubText = Language[`${lang}`].about.banner_valuesSubText;
-  const nextPageText = Language[`${lang}`].about.nextPage;
+  // data
+  const ABOUT_DATA = Language[`${lang}`].about;
 
-  const ObjValues = Language[`${lang}`].about.values;
-  const valuesItems = Object.values(ObjValues).map((value) => {
+  // destructuring
+  const { next_page, bio_text, bio_text_paragraph, profile_image, values, seo, banner_mission_cards } = ABOUT_DATA;
+
+  const valuesItems = Object.values(values).map((value) => {
     return (
       <Row key={value}>
         <Col className='py-2'>{value}</Col>
@@ -29,15 +28,25 @@ const About = () => {
 
   return (
     <PageContainer>
+      <SEO
+        title={seo.title}
+        description={seo.description}
+        image={seo.image}
+        image_alt={seo.image_alt}
+        keywords={seo.keywords}
+      />
       <Hero displayOnPage='about' />
-      <Bio />
-      <Description title={misionTitle} text={missionText} />
-      <ValuesCard />
-      <Description title={valueTitle} SubText={valueSubText}>
-        {valuesItems}
-      </Description>
+      <Bio
+        profile_image={profile_image}
+        bio_text={bio_text}
+        bio_text_paragraph={bio_text_paragraph}
+        seo_image_alt={seo.image_alt}
+      />
+      <Description />
+      <ValuesCard data={banner_mission_cards} />
+      <Description>{valuesItems}</Description>
 
-      <NextView nextTo={nextPageText} goTo='/services' />
+      <NextView nextTo={next_page} goTo='/services' />
     </PageContainer>
   );
 };

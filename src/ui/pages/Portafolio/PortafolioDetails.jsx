@@ -1,25 +1,32 @@
+import { useSelector } from 'react-redux';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Badge from 'react-bootstrap/Badge';
-import { useSelector } from 'react-redux';
 import Image from 'react-bootstrap/Image';
+import { Language } from '../../../data';
 import { Hero, PageContainer } from '../../components/stateless';
-import { PortafolioDetail } from '../../../data';
-// import { useHistory, useParams } from 'react-router-dom';
+import { SEO } from '../../components/utils';
 
 const PortafolioDetails = ({ id, match }) => {
   const lang = useSelector((state) => state.langReducer);
-
   const project_id = match.params.id;
-  const dataDetail = PortafolioDetail[lang][project_id];
-
-  const { title, detail, img, description, location, year, donwload, keyword_1, keyword_2, title_detail } = dataDetail;
+  const PORTAFOLIO_DATA = Language[lang].portafolio;
+  const { portafolio_detail, seo } = PORTAFOLIO_DATA;
+  const PORTAFOLIO_DETAIL_DATA = portafolio_detail[project_id];
+  const { title, detail, img, description, location, year, donwload, keyword_1, keyword_2, title_detail } =
+    PORTAFOLIO_DETAIL_DATA;
 
   return (
     <PageContainer>
       <Hero displayOnPage='portafolio' />
-
+      <SEO
+        title={seo.title}
+        description={seo.description}
+        image={seo.image}
+        image_alt={seo.image_alt}
+        keywords={seo.keywords}
+      />
       <Container className='portafolioDetail__container' id={id}>
         <h1 className='text-center'>{title}</h1>
         <h1 className='text-center'>{location}</h1>
@@ -28,7 +35,7 @@ const PortafolioDetails = ({ id, match }) => {
             {title_detail}
             <ul>
               {Object.values(detail).map((value) => (
-                <li>{value}</li>
+                <li key={value}>{value}</li>
               ))}
             </ul>
           </Col>
@@ -41,6 +48,7 @@ const PortafolioDetails = ({ id, match }) => {
             {description}
           </Col>
           <Col lg={12} className='portafolioDetail__botsection-utils'>
+            {/* // eslint-disable-next-line */}
             <a href='#' className='px-1 mx-1'>
               {donwload}
             </a>

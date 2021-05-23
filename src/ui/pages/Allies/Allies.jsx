@@ -1,25 +1,30 @@
-import React from 'react';
+import { useSelector } from 'react-redux';
+import { TiSocialTwitter, TiSocialFacebook, TiSocialInstagram, TiSocialPinterest } from 'react-icons/ti';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
-
+import { Language } from '../../../data';
 import { Hero, PageContainer, CarouselView, NextView } from '../../components/stateless';
-import { TiSocialTwitter, TiSocialFacebook, TiSocialInstagram, TiSocialPinterest } from 'react-icons/ti';
-
-import { Language, CarouselData } from '../../../data';
-import { useSelector } from 'react-redux';
+import { SEO } from '../../components/utils';
 
 import './Allies.scss';
 const Allies = () => {
   const lang = useSelector((state) => state.langReducer);
-  const alliesData = Language[`${lang}`].allies.allies_detail;
-  const NextPage = Language[`${lang}`].allies.nextPage;
+  const ALLIES_DATA = Language[`${lang}`].allies;
+  const { allies_detail, next_page, seo } = ALLIES_DATA;
 
   return (
     <PageContainer>
+      <SEO
+        title={seo.title}
+        description={seo.description}
+        image={seo.image}
+        image_alt={seo.image_alt}
+        keywords={seo.keywords}
+      />
       <Hero displayOnPage='allies' />
-      {Object.values(alliesData).map((value) => {
+      {Object.values(allies_detail).map((value) => {
         return (
           <Container className='allies__container my-5' key={value.id}>
             <Row>
@@ -63,7 +68,7 @@ const Allies = () => {
         );
       })}
 
-      <NextView nextTo={NextPage} goTo={'/contact'} />
+      <NextView nextTo={next_page} goTo={'/contact'} />
     </PageContainer>
   );
 };

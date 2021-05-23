@@ -1,29 +1,36 @@
-import { Button } from '../../components/stateless';
 import { useSelector } from 'react-redux';
-import { Language } from '../../../data';
 import AOS from 'aos';
-import L_001 from './assets/L_001.jpg';
-import Logo from '../../../assets/images/LogoLight.png';
+import { Language } from '../../../data';
+import { Button } from '../../components/stateless';
+import { SEO } from '../../components/utils';
 import './Home.scss';
 import 'aos/dist/aos.css';
 
 const Home = () => {
-  const lang = useSelector((state) => state.langReducer);
   AOS.init();
+  const lang = useSelector((state) => state.langReducer);
+  const HOME_DATA = Language[`${lang}`].home;
+  const { seo, images, brand_text } = HOME_DATA;
 
   return (
     <div className='home__container'>
+      <SEO
+        title={seo.title}
+        description={seo.description}
+        image={seo.image}
+        image_alt={seo.image_alt}
+        keywords={seo.keywords}
+      />
       <section className='home__left-section'>
         <div className='home__left-content'>
           <div className='home__left-content--aside'>
             <img
-              src={L_001}
-              alt='Diseño y Vanguardia - Interior Design - Coucine - Kitchen - Diseño de Cocinas'
+              src={images.background}
+              alt={images.image_alt}
               data-aos='fade-zoom-in'
               data-aos-easing='ease-in-back'
               data-aos-delay='10'
               data-aos-offset='0'
-              className='test'
             />
           </div>
         </div>
@@ -32,7 +39,7 @@ const Home = () => {
         <div className='home__right-content'>
           <div className='home__right-content--aside'>
             <img
-              src={Logo}
+              src={images.light_logo}
               alt=''
               data-aos='fade-zoom-in'
               data-aos-easing='ease-in-back'
@@ -40,7 +47,7 @@ const Home = () => {
               data-aos-offset='0'
             />
             <p data-aos='fade-left' className='home__right-content--aside---title'>
-              {Language[`${lang}`].home.brandText}
+              {brand_text}
             </p>
             <Button name='Conocenos' route='/about' />
           </div>

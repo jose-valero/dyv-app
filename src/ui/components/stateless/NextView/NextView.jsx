@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 import { BsArrowRight } from 'react-icons/bs';
-import { useHistory } from 'react-router-dom';
 
 import _variables from '../../../../styles/_variables.module.scss';
 

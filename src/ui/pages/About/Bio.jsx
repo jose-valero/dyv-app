@@ -1,29 +1,21 @@
-import ProfileImage from './assets/profile.jpeg';
-import { Language } from '../../../data';
+// import ProfileImage from './assets/profile.jpeg';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import { useSelector } from 'react-redux';
 
-const Bio = () => {
-  const lang = useSelector((state) => state.langReducer);
-  const bioText = Language[`${lang}`].about.bio_text;
-  const bioTextParagraph = Language[`${lang}`].about.bio_text_paragraph;
+const Bio = ({ profile_image, bio_text, bio_text_paragraph, seo_image_alt }) => {
   return (
     <Container className='about__bio-content '>
       <Row>
         <Col sm='12' md='12' lg='7' xl='7' className='about__bio-content--left-section '>
           <div className='about__bio-content--left-section--text'>
-            <p>{bioText}</p>
-            <p>{bioTextParagraph}</p>
+            <p>{bio_text}</p>
+            <p>{bio_text_paragraph}</p>
           </div>
         </Col>
         <Col sm='12' md='12' lg='5' xl='5' className='about__bio-content--right-section '>
           <div className='about__bio-content--right-section--images'>
-            <img
-              src={ProfileImage}
-              alt='Yusmary Villaroel - Diseño y Vanguardia - Diseño de Interiores - Interior Design'
-            />
+            <img src={profile_image} alt={seo_image_alt} />
           </div>
         </Col>
       </Row>

@@ -4,7 +4,6 @@ import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import './Carousel.scss';
 export const CarouselView = ({ data }) => {
-  console.log('data', data);
   return (
     <Container className='mb-3 carousel__container'>
       <Row>
