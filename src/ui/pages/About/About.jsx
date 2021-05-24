@@ -3,7 +3,6 @@ import { useSelector } from 'react-redux';
 import AOS from 'aos';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Spinner from 'react-bootstrap/Spinner';
 import { Language } from '../../../data';
 import { PageContainer } from '../../components/stateless/Container/PageContainer';
 import './About.scss';
