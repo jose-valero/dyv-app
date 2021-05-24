@@ -2,13 +2,13 @@ import React, { lazy, Suspense } from 'react';
 import { useSelector } from 'react-redux';
 import { Language } from '../../../data';
 import { PageContainer } from '../../components/stateless/Container/PageContainer';
-// import { SEO } from '../../components/utils';
 import Skils from './Skils';
 import './Services.scss';
 
 const SEO = lazy(() => import('../../components/utils/SEO/SEO'));
 const Hero = lazy(() => import('../../components/stateless/Hero/Hero'));
 const NextView = lazy(() => import('../../components/stateless/NextView/NextView'));
+const Spinnator = lazy(() => import('../../components/stateless/Spinner/Spinner'));
 const CarouselView = lazy(() => import('../../components/stateless/Carousel/Carousel'));
 const Description = lazy(() => import('../../components/stateless/BannerDescription/Description'));
 const Services = () => {
@@ -19,7 +19,7 @@ const Services = () => {
 
   return (
     <PageContainer>
-      <Suspense fallback={<span>loading...</span>}>
+      <Suspense fallback={<Spinnator />}>
         <SEO
           title={seo.title}
           description={seo.description}

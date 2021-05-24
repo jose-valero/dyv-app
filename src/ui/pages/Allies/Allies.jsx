@@ -4,7 +4,6 @@ import { TiSocialTwitter, TiSocialFacebook, TiSocialInstagram, TiSocialPinterest
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Spinner from 'react-bootstrap/Spinner';
 import Image from 'react-bootstrap/Image';
 import { Language } from '../../../data';
 import { PageContainer } from '../../components/stateless/Container/PageContainer';
@@ -14,6 +13,7 @@ import './Allies.scss';
 const SEO = lazy(() => import('../../components/utils/SEO/SEO'));
 const Hero = lazy(() => import('../../components/stateless/Hero/Hero'));
 const NextView = lazy(() => import('../../components/stateless/NextView/NextView'));
+const Spinnator = lazy(() => import('../../components/stateless/Spinner/Spinner'));
 const CarouselView = lazy(() => import('../../components/stateless/Carousel/Carousel'));
 const Allies = () => {
   const lang = useSelector((state) => state.langReducer);
@@ -22,7 +22,7 @@ const Allies = () => {
 
   return (
     <PageContainer>
-      <Suspense fallback={<Spinner>Loading...</Spinner>}>
+      <Suspense fallback={<Spinnator/>}>
         <SEO
           title={seo.title}
           description={seo.description}

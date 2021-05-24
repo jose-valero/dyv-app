@@ -10,7 +10,7 @@ import { PageContainer } from '../../components/stateless/Container/PageContaine
 
 const SEO = lazy(() => import('../../components/utils/SEO/SEO'));
 const Hero = lazy(() => import('../../components/stateless/Hero/Hero'));
-
+const Spinnator = lazy(() => import('../../components/stateless/Spinner/Spinner'));
 
 const PortafolioDetails = ({ id, match }) => {
   const lang = useSelector((state) => state.langReducer);
@@ -23,7 +23,7 @@ const PortafolioDetails = ({ id, match }) => {
 
   return (
     <PageContainer>
-      <Suspense fallback={<span>loading...</span>}>
+      <Suspense fallback={<Spinnator />}>
         <Hero displayOnPage='portafolio' />
         <SEO
           title={seo.title}

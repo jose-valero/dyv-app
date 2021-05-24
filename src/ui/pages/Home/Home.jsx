@@ -6,6 +6,7 @@ import './Home.scss';
 import 'aos/dist/aos.css';
 
 const Button = lazy(() => import('../../components/stateless/Button/Button'));
+const Spinnator = lazy(() => import('../../components/stateless/Spinner/Spinner'));
 const SEO = lazy(() => import('../../components/utils/SEO/SEO'));
 
 const Home = () => {
@@ -16,7 +17,7 @@ const Home = () => {
 
   return (
     <div className='home__container'>
-      <Suspense fallback={<span>loading...</span>}>
+      <Suspense fallback={<Spinnator />}>
         <SEO
           title={seo.title}
           description={seo.description}

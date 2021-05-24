@@ -5,12 +5,12 @@ import Row from 'react-bootstrap/Row';
 import Image from 'react-bootstrap/Image';
 import { Language } from '../../../data/index';
 import { PageContainer } from '../../components/stateless/Container/PageContainer';
-// import { SEO } from '../../components/utils';
 import PortafolioProjects from './PortafolioProjects';
 import MAP from './assets/bg-portafolio-2.png';
 import './Portafolio.scss';
 const SEO = lazy(() => import('../../components/utils/SEO/SEO'));
 const Hero = lazy(() => import('../../components/stateless/Hero/Hero'));
+const Spinnator = lazy(() => import('../../components/stateless/Spinner/Spinner'));
 const Description = lazy(() => import('../../components/stateless/BannerDescription/Description'));
 
 const Portafolio = () => {
@@ -20,7 +20,7 @@ const Portafolio = () => {
 
   return (
     <PageContainer>
-      <Suspense fallback={<span>loading...</span>}>
+      <Suspense fallback={<Spinnator />}>
         <Hero displayOnPage='portafolio' />
         <SEO
           title={seo.title}
