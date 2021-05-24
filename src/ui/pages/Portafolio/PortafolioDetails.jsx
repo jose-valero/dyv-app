@@ -53,10 +53,9 @@ const PortafolioDetails = ({ id, match }) => {
               {description}
             </Col>
             <Col lg={12} className='portafolioDetail__botsection-utils'>
-              {/* // eslint-disable-next-line */}
-              <a href='#' className='px-1 mx-1'>
+              <button className='px-1 mx-1'>
                 {donwload}
-              </a>
+              </button>
               <Badge variant='primary' className='px-1 mx-1'>
                 {year}
               </Badge>
