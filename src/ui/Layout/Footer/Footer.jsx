@@ -12,7 +12,9 @@ import './Footer.scss';
 
 import fullLogo from 'assets/images/LogoLight.png';
 
-const InputText = lazy(() => import('../../components/stateless/InputText/InputText'));
+const InputText = lazy(() =>
+  import('../../components/stateless/InputText/InputText')
+);
 const Footer = () => {
   const successToast = () => {
     toast(`Sent successfully`, {
@@ -20,14 +22,14 @@ const Footer = () => {
       draggable: true,
       pauseOnHover: true,
       position: toast.POSITION.BOTTOM_RIGHT,
-      closeOnClick: true
+      closeOnClick: true,
     });
   };
   const errorToast = () => {
     toast('API ERROR', {
       className: 'footer__customToast--error',
       draggable: true,
-      position: toast.POSITION.BOTTOM_RIGHT
+      position: toast.POSITION.BOTTOM_RIGHT,
     });
   };
 
@@ -101,14 +103,27 @@ const Footer = () => {
               </div>
             </Col>
             {/* NewsLetter */}
-            <Col xs={5} sm={5} md={5} lg={5} xl={5} className='footer__newsletter p-0'>
+            <Col
+              xs={5}
+              sm={5}
+              md={5}
+              lg={5}
+              xl={5}
+              className='footer__newsletter p-0'
+            >
               <div className='footer__newsletter--content'>
                 <h1>Newsletter</h1>
-                <p>Subscribe for free and keep in touch with our lastest content</p>
+                <p>
+                  Subscribe for free and keep in touch with our lastest content
+                </p>
                 <>
                   <form onSubmit={handleSubmit}>
                     <InputText label='Email' light />
-                    <button type='submit' value='Submit' className='footer__newsletter--button'>
+                    <button
+                      type='submit'
+                      value='Submit'
+                      className='footer__newsletter--button'
+                    >
                       <IoMdSend name='Go!' className='sendButton' />
                     </button>
                     <ToastContainer
@@ -123,12 +138,23 @@ const Footer = () => {
               </div>
             </Col>
             {/* SocialMedia */}
-            <Col xs={4} sm={4} md={3} lg={3} xl={3} className='footer__social p-0'>
+            <Col
+              xs={4}
+              sm={4}
+              md={3}
+              lg={3}
+              xl={3}
+              className='footer__social p-0'
+            >
               <div className='footer__social--content'>
                 <h1>Let's Talk</h1>
                 <ul>
                   <li>
-                    <a href='https://wa.link/702wra' target='_blank' rel='noreferrer'>
+                    <a
+                      href='https://wa.link/702wra'
+                      target='_blank'
+                      rel='noreferrer'
+                    >
                       <div className='footer__social--content--items'>
                         <FaWhatsapp style={iconStyle} />
                         <span>+54 3816592931</span>
@@ -164,7 +190,7 @@ const Footer = () => {
 };
 
 const iconStyle = {
-  fill: '#b3b3b5'
+  fill: '#b3b3b5',
 };
 
 export default Footer;

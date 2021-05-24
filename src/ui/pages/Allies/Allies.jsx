@@ -1,6 +1,11 @@
 import React, { lazy, Suspense } from 'react';
 import { useSelector } from 'react-redux';
-import { TiSocialTwitter, TiSocialFacebook, TiSocialInstagram, TiSocialPinterest } from 'react-icons/ti';
+import {
+  TiSocialTwitter,
+  TiSocialFacebook,
+  TiSocialInstagram,
+  TiSocialPinterest,
+} from 'react-icons/ti';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -12,9 +17,15 @@ import './Allies.scss';
 
 const SEO = lazy(() => import('../../components/utils/SEO/SEO'));
 const Hero = lazy(() => import('../../components/stateless/Hero/Hero'));
-const NextView = lazy(() => import('../../components/stateless/NextView/NextView'));
-const Spinnator = lazy(() => import('../../components/stateless/Spinner/Spinner'));
-const CarouselView = lazy(() => import('../../components/stateless/Carousel/Carousel'));
+const NextView = lazy(() =>
+  import('../../components/stateless/NextView/NextView')
+);
+const Spinnator = lazy(() =>
+  import('../../components/stateless/Spinner/Spinner')
+);
+const CarouselView = lazy(() =>
+  import('../../components/stateless/Carousel/Carousel')
+);
 const Allies = () => {
   const lang = useSelector((state) => state.langReducer);
   const ALLIES_DATA = Language[`${lang}`].allies;
@@ -22,7 +33,7 @@ const Allies = () => {
 
   return (
     <PageContainer>
-      <Suspense fallback={<Spinnator/>}>
+      <Suspense fallback={<Spinnator />}>
         <SEO
           title={seo.title}
           description={seo.description}
@@ -38,7 +49,11 @@ const Allies = () => {
                 <Col xs={3}>
                   <Row>
                     <Col className='py-5'>
-                      <Image src={value.logo} className='allies__image' alt={value.name} />
+                      <Image
+                        src={value.logo}
+                        className='allies__image'
+                        alt={value.name}
+                      />
                     </Col>
                   </Row>
                   <Row>
@@ -57,16 +72,32 @@ const Allies = () => {
               {/* social netword */}
               <Row className='m-0 p-0'>
                 <Col className='allies__socialMedia'>
-                  <a href={value.social_media.fb} target='_blank' rel='noreferrer'>
+                  <a
+                    href={value.social_media.fb}
+                    target='_blank'
+                    rel='noreferrer'
+                  >
                     <TiSocialFacebook />
                   </a>
-                  <a href={value.social_media.tw} target='_blank' rel='noreferrer'>
+                  <a
+                    href={value.social_media.tw}
+                    target='_blank'
+                    rel='noreferrer'
+                  >
                     <TiSocialTwitter />
                   </a>
-                  <a href={value.social_media.ig} target='_blank' rel='noreferrer'>
+                  <a
+                    href={value.social_media.ig}
+                    target='_blank'
+                    rel='noreferrer'
+                  >
                     <TiSocialInstagram />
                   </a>
-                  <a href={value.social_media.pn} target='_blank' rel='noreferrer'>
+                  <a
+                    href={value.social_media.pn}
+                    target='_blank'
+                    rel='noreferrer'
+                  >
                     <TiSocialPinterest />
                   </a>
                 </Col>

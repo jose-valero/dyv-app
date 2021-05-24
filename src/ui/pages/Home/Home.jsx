@@ -6,7 +6,9 @@ import './Home.scss';
 import 'aos/dist/aos.css';
 
 const Button = lazy(() => import('../../components/stateless/Button/Button'));
-const Spinnator = lazy(() => import('../../components/stateless/Spinner/Spinner'));
+const Spinnator = lazy(() =>
+  import('../../components/stateless/Spinner/Spinner')
+);
 const SEO = lazy(() => import('../../components/utils/SEO/SEO'));
 
 const Home = () => {
@@ -50,7 +52,10 @@ const Home = () => {
                 data-aos-delay='10'
                 data-aos-offset='0'
               />
-              <p data-aos='fade-left' className='home__right-content--aside---title'>
+              <p
+                data-aos='fade-left'
+                className='home__right-content--aside---title'
+              >
                 {brand_text}
               </p>
               <Button name='Conocenos' route='/about' />

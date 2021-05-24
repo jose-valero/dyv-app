@@ -1,7 +1,7 @@
 import React, { lazy, Suspense } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Spinner from 'react-bootstrap/Spinner';
 import { HelmetProvider } from 'react-helmet-async';
+import Spinnator from '../ui/components/stateless/Spinner/Spinner';
 import '../styles/App.scss';
 
 const Home = lazy(() => import('ui/pages/Home'));
@@ -12,14 +12,16 @@ const Contact = lazy(() => import('ui/pages/Contact'));
 const NotFound = lazy(() => import('ui/pages/NotFound'));
 const Services = lazy(() => import('ui/pages/Services'));
 const Portafolio = lazy(() => import('ui/pages/Portafolio'));
-const Spinnator = lazy(() => import('ui/components/stateless/Spinner/Spinner'));
-const PortafolioDetails = lazy(() => import('ui/pages/Portafolio/PortafolioDetails'));
+// const Spinnator = lazy(() => import('ui/components/stateless/Spinner/Spinner'));
+const PortafolioDetails = lazy(() =>
+  import('ui/pages/Portafolio/PortafolioDetails')
+);
 
 const App = () => {
   return (
     <BrowserRouter>
       <HelmetProvider>
-        <Suspense fallback={<Spinnator  />}>
+        <Suspense fallback={<Spinnator />}>
           <Layout>
             <Switch>
               <Route exact path='/' component={Home} />

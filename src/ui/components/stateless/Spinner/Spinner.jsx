@@ -4,17 +4,16 @@ import Spinner from 'react-bootstrap/Spinner';
 const Spinnator = () => {
   const spinnerPosition = {
     position: 'absolute',
-    top: '50%',
-    left: '50%',
-    // display: 'flex',
-    // justifyContent: 'center',
-    // alignItems: 'center',
-    // textAlign: 'center',
+    top: '0',
+    left: '0',
+    width: "100%",
+    height: "100%",
     margin: '0',
+    Overflow: "hidden"
   };
   return (
     <div style={spinnerPosition}>
-      <Spinner style={spinnerPosition} animation='grow'/>
+      <Spinner animation='grow'/>
     </div>
   );
 };
