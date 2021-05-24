@@ -12,13 +12,14 @@ const Contact = lazy(() => import('ui/pages/Contact'));
 const NotFound = lazy(() => import('ui/pages/NotFound'));
 const Services = lazy(() => import('ui/pages/Services'));
 const Portafolio = lazy(() => import('ui/pages/Portafolio'));
+const Spinnator = lazy(() => import('ui/components/stateless/Spinner/Spinner'));
 const PortafolioDetails = lazy(() => import('ui/pages/Portafolio/PortafolioDetails'));
 
 const App = () => {
   return (
     <BrowserRouter>
       <HelmetProvider>
-        <Suspense fallback={<Spinner animation='grow' />}>
+        <Suspense fallback={<Spinnator  />}>
           <Layout>
             <Switch>
               <Route exact path='/' component={Home} />

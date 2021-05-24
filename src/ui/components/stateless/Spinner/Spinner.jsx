@@ -14,7 +14,7 @@ const Spinnator = () => {
   };
   return (
     <div style={spinnerPosition}>
-      <Spinner style={spinnerPosition}/>
+      <Spinner style={spinnerPosition} animation='grow'/>
     </div>
   );
 };
