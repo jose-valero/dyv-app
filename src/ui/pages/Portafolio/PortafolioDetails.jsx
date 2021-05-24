@@ -7,10 +7,10 @@ import Badge from 'react-bootstrap/Badge';
 import Image from 'react-bootstrap/Image';
 import { Language } from '../../../data';
 import { PageContainer } from '../../components/stateless/Container/PageContainer';
-// import { SEO } from '../../components/utils';
 
 const SEO = lazy(() => import('../../components/utils/SEO/SEO'));
 const Hero = lazy(() => import('../../components/stateless/Hero/Hero'));
+
 
 const PortafolioDetails = ({ id, match }) => {
   const lang = useSelector((state) => state.langReducer);

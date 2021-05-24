@@ -3,17 +3,16 @@ import { useSelector } from 'react-redux';
 import AOS from 'aos';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Spinner from 'react-bootstrap/Spinner';
 import { Language } from '../../../data';
-// import { SEO } from '../../components/utils/';
-import Bio from './Bio';
-import ValuesCard from './ValuesCard';
+import { PageContainer } from '../../components/stateless/Container/PageContainer';
 import './About.scss';
 
-import { PageContainer } from '../../components/stateless/Container/PageContainer';
-
+const Bio = lazy(() => import('./Bio'));
 const SEO = lazy(() => import('../../components/utils/SEO/SEO'));
 const Hero = lazy(() => import('../../components/stateless/Hero/Hero'));
 const NextView = lazy(() => import('../../components/stateless/NextView/NextView'));
+const ValuesCard = lazy(() => import('./ValuesCard'));
 const Description = lazy(() => import('../../components/stateless/BannerDescription/Description'));
 
 const About = () => {
@@ -35,7 +34,7 @@ const About = () => {
 
   return (
     <PageContainer>
-      <Suspense fallback={<span>loading...</span>}>
+      <Suspense fallback={<Spinner>Loading...</Spinner>}>
         <SEO
           title={seo.title}
           description={seo.description}

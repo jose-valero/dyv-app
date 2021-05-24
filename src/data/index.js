@@ -128,12 +128,21 @@ export const Language = {
       title: 'Diseño & Vanguardia'
     },
     contact: {
-      belongToLabel: 'You belong to',
-      checkboxRadio: ['Individual', 'Company'],
+      belong_to_label: 'You belong to',
+      checkbox_radio: ['Individual', 'Company'],
       headline: 'CONTACT US',
-      lastNameLabel: 'Last Name',
-      nameLabel: 'Name',
-      submitButtonText: 'SUBMIT'
+      lastname_label: 'Last Name',
+      name_label: 'Name',
+      phone_label: "Phone",
+      submit_button_text: 'SUBMIT',
+      seo: {
+        description: 'take a look of us Desing and Vanguard',
+        image: '/images/LogoGold.jpg',
+        image_alt: 'Diseño y Vanguardia',
+        keywords:
+          'Design Portafolio, diseño y vanguardia, design and vanguard, interior design, exterior design, interior designer, exterior designer, modern design  ',
+        title: 'Contact Us | D&V'
+      }
     },
     home: {
       brand_text: 'DESIGNS THAT REFLECT YOUR INSIDE',
@@ -453,12 +462,22 @@ export const Language = {
       four: 'DISEÑO % VANGUARDIA'
     },
     contact: {
-      belongToLabel: 'Perteneces a',
-      checkboxRadio: ['Particular', 'Empresa'],
+      belong_to_label: 'Perteneces a',
+      checkbox_radio: ['Particular', 'Empresa'],
       headline: 'CONTACTANOS',
-      lastNameLabel: 'Apellido',
-      nameLabel: 'Nombre',
-      submitButtonText: 'ENVIAR'
+      lastname_label: 'Apellido',
+      name_label: 'Nombre',
+      phone_label: "Telefono",
+      submit_button_text: 'ENVIAR',
+      image: "/images/L_007.jpg",
+      seo: {
+        description: 'Contacto | Diseño y Vanguardia',
+        image: '/images/LogoGold.jpg',
+        image_alt: 'Diseño y Vanguardia - The Private Collections - Casa Interior',
+        keywords:
+          'The Private Collections, Casa Interior, diseño y vanguardia, design and vanguard, interior design, exterior design, interior designer, exterior designer, modern design  ',
+        title: 'Contactanos | D&V'
+      }
     },
     home: {
       brand_text: 'DISEÑOS QUE REFLEJAN TU INTERIOR',
