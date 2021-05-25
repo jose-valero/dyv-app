@@ -16,7 +16,6 @@ import { PageContainer } from '../../components/stateless/Container/PageContaine
 import './Allies.scss';
 
 const SEO = lazy(() => import('../../components/utils/SEO/SEO'));
-const Hero = lazy(() => import('../../components/stateless/Hero/Hero'));
 const NextView = lazy(() =>
   import('../../components/stateless/NextView/NextView')
 );
@@ -41,7 +40,6 @@ const Allies = () => {
           image_alt={seo.image_alt}
           keywords={seo.keywords}
         />
-        <Hero displayOnPage='allies' />
         {Object.values(allies_detail).map((value) => {
           return (
             <Container className='allies__container my-5' key={value.id}>

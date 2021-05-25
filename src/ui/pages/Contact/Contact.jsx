@@ -11,7 +11,6 @@ import { PageContainer } from '../../components/stateless/Container/PageContaine
 import './Contact.scss';
 
 const SEO = lazy(() => import('../../components/utils/SEO/SEO'));
-const Hero = lazy(() => import('../../components/stateless/Hero/Hero'));
 const Spinnator = lazy(() =>
   import('../../components/stateless/Spinner/Spinner')
 );
@@ -42,7 +41,7 @@ const Contact = () => {
   return (
     <>
       <Suspense fallback={<Spinnator />}>
-        <PageContainer>
+        <PageContainer style={{marginTop: '0'}}>
           <SEO
             title={seo.title}
             description={seo.description}
@@ -50,7 +49,6 @@ const Contact = () => {
             image_alt={seo.image_alt}
             keywords={seo.keywords}
           />
-          <Hero displayOnPage='about' />
           <Container className='form__container' fluid>
             <Row>
               <Col xs={12} md={5} className='p-0 main-col'>

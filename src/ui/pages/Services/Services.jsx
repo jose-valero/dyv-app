@@ -6,7 +6,6 @@ import Skils from './Skils';
 import './Services.scss';
 
 const SEO = lazy(() => import('../../components/utils/SEO/SEO'));
-const Hero = lazy(() => import('../../components/stateless/Hero/Hero'));
 const NextView = lazy(() => import('../../components/stateless/NextView/NextView'));
 const Spinnator = lazy(() => import('../../components/stateless/Spinner/Spinner'));
 const CarouselView = lazy(() => import('../../components/stateless/Carousel/Carousel'));
@@ -27,7 +26,6 @@ const Services = () => {
           image_alt={seo.image_alt}
           keywords={seo.keywords}
         />
-        <Hero displayOnPage='services' />
         <Description title='Servicios de calidad' />
         <CarouselView data={carousel} />
         <Skils row_1={skills.row_1} row_2={skills.row_2} row_3={skills.row_3} row_4={skills.row_4} />

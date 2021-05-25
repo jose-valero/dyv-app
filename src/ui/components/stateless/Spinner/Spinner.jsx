@@ -8,11 +8,14 @@ const Spinnator = () => {
     left: '0',
     width: "100%",
     height: "100%",
-    margin: '0',
-    Overflow: "hidden"
+    background: '#d0ad97',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    zIndex: '999999',
   };
   return (
-    <div style={spinnerPosition}>
+    <div className="spinner__wrapper" style={spinnerPosition}>
       <Spinner animation='grow'/>
     </div>
   );
