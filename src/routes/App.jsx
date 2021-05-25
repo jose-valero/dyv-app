@@ -24,7 +24,7 @@ const App = () => {
         <Suspense fallback={<Spinnator />}>
           <Layout>
             <Switch>
-              <Route exact path='/' component={Home} />
+              <Route exact path='/home' component={Home} />
               <Route exact path='/about' component={About} />
               <Route exact path='/allies' component={Allies} />
               <Route exact path='/contact' component={Contact} />
