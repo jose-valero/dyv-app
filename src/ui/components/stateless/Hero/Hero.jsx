@@ -9,12 +9,13 @@ const Hero = ({ displayOnPage }) => {
   const location = useLocation();
 
   const pathRegex = /[^/]/gi;
-  const validationPath = location.pathname.match(pathRegex).join('');
+  const validationPath = location.pathname.match(pathRegex);
+  const path = validationPath !== null ? validationPath.join('') : 'home';
   
   return (
     <div className='hero__container'>
       <div className='hero__animated'>
-        <p>{Language[`${lang}`][validationPath].hero_scape}</p>
+        <p>{Language[`${lang}`][path].hero_scape}</p>
       </div>
       <div className='hero__animated'>
         <p className='hero__text ml-2'>{Language[`${lang}`][displayOnPage].hero_title}</p>
