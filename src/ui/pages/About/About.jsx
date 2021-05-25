@@ -7,17 +7,13 @@ import { Language } from '../../../data';
 import { PageContainer } from '../../components/stateless/Container/PageContainer';
 import './About.scss';
 import Spinnator from '../../components/stateless/Spinner/Spinner';
-// import Hero from '../../components/stateless/Hero/Hero';
 
 const Bio = lazy(() => import('./Bio'));
 const SEO = lazy(() => import('../../components/utils/SEO/SEO'));
-const Hero = lazy(() => import('../../components/stateless/Hero/Hero'));
 const NextView = lazy(() =>
   import('../../components/stateless/NextView/NextView')
 );
-// const Spinnator = lazy(() =>
-//   import('../../components/stateless/Spinner/Spinner')
-// );
+
 const ValuesCard = lazy(() => import('./ValuesCard'));
 const Description = lazy(() =>
   import('../../components/stateless/BannerDescription/Description')
