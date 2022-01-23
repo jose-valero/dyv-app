@@ -11,12 +11,9 @@ import { PageContainer } from '../../components/stateless/Container/PageContaine
 import './Contact.scss';
 
 const SEO = lazy(() => import('../../components/utils/SEO/SEO'));
-const Spinnator = lazy(() =>
-  import('../../components/stateless/Spinner/Spinner')
-);
-const InputText = lazy(() =>
-  import('../../components/stateless/InputText/InputText')
-);
+const Spinnator = lazy(() => import('../../components/stateless/Spinner/Spinner'));
+const InputText = lazy(() => import('../../components/stateless/InputText/InputText'));
+const Hero = lazy(() => import('../../components/stateless/Hero/Hero'));
 
 const Contact = () => {
   const [textArea, setTextArea] = useState('');
@@ -31,7 +28,7 @@ const Contact = () => {
     lastname_label,
     name_label,
     submit_button_text,
-    phone_label,
+    phone_label
   } = CONTACT_DATA;
 
   const onSubmitForm = (e) => {
@@ -41,7 +38,7 @@ const Contact = () => {
   return (
     <>
       <Suspense fallback={<Spinnator />}>
-        <PageContainer style={{marginTop: '0'}}>
+        <PageContainer style={{ marginTop: '0' }}>
           <SEO
             title={seo.title}
             description={seo.description}
@@ -49,6 +46,7 @@ const Contact = () => {
             image_alt={seo.image_alt}
             keywords={seo.keywords}
           />
+          <Hero displayOnPage='contact' />
           <Container className='form__container' fluid>
             <Row>
               <Col xs={12} md={5} className='p-0 main-col'>

@@ -7,17 +7,13 @@ import { Language } from '../../../data';
 import { PageContainer } from '../../components/stateless/Container/PageContainer';
 import './About.scss';
 import Spinnator from '../../components/stateless/Spinner/Spinner';
-
+const Hero = lazy(() => import('../../../ui/components/stateless/Hero/Hero'));
 const Bio = lazy(() => import('./Bio'));
 const SEO = lazy(() => import('../../components/utils/SEO/SEO'));
-const NextView = lazy(() =>
-  import('../../components/stateless/NextView/NextView')
-);
+const NextView = lazy(() => import('../../components/stateless/NextView/NextView'));
 
 const ValuesCard = lazy(() => import('./ValuesCard'));
-const Description = lazy(() =>
-  import('../../components/stateless/BannerDescription/Description')
-);
+const Description = lazy(() => import('../../components/stateless/BannerDescription/Description'));
 
 const About = () => {
   AOS.init();
@@ -26,15 +22,7 @@ const About = () => {
   const ABOUT_DATA = Language[`${lang}`].about;
 
   // destructuring
-  const {
-    next_page,
-    bio_text,
-    bio_text_paragraph,
-    profile_image,
-    values,
-    seo,
-    banner_mission_cards,
-  } = ABOUT_DATA;
+  const { next_page, bio_text, bio_text_paragraph, profile_image, values, seo, banner_mission_cards } = ABOUT_DATA;
 
   const valuesItems = Object.values(values).map((value) => {
     return (
@@ -54,7 +42,7 @@ const About = () => {
           image_alt={seo.image_alt}
           keywords={seo.keywords}
         />
-        {/* <Hero displayOnPage='about' /> */}
+        <Hero displayOnPage='about' />
         <Bio
           profile_image={profile_image}
           bio_text={bio_text}

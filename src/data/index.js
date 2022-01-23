@@ -130,13 +130,14 @@ export const Language = {
       acronym: 'D&V'
     },
     contact: {
+      // hero_title: 'hacemos la diferencia',
       belong_to_label: 'You belong to',
       checkbox_radio: ['Individual', 'Company'],
       headline: 'CONTACT US',
+      hero_scape: 'Contactanos',
       lastname_label: 'Last Name',
       name_label: 'Name',
-      phone_label: "Phone",
-      submit_button_text: 'SUBMIT',
+      phone_label: 'Phone',
       seo: {
         description: 'take a look of us Desing and Vanguard',
         image: '/images/LogoGold.jpg',
@@ -144,7 +145,8 @@ export const Language = {
         keywords:
           'Design Portafolio, diseño y vanguardia, design and vanguard, interior design, exterior design, interior designer, exterior designer, modern design  ',
         title: 'Contact Us | D&V'
-      }
+      },
+      submit_button_text: 'SUBMIT'
     },
     home: {
       brand_text: 'DESIGNS THAT REFLECT YOUR INSIDE',
@@ -623,14 +625,16 @@ export const Language = {
       acronym: 'D&V'
     },
     contact: {
+      hero_scape: 'Contactanos',
+      // hero_title: 'hacemos la diferencia',
       belong_to_label: 'Perteneces a',
       checkbox_radio: ['Particular', 'Empresa'],
       headline: 'CONTACTANOS',
       lastname_label: 'Apellido',
       name_label: 'Nombre',
-      phone_label: "Telefono",
+      phone_label: 'Telefono',
       submit_button_text: 'ENVIAR',
-      image: "/images/L_007.jpg",
+      image: '/images/L_007.jpg',
       seo: {
         description: 'Contacto | Diseño y Vanguardia',
         image: '/images/LogoGold.jpg',

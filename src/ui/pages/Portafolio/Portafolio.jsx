@@ -11,12 +11,11 @@ import './Portafolio.scss';
 const SEO = lazy(() => import('../../components/utils/SEO/SEO'));
 const Spinnator = lazy(() => import('../../components/stateless/Spinner/Spinner'));
 const Description = lazy(() => import('../../components/stateless/BannerDescription/Description'));
-
+const Hero = lazy(() => import('../../components/stateless/Hero/Hero'));
 const Portafolio = () => {
   const lang = useSelector((state) => state.langReducer);
   const PORTAFOLIO_DATA = Language[lang].portafolio;
   const { portafolio_detail, seo } = PORTAFOLIO_DATA;
-  console.log('🚀 ~ portafolio_detail', portafolio_detail);
 
   return (
     <PageContainer>
@@ -28,6 +27,7 @@ const Portafolio = () => {
           image_alt={seo.image_alt}
           keywords={seo.keywords}
         />
+        <Hero displayOnPage='portafolio' />
         <Container className='portfolio__page'>
           <Description
             title={Language[`${lang}`].portafolio.descriptionHeadline}
