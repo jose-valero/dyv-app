@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Badge from 'react-bootstrap/Badge';
-import Image from 'react-bootstrap/Image';
+// import Image from 'react-bootstrap/Image';
 import { Language } from '../../../data';
 import { PageContainer } from '../../components/stateless/Container/PageContainer';
 
@@ -21,7 +21,7 @@ const PortafolioDetails = ({ id, match }) => {
   const PORTAFOLIO_DETAIL_DATA = portafolio_detail[project_id];
   const PORTAFOLIO_DETAIL_CAROUSEL = PORTAFOLIO_DETAIL_DATA.carousel;
 
-  const { title, description, location, donwload, description_title, keywords } = PORTAFOLIO_DETAIL_DATA;
+  const { title, description, location, donwload, keywords } = PORTAFOLIO_DETAIL_DATA;
 
   return (
     <PageContainer>
@@ -47,7 +47,8 @@ const PortafolioDetails = ({ id, match }) => {
             </Col>
             <Col sm={12} md={8} lg={7} className='portafolioDetail__content-carousel'>
               <CarouselView data={PORTAFOLIO_DETAIL_CAROUSEL} />
-              <a href='#' className='px-1 mx-1'>
+
+              <a href='#algo' className='px-1 mx-1'>
                 {donwload}
               </a>
               {Object.values(keywords).map((keyword) => {
