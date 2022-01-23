@@ -1,46 +1,43 @@
 ## 17/11/2020
-terminar todas las vistas y estilizar los espacios
 
+terminar todas las vistas y estilizar los espacios
 
 29/12/2020
 
-clientes: 
+clientes:
+
 #### --> prioridad y buyer persona
-  arquitectos
-  diseñadores 
-  constructores 
-#### --> clientes particulares segunda prioridad 
-  
-clientes: 
-  sully Dueña | privatecolecttion(fafricas con las que trabaja) -> clientes/aliados ###PRO
-  sully Dueña | casainterior(tienda de diseño) -> clientes/aliados  ###COMUN
+
+arquitectos
+diseñadores
+constructores
+
+#### --> clientes particulares segunda prioridad
+
+clientes:
+sully Dueña | privatecolecttion(fafricas con las que trabaja) -> clientes/aliados ###PRO
+sully Dueña | casainterior(tienda de diseño) -> clientes/aliados ###COMUN
 
     introduccion a the private colection y conozacan su pagina
 
-servicios: 
+servicios:
 
-Interiores: 
-  Oficina, Restaurante, Hogar.
-  
-    Presentacion completa: 
+Interiores:
+Oficina, Restaurante, Hogar.
+
+    Presentacion completa:
      .- Diseño(ambos lados <->), planos, cotización, conceptual
 
 Exteriores:
-  Fachada, Jardin, Terraza, Balcon.
+Fachada, Jardin, Terraza, Balcon.
 
-  Planos 
+Planos
 
-
-
-  arreglar id de render, que abra en top lvl
-  reducir hero a la mitad en mobile -> DONE
-  About:  Nuestros valores separar las palabras claves en 3 lineas diferentes. -> DONE
-  servicios_hero: Diseño & Vanguardia, te ofrece -> DONE
-  servicios_caroulse: intercambiar titulo card1 con card3 -> DONE
-  servicios_carousel: cambiar flechas, titulos, no se aprecian.  -> DONE
-  hero: revisar font size y  probar font-family
-  modal portafolio: maquetar vista de detalles de portafolio. 
-
-  
-
-  
+arreglar id de render, que abra en top lvl
+reducir hero a la mitad en mobile -> DONE
+About: Nuestros valores separar las palabras claves en 3 lineas diferentes. -> DONE
+servicios_hero: Diseño & Vanguardia, te ofrece -> DONE
+servicios_caroulse: intercambiar titulo card1 con card3 -> DONE
+servicios_carousel: cambiar flechas, titulos, no se aprecian. -> DONE
+hero: revisar font size y probar font-family
+modal portafolio: maquetar vista de detalles de portafolio.

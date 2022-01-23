@@ -16,6 +16,7 @@ const Portafolio = () => {
   const lang = useSelector((state) => state.langReducer);
   const PORTAFOLIO_DATA = Language[lang].portafolio;
   const { portafolio_detail, seo } = PORTAFOLIO_DATA;
+  console.log('🚀 ~ portafolio_detail', portafolio_detail);
 
   return (
     <PageContainer>
@@ -34,9 +35,10 @@ const Portafolio = () => {
           />
           <Image src={MAP} fluid />
           <Row className='portafolio__card pb-4'>
-            {Object.values(portafolio_detail).map((value) => (
-              <PortafolioProjects key={value.id} data={value} />
-            ))}
+            {Object.values(portafolio_detail).map((value) => {
+              console.log('🚀 ~ value', value);
+              return <PortafolioProjects key={value.id} data={value} />;
+            })}
           </Row>
         </Container>
       </Suspense>

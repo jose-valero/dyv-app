@@ -1,9 +1,9 @@
-@import "../../../styles/animations";
-@import "../../../styles/fonts";
-@import "../../../styles/keyframes";
-@import "../../../styles/media";
-@import "../../../styles/mixins";
-@import "../../../styles/variables.module";
+@import '../../../styles/animations';
+@import '../../../styles/fonts';
+@import '../../../styles/keyframes';
+@import '../../../styles/media';
+@import '../../../styles/mixins';
+@import '../../../styles/variables.module';
 
 .portfolio__page {
   .about__banner-desc-content {
@@ -16,6 +16,10 @@
 }
 
 .portafolio__card {
+  img {
+    width: auto;
+    height: auto;
+  }
   &--content {
     padding: 1rem;
     &---cards {
@@ -40,36 +44,43 @@
 }
 
 .portafolioDetail__container {
-  margin: 2rem 0;
-  height: 675px;
-  background-color: rgb(233, 195, 195);
-.portafolioDetail__topsection {
-  text-align: center;
-  @include centerFlex;
-  margin: 0 auto;
-  height: 350px;
-  background-color: aquamarine;
+  margin: 2rem auto;
   &-title {
-    background-color: chocolate;
-    height: 300px;
+    @include font-size($h1-font-sizes);
+    text-align: center;
   }
-  &-images {
-    background-color: magenta;
-    height: 300px;
-    @include centerFlex;
+  &-location {
+    text-align: center;
   }
-}
-.portafolioDetail__botsection {
-  text-align: center;
-  @include centerFlex;
-  margin: 0 auto;
-  height: 212px;
-  background-color: rgb(127, 129, 255);
-  &-desc{
-    text-align: left;
+  .portafolioDetail__content {
+    // @include centerFlex;
+    margin: 0 auto;
+    // min-height: 350px;
+    &-description {
+      &--title {
+        text-align: center;
+        @include breakpoint(mobile) {
+          text-align: start;
+        }
+        @include font-size($p-font-sizes);
+      }
+      &--text {
+        @include font-size($p-font-sizes);
+        @include breakpoint(laptop) {
+          @include font-size($a-font-sizes);
+        }
+        @include breakpoint(tablet_land) {
+          @include font-size($a-font-sizes);
+        }
+        @include breakpoint(tablet_port) {
+          @include font-size($a-font-sizes);
+        }
+      }
+    }
+    &-carousel {
+      @include breakpoint(mobile) {
+        min-height: 100px;
+      }
+    }
   }
-  &-utils{
-    @include startFlex;
-  }
-}
 }

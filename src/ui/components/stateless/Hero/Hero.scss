@@ -6,7 +6,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 250px;
+  height: 175px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -28,14 +28,14 @@
       width: 0px;
     }
     30% {
-      width: 200px;
+      width: 300px;
     }
     80% {
       opacity: 1;
     }
     100% {
       opacity: 0;
-      width: 200px;
+      width: 300px;
     }
   }
   @keyframes showup {
@@ -54,10 +54,10 @@
   }
   @keyframes slideinMobile {
     0% {
-      margin-left: -400px;
+      margin-left: -500px;
     }
     20% {
-      margin-left: -400px;
+      margin-left: -500px;
     }
     35% {
       margin-left: 0px;
@@ -121,15 +121,12 @@
   }
 }
 .hero__animated {
-  font-family: $hero-font;
   font-size: 1.25rem;
-  font-weight: 200;
-  // @include font-size($xl-font-sizes);
   @include breakpoint(mobile) {
-    font-size: 1.25rem;
-    // @include font-size($xl-font-sizes);
-    // color: red;
+    font-size: 0.75rem;
   }
+  font-family: $hero-font;
+  font-weight: 200;
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;

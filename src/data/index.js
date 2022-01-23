@@ -125,7 +125,9 @@ export const Language = {
       }
     },
     brand_name: {
-      title: 'Diseño & Vanguardia'
+      name_1: 'Diseño & Vanguardia',
+      name_2: 'Diseño y Vanguardia',
+      acronym: 'D&V'
     },
     contact: {
       belong_to_label: 'You belong to',
@@ -167,99 +169,259 @@ export const Language = {
       next_page: 'Take a look Around',
       portafolio_detail: {
         project_1: {
-          description: 'content description',
-          detail: {
-            item_1: 'item#1',
-            item_2: 'item#2',
-            item_3: 'item#3',
-            item_4: 'item#4',
-            item_5: 'item#5'
+          carousel: [
+            {
+              id: 'portafolio_project_1_1',
+              image: '/images/POR_CK_1_005_EN.jpg',
+              name: 'Diseño y Vanguardia / The Private Collections'
+            },
+            {
+              id: 'portafolio_project_1_2',
+              image: '/images/POR_CK_1_011.jpg',
+              name: 'Diseño y Vanguardia / The Private Collections'
+            },
+            {
+              id: 'portafolio_project_1_3',
+              image: '/images/POR_CK_1_007.jpg',
+              name: 'Diseño y Vanguardia / The Private Collections'
+            }
+          ],
+          description: {
+            description_title: 'SOFT AND LIGHT',
+            text: {
+              paragraph_1: 'In collaboration with THE PRIVATE COLLECTIONS',
+              paragraph_2:
+                'Undoubtedly, the table-island is the protagonist in this project, an exclusive design by Obumex and French designer Joseph Dirand.',
+              paragraph_3: 'It is a distinctive minimalist style, timeless and elegant, resulting in a warm home.',
+              paragraph_4:
+                'Creating an additional interest, technology is present, making this kitchen more comfortable and functional. THE PRIVATE COLLECTIONS offers the best in kitchens.'
+            },
+            tpc: 'THE PRIVATE COLLECTIONS'
           },
-          donwload: 'download',
+          donwload: 'Download',
           id: 'project_1',
-          img: '/images/C_003.jpg',
-          keyword_1: 'keyword_1',
-          keyword_2: 'keyword_2',
-          location: 'Miami, USA',
-          title: 'hola detalle de proyecto #1',
-          title_detail: 'lista de detalles',
-          year: '2092'
+          img: '/images/POR_CK_1_005_EN.jpg',
+          keywords: {
+            key_1: 'OBUMEX',
+            key_2: 'DIRAND',
+            key_3: 'HOME'
+          },
+          location: 'MIAMI, USA',
+          title: 'PORTOFINO RESIDENCE'
         },
         project_2: {
-          description: 'content description',
-          detail: {
-            item_1: 'item#1',
-            item_2: 'item#2',
-            item_3: 'item#3',
-            item_4: 'item#4',
-            item_5: 'item#5'
+          carousel: [
+            {
+              id: 'portafolio_project_2_1',
+              image: '/images/POR_CK_2_001.jpg',
+              name: 'Diseño y Vanguardia / The Private Collections'
+            },
+            {
+              id: 'portafolio_project_2_2',
+              image: '/images/POR_CK_2_002_EN.jpg',
+              name: 'Diseño y Vanguardia / The Private Collections'
+            },
+            {
+              id: 'portafolio_project_2_3',
+              image: '/images/POR_CK_2_003.jpg',
+              name: 'Diseño y Vanguardia / The Private Collections'
+            }
+          ],
+          description: {
+            description_title: 'SMOOTH y LIGHT.',
+            text: {
+              paragraph_1: 'Project developed by D&V and THE PRIVATE COLLECTIONS',
+              paragraph_2:
+                'Undoubtedly, the table-island is the protagonist in this project, an exclusive design by Obumex and French designer Joseph Dirand.',
+              paragraph_3: 'It is a distinctive minimalist style, timeless and elegant, resulting in a warm home.',
+              paragraph_4:
+                'Creating an additional interest, technology is present, making this kitchen more comfortable and functional.'
+            },
+            tpc: 'THE PRIVATE COLLECTIONS'
           },
-          donwload: 'download',
+          donwload: 'Download',
           id: 'project_2',
-          img: '/images/C_003.jpg',
-          keyword_1: 'keyword_1',
-          keyword_2: 'keyword_2',
-          location: 'Miami, USA',
-          title: 'hola detalle de proyecto #2',
-          title_detail: 'lista de detalles',
-          year: '2092'
+          img: '/images/POR_CK_2_002_EN.jpg',
+          keywords: {
+            key_1: 'OBUMEX',
+            key_2: 'DIRAND',
+            key_3: 'HOME'
+          },
+          location: 'MIAMI, USA',
+          title: 'PORTOFINO RESIDENCE'
         },
         project_3: {
-          description: 'content description',
-          detail: {
-            item_1: 'item#1',
-            item_2: 'item#2',
-            item_3: 'item#3',
-            item_4: 'item#4',
-            item_5: 'item#5'
+          carousel: [
+            {
+              id: 'portafolio_project_3_1',
+              image: '/images/POR_CK_3_012_EN.jpg',
+              name: 'Diseño y Vanguardia / The Private Collections'
+            },
+            {
+              id: 'portafolio_project_2_2',
+              image: '/images/POR_CK_3_013.jpg',
+              name: 'Diseño y Vanguardia / The Private Collections'
+            }
+          ],
+          description: {
+            description_title: 'LINEAL',
+            text: {
+              paragraph_1: 'Project developed by D&V and THE PRIVATE COLLECTIONS',
+              paragraph_2:
+                'They say that the kitchen is the heart of the home and this is no exception. We present a solid and elegant design, which represents the client, where function and creativity go hand in hand.',
+              paragraph_3:
+                'In THE PRIVATE COLLECTIONS you will find a personalized service that adapts perfectly to your needs and space, following the design criteria.'
+            },
+            tpc: 'THE PRIVATE COLLECTIONS'
           },
-          donwload: 'download',
+          donwload: 'Download',
           id: 'project_3',
-          img: '/images/C_003.jpg',
-          keyword_1: 'keyword_1',
-          keyword_2: 'keyword_2',
-          location: 'Miami, USA',
-          title: 'hola detalle de proyecto #3',
-          title_detail: 'lista de detalles',
-          year: '2092'
+          img: '/images/POR_CK_3_012_EN.jpg',
+          keywords: {
+            key_1: 'EFFETI',
+            key_2: 'CUCINE',
+            key_3: 'DESIGN'
+          },
+          location: 'POMPANO BEACH, USA',
+          title: 'CONDO INTERIOR RENOVATION'
         },
         project_4: {
-          description: 'content description',
-          detail: {
-            item_1: 'item#1',
-            item_2: 'item#2',
-            item_3: 'item#3',
-            item_4: 'item#4',
-            item_5: 'item#5'
+          carousel: [
+            {
+              id: 'portafolio_project_4_1',
+              image: '/images/POR_CK_4_015.jpg',
+              name: 'Diseño y Vanguardia / The Private Collections'
+            },
+            {
+              id: 'portafolio_project_4_2',
+              image: '/images/POR_CK_4_016.jpg',
+              name: 'Diseño y Vanguardia / The Private Collections'
+            },
+            {
+              id: 'portafolio_project_4_3',
+              image: '/images/POR_CK_4_017.jpg',
+              name: 'Diseño y Vanguardia / The Private Collections'
+            },
+            {
+              id: 'portafolio_project_4_4',
+              image: '/images/POR_CK_4_018.jpg',
+              name: 'Diseño y Vanguardia / The Private Collections'
+            },
+            {
+              id: 'portafolio_project_4_4',
+              image: '/images/POR_CK_4_019.jpg',
+              name: 'Diseño y Vanguardia / The Private Collections'
+            }
+          ],
+          description: {
+            description_title: 'MYSTIQUE ROSE.',
+            text: {
+              paragraph_1: 'Project Developed by D&V y CASAINTERIOR',
+              paragraph_2: 'A magical design, where fun cannot be missing.',
+              paragraph_3:
+                'A room that will adapt without any problem to the growth of the smallest of the house, the combination of colors and materials provide a soft look.',
+              paragraph_4: 'A space that they will feel as their own, generating a sense of security and freedom.'
+            }
           },
-          donwload: 'download',
+          donwload: 'Download',
           id: 'project_4',
-          img: '/images/C_003.jpg',
-          keyword_1: 'keyword_1',
-          keyword_2: 'keyword_2',
-          location: 'Miami, USA',
-          title: 'hola detalle de proyecto #4',
-          title_detail: 'lista de detalles',
-          year: '2092'
+          img: '/images/POR_CK_4_020.jpg',
+          keywords: {
+            key_1: 'NIDI',
+            key_2: 'BEDROOM',
+            key_3: 'KIDS'
+          },
+          location: 'MIAMI, USA',
+          title: 'GIRLS ROOM'
         },
         project_5: {
-          description: 'content description',
-          detail: {
-            item_1: 'item#1',
-            item_2: 'item#2',
-            item_3: 'item#3',
-            item_4: 'item#4',
-            item_5: 'item#5'
+          carousel: [
+            {
+              id: 'portafolio_project_5_1',
+              image: '/images/POR_CK_5_001.jpg',
+              name: 'Diseño y Vanguardia / The Private Collections'
+            },
+            {
+              id: 'portafolio_project_5_2',
+              image: '/images/POR_CK_5_002.jpg',
+              name: 'Diseño y Vanguardia / The Private Collections'
+            },
+            {
+              id: 'portafolio_project_5_3',
+              image: '/images/POR_CK_5_003.jpg',
+              name: 'Diseño y Vanguardia / The Private Collections'
+            },
+            {
+              id: 'portafolio_project_5_4',
+              image: '/images/POR_CK_5_004.jpg',
+              name: 'Diseño y Vanguardia / The Private Collections'
+            }
+          ],
+          description: {
+            description_title: 'HOME',
+            text: {
+              paragraph_1: 'Project developed por D&V y CASAINTERIOR',
+              paragraph_2:
+                'Your home gym can also be a glamorous and empowering space that motivates you on a day to day basis.',
+              paragraph_3:
+                "We have selected a unique equipment, manufactured with the highest quality materials, which covers the customer's needs and generates a modern look, which takes this design to another level "
+            }
           },
-          donwload: 'download',
+          donwload: 'Download',
           id: 'project_5',
-          img: '/images/C_003.jpg',
-          keyword_1: 'keyword_1',
-          keyword_2: 'keyword_2',
-          location: 'Miami, USA',
-          title: 'hola detalle de proyecto #5',
-          title_detail: 'lista de detalles',
-          year: '2092'
+          img: '/images/POR_CK_5_001.jpg',
+          keywords: {
+            key_1: 'GREEN',
+            key_2: 'WHITE',
+            key_3: 'WOOD'
+          },
+          location: 'MIAMI, USA',
+          title: 'GYM'
+        },
+        project_6: {
+          carousel: [
+            {
+              id: 'portafolio_project_6_1',
+              image: '/images/POR_CK_6_001.jpg',
+              name: 'Diseño y Vanguardia / The Private Collections'
+            },
+            {
+              id: 'portafolio_project_6_2',
+              image: '/images/POR_CK_6_002.jpg',
+              name: 'Diseño y Vanguardia / The Private Collections'
+            },
+            {
+              id: 'portafolio_project_6_3',
+              image: '/images/POR_CK_6_003.jpg',
+              name: 'Diseño y Vanguardia / The Private Collections'
+            },
+            {
+              id: 'portafolio_project_6_4',
+              image: '/images/POR_CK_6_004.jpg',
+              name: 'Diseño y Vanguardia / The Private Collections'
+            }
+          ],
+          description: {
+            description_title: 'TO THE LAST DROP',
+            text: {
+              paragraph_1:
+                'Este es un proyecto que sin duda alguna es impecable, un diseño que inspira tranquilidad y da una sensación hogareña.',
+              paragraph_2:
+                'La intimidad y relajación fueron nuestra inspiración, dieron como resultado la perfecta combinación de los materiales y distribución de los espacios.',
+              paragraph_3:
+                'Tener rincones verdes en el interior de nuestros hogares no solo embellecen y le dan un toque natural, también nos ayuda a purificar el aire y a mantener el estado de animo positivo.'
+            }
+          },
+          donwload: 'Download',
+          id: 'project_6',
+          img: '/images/POR_CK_5_001.jpg',
+          keywords: {
+            key_1: 'GREEN',
+            key_2: 'WHITE',
+            key_3: 'WOOD'
+          },
+          location: 'VENEZUELA',
+          title: 'NEVADA PALACE'
         }
       },
       seo: {
@@ -456,10 +618,9 @@ export const Language = {
       }
     },
     brand_name: {
-      one: 'Diseño y Vanguardia',
-      two: 'Diseño & Vanguardia',
-      three: 'DISEÑO Y VANGUARDIA',
-      four: 'DISEÑO % VANGUARDIA'
+      name_1: 'Diseño & Vanguardia',
+      name_2: 'Diseño y Vanguardia',
+      acronym: 'D&V'
     },
     contact: {
       belong_to_label: 'Perteneces a',
@@ -502,99 +663,261 @@ export const Language = {
       next_page: 'Nuestros Aliados',
       portafolio_detail: {
         project_1: {
-          description: 'content description',
-          detail: {
-            item_1: 'item#1',
-            item_2: 'item#2',
-            item_3: 'item#3',
-            item_4: 'item#4',
-            item_5: 'item#5'
+          carousel: [
+            {
+              id: 'portafolio_project_1_1',
+              image: '/images/POR_CK_1_005_ES.jpg',
+              name: 'Diseño y Vanguardia / The Private Collections'
+            },
+            {
+              id: 'portafolio_project_1_2',
+              image: '/images/POR_CK_1_011.jpg',
+              name: 'Diseño y Vanguardia / The Private Collections'
+            },
+            {
+              id: 'portafolio_project_1_3',
+              image: '/images/POR_CK_1_007.jpg',
+              name: 'Diseño y Vanguardia / The Private Collections'
+            }
+          ],
+          description: {
+            description_title: 'UNA OBRA DE ARTE.',
+            text: {
+              paragraph_1: 'Proyecto realizado por D&V y THE PRIVATE COLLECTIONS',
+              paragraph_2:
+                'Un espacio donde la madera es la protagonista, perfectamente combinada con el resto de los materiales e iluminación. Generando un ambiente moderno y armónico.',
+              paragraph_3:
+                'THE PRIVATE COLLECTIONS se caracteriza por ofrecer productos europeos, con una tecnología deslumbrante, de alta calidad, y esta no es la excepción.',
+              paragraph_4:
+                'Utilizando las pocket doors en la cocina y puertas invisibles en el resto del apartamento logramos definir e integrar los espacios, creando un hogar único.'
+            },
+            tpc: 'THE PRIVATE COLLECTIONS'
           },
           donwload: 'download',
           id: 'project_1',
-          img: '/images/C_003.jpg',
-          keyword_1: 'keyword_1',
-          keyword_2: 'keyword_2',
-          location: 'Miami, USA',
-          title: 'hola detalle de proyecto #1',
-          title_detail: 'lista de detalles',
-          year: '2092'
+          img: '/images/POR_CK_1_010.jpg',
+          keywords: {
+            key_1: 'ART',
+            key_2: 'ITALIA',
+            key_3: 'ZEN'
+          },
+          location: 'MIAMI, USA',
+          title: 'GORENSTEIN RESIDENCE'
         },
         project_2: {
-          description: 'content description',
-          detail: {
-            item_1: 'item#1',
-            item_2: 'item#2',
-            item_3: 'item#3',
-            item_4: 'item#4',
-            item_5: 'item#5'
+          carousel: [
+            {
+              id: 'portafolio_project_2_1',
+              image: '/images/POR_CK_2_001.jpg',
+              name: 'Diseño y Vanguardia / The Private Collections'
+            },
+            {
+              id: 'portafolio_project_2_2',
+              image: '/images/POR_CK_2_002_ES.jpg',
+              name: 'Diseño y Vanguardia / The Private Collections'
+            },
+            {
+              id: 'portafolio_project_2_3',
+              image: '/images/POR_CK_2_003.jpg',
+              name: 'Diseño y Vanguardia / The Private Collections'
+            }
+          ],
+          description: {
+            description_title: 'SUAVE y LIGERO.',
+            text: {
+              paragraph_1: 'Proyecto realizado por D&V y THE PRIVATE COLLECTIONS',
+              paragraph_2:
+                'Sin duda alguna la isla es la protagonista en este proyecto, se trata de un diseño exclusivo de Obumex y el diseñador francés Joseph Dirand.',
+              paragraph_3:
+                'Es un estilo minimalista distintivo, atemporal y elegante, que da como resultado un hogar cálido.',
+              paragraph_4:
+                'Creando un interés adicional la tecnología se hace presente, generando que esta cocina sea más cómoda y funcional.'
+            },
+            tpc: 'THE PRIVATE COLLECTIONS'
           },
           donwload: 'download',
           id: 'project_2',
-          img: '/images/C_003.jpg',
-          keyword_1: 'keyword_1',
-          keyword_2: 'keyword_2',
-          location: 'Miami, USA',
-          title: 'hola detalle de proyecto #2',
-          title_detail: 'lista de detalles',
-          year: '2092'
+          img: '/images/POR_CK_2_002_ES.jpg',
+          keywords: {
+            key_1: 'OBUMEX',
+            key_2: 'DIRAND',
+            key_3: 'HOME'
+          },
+          location: 'MIAMI, USA',
+          title: 'PORTOFINO RESIDENCE'
         },
         project_3: {
-          description: 'content description',
-          detail: {
-            item_1: 'item#1',
-            item_2: 'item#2',
-            item_3: 'item#3',
-            item_4: 'item#4',
-            item_5: 'item#5'
+          carousel: [
+            {
+              id: 'portafolio_project_3_1',
+              image: '/images/POR_CK_3_012_ES.jpg',
+              name: 'Diseño y Vanguardia / The Private Collections'
+            },
+            {
+              id: 'portafolio_project_2_2',
+              image: '/images/POR_CK_3_013.jpg',
+              name: 'Diseño y Vanguardia / The Private Collections'
+            }
+          ],
+          description: {
+            description_title: 'LINEAL',
+            text: {
+              paragraph_1: 'Proyecto realizado por D&V y THE PRIVATE COLLECTIONS',
+              paragraph_2:
+                'Dicen que la cocina es el corazón del hogar y esta no es la excepción, Les presentamos un diseño solido y elegante, el cual representa al cliente, donde la función y creatividad van de la mano.',
+              paragraph_3:
+                'En  THE PRIVATE COLLECTIONS Podrás encontrar un servicio personalizado que se adapta perfectamente a tus necesidades y espacio, siguiendo los criterios de diseño.'
+            },
+            tpc: 'THE PRIVATE COLLECTIONS'
           },
-          donwload: 'download',
+          donwload: 'Descargar',
           id: 'project_3',
-          img: '/images/C_003.jpg',
-          keyword_1: 'keyword_1',
-          keyword_2: 'keyword_2',
-          location: 'Miami, USA',
-          title: 'hola detalle de proyecto #3',
-          title_detail: 'lista de detalles',
-          year: '2092'
+          img: '/images/POR_CK_3_012_ES.jpg',
+          keywords: {
+            key_1: 'EFFETI',
+            key_2: 'CUCINE',
+            key_3: 'DESIGN'
+          },
+          location: 'POMPANO BEACH, USA',
+          title: 'CONDO INTERIOR RENOVATION'
         },
         project_4: {
-          description: 'content description',
-          detail: {
-            item_1: 'item#1',
-            item_2: 'item#2',
-            item_3: 'item#3',
-            item_4: 'item#4',
-            item_5: 'item#5'
+          carousel: [
+            {
+              id: 'portafolio_project_4_1',
+              image: '/images/POR_CK_4_015.jpg',
+              name: 'Diseño y Vanguardia / The Private Collections'
+            },
+            {
+              id: 'portafolio_project_4_2',
+              image: '/images/POR_CK_4_016.jpg',
+              name: 'Diseño y Vanguardia / The Private Collections'
+            },
+            {
+              id: 'portafolio_project_4_3',
+              image: '/images/POR_CK_4_017.jpg',
+              name: 'Diseño y Vanguardia / The Private Collections'
+            },
+            {
+              id: 'portafolio_project_4_4',
+              image: '/images/POR_CK_4_018.jpg',
+              name: 'Diseño y Vanguardia / The Private Collections'
+            },
+            {
+              id: 'portafolio_project_4_4',
+              image: '/images/POR_CK_4_019.jpg',
+              name: 'Diseño y Vanguardia / The Private Collections'
+            }
+          ],
+          description: {
+            description_title: 'SUAVE y LIGERO.',
+            text: {
+              paragraph_1: 'Proyecto realizado por D&V y CASAINTERIOR',
+              paragraph_2: 'Un diseño mágico, donde la diversión no puede faltar.',
+              paragraph_3:
+                'Una habitación que se adaptara sin ningún problema al crecimiento de las mas pequeñas de la casa, la combinación de colores y materiales proporcionan un aspecto suave.',
+              paragraph_4: 'Un espacio que sentirán propio, generado una sensación de seguridad y libertad'
+            }
           },
-          donwload: 'download',
+          donwload: 'Download',
           id: 'project_4',
-          img: '/images/C_003.jpg',
-          keyword_1: 'keyword_1',
-          keyword_2: 'keyword_2',
-          location: 'Miami, USA',
-          title: 'hola detalle de proyecto #4',
-          title_detail: 'lista de detalles',
-          year: '2092'
+          img: '/images/POR_CK_4_020.jpg',
+          keywords: {
+            key_1: 'NIDI',
+            key_2: 'BEDROOM',
+            key_3: 'KIDS'
+          },
+          location: 'MIAMI, USA',
+          title: 'GIRLS ROOM'
         },
         project_5: {
-          description: 'content description',
-          detail: {
-            item_1: 'item#1',
-            item_2: 'item#2',
-            item_3: 'item#3',
-            item_4: 'item#4',
-            item_5: 'item#5'
+          carousel: [
+            {
+              id: 'portafolio_project_5_1',
+              image: '/images/POR_CK_5_001.jpg',
+              name: 'Diseño y Vanguardia / The Private Collections'
+            },
+            {
+              id: 'portafolio_project_5_2',
+              image: '/images/POR_CK_5_002.jpg',
+              name: 'Diseño y Vanguardia / The Private Collections'
+            },
+            {
+              id: 'portafolio_project_5_3',
+              image: '/images/POR_CK_5_003.jpg',
+              name: 'Diseño y Vanguardia / The Private Collections'
+            },
+            {
+              id: 'portafolio_project_5_4',
+              image: '/images/POR_CK_5_004.jpg',
+              name: 'Diseño y Vanguardia / The Private Collections'
+            }
+          ],
+          description: {
+            description_title: 'HASTA LA ULTIMA GOTA',
+            text: {
+              paragraph_1: 'Proyecto realizado por D&V y CASAINTERIOR',
+              paragraph_2:
+                'El Gym de tu hogar también puede ser un espacio glamuroso y con poder, el cual te motive día a día',
+              paragraph_3:
+                'Hemos seleccionado un equipo único, fabricados con los materiales de la mas alta calidad, el cual cubre las necesidades  del cliente y genera un look moderno, que lleva este diseño a otro nivel '
+            }
           },
-          donwload: 'download',
+          donwload: 'Download',
           id: 'project_5',
-          img: '/images/C_003.jpg',
-          keyword_1: 'keyword_1',
-          keyword_2: 'keyword_2',
-          location: 'Miami, USA',
-          title: 'hola detalle de proyecto #5',
-          title_detail: 'lista de detalles',
-          year: '2092'
+          img: '/images/POR_CK_5_001.jpg',
+          keywords: {
+            key_1: 'GYM',
+            key_2: 'LUXURY',
+            key_3: 'GLAM'
+          },
+          location: 'MIAMI, USA',
+          title: 'GYM'
+        },
+        project_6: {
+          carousel: [
+            {
+              id: 'portafolio_project_6_1',
+              image: '/images/POR_CK_6_001.jpg',
+              name: 'Diseño y Vanguardia / The Private Collections'
+            },
+            {
+              id: 'portafolio_project_6_2',
+              image: '/images/POR_CK_6_002.jpg',
+              name: 'Diseño y Vanguardia / The Private Collections'
+            },
+            {
+              id: 'portafolio_project_6_3',
+              image: '/images/POR_CK_6_003.jpg',
+              name: 'Diseño y Vanguardia / The Private Collections'
+            },
+            {
+              id: 'portafolio_project_6_4',
+              image: '/images/POR_CK_6_004.jpg',
+              name: 'Diseño y Vanguardia / The Private Collections'
+            }
+          ],
+          description: {
+            description_title: 'HOGAR',
+            text: {
+              paragraph_1:
+                'This is a project that is undoubtedly impeccable, a design that inspires tranquility and gives a homey feeling.',
+              paragraph_2:
+                'Intimacy and relaxation were our inspiration, resulting in the perfect combination of materials and distribution of spaces.',
+              paragraph_3:
+                'Having green corners inside our homes not only beautifies and gives a natural touch, it also helps us to purify the air and maintain a positive mood.'
+            }
+          },
+          donwload: 'Download',
+          id: 'project_6',
+          img: '/images/POR_CK_6_001.jpg',
+          keywords: {
+            key_1: 'GREEN',
+            key_2: 'WHITE',
+            key_3: 'WOOD'
+          },
+          location: 'VENEZUELA',
+          title: 'NEVADA PALACE'
         }
       },
       seo: {

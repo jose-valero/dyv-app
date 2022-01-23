@@ -9,7 +9,7 @@ const CarouselView = ({ data }) => {
       <Row>
         <Col>
           <Carousel>
-            {data.map((value) => (
+            {data?.map((value) => (
               <Carousel.Item key={value.id}>
                 <img className='carousel__image' src={value.image} alt={value.description} />
                 <Carousel.Caption>{<p className='carousel__caption'>{value.description}</p>}</Carousel.Caption>

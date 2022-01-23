@@ -11,6 +11,7 @@ import { PageContainer } from '../../components/stateless/Container/PageContaine
 const SEO = lazy(() => import('../../components/utils/SEO/SEO'));
 const Hero = lazy(() => import('../../components/stateless/Hero/Hero'));
 const Spinnator = lazy(() => import('../../components/stateless/Spinner/Spinner'));
+const CarouselView = lazy(() => import('../../components/stateless/Carousel/Carousel'));
 
 const PortafolioDetails = ({ id, match }) => {
   const lang = useSelector((state) => state.langReducer);
@@ -18,8 +19,9 @@ const PortafolioDetails = ({ id, match }) => {
   const PORTAFOLIO_DATA = Language[lang].portafolio;
   const { portafolio_detail, seo } = PORTAFOLIO_DATA;
   const PORTAFOLIO_DETAIL_DATA = portafolio_detail[project_id];
-  const { title, detail, img, description, location, year, donwload, keyword_1, keyword_2, title_detail } =
-    PORTAFOLIO_DETAIL_DATA;
+  const PORTAFOLIO_DETAIL_CAROUSEL = PORTAFOLIO_DETAIL_DATA.carousel;
+
+  const { title, description, location, donwload, description_title, keywords } = PORTAFOLIO_DETAIL_DATA;
 
   return (
     <PageContainer>
@@ -33,38 +35,28 @@ const PortafolioDetails = ({ id, match }) => {
           keywords={seo.keywords}
         />
         <Container className='portafolioDetail__container' id={id}>
-          <h1 className='text-center'>{title}</h1>
-          <h1 className='text-center'>{location}</h1>
-          <Row className='portafolioDetail__topsection'>
-            <Col className='portafolioDetail__topsection-title'>
-              {title_detail}
-              <ul>
-                {Object.values(detail).map((value) => (
-                  <li key={value}>{value}</li>
-                ))}
-              </ul>
+          <p className='portafolioDetail__container-title'>{title}</p>
+          <p className='portafolioDetail__container-location'>{location}</p>
+          <Row className='portafolioDetail__content'>
+            <Col sm={12} md={4} lg={5} className='portafolioDetail__content-description'>
+              <p className='portafolioDetail__content-description--title'>{description.description_title}</p>
+              <p className='portafolioDetail__content-description--text'>{description.text.paragraph_1}</p>
+              <p className='portafolioDetail__content-description--text'>{description.text.paragraph_2}</p>
+              <p className='portafolioDetail__content-description--text'>{description.text.paragraph_3}</p>
+              <p className='portafolioDetail__content-description--text'>{description.text.paragraph_4}</p>
             </Col>
-            <Col className='portafolioDetail__topsection-images'>
-              <Image src={img} fluid />
-            </Col>
-          </Row>
-          <Row className='portafolioDetail__botsection'>
-            <Col lg={12} className='portafolioDetail__botsection-desc'>
-              {description}
-            </Col>
-            <Col lg={12} className='portafolioDetail__botsection-utils'>
-              <button className='px-1 mx-1'>
+            <Col sm={12} md={8} lg={7} className='portafolioDetail__content-carousel'>
+              <CarouselView data={PORTAFOLIO_DETAIL_CAROUSEL} />
+              <a href='#' className='px-1 mx-1'>
                 {donwload}
-              </button>
-              <Badge variant='primary' className='px-1 mx-1'>
-                {year}
-              </Badge>
-              <Badge variant='primary' className='px-1 mx-1'>
-                {keyword_1}
-              </Badge>
-              <Badge variant='primary' className='px-1 mx-1'>
-                {keyword_2}
-              </Badge>
+              </a>
+              {Object.values(keywords).map((keyword) => {
+                return (
+                  <Badge variant='secondary' className='mx-1' key={keyword}>
+                    {keyword}
+                  </Badge>
+                );
+              })}
             </Col>
           </Row>
         </Container>
