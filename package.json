@@ -6,6 +6,7 @@
     "aos": "3.0.0-beta.6",
     "axios": "0.21.1",
     "bootstrap": "4.5.3",
+    "fs-extra": "^10.1.0",
     "node-sass": "4.14.1",
     "react": "17.0.1",
     "react-bootstrap": "1.4.0",
@@ -24,7 +25,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "node deployment.js s3://disenoyvanguardia.com E3HE0IUN8WWW0S --mode production"
   },
   "eslintConfig": {
     "extends": [
